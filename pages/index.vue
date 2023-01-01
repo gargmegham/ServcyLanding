@@ -1,13 +1,11 @@
 <template>
-  <div>
-    <Header></Header>
-  </div>
+  <div></div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from "vue";
 
 export default Vue.extend({
-  name: 'HomePage'
-})
+  name: "HomePage",
+});
 </script>
