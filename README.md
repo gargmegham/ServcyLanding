@@ -1,5 +1,8 @@
 # Servcy
 
+## Deployment Status
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9be579e4-51a6-4d89-bc2f-22fecba6b5a6/deploy-status)](https://app.netlify.com/sites/servcy/deploys)
+
 ## Build Setup
 
 ```bash
