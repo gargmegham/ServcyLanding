@@ -1,7 +1,7 @@
 <template>
   <header
     :class="{
-      'd-flex flex-row justify-space-between': true,
+      'd-flex servcy-linear-bg flex-row py-3 justify-space-between': true,
       'large-header': $vuetify.breakpoint.mdAndUp,
       'small-header': !$vuetify.breakpoint.mdAndUp,
     }"
@@ -9,13 +9,29 @@
     <div class="flex-column">
       <img src="@/static/logo.svg" width="80px" class="logo" />
     </div>
-    <div
-      v-if="!$vuetify.breakpoint.mdAndUp"
-      class="flex-column align-center align-self-center"
-    >
-      <v-btn x-large icon @click.stop="$emit('toggle-drawer')">
-        <v-icon>mdi-menu</v-icon>
-      </v-btn>
+    <div class="flex-column align-center align-self-center">
+      <div v-if="!$vuetify.breakpoint.mdAndUp">
+        <v-btn small class="mr-2" outlined>
+          <a target="_blank" href="https://app.sevcy.com/login">login</a>
+        </v-btn>
+        <v-btn small color="#26542F">
+          <img src="@/assets/icons/server.svg" width="30" height="30" />
+          <a target="_blank" href="https://app.sevcy.com/signup">signup</a>
+        </v-btn>
+      </div>
+      <div v-else>
+        <a class="mr-8" href="#why-servcy">Why Servcy?</a>
+        <a class="mr-8" href="#features">Features</a>
+        <a class="mr-8" href="#blogs">Blogs</a>
+        <a class="mr-8" href="#pricing">Pricing</a>
+        <v-btn class="mr-2" outlined>
+          <a target="_blank" href="https://app.sevcy.com/login">login</a>
+        </v-btn>
+        <v-btn color="#26542F">
+          <img src="@/assets/icons/server.svg" width="35" height="35" />
+          <a target="_blank" href="https://app.sevcy.com/signup">signup</a>
+        </v-btn>
+      </div>
     </div>
   </header>
 </template>
@@ -27,38 +43,17 @@ export default {
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+}
+a:hover {
+  color: rgba(167, 226, 165, 1);
+}
 header {
-  background: rgb(167, 226, 165);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(167, 226, 165, 1) 0%,
-    rgba(91, 169, 89, 1) 23%,
-    rgba(77, 126, 62, 1) 58%,
-    rgba(38, 84, 47, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(167, 226, 165, 1) 0%,
-    rgba(91, 169, 89, 1) 23%,
-    rgba(77, 126, 62, 1) 58%,
-    rgba(38, 84, 47, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(167, 226, 165, 1) 0%,
-    rgba(91, 169, 89, 1) 23%,
-    rgba(77, 126, 62, 1) 58%,
-    rgba(38, 84, 47, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a7e2a5",endColorstr="#26542f",GradientType=1);
-}
-.large-header {
-  height: 10vh;
-  padding: 12px 5%;
-}
-.small-header {
-  height: 8vh;
-  padding: 12px 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .logo {
   vertical-align: middle;

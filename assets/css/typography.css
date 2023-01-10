@@ -1,0 +1,26 @@
+.dark-text {
+  color: #2b3232;
+}
+.font-weight-semibold {
+  font-weight: 600;
+}
+.servcy-gradient-font {
+  background-image: linear-gradient(
+    90deg,
+    rgba(167, 226, 165, 1),
+    rgba(38, 84, 47, 1)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.servcy-headline {
+  font-size: 4.5rem !important;
+  line-height: 5rem;
+  letter-spacing: -0.0083333333em !important;
+}
+.servcy-sub-headline {
+  font-size: 1.5rem !important;
+  line-height: 2rem;
+  letter-spacing: normal !important;
+}
