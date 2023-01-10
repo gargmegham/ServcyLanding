@@ -1,17 +1,10 @@
 <template>
-  <div
-    :class="{
-      'servcy-body': true,
-      'large-body': $vuetify.breakpoint.mdAndUp,
-      'small-body': !$vuetify.breakpoint.mdAndUp,
-    }"
-  >
+  <div class="servcy-body">
     <v-row no-gutters class="py-10">
       <v-col sm="12" xs="12" lg="6" xl="6" md="6">
         <div
           :class="{
             'servcy-headline servcy-gradient-font font-weight-bold': true,
-            'pb-8': $vuetify.breakpoint.smAndDown,
             's-p-y-40': !$vuetify.breakpoint.smAndDown,
           }"
         >
@@ -24,12 +17,7 @@
         >
           Increase Your Business Efficiency, Productivity and Client
           Satisfaction all from the same platform.
-          <ul
-            :class="{
-              'mt-4': true,
-              'list-style-none': $vuetify.breakpoint.smAndDown,
-            }"
-          >
+          <ul class="mt-4 list-style-none">
             <li>AI Generated Insights & Reports</li>
             <li>Automated Workflows</li>
             <li>Raise & Track Payment Requests</li>
@@ -52,6 +40,7 @@ export default {
 
 <style scoped>
 .servcy-body {
+  min-height: 90vh;
   padding-left: 5%;
   padding-right: 5%;
   background: rgb(255, 255, 255);
@@ -78,15 +67,19 @@ li {
   font-weight: 400;
   letter-spacing: normal !important;
 }
-.list-style-none {
-  list-style-type: none;
-}
 @media screen and (max-width: 959px) {
   .servcy-headline {
+    padding-bottom: 32px;
     text-align: center;
+  }
+  .servcy-body {
+    min-height: 92vh;
   }
   .servcy-sub-headline {
     text-align: center;
+  }
+  .list-style-none {
+    list-style-type: none;
   }
 }
 </style>
