@@ -11,8 +11,8 @@
         <div
           :class="{
             'servcy-headline servcy-gradient-font font-weight-bold': true,
-            'text-center pb-8': $vuetify.breakpoint.smAndDown,
-            ' s-p-y-40': !$vuetify.breakpoint.mdAndDown,
+            'pb-8': $vuetify.breakpoint.smAndDown,
+            's-p-y-40': !$vuetify.breakpoint.mdAndDown,
           }"
         >
           Best Place To Run Your Freelance Agency
@@ -20,7 +20,6 @@
         <div
           :class="{
             'servcy-sub-headline dark-text pb-4 font-weight-semibol': true,
-            'text-center': $vuetify.breakpoint.smAndDown,
           }"
         >
           Increase Your Business Efficiency, Productivity and Client
@@ -81,5 +80,13 @@ li {
 }
 .list-style-none {
   list-style-type: none;
+}
+@media screen and (max-width: 959px) {
+  .servcy-headline {
+    text-align: center;
+  }
+  .servcy-sub-headline {
+    text-align: center;
+  }
 }
 </style>
