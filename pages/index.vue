@@ -76,7 +76,7 @@ export default {
 li {
   font-size: 1.25rem !important;
   line-height: 2rem;
-  font-weight: 550;
+  font-weight: 400;
   letter-spacing: normal !important;
 }
 .list-style-none {
