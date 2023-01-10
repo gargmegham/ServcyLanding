@@ -51,7 +51,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .servcy-body {
   padding-left: 5%;
   padding-right: 5%;
