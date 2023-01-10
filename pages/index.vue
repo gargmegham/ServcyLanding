@@ -11,7 +11,7 @@
         <div
           :class="{
             'servcy-headline servcy-gradient-font font-weight-bold': true,
-            'text-center pb-8': $vuetify.breakpoint.mdAndDown,
+            'text-center pb-8': $vuetify.breakpoint.smAndDown,
             ' s-p-y-40': !$vuetify.breakpoint.mdAndDown,
           }"
         >
@@ -20,7 +20,7 @@
         <div
           :class="{
             'servcy-sub-headline dark-text pb-4 font-weight-semibol': true,
-            'text-center': $vuetify.breakpoint.mdAndDown,
+            'text-center': $vuetify.breakpoint.smAndDown,
           }"
         >
           Increase Your Business Efficiency, Productivity and Client

@@ -7,7 +7,7 @@
     }"
   >
     <div class="flex-column">
-      <img src="@/static/logo.svg" width="80px" class="logo" />
+      <img src="@/static/logo.svg" alt="logo" width="80px" class="logo" />
     </div>
     <div class="flex-column align-center align-self-center">
       <div v-if="!$vuetify.breakpoint.mdAndUp">
@@ -28,7 +28,12 @@
           <a target="_blank" href="https://app.sevcy.com/login">login</a>
         </v-btn>
         <v-btn color="#26542F">
-          <img src="@/assets/icons/server.svg" width="35" height="35" />
+          <img
+            src="@/assets/icons/server.svg"
+            alt="signup-icon"
+            width="35"
+            height="35"
+          />
           <a target="_blank" href="https://app.sevcy.com/signup">signup</a>
         </v-btn>
       </div>
