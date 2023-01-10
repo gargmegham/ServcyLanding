@@ -45,7 +45,7 @@ export default {
 <style scoped>
 a {
   text-decoration: none;
-  color: #fff;
+  color: #fff !important;
   font-weight: 500;
 }
 a:hover {
