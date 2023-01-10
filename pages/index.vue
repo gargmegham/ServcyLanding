@@ -12,7 +12,7 @@
           :class="{
             'servcy-headline servcy-gradient-font font-weight-bold': true,
             'pb-8': $vuetify.breakpoint.smAndDown,
-            's-p-y-40': !$vuetify.breakpoint.mdAndDown,
+            's-p-y-40': !$vuetify.breakpoint.smAndDown,
           }"
         >
           Best Place To Run Your Freelance Agency
@@ -27,7 +27,7 @@
           <ul
             :class="{
               'mt-4': true,
-              'list-style-none': $vuetify.breakpoint.mdAndDown,
+              'list-style-none': $vuetify.breakpoint.smAndDown,
             }"
           >
             <li>AI Generated Insights & Reports</li>
