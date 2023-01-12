@@ -54,7 +54,7 @@ a {
   font-weight: 500;
 }
 a:hover {
-  color: rgba(167, 226, 165, 1);
+  color: rgba(167, 226, 165, 1) !important;
 }
 header {
   padding-left: 5%;
