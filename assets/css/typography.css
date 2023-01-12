@@ -15,12 +15,12 @@
   -webkit-text-fill-color: transparent;
 }
 .servcy-headline {
-  font-size: 4.5rem !important;
-  line-height: 5rem;
+  font-size: 4rem !important;
+  line-height: 4.5rem;
   letter-spacing: -0.0083333333em !important;
 }
 .servcy-sub-headline {
-  font-size: 1.5rem !important;
-  line-height: 2rem;
+  font-size: 1.3rem !important;
+  line-height: 1.5rem;
   letter-spacing: normal !important;
 }
