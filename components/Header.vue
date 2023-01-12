@@ -25,7 +25,7 @@
         <a class="mr-8" href="#blogs">Blogs</a>
         <a class="mr-8" href="#pricing">Pricing</a>
         <v-btn class="mr-2" outlined>
-          <a target="_blank" href="https://app.sevcy.com/login">login</a>
+          <a target="_blank" href="#login">login</a>
         </v-btn>
         <v-btn color="#26542F">
           <img
@@ -34,7 +34,7 @@
             width="35"
             height="35"
           />
-          <a target="_blank" href="https://app.sevcy.com/signup">signup</a>
+          <a target="_blank" href="#signup">signup</a>
         </v-btn>
       </div>
     </div>
