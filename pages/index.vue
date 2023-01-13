@@ -34,7 +34,7 @@
             width="90"
             height="100%"
           />
-          <v-tooltip bottom v-if="!$vuetify.breakpoint.smAndDown">
+          <v-tooltip bottom v-if="!$vuetify.breakpoint.xsAndDown">
             <template v-slot:activator="{ on }">
               <img
                 src="@/assets/icons/figma-logo.svg"
