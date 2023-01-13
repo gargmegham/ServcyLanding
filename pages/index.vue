@@ -54,7 +54,7 @@
             </template>
             <span>Gmail</span>
           </v-tooltip>
-          <v-tooltip bottom>
+          <v-tooltip bottom v-if="!$vuetify.breakpoint.smAndDown">
             <template v-slot:activator="{ on }">
               <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
                 >mdi-aws</v-icon
@@ -62,7 +62,7 @@
             </template>
             <span>AWS</span>
           </v-tooltip>
-          <v-tooltip bottom>
+          <v-tooltip v-if="!$vuetify.breakpoint.smAndDown" bottom>
             <template v-slot:activator="{ on }">
               <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
                 >mdi-microsoft-outlook</v-icon
