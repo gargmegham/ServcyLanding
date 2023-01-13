@@ -24,7 +24,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ["~/plugins/notifier.js"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -35,13 +35,6 @@ export default {
     "@nuxtjs/vuetify",
     "@nuxtjs/google-analytics",
   ],
-
-  // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["nuxtjs-microsoft-clarity"],
-
-  microsoftClarity: {
-    id: process.env.CLARITY_PROJECT_ID,
-  },
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
   vuetify: {
@@ -64,6 +57,29 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: ["nuxtjs-microsoft-clarity", "@nuxtjs/firebase"],
+
+  firebase: {
+    config: {
+      apiKey: process.env.FIREBASE_apiKey,
+      authDomain: process.env.FIREBASE_authDomain,
+      projectId: process.env.FIREBASE_projectId,
+      storageBucket: process.env.FIREBASE_storageBucket,
+      messagingSenderId: process.env.FIREBASE_messagingSenderId,
+      appId: process.env.FIREBASE_appId,
+      measurementId: process.env.FIREBASE_measurementId,
+    },
+    services: {
+      auth: true,
+      firestore: true,
+    },
+  },
+
+  microsoftClarity: {
+    id: process.env.CLARITY_PROJECT_ID,
+  },
 
   googleAnalytics: {
     id: "UA-254127105-1",

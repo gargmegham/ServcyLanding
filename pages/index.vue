@@ -113,7 +113,14 @@
           </button>
         </form>
       </v-col>
-      <v-col sm="12" cols="12" lg="6" xl="6" md="6">
+      <v-col
+        sm="12"
+        cols="12"
+        lg="6"
+        xl="6"
+        md="6"
+        :class="!$vuetify.breakpoint.smAndDown ? '' : 'pt-10 max-h-500'"
+      >
         <v-tooltip v-if="currentIsometric === 0" bottom>
           <template v-slot:activator="{ on }">
             <img
@@ -199,6 +206,21 @@ export default {
   methods: {
     submit(e) {
       e.preventDefault();
+      this.$fire.firestore
+        .collection("servcy-landing-page-email-subscribers")
+        .add({ email: this.email, timestamp: new Date() })
+        .then(() => {
+          this.$notifier.showMessage({
+            content: "Thank you for your interest!",
+            color: "#5BA959",
+          });
+        })
+        .catch((err) => {
+          this.$notifier.showMessage({
+            content: "Something went wrong. Please try again later.",
+            color: "#5BA959",
+          });
+        });
     },
   },
 };
@@ -218,7 +240,7 @@ export default {
   background: -webkit-linear-gradient(
     90deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(223, 224, 236, 1) 47%
+    rgb(236, 223, 234) 47%
   );
   background: linear-gradient(
     90deg,
@@ -233,6 +255,9 @@ li {
   letter-spacing: normal !important;
 }
 @media screen and (max-width: 959px) {
+  .max-h-500 {
+    height: 500px;
+  }
   .servcy-headline {
     padding-bottom: 32px;
     text-align: center;

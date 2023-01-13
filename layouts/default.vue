@@ -4,12 +4,18 @@
     <v-main>
       <Nuxt />
     </v-main>
+    <snack-bar />
   </v-app>
 </template>
 
 <script>
+// import Snackbar from "~/components/Snackbar.vue";
+
 export default {
   name: "DefaultLayout",
+  // components: {
+  //   Snackbar,
+  // },
 };
 </script>
 
