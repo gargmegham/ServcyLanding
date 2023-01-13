@@ -113,7 +113,56 @@
           </button>
         </form>
       </v-col>
-      <v-col sm="12" cols="12" lg="6" xl="6" md="6"></v-col>
+      <v-col sm="12" cols="12" lg="6" xl="6" md="6">
+        <v-tooltip v-if="currentIsometric === 0" bottom>
+          <template v-slot:activator="{ on }">
+            <img
+              src="@/assets/icons/inbox-management-isometric.svg"
+              alt="isometric composition"
+              width="90%"
+              height="90%"
+              v-on="on"
+              class="ma-2"
+          /></template>
+          <span>Aggregated Inbox</span>
+        </v-tooltip>
+        <v-tooltip v-else-if="currentIsometric === 1" bottom>
+          <template v-slot:activator="{ on }">
+            <img
+              src="@/assets/icons/task-management-isometric.svg"
+              alt="isometric composition"
+              width="90%"
+              v-on="on"
+              height="90%"
+              class="ma-2"
+          /></template>
+          <span>Project Management</span>
+        </v-tooltip>
+        <v-tooltip v-else-if="currentIsometric === 2" bottom>
+          <template v-slot:activator="{ on }">
+            <img
+              src="@/assets/icons/payments-isometric.svg"
+              alt="isometric composition"
+              width="90%"
+              v-on="on"
+              height="90%"
+              class="ma-2"
+          /></template>
+          <span>Payments & Invoices</span>
+        </v-tooltip>
+        <v-tooltip v-else-if="currentIsometric === 3" bottom>
+          <template v-slot:activator="{ on }">
+            <img
+              src="@/assets/icons/insights-isometric.svg"
+              alt="isometric composition"
+              v-on="on"
+              width="90%"
+              height="90%"
+              class="ma-2"
+          /></template>
+          <span>Analytics & Reports</span>
+        </v-tooltip>
+      </v-col>
     </v-row>
   </div>
 </template>
@@ -124,6 +173,8 @@ export default {
   data() {
     return {
       email: "",
+      currentIsometric: 2,
+      isometricInterval: null,
     };
   },
   computed: {
@@ -132,6 +183,18 @@ export default {
         /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
       return !!this.email.match(validRegex);
     },
+  },
+  mounted() {
+    this.isometricInterval = setInterval(() => {
+      if (this.currentIsometric === 3) {
+        this.currentIsometric = 0;
+      } else {
+        this.currentIsometric++;
+      }
+    }, 5000);
+  },
+  beforeDestroy() {
+    clearInterval(this.isometricInterval);
   },
   methods: {
     submit(e) {
