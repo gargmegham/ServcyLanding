@@ -13,11 +13,17 @@
         <div
           :class="{
             'servcy-sub-headline dark-text pb-4 font-weight-semibol': true,
+            'text-left': $vuetify.breakpoint.smAndDown,
           }"
         >
           Helping you increase your productivity and client satisfaction all
           from one platform.
-          <ul class="mt-4 list-style-none">
+          <ul
+            :class="{
+              'mt-4': true,
+              'text-left': $vuetify.breakpoint.smAndDown,
+            }"
+          >
             <li>AI Generated Insights & Reports</li>
             <li>Automated Workflows</li>
             <li>Raise & Track Payment Requests</li>
@@ -108,7 +114,20 @@
             type="email"
             placeholder="Your Email address"
           />
-          <button id="cta-button" @click="submit" :disabled="!isEmailValid">
+          <v-progress-circular
+            v-if="subscribing"
+            class="mr-5"
+            indeterminate
+            color="success"
+            size="20"
+          />
+          <button
+            v-else
+            id="cta-button"
+            @click="submit"
+            :loading="true"
+            :disabled="!isEmailValid"
+          >
             <span id="cta-span">I'm Interested</span>
           </button>
         </form>
@@ -181,6 +200,7 @@ export default {
     return {
       email: "",
       currentIsometric: 2,
+      subscribing: false,
       isometricInterval: null,
     };
   },
@@ -205,6 +225,7 @@ export default {
   },
   methods: {
     submit(e) {
+      this.subscribing = true;
       e.preventDefault();
       this.$fire.firestore
         .collection("servcy-landing-page-email-subscribers")
@@ -212,14 +233,17 @@ export default {
         .then(() => {
           this.$notifier.showMessage({
             content: "Thanks for your interest, We'll contact you soon!",
-            color: "#5BA959",
+            color: "success",
           });
         })
         .catch((err) => {
           this.$notifier.showMessage({
             content: "Something went wrong. Please try again later.",
-            color: "#5BA959",
+            color: "errorLight",
           });
+        })
+        .finally(() => {
+          this.subscribing = false;
         });
     },
   },
@@ -265,11 +289,19 @@ li {
   .servcy-body {
     min-height: 92vh;
   }
-  .servcy-sub-headline {
-    text-align: center;
+}
+@media screen and (max-width: 599px) {
+  .servcy-headline {
+    font-size: 3rem !important;
+    line-height: 3.5rem;
   }
-  .list-style-none {
-    list-style-type: none;
+  .servcy-sub-headline {
+    font-size: 1.1rem !important;
+    line-height: 1.2rem;
+  }
+  li {
+    font-size: 1.1rem !important;
+    line-height: 1.2rem;
   }
 }
 </style>
