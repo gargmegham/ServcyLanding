@@ -211,7 +211,7 @@ export default {
         .add({ email: this.email, timestamp: new Date() })
         .then(() => {
           this.$notifier.showMessage({
-            content: "Thank you for your interest!",
+            content: "Thanks for your interest, We'll contact you soon!",
             color: "#5BA959",
           });
         })
