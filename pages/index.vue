@@ -49,14 +49,14 @@
             </span>
           </div>
         </div>
+        <div
+          class="dark--text mb-5 mt-13 s-title font-weight-semibold font-castoro"
+        >
+          Increase your productivity, and give your clients the best
+          experience.
+        </div>
         <!-- Integrations Icons -->
-        <v-row class="d-flex align-end mt-13 justify-space-between">
-          <div
-            class="dark--text mb-5 s-title font-weight-semibold font-castoro"
-          >
-            Increase your productivity, and give your clients the best
-            experience.
-          </div>
+        <v-row class="d-flex align-end  justify-space-between">
           <img
             class="mr-2"
             src="@/assets/icons/itegrate.svg"
