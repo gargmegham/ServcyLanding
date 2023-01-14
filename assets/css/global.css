@@ -2,3 +2,6 @@
 * {
   font-family: "Poppins" !important;
 }
+.s-none {
+  display: none !important;
+}
