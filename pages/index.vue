@@ -1,42 +1,66 @@
 <template>
-  <div class="servcy-body">
+  <div class="servcy-body servcy-linear-bg-light">
     <v-row no-gutters class="py-10">
       <v-col sm="12" xs="12" lg="6" xl="6" md="6">
         <div
           :class="{
-            'servcy-headline servcy-gradient-font font-weight-bold': true,
+            'servcy-headline servcy-headline-font servcy-gradient-font font-weight-bold': true,
             'pt-8 pb-10': !$vuetify.breakpoint.smAndDown,
           }"
         >
-          Best Place To Run Your Freelance Agency
+          Virtual Office For Freelance Developers
         </div>
         <div
           :class="{
-            'servcy-sub-headline dark-text pb-4 font-weight-semibol': true,
+            'servcy-sub-headline-font dark--text pb-4 font-weight-semibol': true,
             'text-left': $vuetify.breakpoint.smAndDown,
           }"
         >
-          Helping you increase your productivity and client satisfaction all
-          from one platform.
-          <ul
-            :class="{
-              'mt-4': true,
-              'text-left': $vuetify.breakpoint.smAndDown,
-            }"
+          <div
+            class="mt-5 d-flex integrate-replace align-center align-self-center flex-wrap overflow-hidden"
           >
-            <li>AI Generated Insights & Reports</li>
-            <li>Automated Workflows</li>
-            <li>Raise & Track Payment Requests</li>
-            <li>Manage & Track Time</li>
-            <li>Manage Client Communication & Feedback</li>
-            <li>Manage Projects & Tasks</li>
-          </ul>
+            <img
+              src="@/assets/icons/integrate-replace.svg"
+              alt="integrate-replace-icon"
+              width="20%"
+              height="100%"
+            />
+            <span
+              class="ma-4 overflow-hidden manage-text-animation__content-container"
+            >
+              <span
+                class="manage-text-animation__content-container__inner"
+                style="width: 100%"
+              ></span>
+              <span class="mr-2 manage-text-animation__content">{{
+                currentIsometric === 0
+                  ? "Inbox Aggregation"
+                  : currentIsometric === 1
+                  ? "Project Management"
+                  : currentIsometric === 2
+                  ? "Payments & Invoicing"
+                  : "Analytics & Reporting"
+              }}</span>
+              <span
+                v-if="!$vuetify.breakpoint.smAndDown"
+                class="font-weight-bold"
+                >Software</span
+              >
+            </span>
+          </div>
         </div>
-        <v-row class="d-flex align-end mt-8 justify-space-between">
+        <!-- Integrations Icons -->
+        <v-row class="d-flex align-end mt-13 justify-space-between">
+          <div
+            class="dark--text mb-5 s-title font-weight-semibold font-castoro"
+          >
+            Increase your productivity, and give your clients the best
+            experience.
+          </div>
           <img
             class="mr-2"
             src="@/assets/icons/itegrate.svg"
-            alt="signup-icon"
+            alt="integrate-icon"
             width="90"
             height="100%"
           />
@@ -44,13 +68,25 @@
             <template v-slot:activator="{ on }">
               <img
                 src="@/assets/icons/figma-logo.svg"
-                alt="signup-icon"
+                alt="figma-icon"
                 v-on="on"
                 height="40"
                 class="ma-2"
               />
             </template>
             <span>Figma</span>
+          </v-tooltip>
+          <v-tooltip bottom v-if="!$vuetify.breakpoint.xsAndDown">
+            <template v-slot:activator="{ on }">
+              <img
+                src="@/assets/icons/zapier-logo.svg"
+                alt="zapier-icon"
+                v-on="on"
+                height="40"
+                class="ma-2"
+              />
+            </template>
+            <span>Zapier</span>
           </v-tooltip>
           <v-tooltip bottom>
             <template v-slot:activator="{ on }">
@@ -60,15 +96,7 @@
             </template>
             <span>Gmail</span>
           </v-tooltip>
-          <v-tooltip bottom v-if="!$vuetify.breakpoint.smAndDown">
-            <template v-slot:activator="{ on }">
-              <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
-                >mdi-aws</v-icon
-              >
-            </template>
-            <span>AWS</span>
-          </v-tooltip>
-          <v-tooltip v-if="!$vuetify.breakpoint.smAndDown" bottom>
+          <v-tooltip bottom>
             <template v-slot:activator="{ on }">
               <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
                 >mdi-microsoft-outlook</v-icon
@@ -102,12 +130,13 @@
           </v-tooltip>
           <img
             src="@/assets/icons/more.svg"
-            alt="signup-icon"
+            alt="more-icon"
             width="90"
             height="100%"
           />
         </v-row>
-        <form class="newsletter-form mt-8">
+        <!-- Email Form -->
+        <form class="newsletter-form mt-16">
           <input
             id="cta-input"
             v-model="email"
@@ -128,10 +157,11 @@
             :loading="true"
             :disabled="!isEmailValid"
           >
-            <span id="cta-span">I'm Interested</span>
+            <span id="cta-span">Notify Me!</span>
           </button>
         </form>
       </v-col>
+      <!-- ISOMETRIC Illustrations -->
       <v-col
         sm="12"
         cols="12"
@@ -199,7 +229,7 @@ export default {
   data() {
     return {
       email: "",
-      currentIsometric: 2,
+      currentIsometric: 0,
       subscribing: false,
       isometricInterval: null,
     };
@@ -255,28 +285,41 @@ export default {
   min-height: 90vh;
   padding-left: 5%;
   padding-right: 5%;
-  background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(223, 224, 236, 1) 47%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgb(236, 223, 234) 47%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(223, 224, 236, 1) 47%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#dfe0ec",GradientType=1);
 }
 li {
   font-size: 1.2rem !important;
   line-height: 1.5rem;
   letter-spacing: normal !important;
+}
+.manage-text-animation__content-container {
+  min-width: -webkit-max-content;
+  min-width: max-content;
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.manage-text-animation__content-container__inner {
+  background-color: #26542f;
+  bottom: -5px;
+  height: 20px;
+  left: 0;
+  opacity: 0.12;
+  position: absolute;
+  width: 0;
+}
+.manage-text-animation__content {
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-color: #7ff096;
+  background-image: linear-gradient(90deg, #a6d1af 0, #26542f 0);
+  background-size: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 0.2px;
+  width: -webkit-max-content;
+  width: max-content;
 }
 @media screen and (max-width: 959px) {
   .max-h-500 {
@@ -291,11 +334,11 @@ li {
   }
 }
 @media screen and (max-width: 599px) {
-  .servcy-headline {
+  .servcy-headline-font {
     font-size: 3rem !important;
     line-height: 3.5rem;
   }
-  .servcy-sub-headline {
+  .servcy-sub-headline-font {
     font-size: 1.1rem !important;
     line-height: 1.2rem;
   }
@@ -306,6 +349,7 @@ li {
 }
 </style>
 
+<!-- For Email Form -->
 <style scoped lang="scss">
 .newsletter-form {
   --primary: #275efe;

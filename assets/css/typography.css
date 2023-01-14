@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Castoro");
+.font-castoro {
+  font-family: "Castoro" !important;
+}
+.font-poppins {
+  font-family: "Poppins" !important;
+}
 .dark-text {
   color: #2b3232;
 }
@@ -14,13 +22,18 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.servcy-headline {
+.servcy-headline-font {
   font-size: 4rem !important;
   line-height: 4.5rem;
   letter-spacing: -0.0083333333em !important;
 }
-.servcy-sub-headline {
+.servcy-sub-headline-font {
   font-size: 1.3rem !important;
   line-height: 1.5rem;
   letter-spacing: normal !important;
+}
+.s-title {
+  font-size: 1.25rem !important;
+  line-height: 2rem;
+  letter-spacing: 0.0125em !important;
 }

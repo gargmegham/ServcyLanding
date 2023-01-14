@@ -64,4 +64,10 @@ header {
   vertical-align: middle;
   height: 100%;
 }
+.large-header {
+  height: 10vh;
+}
+.small-header {
+  height: 8vh;
+}
 </style>

@@ -46,6 +46,7 @@ export default {
           primary: "#26542F",
           secondary: "4D7E3E",
           accent: colors.grey.darken3,
+          dark: "#2b3232",
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
