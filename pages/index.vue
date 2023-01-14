@@ -17,7 +17,7 @@
           }"
         >
           <div
-            class="mt-5 d-flex integrate-replace align-center align-self-center flex-wrap overflow-hidden"
+            class="mt-5 d-flex integrate-replace align-center align-self-center flex-wrap"
           >
             <img
               src="@/assets/icons/integrate-replace.svg"
@@ -25,14 +25,8 @@
               width="20%"
               height="100%"
             />
-            <span
-              class="ma-4 overflow-hidden manage-text-animation__content-container"
-            >
-              <span
-                class="manage-text-animation__content-container__inner"
-                style="width: 100%"
-              ></span>
-              <span class="mr-2 manage-text-animation__content">{{
+            <span class="ma-4 manage-text">
+              <span class="mr-2 font-weight-bold">{{
                 currentIsometric === 0
                   ? "Inbox Aggregation"
                   : currentIsometric === 1
@@ -43,7 +37,7 @@
               }}</span>
               <span
                 v-if="!$vuetify.breakpoint.smAndDown"
-                class="font-weight-bold"
+                class="s-title font-weight-semibold"
                 >Software</span
               >
             </span>
@@ -52,11 +46,10 @@
         <div
           class="dark--text mb-5 mt-13 s-title font-weight-semibold font-castoro"
         >
-          Increase your productivity, and give your clients the best
-          experience.
+          Increase your productivity, and give your clients the best experience.
         </div>
         <!-- Integrations Icons -->
-        <v-row class="d-flex align-end  justify-space-between">
+        <v-row class="d-flex align-end justify-space-between">
           <img
             class="mr-2"
             src="@/assets/icons/itegrate.svg"
@@ -64,70 +57,206 @@
             width="90"
             height="100%"
           />
-          <v-tooltip bottom v-if="!$vuetify.breakpoint.xsAndDown">
-            <template v-slot:activator="{ on }">
-              <img
-                src="@/assets/icons/figma-logo.svg"
-                alt="figma-icon"
-                v-on="on"
-                height="40"
-                class="ma-2"
-              />
-            </template>
-            <span>Figma</span>
-          </v-tooltip>
-          <v-tooltip bottom v-if="!$vuetify.breakpoint.xsAndDown">
-            <template v-slot:activator="{ on }">
-              <img
-                src="@/assets/icons/zapier-logo.svg"
-                alt="zapier-icon"
-                v-on="on"
-                height="40"
-                class="ma-2"
-              />
-            </template>
-            <span>Zapier</span>
-          </v-tooltip>
-          <v-tooltip bottom>
-            <template v-slot:activator="{ on }">
-              <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
-                >mdi-gmail</v-icon
-              >
-            </template>
-            <span>Gmail</span>
-          </v-tooltip>
-          <v-tooltip bottom>
-            <template v-slot:activator="{ on }">
-              <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
-                >mdi-microsoft-outlook</v-icon
-              >
-            </template>
-            <span>Outlook</span>
-          </v-tooltip>
-          <v-tooltip bottom>
-            <template v-slot:activator="{ on }">
-              <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
-                >mdi-slack</v-icon
-              >
-            </template>
-            <span>Slack</span>
-          </v-tooltip>
-          <v-tooltip bottom>
-            <template v-slot:activator="{ on }">
-              <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
-                >mdi-github</v-icon
-              >
-            </template>
-            <span>Github</span>
-          </v-tooltip>
-          <v-tooltip bottom>
-            <template v-slot:activator="{ on }">
-              <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
-                >mdi-jira</v-icon
-              >
-            </template>
-            <span>Jira</span>
-          </v-tooltip>
+          <template v-if="currentIsometric === 0">
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <img
+                  src="@/assets/icons/figma-logo.svg"
+                  alt="figma-icon"
+                  v-on="on"
+                  height="40"
+                  class="ma-2"
+                />
+              </template>
+              <span>Figma</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
+                  >mdi-gmail</v-icon
+                >
+              </template>
+              <span>Gmail</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <img
+                  src="@/assets/icons/notion-logo.svg"
+                  alt="notion-icon"
+                  v-on="on"
+                  height="40"
+                  class="ma-2"
+                />
+              </template>
+              <span>Notion</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
+                  >mdi-microsoft-outlook</v-icon
+                >
+              </template>
+              <span>Outlook</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
+                  >mdi-slack</v-icon
+                >
+              </template>
+              <span>Slack</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
+                  >mdi-calendar-month-outline</v-icon
+                >
+              </template>
+              <span>Calendly</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
+                  >mdi-github</v-icon
+                >
+              </template>
+              <span>Github</span>
+            </v-tooltip>
+          </template>
+          <template v-else-if="currentIsometric === 1">
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <v-icon v-on="on" class="ma-2" color="#7E84A3" size="40"
+                  >mdi-jira</v-icon
+                >
+              </template>
+              <span>Jira</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <img
+                  src="@/assets/icons/asana-logo.svg"
+                  alt="asana-icon"
+                  v-on="on"
+                  height="40"
+                  class="ma-2"
+                />
+              </template>
+              <span>Asana</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <img
+                  src="@/assets/icons/linear-logo.svg"
+                  alt="linear-icon"
+                  v-on="on"
+                  height="40"
+                  class="ma-2"
+                />
+              </template>
+              <span>Linear</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <img
+                  src="@/assets/icons/monday-logo.svg"
+                  alt="monday-icon"
+                  v-on="on"
+                  height="40"
+                  class="ma-2"
+                />
+              </template>
+              <span>Monday.com</span>
+            </v-tooltip>
+          </template>
+          <template v-else-if="currentIsometric === 2">
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <img
+                  src="@/assets/icons/simple-invoices-logo.svg"
+                  alt="simple-invoices-logo-icon"
+                  v-on="on"
+                  height="40"
+                  class="ma-2"
+                />
+              </template>
+              <span>Simple Invoices</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <img
+                  src="@/assets/icons/paypal-logo.svg"
+                  alt="paypal-logo-icon"
+                  v-on="on"
+                  height="40"
+                  class="ma-2"
+                />
+              </template>
+              <span>Paypal</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <img
+                  src="@/assets/icons/stripe-logo.svg"
+                  alt="stripe-logo-icon"
+                  v-on="on"
+                  height="40"
+                  class="ma-2"
+                />
+              </template>
+              <span>Stripe</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <img
+                  src="@/assets/icons/qb-logo.svg"
+                  alt="qb-logo-icon"
+                  v-on="on"
+                  height="40"
+                  class="ma-2"
+                />
+              </template>
+              <span>Quickbooks</span>
+            </v-tooltip>
+          </template>
+          <template v-else>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <img
+                  src="@/assets/icons/zapier-logo.svg"
+                  alt="zapier-icon"
+                  v-on="on"
+                  height="40"
+                  class="ma-2"
+                />
+              </template>
+              <span>Zapier</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <img
+                  src="@/assets/icons/docusign.svg"
+                  alt="docusign-icon"
+                  v-on="on"
+                  height="40"
+                  class="ma-2"
+                />
+              </template>
+              <span>DocuSign</span>
+            </v-tooltip>
+            <v-tooltip bottom>
+              <template v-slot:activator="{ on }">
+                <img
+                  src="@/assets/icons/ironclad-logo.svg"
+                  alt="ironclad-icon"
+                  v-on="on"
+                  height="40"
+                  class="ma-2"
+                />
+              </template>
+              <span>Ironclad Contracts</span>
+            </v-tooltip>
+          </template>
           <img
             src="@/assets/icons/more.svg"
             alt="more-icon"
@@ -180,7 +309,7 @@
               v-on="on"
               class="ma-2"
           /></template>
-          <span>Aggregated Inbox</span>
+          <span>Inbox & Calendar</span>
         </v-tooltip>
         <v-tooltip v-else-if="currentIsometric === 1" bottom>
           <template v-slot:activator="{ on }">
@@ -291,35 +420,30 @@ li {
   line-height: 1.5rem;
   letter-spacing: normal !important;
 }
-.manage-text-animation__content-container {
-  min-width: -webkit-max-content;
-  min-width: max-content;
+.manage-text {
   position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  font-size: 1.75rem;
+  line-height: 1.9rem;
+  letter-spacing: normal;
 }
-.manage-text-animation__content-container__inner {
-  background-color: #26542f;
-  bottom: -5px;
-  height: 20px;
-  left: 0;
-  opacity: 0.12;
+.manage-text span {
+  position: relative;
+}
+.manage-text::before {
+  content: "";
   position: absolute;
-  width: 0;
+  left: -0.1px;
+  right: -0.1px;
+  bottom: 0;
+  height: 100%;
+  transform: scaleY(0.3);
+  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
+  transform-origin: bottom;
+  background-color: #5ba959;
+  opacity: 0.6;
 }
-.manage-text-animation__content {
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  background-color: #7ff096;
-  background-image: linear-gradient(90deg, #a6d1af 0, #26542f 0);
-  background-size: 100%;
-  font-size: 2rem;
-  font-weight: 700;
-  padding: 0.2px;
-  width: -webkit-max-content;
-  width: max-content;
+.manage-text:hover::before {
+  transform: scaleY(1);
 }
 @media screen and (max-width: 959px) {
   .max-h-500 {
@@ -345,6 +469,10 @@ li {
   li {
     font-size: 1.1rem !important;
     line-height: 1.2rem;
+  }
+  .manage-text {
+    font-size: 1.35rem;
+    line-height: 1.5rem;
   }
 }
 </style>

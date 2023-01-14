@@ -44,14 +44,14 @@ export default {
       themes: {
         dark: {
           primary: "#26542F",
-          secondary: "4D7E3E",
+          secondary: "#4D7E3E",
+          success: "#5BA959",
           accent: colors.grey.darken3,
           dark: "#2b3232",
           info: colors.teal.lighten1,
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           errorLight: colors.red.lighten1,
-          success: "#5BA959",
         },
       },
     },
