@@ -1,5 +1,5 @@
 <template>
-  <div class="servcy-body servcy-linear-bg-light">
+  <div>
     <v-row no-gutters class="py-10">
       <v-col sm="12" xs="12" lg="6" xl="6" md="6">
         <div
@@ -316,12 +316,12 @@
       </v-col>
       <!-- ISOMETRIC Illustrations -->
       <v-col
+        v-if="!$vuetify.breakpoint.smAndDown"
         sm="12"
         cols="12"
         lg="6"
         xl="6"
         md="6"
-        :class="!$vuetify.breakpoint.smAndDown ? '' : 'pt-10 max-h-500'"
       >
         <v-tooltip v-if="currentIsometric === 0" bottom>
           <template v-slot:activator="{ on }">
@@ -434,11 +434,6 @@ export default {
 </script>
 
 <style scoped lang="css">
-.servcy-body {
-  min-height: 90vh;
-  padding-left: 5%;
-  padding-right: 5%;
-}
 li {
   font-size: 1.2rem !important;
   line-height: 1.5rem;
@@ -470,15 +465,9 @@ li {
   transform: scaleY(1);
 }
 @media screen and (max-width: 959px) {
-  .max-h-500 {
-    height: 500px;
-  }
   .servcy-headline {
     padding-bottom: 32px;
     text-align: center;
-  }
-  .servcy-body {
-    min-height: 92vh;
   }
 }
 @media screen and (max-width: 599px) {

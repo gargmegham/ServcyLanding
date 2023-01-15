@@ -1,7 +1,5 @@
-@import url("@/assets/css/height.css");
 @import url("@/assets/css/typography.css");
 @import url("@/assets/css/backgrounds.css");
-@import url("@/assets/css/spacing.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
 @import url("https://fonts.googleapis.com/css2?family=Castoro");
 * {
@@ -9,4 +7,14 @@
 }
 .s-none {
   display: none !important;
+}
+.servcy-body {
+  min-height: 90vh;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+@media screen and (max-width: 959px) {
+  .servcy-body {
+    min-height: 92vh;
+  }
 }

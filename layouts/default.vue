@@ -2,7 +2,7 @@
   <v-app id="Home">
     <Header />
     <v-main>
-      <Nuxt />
+      <Nuxt class="servcy-linear-bg-light servcy-body" />
     </v-main>
     <snack-bar />
   </v-app>
