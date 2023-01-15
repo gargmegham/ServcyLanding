@@ -34,7 +34,7 @@
           </button>
         </form>
       </div>
-      <div class="flex-column">
+      <div v-if="!$vuetify.breakpoint.smAndDown" class="flex-column">
         <img
           src="@/assets/icons/all-blogs.svg"
           alt="blog home"
