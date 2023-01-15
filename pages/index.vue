@@ -26,7 +26,7 @@
               height="100%"
             />
             <span class="ma-4 manage-text">
-              <span class="mr-2 font-weight-bold">{{
+              <span class="mr-2 font-weight-bold font-castoro">{{
                 currentIsometric === 0
                   ? "Inbox Aggregation"
                   : currentIsometric === 1
@@ -69,7 +69,7 @@
           </button>
         </form>
         <div
-          class="dark--text mb-5 mt-13 s-title font-weight-semibold font-sofia"
+          class="dark--text mb-5 mt-13 s-title font-weight-semibold font-castoro"
         >
           Increase your productivity, and give your clients the best experience.
         </div>
