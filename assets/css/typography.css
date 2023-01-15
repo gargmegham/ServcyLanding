@@ -1,10 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
 @import url("https://fonts.googleapis.com/css2?family=Castoro");
+@import url("https://fonts.googleapis.com/css2?family=Sofia");
 .font-castoro {
   font-family: "Castoro" !important;
 }
 .font-poppins {
   font-family: "Poppins" !important;
+}
+.font-sofia {
+  font-family: "Sofia", sans-serif;
 }
 .dark-text {
   color: #2b3232;
