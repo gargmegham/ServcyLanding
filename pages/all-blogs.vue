@@ -57,7 +57,9 @@ export default {
     };
   },
   methods: {
-    search(e) {},
+    search(e) {
+      e.preventDefault();
+    },
   },
 };
 </script>
