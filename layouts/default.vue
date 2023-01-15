@@ -25,4 +25,7 @@ export default {
 @import url("@/assets/css/typography.css");
 @import url("@/assets/css/backgrounds.css");
 @import url("@/assets/css/spacing.css");
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Castoro");
+@import url("https://fonts.googleapis.com/css2?family=Sofia");
 </style>
