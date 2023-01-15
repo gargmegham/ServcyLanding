@@ -69,7 +69,7 @@
           </button>
         </form>
         <div
-          class="dark--text mb-5 mt-13 s-title font-weight-semibold font-castoro"
+          class="dark--text mb-5 mt-13 s-title font-weight-semibold font-sofia"
         >
           Increase your productivity, and give your clients the best experience.
         </div>
