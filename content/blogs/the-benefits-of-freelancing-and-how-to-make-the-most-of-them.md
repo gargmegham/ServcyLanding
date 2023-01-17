@@ -1,6 +1,6 @@
 ---
 title: "The Benefits of Freelancing and How to Make the Most of Them"
-description: "There are many benefits to freelancing, and if you know how to make the most of them, you can reap some great rewards. Here are some of the top benefits of freelancing, and how you can make the most of them:"
+description: "There are many benefits to freelancing, and if you know how to make the most of them, you can reap some great rewards."
 ---
 
 1. You can be your own boss

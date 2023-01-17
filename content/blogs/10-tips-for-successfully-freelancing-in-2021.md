@@ -1,11 +1,13 @@
 ---
 title: "10 Tips for Successfully Freelancing in 2021"
-description: "Freelancing can be a great way to earn a living while having the flexibility to work from home or anywhere else you have an internet connection. However, it can also be a bit of a challenge to get started and to find clients. Here are 10 tips for successfully freelancing in 2021:"
+description: "Freelancing can be a great way to earn a living while having the flexibility to work from home or anywhere else you have an internet connection. However, it can also be a bit of a challenge to get started and to find clients."
 ---
 
 # 10 Tips for Successfully Freelancing in 2021
 
-Freelancing can be a great way to earn a living while having the flexibility to work from home or anywhere else you have an internet connection. However, it can also be a bit of a challenge to get started and to find clients. Here are 10 tips for successfully freelancing in 2021:
+Freelancing can be a great way to earn a living while having the flexibility to work from home or anywhere else you have an internet connection. However, it can also be a bit of a challenge to get started and to find clients.
+
+Here are 10 tips for successfully freelancing in 2021:
 
 1. Get organized and set up a system for tracking your work.
 

@@ -9,7 +9,9 @@ As the world of work continues to evolve, more and more people are choosing to f
 
 But while freelancing can be a great career choice, it's not always a sustainable one. In fact, according to a recent study, nearly 60% of freelancers say they don't earn enough money to support themselves, and 30% say they're in danger of burnout.
 
-So, how can you make freelancing a sustainable career choice? Here are four tips:
+So, how can you make freelancing a sustainable career choice?
+
+Here are four tips:
 
 1. Diversify your income streams
 

@@ -1,6 +1,6 @@
 ---
 title: "The Dos and Don'ts of Setting Your Freelance Rates"
-description: "When it comes to setting your freelance rates, there are a few things you need to take into account. Here are the dos and don'ts of setting your rates to ensure you are getting the most out of your work."
+description: "When it comes to setting your freelance rates, there are a few things you need to take into account."
 ---
 
 # The Dos and Don'ts of Setting Your Freelance Rates
