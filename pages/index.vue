@@ -8,7 +8,7 @@
             'pt-8 pb-10': !$vuetify.breakpoint.smAndDown,
           }"
         >
-          Virtual Office For Freelance Solo-preneurs
+          Virtual Office For Freelance Entrepreneurs
         </div>
         <div
           :class="{
