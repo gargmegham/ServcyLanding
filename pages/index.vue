@@ -4,7 +4,7 @@
       <v-col sm="12" xs="12" lg="6" xl="6" md="6">
         <div
           :class="{
-            'servcy-headline servcy-headline-font servcy-gradient-font font-weight-bold': true,
+            'servcy-headline servcy-headline-font servcy-gradient-font s-bold': true,
             'pt-8 pb-10': !$vuetify.breakpoint.smAndDown,
           }"
         >
@@ -12,7 +12,7 @@
         </div>
         <div
           :class="{
-            'servcy-sub-headline-font dark--text pb-4 font-weight-semibol': true,
+            'servcy-sub-headline-font dark--text pb-4 s-semi-bold': true,
             'text-left': $vuetify.breakpoint.smAndDown,
           }"
         >
@@ -25,8 +25,8 @@
               width="20%"
               height="100%"
             />
-            <span class="ma-4 manage-text">
-              <span class="mr-2 font-weight-bold font-castoro">{{
+            <span class="ma-4 manage-text servcy-sub-headline-font">
+              <span class="mr-2 s-bold font-castoro">{{
                 currentIsometric === 0
                   ? "Inbox Aggregation"
                   : currentIsometric === 1
@@ -37,14 +37,14 @@
               }}</span>
               <span
                 v-if="!$vuetify.breakpoint.smAndDown"
-                class="s-title font-weight-semibold"
+                class="s-title s-semi-bold"
                 >Software</span
               >
             </span>
           </div>
         </div>
         <!-- Email Form -->
-        <form class="newsletter-form mt-10">
+        <form class="newsletter-form mt-8">
           <input
             id="cta-input"
             v-model="email"
@@ -68,10 +68,9 @@
             <span id="cta-span">Notify Me!</span>
           </button>
         </form>
-        <div
-          class="dark--text mb-5 mt-13 s-title font-weight-semibold font-castoro"
-        >
-          Increase your productivity, and give your clients the best experience.
+        <div class="dark--text mb-5 mt-10 s-title s-semi-bold font-castoro">
+          Having all your operations in one place will increase productivity
+          enabling you to serve your clients better.
         </div>
         <!-- Integrations Icons -->
         <div class="d-flex w-100">
@@ -434,16 +433,8 @@ export default {
 </script>
 
 <style scoped lang="css">
-li {
-  font-size: 1.2rem !important;
-  line-height: 1.5rem;
-  letter-spacing: normal !important;
-}
 .manage-text {
   position: relative;
-  font-size: 1.75rem;
-  line-height: 1.9rem;
-  letter-spacing: normal;
 }
 .manage-text span {
   position: relative;
@@ -468,24 +459,6 @@ li {
   .servcy-headline {
     padding-bottom: 32px;
     text-align: center;
-  }
-}
-@media screen and (max-width: 599px) {
-  .servcy-headline-font {
-    font-size: 3rem !important;
-    line-height: 3.5rem;
-  }
-  .servcy-sub-headline-font {
-    font-size: 1.1rem !important;
-    line-height: 1.2rem;
-  }
-  li {
-    font-size: 1.1rem !important;
-    line-height: 1.2rem;
-  }
-  .manage-text {
-    font-size: 1.35rem;
-    line-height: 1.5rem;
   }
 }
 </style>
@@ -518,8 +491,6 @@ li {
     display: block;
     border: none;
     font-family: inherit;
-    font-size: 14px;
-    line-height: 24px;
     margin: 0;
   }
   #cta-input {

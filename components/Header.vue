@@ -7,7 +7,7 @@
     }"
   >
     <div class="flex-column">
-      <a href="/">
+      <a href="/" class="s-black">
         <img src="@/static/logo.svg" alt="logo" width="80px" class="logo"
       /></a>
     </div>
@@ -24,7 +24,7 @@
       <div v-else>
         <a class="mr-8" href="#why-servcy">Why Servcy?</a>
         <a class="mr-8" href="#features">Features</a>
-        <a class="mr-8" href="all-blogs">Blogs</a>
+        <a class="mr-8" href="blogs">Blogs</a>
         <a class="mr-8" href="#pricing">Pricing</a>
         <v-btn class="mr-2" outlined>
           <a target="_blank" href="#login">login</a>
@@ -53,7 +53,6 @@ export default {
 a {
   text-decoration: none;
   color: #fff !important;
-  font-weight: 500;
 }
 a:hover {
   color: rgba(167, 226, 165, 1) !important;

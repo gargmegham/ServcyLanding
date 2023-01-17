@@ -2,14 +2,10 @@
   <div class="pt-10">
     <div class="d-flex flex-row justify-space-between">
       <div class="flex-column">
-        <div
-          class="servcy-headline-font font-castoro font-weight-bold black--text"
-        >
+        <div class="servcy-headline-font font-castoro s-bold black--text">
           Welcome to Servcy Academy
         </div>
-        <div
-          class="servcy-sub-headline-font mt-6 font-weight-regular dark--text"
-        >
+        <div class="servcy-sub-headline-font mt-6 s-regular dark--text">
           An interactive suite of blog posts for helping you become more
           productive, and to help you grow your freelance business.
         </div>
@@ -44,6 +40,31 @@
         />
       </div>
     </div>
+    <div class="pb-10 mt-10 d-flex flex-row justify-space-between flex-wrap">
+      <div
+        v-for="(blogPost, index) of blogPosts"
+        :key="index"
+        class="flex-column"
+      >
+        <v-sheet
+          class="pa-4 ma-3 blog-card rounded-xl"
+          color="white"
+          width="400px"
+          height="350px"
+        >
+          <a :href="blogPost.path" target="_blank" class="blog-link">
+            <div
+              class="blog-title mb-2 dark--text servcy-sub-headline-font s-bold"
+            >
+              {{ blogPost.title }}
+            </div>
+            <div class="blog-desc dark--text s-sub-heading s-regular">
+              {{ blogPost.description }}
+            </div>
+          </a>
+        </v-sheet>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -54,6 +75,7 @@ export default {
     return {
       searchTerm: "",
       searching: false,
+      blogPosts: [],
     };
   },
   methods: {
@@ -61,8 +83,40 @@ export default {
       e.preventDefault();
     },
   },
+  async fetch() {
+    this.blogPosts = await this.$content("blogs")
+      .only(["title", "description"])
+      .sortBy("createdAt", "desc")
+      .fetch();
+  },
 };
 </script>
+
+<style scoped>
+.blog-link {
+  text-decoration: none;
+}
+.blog-card {
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: 0.6s cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition: 0.6s cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+.blog-card:hover,
+.blog-card:focus,
+.blog-card:active {
+  transform: scale(1.1);
+}
+.blog-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 80px;
+}
+.blog-desc {
+  max-height: 250px;
+  overflow: hidden;
+}
+</style>
 
 <!-- For Email Form -->
 <style scoped lang="scss">
@@ -92,8 +146,6 @@ export default {
     display: block;
     border: none;
     font-family: inherit;
-    font-size: 14px;
-    line-height: 24px;
     margin: 0;
   }
   #cta-input {

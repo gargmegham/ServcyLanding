@@ -61,7 +61,7 @@ export default {
   build: {},
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["nuxtjs-microsoft-clarity", "@nuxtjs/firebase"],
+  modules: ["nuxtjs-microsoft-clarity", "@nuxtjs/firebase", "@nuxt/content"],
 
   firebase: {
     config: {
