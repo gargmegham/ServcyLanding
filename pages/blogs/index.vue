@@ -18,14 +18,7 @@
             type="text"
             placeholder="Search for a blog post"
           />
-          <v-progress-circular
-            v-if="searching"
-            class="mr-5"
-            indeterminate
-            color="success"
-            size="20"
-          />
-          <button v-else id="cta-button" @click="search">
+          <button id="cta-button" @click="search">
             <span id="cta-span">Search</span>
           </button>
         </form>
@@ -40,28 +33,26 @@
         />
       </div>
     </div>
-    <div class="pb-10 mt-10 d-flex flex-row justify-space-between flex-wrap">
+    <div class="pb-10 mt-10 d-flex flex-row flex-wrap justify-space-around">
       <div
-        v-for="(blogPost, index) of blogPosts"
+        v-for="(blogPost, index) of filteredPosts"
         :key="index"
-        class="flex-column"
+        class="flex-column my-4"
       >
         <v-sheet
-          class="pa-4 ma-3 blog-card rounded-xl"
+          class="pa-4 blog-card rounded-xl"
           color="white"
-          width="400px"
+          width="350px"
           height="350px"
         >
-          <a :href="blogPost.path" target="_blank" class="blog-link">
-            <div
-              class="blog-title mb-2 dark--text servcy-sub-headline-font s-bold"
-            >
+          <NuxtLink :to="blogPost.path" class="blog-link">
+            <div class="blog-title mb-8 dark--text s-heading s-bold">
               {{ blogPost.title }}
             </div>
             <div class="blog-desc dark--text s-sub-heading s-regular">
               {{ blogPost.description }}
-            </div>
-          </a>
+            </div></NuxtLink
+          >
         </v-sheet>
       </div>
     </div>
@@ -74,9 +65,18 @@ export default {
   data() {
     return {
       searchTerm: "",
-      searching: false,
       blogPosts: [],
     };
+  },
+  computed: {
+    filteredPosts() {
+      const res = this.blogPosts.filter((blogPost) => {
+        return blogPost.title
+          .toLowerCase()
+          .includes(this.searchTerm.toLowerCase());
+      });
+      return res;
+    },
   },
   methods: {
     search(e) {
@@ -107,14 +107,11 @@ export default {
   transform: scale(1.1);
 }
 .blog-title {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   height: 80px;
 }
 .blog-desc {
-  max-height: 250px;
-  overflow: hidden;
+  height: 170px;
+  overflow: scroll;
 }
 </style>
 

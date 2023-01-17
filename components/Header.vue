@@ -7,9 +7,9 @@
     }"
   >
     <div class="flex-column">
-      <a href="/" class="s-black">
-        <img src="@/static/logo.svg" alt="logo" width="80px" class="logo"
-      /></a>
+      <NuxtLink to="/" class="s-black"
+        ><img src="@/static/logo.svg" alt="logo" width="80px" class="logo"
+      /></NuxtLink>
     </div>
     <div class="flex-column align-center align-self-center">
       <div v-if="!$vuetify.breakpoint.mdAndUp">
@@ -22,12 +22,12 @@
         </v-btn>
       </div>
       <div v-else>
-        <a class="mr-8" href="#why-servcy">Why Servcy?</a>
-        <a class="mr-8" href="#features">Features</a>
-        <a class="mr-8" href="blogs">Blogs</a>
-        <a class="mr-8" href="#pricing">Pricing</a>
+        <a class="mr-8" href="#">Why Servcy?</a>
+        <a class="mr-8" href="#">Features</a>
+        <NuxtLink to="/blogs"><a class="mr-8">Blogs</a></NuxtLink>
+        <a class="mr-8" href="#">Pricing</a>
         <v-btn class="mr-2" outlined>
-          <a target="_blank" href="#login">login</a>
+          <a target="_blank" href="#">login</a>
         </v-btn>
         <v-btn color="#26542F">
           <img
@@ -36,7 +36,7 @@
             width="35"
             height="35"
           />
-          <a target="_blank" href="#signup">signup</a>
+          <a target="_blank" href="#">signup</a>
         </v-btn>
       </div>
     </div>

@@ -1,7 +1,9 @@
 <template>
-  <article class="pa-16">
-    <nuxt-content class="dark--text" :document="theBlog" />
-  </article>
+  <nuxt-content
+    class="pa-16 mx-auto dark--text"
+    :document="theBlog"
+    tag="article"
+  />
 </template>
 
 <script>
@@ -12,3 +14,17 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.nuxt-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-bottom: 20px;
+  }
+  max-width: 850px !important;
+}
+</style>

@@ -35,7 +35,7 @@ If you're still interested in starting a freelance business, let's take a look a
 
 One of the first decisions you'll need to make when starting a freelance business is choosing the right business model for you.
 
-Here are four of the most popular freelance business models:
+### Here are four of the most popular freelance business models:
 
 - Solopreneur: This is the most common type of freelance business. As a solopreneur, you'll be responsible for all aspects of your business, from finding clients to doing the work and everything in between.
 
@@ -51,7 +51,7 @@ There are many other types of freelance businesses, but these are some of the mo
 
 Now that you know what type of freelance business you want to start, it's time to start looking for clients.
 
-Here are a few ideas to get you started:
+### Here are a few ideas to get you started:
 
 - Network with people you know: Let your family and friends know that you're starting a freelance business and ask if they know anyone who might need your services.
 
@@ -65,7 +65,7 @@ Here are a few ideas to get you started:
 
 Once you've found your first clients, it's time to get started with the right tools and resources.
 
-Here are a few things you'll need to get started:
+### Here are a few things you'll need to get started:
 
 - A computer and reliable internet: You'll need a computer and reliable internet access to do most freelance work.
 
