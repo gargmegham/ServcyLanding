@@ -45,7 +45,11 @@
           width="350px"
           height="350px"
         >
-          <NuxtLink :to="blogPost.path" class="blog-link">
+          <NuxtLink
+            :to="{ path: blogPost.path }"
+            :key="blogPost._id"
+            class="blog-link"
+          >
             <div class="blog-title mb-8 dark--text s-heading s-bold">
               {{ blogPost.title }}
             </div>
@@ -85,7 +89,7 @@ export default {
   },
   async fetch() {
     this.blogPosts = await this.$content("blogs")
-      .only(["title", "description"])
+      .only(["title", "description", "path"])
       .sortBy("createdAt", "desc")
       .fetch();
   },

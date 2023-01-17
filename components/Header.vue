@@ -24,7 +24,7 @@
       <div v-else>
         <a class="mr-8" href="#">Why Servcy?</a>
         <a class="mr-8" href="#">Features</a>
-        <NuxtLink to="/blogs"><a class="mr-8">Blogs</a></NuxtLink>
+        <NuxtLink to="/blogs" class="mr-8">Blogs</NuxtLink>
         <a class="mr-8" href="#">Pricing</a>
         <v-btn class="mr-2" outlined>
           <a target="_blank" href="#">login</a>
