@@ -1,8 +1,8 @@
 <template>
   <v-app id="Home">
     <Header />
-    <v-main>
-      <Nuxt class="servcy-linear-bg-light servcy-body" />
+    <v-main class="servcy-linear-bg-light">
+      <Nuxt class="servcy-body" />
     </v-main>
     <snack-bar />
   </v-app>
