@@ -3,6 +3,10 @@ title: "5 Ways to Stay Productive and Organized as a Freelancer"
 description: "The life of a freelancer can be a bit of a balancing act. On one hand, you have the freedom to work from anywhere and set your own hours. On the other hand, you have to be highly organized and self-motivated to get the job done."
 ---
 
+# 5 Ways to Stay Productive and Organized as a Freelancer
+
+The life of a freelancer can be a bit of a balancing act. On one hand, you have the freedom to work from anywhere and set your own hours. On the other hand, you have to be highly organized and self-motivated to get the job done.
+
 If you're feeling a bit scattered and unproductive, here are five ways to get back on track:
 
 1. Set a regular schedule

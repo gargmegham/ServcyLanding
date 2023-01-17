@@ -3,6 +3,10 @@ title: "10 Time Management Tips for Freelancers"
 description: "Freelancers are often lauded for their ability to work independently and manage their own time. But while this freedom can be a great perk, it can also lead to some bad habits when it comes to time management."
 ---
 
+# 10 Time Management Tips for Freelancers
+
+Freelancers are often lauded for their ability to work independently and manage their own time. But while this freedom can be a great perk, it can also lead to some bad habits when it comes to time management.
+
 Here are 10 tips to help you stay on track and make the most of your time as a freelancer:
 
 1. Set a schedule and stick to it

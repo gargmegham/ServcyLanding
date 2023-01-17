@@ -3,6 +3,10 @@ title: "5 Ways to Find and Keep Great Freelance Clients"
 description: "It's no secret that the freelance economy is booming. In fact, according to a recent report by Upwork and Freelancers Union, 57.3 million Americans are now freelancing - that's up from 53 million in 2014."
 ---
 
+# 5 Ways to Find and Keep Great Freelance Clients
+
+It's no secret that the freelance economy is booming. In fact, according to a recent report by Upwork and Freelancers Union, 57.3 million Americans are now freelancing - that's up from 53 million in 2014.
+
 With so many people freelancing, it's no surprise that the competition for clients is fierce. So, how do you make sure you stand out from the crowd and land the best clients?
 
 Here are 5 tips to help you find and keep great freelance clients:
