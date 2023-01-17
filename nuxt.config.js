@@ -61,7 +61,12 @@ export default {
   build: {},
 
   // Modules: https://go.nuxtjs.dev/config-modules
-  modules: ["nuxtjs-microsoft-clarity", "@nuxtjs/firebase", "@nuxt/content"],
+  modules: [
+    "nuxtjs-microsoft-clarity",
+    "@nuxtjs/firebase",
+    "@nuxt/content",
+    "@nuxtjs/sitemap",
+  ],
 
   firebase: {
     config: {
@@ -77,6 +82,11 @@ export default {
       auth: true,
       firestore: true,
     },
+  },
+
+  sitemap: {
+    hostname: "https://servcy.com",
+    gzip: true,
   },
 
   microsoftClarity: {
