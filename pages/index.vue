@@ -69,7 +69,7 @@
           </button>
         </form>
         <div class="silver--text mb-5 mt-10 s-title s-semi-bold font-castoro">
-          Having all your operations in one place will increase productivity
+          Having all your operations in one place will increase productivity,
           enabling you to serve your clients better.
         </div>
         <!-- Integrations Icons -->
