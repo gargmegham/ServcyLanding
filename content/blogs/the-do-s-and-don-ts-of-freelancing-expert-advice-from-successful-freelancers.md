@@ -9,7 +9,7 @@ As a freelancer, you are in control of your own career. You can work as much or 
 
 You are responsible for finding your own clients, managing your own time, and making sure that you are getting paid. And, if you want to be successful, you need to be good at all of those things.
 
-## Fortunately, there are a lot of resources available to help you be a successful freelancer. In this blog post, we will share some of the best advice from successful freelancers on how to be successful.
+### Fortunately, there are a lot of resources available to help you be a successful freelancer. In this blog post, we will share some of the best advice from successful freelancers on how to be successful.
 
 1. **Do: Invest in Yourself**
 
