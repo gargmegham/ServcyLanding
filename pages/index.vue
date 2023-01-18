@@ -37,7 +37,7 @@
               }}</span>
               <span
                 v-if="!$vuetify.breakpoint.smAndDown"
-                class="s-title s-semi-bold"
+                class="s-title silver--text s-semi-bold"
                 >Software</span
               >
             </span>
@@ -68,7 +68,7 @@
             <span id="cta-span">Notify Me!</span>
           </button>
         </form>
-        <div class="dark--text mb-5 mt-10 s-title s-semi-bold font-castoro">
+        <div class="silver--text mb-5 mt-10 s-title s-semi-bold font-castoro">
           Having all your operations in one place will increase productivity
           enabling you to serve your clients better.
         </div>

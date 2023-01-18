@@ -52,6 +52,7 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           errorLight: colors.red.lighten1,
+          silver: "#7E84A3",
         },
       },
     },
