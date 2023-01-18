@@ -5,6 +5,7 @@
       <Nuxt />
     </v-main>
     <snack-bar />
+    <TheFooter />
   </v-app>
 </template>
 

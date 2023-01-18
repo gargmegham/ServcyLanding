@@ -78,7 +78,6 @@ export default {
   name: "HeroSection",
   data() {
     return {
-      email: "",
       currentIsometric: 0,
       subscribing: false,
       isometricInterval: null,

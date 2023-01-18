@@ -1,5 +1,5 @@
 <template>
-  <form class="newsletter-form mt-8">
+  <form class="newsletter-form">
     <input
       id="cta-input"
       v-model="input"

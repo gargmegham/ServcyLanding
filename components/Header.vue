@@ -22,7 +22,7 @@
         </v-btn>
       </div>
       <div v-else>
-        <a class="mr-8" href="#">Why Servcy?</a>
+        <a class="mr-8" href="#why-servcy">Why Servcy?</a>
         <a class="mr-8" href="#">Features</a>
         <NuxtLink to="/blogs" class="mr-8">Blogs</NuxtLink>
         <a class="mr-8" href="#">Pricing</a>

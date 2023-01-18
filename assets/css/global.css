@@ -13,6 +13,9 @@
   padding-left: 5%;
   padding-right: 5%;
 }
+a {
+  text-decoration: none;
+}
 @media screen and (max-width: 959px) {
   .servcy-body {
     min-height: 92vh;
