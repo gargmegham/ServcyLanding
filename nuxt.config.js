@@ -14,8 +14,39 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
-      { name: "format-detection", content: "telephone=no" },
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Servcy is for freelance entrepreneurs, it's their virtual office with features like inbox aggregation, payments, invoicing, reporting, contract management, project management, boilerplates for commonly used documents, and integrations to support other SaaS who provide these features.",
+      },
+      { property: "og:site_name", content: "Servcy" },
+      { hid: "og:type", property: "og:type", content: "website" },
+      { hid: "og:url", property: "og:url", content: "https://servcy.com" },
+      {
+        hid: "og:title",
+        property: "og:title",
+        content: "Virtual Office For Freelance Entrepreneurs | Servcy",
+      },
+      {
+        hid: "og:description",
+        property: "og:description",
+        content:
+          "Servcy is for freelance entrepreneurs, it's their virtual office with features like inbox aggregation, payments, invoicing, reporting, contract management, project management, boilerplates for commonly used documents, and integrations to support other SaaS who provide these features.",
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content: "https://servcy.com/inbox-management-isometric.svg",
+      },
+      { hid: "og:image:width", property: "og:image:width", content: "15141" },
+      { hid: "og:image:height", property: "og:image:height", content: "16290" },
+      { name: "format-detection", content: "telephone=yes" },
+      {
+        name: "robots",
+        content:
+          "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+      },
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
