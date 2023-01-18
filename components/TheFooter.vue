@@ -43,8 +43,11 @@
           >
         </div>
         <div class="mt-4 d-flex flex-row justify-end align-end">
+          <a target="_blank" class="mr-4" href="mailto:contact@servcy.com"
+            ><v-btn small rounded outlined>contact Us</v-btn></a
+          >
           <nuxt-link to="/blogs"
-            ><v-btn rounded outlined
+            ><v-btn small rounded outlined
               >Read Our Latest Blog Posts</v-btn
             ></nuxt-link
           >
@@ -56,11 +59,11 @@
               alt="privacy-policy"
               height="15"
             />
-            <span class="white--text my-auto">Privacy Policy</span>
+            <span class="s-small white--text my-auto">Privacy Policy</span>
           </nuxt-link>
           <nuxt-link class="mr-8" to="/documents/terms-and-conditions">
             <img src="@/assets/icons/documents.svg" alt="terms" height="15" />
-            <span class="white--text my-auto">Terms & Conditions</span>
+            <span class="s-small white--text my-auto">Terms & Conditions</span>
           </nuxt-link>
           <nuxt-link to="/documents/refund-and-cancellation-policy">
             <img
@@ -68,7 +71,7 @@
               alt="refund-policy"
               height="15"
             />
-            <span class="white--text my-auto">Refund Policy</span>
+            <span class="s-small white--text my-auto">Refund Policy</span>
           </nuxt-link>
         </div>
       </v-col>
