@@ -39,12 +39,12 @@
         </div>
         <div class="mt-4 d-flex flex-row justify-end align-end">
           <nuxt-link to="/blogs"
-            ><v-btn rounded="lg" outlined
+            ><v-btn rounded outlined
               >Read Our Latest Blog Posts</v-btn
             ></nuxt-link
           >
           <nuxt-link class="ml-3" to="/"
-            ><v-btn rounded="lg" fab small outlined
+            ><v-btn fab small outlined
               ><v-icon>mdi-home</v-icon></v-btn
             ></nuxt-link
           >
