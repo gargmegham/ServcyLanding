@@ -22,6 +22,11 @@
       </v-col>
       <v-col sm="12" xs="12" md="6" lg="6" cols="12" xl="6">
         <div class="d-flex flex-row justify-end align-end">
+          <nuxt-link class="mr-4" to="/"
+            ><v-btn fab small outlined
+              ><v-icon>mdi-home</v-icon></v-btn
+            ></nuxt-link
+          >
           <a target="_blank" href="https://twitter.com/ContactServcy"
             ><v-icon large class="mr-4">mdi-twitter</v-icon></a
           >
@@ -34,7 +39,7 @@
           <a
             target="_blank"
             href="https://www.facebook.com/profile.php?id=100087292992160"
-            ><v-icon large class="mr-4">mdi-facebook</v-icon></a
+            ><v-icon large>mdi-facebook</v-icon></a
           >
         </div>
         <div class="mt-4 d-flex flex-row justify-end align-end">
@@ -43,11 +48,28 @@
               >Read Our Latest Blog Posts</v-btn
             ></nuxt-link
           >
-          <nuxt-link class="ml-3" to="/"
-            ><v-btn fab small outlined
-              ><v-icon>mdi-home</v-icon></v-btn
-            ></nuxt-link
-          >
+        </div>
+        <div class="mt-4 d-flex flex-row justify-end">
+          <nuxt-link class="mr-8" to="/documents/privacy-policy">
+            <img
+              src="@/assets/icons/documents.svg"
+              alt="privacy-policy"
+              height="15"
+            />
+            <span class="white--text my-auto">Privacy Policy</span>
+          </nuxt-link>
+          <nuxt-link class="mr-8" to="/documents/terms-and-conditions">
+            <img src="@/assets/icons/documents.svg" alt="terms" height="15" />
+            <span class="white--text my-auto">Terms & Conditions</span>
+          </nuxt-link>
+          <nuxt-link to="/documents/refund-and-cancellation-policy">
+            <img
+              src="@/assets/icons/documents.svg"
+              alt="refund-policy"
+              height="15"
+            />
+            <span class="white--text my-auto">Refund Policy</span>
+          </nuxt-link>
         </div>
       </v-col>
     </v-row>
