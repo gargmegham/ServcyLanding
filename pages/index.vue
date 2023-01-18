@@ -43,31 +43,14 @@
             </span>
           </div>
         </div>
-        <!-- Email Form -->
-        <form class="newsletter-form mt-8">
-          <input
-            id="cta-input"
-            v-model="email"
-            type="email"
-            placeholder="Your Email address"
-          />
-          <v-progress-circular
-            v-if="subscribing"
-            class="mr-5"
-            indeterminate
-            color="success"
-            size="20"
-          />
-          <button
-            v-else
-            id="cta-button"
-            @click="submit"
-            :loading="true"
-            :disabled="!isEmailValid"
-          >
-            <span id="cta-span">Notify Me!</span>
-          </button>
-        </form>
+        <FormTextField
+          class="mt-8"
+          :loading="subscribing"
+          @submit="submit"
+          buttonText="Notify Me!"
+          input-type="email"
+          placeholder="Your email address:"
+        />
         <div class="silver--text mb-5 mt-10 s-title s-semi-bold font-castoro">
           Having all your operations in one place will increase productivity,
           enabling you to serve your clients better.
@@ -386,13 +369,6 @@ export default {
       isometricInterval: null,
     };
   },
-  computed: {
-    isEmailValid() {
-      var validRegex =
-        /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return !!this.email.match(validRegex);
-    },
-  },
   mounted() {
     this.isometricInterval = setInterval(() => {
       if (this.currentIsometric === 3) {
@@ -406,12 +382,11 @@ export default {
     clearInterval(this.isometricInterval);
   },
   methods: {
-    submit(e) {
+    submit(email) {
       this.subscribing = true;
-      e.preventDefault();
       this.$fire.firestore
         .collection("servcy-landing-page-email-subscribers")
-        .add({ email: this.email, timestamp: new Date() })
+        .add({ email: email, timestamp: new Date() })
         .then(() => {
           this.$notifier.showMessage({
             content: "Thanks for your interest, We'll contact you soon!",
@@ -459,74 +434,6 @@ export default {
   .servcy-headline {
     padding-bottom: 32px;
     text-align: center;
-  }
-}
-</style>
-
-<!-- For Email Form -->
-<style scoped lang="scss">
-.newsletter-form {
-  --primary: #275efe;
-  --input-placeholder: #7e84a3;
-  --input-text: #7e84a3;
-  --border-default: #e1e6f9;
-  --background: #fff;
-  --button-text: #ffffff;
-  display: flex;
-  align-items: center;
-  width: 90%;
-  background: var(--background);
-  box-shadow: inset 0 0 0 var(--border-width, 1px)
-    var(--border, var(--border-default));
-  border-radius: 9px;
-  padding-right: 4px;
-  transition: box-shadow 0.25s;
-  &:focus-within {
-    --border-width: 1.5px;
-  }
-  #cta-input,
-  #cta-button {
-    background: none;
-    outline: none;
-    display: block;
-    border: none;
-    font-family: inherit;
-    margin: 0;
-  }
-  #cta-input {
-    width: 100%;
-    flex-grow: 1;
-    padding: 12px 12px 12px 16px;
-    color: var(--input-text);
-    font-weight: 400;
-    &::placeholder {
-      color: var(--input-placeholder);
-    }
-  }
-  #cta-button {
-    --text-opacity: 1;
-    --border-radius: 7px;
-    position: relative;
-    padding: 8px 0;
-    min-width: 130px;
-    text-align: center;
-    font-weight: 600 !important;
-    opacity: var(--button-opacity, 0.5);
-    filter: var(--button-filter, grayscale(65%));
-    color: var(--button-text);
-    border-radius: var(--border-radius);
-    transform: translateZ(0);
-    transition: opacity 0.25s, filter 0.25s;
-    -webkit-tap-highlight-color: transparent;
-    &:not(.active) {
-      background: var(--primary);
-    }
-    #cta-span {
-      display: block;
-      position: relative;
-      z-index: 4;
-      opacity: var(--text-opacity);
-    }
   }
 }
 </style>
