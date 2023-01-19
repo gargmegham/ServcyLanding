@@ -2,19 +2,23 @@
   <div id="why-servcy" class="s-vh-100">
     <div class="wave-block text-center">
       <div class="servcy-sub-headline-font s-bold font-castoro pt-10 pb-6">
-        Why Servcy?
+        Why Servcy, you ask?
+      </div>
+      <div class="s-heading why-servcy-padding-x s-semibold font-castoro pb-6">
+        Because we understand the true challenges faced while onboarding
+        clients, sending invoices, communication, project management and more.
       </div>
       <div class="d-flex flex-row align-center justify-center">
         <img
           src="@/assets/icons/servcy-universe.svg"
           alt="servcy universe"
-          width="90%"
-          height="90%"
+          width="80%"
+          height="80%"
         />
       </div>
     </div>
     <div
-      class="why-servcy-padding align mt-2 d-flex flex-wrap align-center justify-center"
+      class="why-servcy-padding-x pb-13 align mt-2 d-flex flex-wrap align-center justify-center"
     >
       <v-sheet
         color="white"
@@ -107,8 +111,9 @@ export default {
 </script>
 
 <style scoped>
-.why-servcy-padding {
-  padding: 0px 5% 50px 5%;
+.why-servcy-padding-x {
+  padding-left: 5%;
+  padding-right: 5%;
 }
 .wave-block {
   margin-bottom: 50px;
