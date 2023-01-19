@@ -1,6 +1,6 @@
 <template>
   <div class="servcy-body">
-    <v-row no-gutters class="py-10">
+    <v-row no-gutters class="pt-10">
       <v-col sm="12" xs="12" lg="6" xl="6" md="6">
         <div
           :class="{
@@ -84,13 +84,13 @@ export default {
     };
   },
   mounted() {
-    this.isometricInterval = setInterval(() => {
-      if (this.currentIsometric === 3) {
-        this.currentIsometric = 0;
-      } else {
-        this.currentIsometric++;
-      }
-    }, 5000);
+    // this.isometricInterval = setInterval(() => {
+    //   if (this.currentIsometric === 3) {
+    //     this.currentIsometric = 0;
+    //   } else {
+    //     this.currentIsometric++;
+    //   }
+    // }, 5000);
   },
   beforeDestroy() {
     clearInterval(this.isometricInterval);

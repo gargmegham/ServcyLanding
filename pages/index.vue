@@ -1,7 +1,7 @@
 <template>
   <div>
     <HeroSection />
-    <!-- <WhyServcy /> -->
+    <WhyServcy />
   </div>
 </template>
 

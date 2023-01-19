@@ -8,6 +8,9 @@
 .s-none {
   display: none !important;
 }
+.s-vh-100 {
+  min-height: 100vh !important;
+}
 .servcy-body {
   min-height: 90vh;
   padding-left: 5%;

@@ -26,6 +26,16 @@
   line-height: 2.5rem;
   letter-spacing: normal !important;
 }
+.servcy-headline-small-font {
+  font-size: 3rem !important;
+  line-height: 4rem;
+  letter-spacing: -0.0083333333em !important;
+}
+.servcy-sub-headline-small-font {
+  font-size: 1.5rem !important;
+  line-height: 2rem;
+  letter-spacing: normal !important;
+}
 @media screen and (max-width: 599px) {
   .servcy-headline-font {
     font-size: 3rem !important;

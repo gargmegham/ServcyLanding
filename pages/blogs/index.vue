@@ -2,10 +2,10 @@
   <div class="pt-10 servcy-body">
     <div class="d-flex flex-row justify-space-between">
       <div class="flex-column">
-        <div class="servcy-headline-font font-castoro s-bold black--text">
+        <div class="servcy-headline-small-font font-castoro s-bold black--text">
           Welcome to Servcy Academy
         </div>
-        <div class="servcy-sub-headline-font mt-6 s-regular dark--text">
+        <div class="servcy-sub-headline-small-font mt-6 s-regular dark--text">
           An interactive suite of blog posts for helping you become more
           productive, and to help you grow your freelance business.
         </div>
@@ -22,17 +22,17 @@
         <img
           src="@/assets/icons/all-blogs.svg"
           alt="blog home"
-          width="400"
+          width="700"
           height="400"
           class="ma-2"
         />
       </div>
     </div>
-    <div class="pb-10 mt-10 d-flex flex-row flex-wrap justify-space-around">
+    <div class="pb-10 mt-10 d-flex flex-row flex-wrap">
       <div
         v-for="(blogPost, index) of filteredPosts"
         :key="index"
-        class="flex-column my-4"
+        class="flex-column ma-4"
       >
         <v-sheet
           class="pa-4 blog-card rounded-xl"
