@@ -2,6 +2,7 @@
 @import url("@/assets/css/backgrounds.css");
 @import url("@/assets/css/spacing.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:300i,400");
 @import url("https://fonts.googleapis.com/css2?family=Castoro");
 * {
   font-family: "Poppins" !important;
