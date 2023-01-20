@@ -1,5 +1,5 @@
 <template>
-  <div class="servcy-body">
+  <section class="servcy-body">
     <v-row no-gutters class="pt-10">
       <v-col sm="12" xs="12" lg="6" xl="6" md="6">
         <div
@@ -70,7 +70,7 @@
         <IsomentricIllustrations :current-isometric="currentIsometric" />
       </v-col>
     </v-row>
-  </div>
+  </section>
 </template>
 
 <script>

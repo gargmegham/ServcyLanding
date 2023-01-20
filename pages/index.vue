@@ -2,6 +2,7 @@
   <div>
     <HeroSection />
     <WhyServcy />
+    <FeaturesSection />
   </div>
 </template>
 

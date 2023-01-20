@@ -28,7 +28,12 @@
         />
       </div>
     </div>
-    <div class="pb-10 mt-10 d-flex flex-row flex-wrap">
+    <div
+      :class="[
+        'pb-10 mt-10 d-flex flex-row flex-wrap',
+        $vuetify.breakpoint.smAndDown ? 'justify-space-around' : '',
+      ]"
+    >
       <div
         v-for="(blogPost, index) of filteredPosts"
         :key="index"

@@ -1,6 +1,12 @@
 <template>
   <footer>
-    <v-row class="justify-space-between">
+    <v-row
+      :class="[
+        $vuetify.breakpoint.smAndDown
+          ? 'justify-center align-center'
+          : 'justify-space-between ',
+      ]"
+    >
       <v-col
         sm="12"
         xs="12"
@@ -21,7 +27,14 @@
         </div>
       </v-col>
       <v-col sm="12" xs="12" md="6" lg="6" cols="12" xl="6">
-        <div class="d-flex flex-row justify-end align-end">
+        <div
+          :class="[
+            'd-flex flex-row ',
+            $vuetify.breakpoint.smAndDown
+              ? 'justify-center align-center'
+              : 'justify-end align-end',
+          ]"
+        >
           <nuxt-link class="mr-4" to="/"
             ><v-btn fab small outlined
               ><v-icon>mdi-home</v-icon></v-btn
@@ -42,8 +55,15 @@
             ><v-icon large>mdi-facebook</v-icon></a
           >
         </div>
-        <div class="mt-4 d-flex flex-row justify-end align-end">
-          <a target="_blank" class="mr-4" href="mailto:contact@servcy.com"
+        <div
+          :class="[
+            'mt-4 d-flex flex-row ',
+            $vuetify.breakpoint.smAndDown
+              ? 'justify-center align-center'
+              : 'justify-end align-end',
+          ]"
+        >
+          <a target="_blank" class="mr-4" href="mailto:megham@servcy.com"
             ><v-btn small rounded outlined>contact Us</v-btn></a
           >
           <nuxt-link to="/blogs"
@@ -52,7 +72,14 @@
             ></nuxt-link
           >
         </div>
-        <div class="mt-4 d-flex flex-row justify-end">
+        <div
+          :class="[
+            'mt-4 d-flex flex-row ',
+            $vuetify.breakpoint.smAndDown
+              ? 'justify-center align-center'
+              : 'justify-end align-end',
+          ]"
+        >
           <nuxt-link class="mr-8" to="/documents/privacy-policy">
             <img
               src="@/assets/icons/documents.svg"

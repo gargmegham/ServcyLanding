@@ -13,19 +13,35 @@
     </div>
     <div class="flex-column align-center align-self-center">
       <div v-if="!$vuetify.breakpoint.mdAndUp">
-        <v-btn small class="mr-2" outlined>
+        <NuxtLink class="mr-4 s-small" to="/#why-servcy">Why Servcy?</NuxtLink>
+        <NuxtLink class="mr-4 s-small" to="/#features">Features</NuxtLink>
+        <a target="_blank" class="mr-4 s-small" href="mailto:megham@servcy.com"
+          ><v-btn x-small rounded outlined>contact Us</v-btn></a
+        >
+        <NuxtLink to="/blogs">
+          <v-btn class="s-small" x-small rounded outlined>
+            Blogs
+          </v-btn></NuxtLink
+        >
+        <!-- <v-btn small class="mr-2" outlined>
           <a target="_blank" href="https://app.sevcy.com/login">login</a>
         </v-btn>
         <v-btn small color="#26542F">
           <img src="@/assets/icons/server.svg" width="30" height="30" />
           <a target="_blank" href="https://app.sevcy.com/signup">signup</a>
-        </v-btn>
+        </v-btn> -->
       </div>
       <div v-else>
-        <a class="mr-8" href="#why-servcy">Why Servcy?</a>
-        <a class="mr-8" href="#">Features</a>
-        <NuxtLink to="/blogs" class="mr-8">Blogs</NuxtLink>
-        <a class="mr-8" href="#">Pricing</a>
+        <a class="mr-8" href="/#why-servcy">Why Servcy?</a>
+        <a class="mr-8" href="/#features">Features</a>
+        <a class="mr-8" href="/#features">Features</a>
+        <a target="_blank" class="mr-4 s-small" href="mailto:megham@servcy.com"
+          ><v-btn outlined>contact Us</v-btn></a
+        >
+        <NuxtLink to="/blogs">
+          <v-btn class="mr-2" outlined> Blogs </v-btn></NuxtLink
+        >
+        <!-- <a class="mr-8" href="#">Pricing</a>
         <v-btn class="mr-2" outlined>
           <a target="_blank" href="#">login</a>
         </v-btn>
@@ -37,7 +53,7 @@
             height="35"
           />
           <a target="_blank" href="#">signup</a>
-        </v-btn>
+        </v-btn> -->
       </div>
     </div>
   </header>

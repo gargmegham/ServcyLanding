@@ -99,7 +99,7 @@ Security is a priority for us when it comes to your personal data. We're committ
 
 # Clause 9: Your Rights
 
-1. It's your personal data and you have certain rights relating to it. When it comes to marketing communications, you can ask us not to send you these at any time – just follow the unsubscribe instructions contained in the marketing communication, or send your request to contact@servcy.com.
+1. It's your personal data and you have certain rights relating to it. When it comes to marketing communications, you can ask us not to send you these at any time – just follow the unsubscribe instructions contained in the marketing communication, or send your request to megham@servcy.com.
 
 2. You also have rights to, subject to the applicable limitations on reasonableness and practicability:
 
@@ -107,10 +107,10 @@ Security is a priority for us when it comes to your personal data. We're committ
    - request a copy of your personal data, or ask us to restrict processing your personal data or delete it; and
    - object to our continued processing of your personal data
 
-3. You can exercise these rights at any time by sending an email to contact@servcy.com.
+3. You can exercise these rights at any time by sending an email to megham@servcy.com.
 
-4. If you're not happy with how we are processing your personal data, please let us know by sending an email to contact@servcy.com. We will review and investigate your complaint, and try to get back to you within a reasonable time frame.
+4. If you're not happy with how we are processing your personal data, please let us know by sending an email to megham@servcy.com. We will review and investigate your complaint, and try to get back to you within a reasonable time frame.
 
 # Clause 10: How to contact us
 
-You could get in touch with us at contact@servcy.com.
+You could get in touch with us at megham@servcy.com.
