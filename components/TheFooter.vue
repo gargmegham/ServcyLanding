@@ -63,7 +63,7 @@
               : 'justify-end align-end',
           ]"
         >
-          <a target="_blank" class="mr-4" href="mailto:megham@servcy.com"
+          <a target="_blank" class="mr-4" href="mailto:contact@servcy.com"
             ><v-btn small rounded outlined>contact Us</v-btn></a
           >
           <nuxt-link to="/blogs"
