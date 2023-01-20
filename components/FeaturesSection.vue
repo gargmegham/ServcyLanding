@@ -44,7 +44,8 @@ export default {
           val: [
             "Set your availability.",
             "Share your meeting link.",
-            "Get scheduled.",
+            "Get automatic reminders for scheduled meetings.",
+            "Easy for your clients to use.",
           ],
         },
         "Sign Your Contract": {
@@ -55,7 +56,16 @@ export default {
             "Tweak style and format to suit your business.",
           ],
         },
-        "Create Tasks": {
+        "Add Projects": {
+          icon: "mdi-microsoft-teams",
+          val: [
+            "Add a project along with related client details.",
+            "Create milestones and timeline.",
+            "Add team members.",
+            "Connect related apps.",
+          ],
+        },
+        "Add Tasks": {
           icon: "mdi-checkbox-marked-circle-plus-outline",
           val: [
             "Create new tasks and subtasks in seconds.",
@@ -95,7 +105,7 @@ export default {
             "Insights based on tracked time.",
           ],
         },
-        "Inbox Aggregation": {
+        "Manage Just One Inbox": {
           icon: "mdi-inbox-arrow-down",
           val: [
             "Comments from figma, github, linear, asana, notion & more..",
