@@ -22,12 +22,11 @@
       <div v-else>
         <a class="mr-8" href="/#why-servcy">Why Servcy?</a>
         <a class="mr-8" href="/#features">Features</a>
-        <a class="mr-8" href="/#features">Features</a>
         <a target="_blank" class="mr-4" href="mailto:megham@servcy.com"
-          ><v-btn outlined>contact Us</v-btn></a
+          ><v-btn rounded outlined>contact Us</v-btn></a
         >
         <NuxtLink to="/blogs">
-          <v-btn class="mr-2" outlined> Blogs </v-btn></NuxtLink
+          <v-btn class="mr-2" rounded outlined> Blogs </v-btn></NuxtLink
         >
       </div>
     </div>
