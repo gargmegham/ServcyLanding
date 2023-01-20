@@ -1,6 +1,6 @@
 <template>
   <nuxt-content
-    class="pa-16 mx-auto dark--text servcy-body"
+    class="pa-16 mx-auto dark--text s-page-padding-x"
     :document="theBlog"
     tag="article"
   />

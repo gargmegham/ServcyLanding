@@ -4,7 +4,7 @@
       <v-sheet
         color="white"
         elevation="2"
-        height="450px"
+        :height="$vuetify.breakpoint.smAndDown ? '' : '450px'"
         width="350px"
         rounded="xl"
         class="pa-6 card-bounce ma-4 text-center"
@@ -57,7 +57,7 @@
       <v-sheet
         color="white"
         elevation="2"
-        height="450px"
+        :height="$vuetify.breakpoint.smAndDown ? '' : '450px'"
         width="350px"
         rounded="xl"
         class="pa-6 ma-4 card-bounce text-center"

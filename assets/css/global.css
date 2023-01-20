@@ -1,5 +1,6 @@
 @import url("@/assets/css/typography.css");
 @import url("@/assets/css/backgrounds.css");
+@import url("@/assets/css/spacing.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
 @import url("https://fonts.googleapis.com/css2?family=Castoro");
 * {
@@ -11,16 +12,6 @@
 .s-vh-100 {
   min-height: 100vh !important;
 }
-.servcy-body {
-  min-height: 90vh;
-  padding-left: 5%;
-  padding-right: 5%;
-}
 a {
   text-decoration: none;
-}
-@media screen and (max-width: 959px) {
-  .servcy-body {
-    min-height: 92vh;
-  }
 }

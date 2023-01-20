@@ -1,5 +1,5 @@
 <template>
-  <section id="why-servcy" class="s-vh-100">
+  <section id="why-servcy">
     <div class="wave-block text-center">
       <div class="servcy-sub-headline-font s-bold font-castoro pt-10 pb-6">
         Why Servcy, you ask?

@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-10 servcy-body">
+  <div class="pt-10 s-page-padding-x">
     <div class="d-flex flex-row justify-space-between">
       <div class="flex-column">
         <div class="servcy-headline-small-font font-castoro s-bold black--text">
