@@ -43,15 +43,25 @@
           class="pa-4 blog-card rounded-xl"
           color="white"
           width="350px"
-          height="350px"
+          elevation="2"
+          height="400px"
         >
           <NuxtLink
             :to="{ path: blogPost.path }"
             :key="blogPost._id"
             class="blog-link"
           >
-            <div class="blog-title mb-8 dark--text s-heading s-bold">
-              {{ blogPost.title }}
+            <div class="d-flex flex-row justify-space-between align-start">
+              <div class="flex-column mr-4">
+                <v-icon color="silver" large
+                  >mdi-book-open-page-variant-outline</v-icon
+                >
+              </div>
+              <div
+                class="flex-column blog-title mb-8 dark--text s-heading s-bold"
+              >
+                {{ blogPost.title }}
+              </div>
             </div>
             <div class="blog-desc dark--text s-sub-heading s-regular">
               {{ blogPost.description }}
@@ -106,7 +116,7 @@ export default {
   transform: scale(1.1);
 }
 .blog-title {
-  height: 80px;
+  height: 100px;
 }
 .blog-desc {
   height: 170px;
