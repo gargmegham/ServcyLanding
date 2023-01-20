@@ -4,9 +4,10 @@
       <div class="servcy-sub-headline-font s-bold font-castoro pt-10 pb-6">
         Why Servcy, you ask?
       </div>
-      <div class="s-heading why-servcy-padding-x s-semibold font-castoro pb-6">
-        Because we understand the true challenges faced while onboarding
-        clients, sending invoices, communication, project management and more.
+      <div class="s-subheading why-servcy-desc s-semibold font-castoro pb-6">
+        Because we understand the true challenges you face while onboarding
+        clients, sending invoices, communicating, managing project timelines,
+        managing contracts and more.
       </div>
       <div class="d-flex flex-row align-center justify-center">
         <img
@@ -27,6 +28,11 @@ export default {
 </script>
 
 <style scoped>
+.why-servcy-desc {
+  padding-left: 10%;
+  padding-right: 10%;
+  letter-spacing: 0.08em !important;
+}
 .why-servcy-padding-x {
   padding-left: 5%;
   padding-right: 5%;
@@ -36,6 +42,11 @@ export default {
   background-image: url("@/assets/icons/wave.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -10%;
+}
+@media screen and (max-width: 768px) {
+  .wave-block {
+    background-color: #26542f;
+    padding-bottom: 30px;
+  }
 }
 </style>
