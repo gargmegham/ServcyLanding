@@ -74,8 +74,8 @@ export default {
         "Raise Invoices": {
           icon: "mdi-receipt-text-plus",
           val: [
-            "Use provided templates or import your own.",
-            "Tweak style and format to suit your business.",
+            "Raise from provided templates or upload your own template.",
+            "Scan invoices with amount auto detection.",
             "Add automatic reminders.",
           ],
         },
@@ -90,7 +90,7 @@ export default {
         "Track Earnings For Taxes": {
           icon: "mdi-currency-usd",
           val: [
-            "Set  goals for revenue and track progress.",
+            "Set goals for revenue and track progress.",
             "Revenue reports for taxation purposes.",
             "Insights based on tracked time.",
           ],
@@ -99,7 +99,7 @@ export default {
           icon: "mdi-inbox-arrow-down",
           val: [
             "Comments from figma, github, linear, asana, notion & more..",
-            "Emails from mutiple accounts aggregated & assigned to one client.",
+            "Emails & messages from mutiple accounts aggregated & assigned under one client.",
             "Payments information aggregated in one place.",
           ],
         },
@@ -154,7 +154,6 @@ li {
   transform: translateY(-20px);
   transition: 0.4s ease-out;
 }
-
 .card:hover ~ .card {
   transition: 0.4s ease-out;
 }
