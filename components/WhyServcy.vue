@@ -81,7 +81,7 @@
         class="pa-6 ma-4 card-bounce text-center"
       >
         <img
-          src="@/assets/icons/app-icon.svg"
+          src="@/assets/icons/client-face.svg"
           alt="gear"
           class="mx-auto d-block align-items-center"
           width="100px"
