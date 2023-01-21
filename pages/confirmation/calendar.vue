@@ -4,7 +4,11 @@
     class="d-flex flex-row justify-center flex-wrap"
   >
     <div class="flex-column ma-4" v-if="!$vuetify.breakpoint.smAndDown">
-      <img src="@/assets/icons/booking.svg" alt="calendar image" />
+      <img
+        src="@/assets/icons/super-thank-you.svg"
+        alt="calendar image"
+        height="400px"
+      />
     </div>
     <v-sheet
       class="pa-6 flex-column ma-4 dark--text font-castoro"
@@ -15,9 +19,14 @@
       elevation="2"
       color="white"
     >
-      <div class="pb-4 s-bold s-heading">
-        Hi {{ $route.query.invitee_full_name }} thanks for your intereset in our
-        product.
+      <div class="pb-10 s-bold s-heading d-flex flex-row">
+        <v-btn class="mr-2" fab outlined color="#07796A">
+          <v-icon>mdi-party-popper</v-icon></v-btn
+        >
+        <div>
+          Hi {{ $route.query.invitee_full_name }}, thanks for your intereset in
+          our product!
+        </div>
       </div>
       <div class="s-semibold s-subheading">
         <ul>
