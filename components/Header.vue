@@ -15,14 +15,20 @@
       <div v-if="!$vuetify.breakpoint.mdAndUp">
         <NuxtLink class="mr-2 s-small" to="/#why-servcy">Why Servcy?</NuxtLink>
         <NuxtLink class="mr-2 s-small" to="/#features">Features</NuxtLink>
-        <a target="_blank" class="s-small" href="mailto:contact@servcy.com"
+        <a
+          target="_blank"
+          class="s-small"
+          href="https://calendly.com/servcy/demo?utm_source=website&utm_medium=header&utm_campaign=contact_us"
           ><v-btn x-small rounded outlined>contact Us</v-btn></a
         >
       </div>
       <div v-else>
         <a class="mr-8" href="/#why-servcy">Why Servcy?</a>
         <a class="mr-8" href="/#features">Features</a>
-        <a target="_blank" class="mr-4" href="mailto:contact@servcy.com"
+        <a
+          target="_blank"
+          class="mr-4"
+          href="https://calendly.com/servcy/demo?utm_source=website&utm_medium=header&utm_campaign=contact_us"
           ><v-btn rounded outlined>contact Us</v-btn></a
         >
         <NuxtLink to="/blogs">

@@ -63,7 +63,10 @@
               : 'justify-end align-end',
           ]"
         >
-          <a target="_blank" class="mr-4" href="mailto:contact@servcy.com"
+          <a
+            target="_blank"
+            class="mr-4"
+            href="https://calendly.com/servcy/demo?utm_source=website&utm_medium=footer&utm_campaign=contact_us"
             ><v-btn small rounded outlined>contact Us</v-btn></a
           >
           <nuxt-link to="/blogs"
