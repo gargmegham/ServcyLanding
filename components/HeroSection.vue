@@ -10,7 +10,7 @@
         <div
           :class="{
             'servcy-headline servcy-headline-font servcy-gradient-font s-bold': true,
-            'pt-8 pb-10': !$vuetify.breakpoint.smAndDown,
+            'pb-10': !$vuetify.breakpoint.smAndDown,
           }"
         >
           Virtual Office For Freelance Entrepreneurs
