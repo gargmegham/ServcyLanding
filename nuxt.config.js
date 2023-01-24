@@ -98,6 +98,7 @@ export default {
     "@nuxtjs/firebase",
     "@nuxt/content",
     "@nuxtjs/sitemap",
+    "@nuxtjs/gtm",
   ],
 
   firebase: {
@@ -127,5 +128,9 @@ export default {
 
   googleAnalytics: {
     id: "UA-254127105-1",
+  },
+
+  gtm: {
+    id: process.env.GTM_ID,
   },
 };
