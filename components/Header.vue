@@ -11,7 +11,7 @@
         ><img src="@/static/logo.svg" alt="logo" class="logo"
       /></NuxtLink>
     </div>
-    <div class="flex-column align-center align-self-center">
+    <div class="flex-column align-center align-self-center cols-3">
       <div v-if="!$vuetify.breakpoint.mdAndUp">
         <a
           target="_blank"
@@ -21,16 +21,18 @@
         >
       </div>
       <div v-else>
-        <a class="mr-8" href="/#why-servcy">Why Servcy?</a>
-        <a class="mr-8" href="/#features">Features</a>
+        <a class="mr-8 s-bold" href="/#why-servcy">Why Servcy?</a>
+        <a class="mr-8 s-bold" href="/#features">Features</a>
         <a
           target="_blank"
-          class="mr-4"
+          class="mr-4 s-bold"
           href="https://calendly.com/servcy/demo?utm_source=website&utm_medium=header&utm_campaign=contact_us"
-          ><v-btn rounded outlined>contact Us</v-btn></a
+          >Contact Us</a
         >
         <NuxtLink to="/blogs">
-          <v-btn class="mr-2" rounded outlined> Blogs </v-btn></NuxtLink
+          <v-btn class="mr-2 s-bold" rounded outlined
+            ><span class="s-bold">Blogs</span></v-btn
+          ></NuxtLink
         >
       </div>
     </div>
