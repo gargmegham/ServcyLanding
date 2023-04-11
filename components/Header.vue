@@ -8,13 +8,11 @@
   >
     <div class="flex-column">
       <NuxtLink to="/" class="s-black"
-        ><img src="@/static/logo.svg" alt="logo" width="80px" class="logo"
+        ><img src="@/static/logo.svg" alt="logo" class="logo"
       /></NuxtLink>
     </div>
     <div class="flex-column align-center align-self-center">
       <div v-if="!$vuetify.breakpoint.mdAndUp">
-        <NuxtLink class="mr-2 s-small" to="/#why-servcy">Why Servcy?</NuxtLink>
-        <NuxtLink class="mr-2 s-small" to="/#features">Features</NuxtLink>
         <a
           target="_blank"
           class="s-small"
@@ -60,6 +58,7 @@ header {
 .logo {
   vertical-align: middle;
   height: 100%;
+  width: 170px;
 }
 .large-header {
   height: 10vh;
