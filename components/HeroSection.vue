@@ -64,10 +64,7 @@
         <IntegrationIcons :current-isometric="currentIsometric" />
       </v-col>
       <!-- Isomentric Illustrations -->
-      <v-col
-        v-if="!$vuetify.breakpoint.smAndDown"
-        cols="4"
-      >
+      <v-col v-if="!$vuetify.breakpoint.smAndDown" cols="4">
         <IsomentricIllustrations :current-isometric="currentIsometric" />
       </v-col>
     </v-row>
@@ -86,11 +83,8 @@ export default {
   },
   mounted() {
     this.isometricInterval = setInterval(() => {
-      if (this.currentIsometric === 3) {
-        this.currentIsometric = 0;
-      } else {
-        this.currentIsometric++;
-      }
+      this.currentIsometric =
+        this.currentIsometric === 3 ? 0 : this.currentIsometric + 1;
     }, 5000);
   },
   beforeDestroy() {
