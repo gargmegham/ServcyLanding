@@ -15,6 +15,9 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.s-green {
+  color: rgba(38, 84, 47, 1);
+}
 /* text size */
 .servcy-headline-font {
   font-size: 4rem !important;
