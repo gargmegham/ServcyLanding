@@ -6,7 +6,7 @@
     ]"
   >
     <v-row no-gutters class="pt-10">
-      <v-col sm="12" xs="12" lg="6" xl="6" md="6">
+      <v-col sm="12" xs="12" lg="8" xl="8" md="8" cols="8">
         <div
           :class="{
             'servcy-headline servcy-headline-font servcy-gradient-font s-bold': true,
@@ -66,11 +66,7 @@
       <!-- Isomentric Illustrations -->
       <v-col
         v-if="!$vuetify.breakpoint.smAndDown"
-        sm="12"
-        cols="12"
-        lg="6"
-        xl="6"
-        md="6"
+        cols="4"
       >
         <IsomentricIllustrations :current-isometric="currentIsometric" />
       </v-col>
