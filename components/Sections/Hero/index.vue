@@ -6,14 +6,22 @@
     ]"
   >
     <v-row no-gutters class="pt-10">
-      <v-col sm="12" xs="12" lg="8" xl="8" md="8" cols="8">
+      <v-col sm="12" xs="12" lg="8" xl="8" md="8" cols="12">
         <div
           :class="{
             'servcy-headline servcy-headline-font servcy-gradient-font s-bold': true,
+            'pb-3': !$vuetify.breakpoint.smAndDown,
+          }"
+        >
+          One For All Platform
+        </div>
+        <div
+          :class="{
+            'servcy-sub-headline-font servcy-gradient-font s-bold': true,
             'pb-10': !$vuetify.breakpoint.smAndDown,
           }"
         >
-          One Platform For All Freelance Operations
+          For Operations Of Ambitious Freelance Agencies
         </div>
         <div
           :class="{
