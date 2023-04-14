@@ -74,8 +74,13 @@
 </template>
 
 <script>
+import FormTextField from "@/components/Forms/FormTextField.vue";
+
 export default {
   name: "AllBlogs",
+  components: {
+    FormTextField
+  },
   data() {
     return {
       searchTerm: "",

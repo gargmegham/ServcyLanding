@@ -110,8 +110,13 @@
 </template>
 
 <script>
+import FormTextField from "@/components/Forms/FormTextField.vue";
+
 export default {
   name: "TheFooter",
+  components: {
+    FormTextField
+  },
   data() {
     return {
       subscribing: false,

@@ -10,7 +10,14 @@
 </template>
 
 <script>
+import Header from "@/layouts/Header.vue";
+import TheFooter from "@/layouts/TheFooter.vue";
+
 export default {
   name: "DefaultLayout",
+  components: {
+    Header,
+    TheFooter,
+  },
 };
 </script>

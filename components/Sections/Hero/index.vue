@@ -72,8 +72,17 @@
 </template>
 
 <script>
+import IsomentricIllustrations from "@/components/Sections/Hero/IsomentricIllustrations.vue";
+import IntegrationIcons from "@/components/Sections/Hero/IntegrationIcons.vue";
+import FormTextField from "@/components/Forms/FormTextField.vue";
+
 export default {
   name: "HeroSection",
+  components: {
+    IsomentricIllustrations,
+    IntegrationIcons,
+    FormTextField
+  },
   data() {
     return {
       currentIsometric: 0,
