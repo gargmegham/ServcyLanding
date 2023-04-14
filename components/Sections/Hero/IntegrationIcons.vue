@@ -3,7 +3,7 @@
   <div class="d-flex w-100">
     <img
       class="mr-2"
-      src="@/assets/icons/itegrate.svg"
+      src="@/assets/icons/integrate.svg"
       alt="integrate-icon"
       width="90"
       height="100%"

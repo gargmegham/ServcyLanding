@@ -13,7 +13,7 @@
             'pb-10': !$vuetify.breakpoint.smAndDown,
           }"
         >
-          Virtual Office For Freelance Entrepreneurs
+          One Platform For All Freelance Operations
         </div>
         <div
           :class="{
@@ -57,8 +57,7 @@
           placeholder="Your email address:"
         />
         <div class="silver--text mb-5 mt-10 s-title s-semi-bold font-castoro">
-          Having all your operations in one place will increase productivity,
-          enabling you to serve your clients better.
+          Consolidate Operations, Boost Productivity, and Delight Your Clients
         </div>
         <!-- Integrations Icons -->
         <IntegrationIcons :current-isometric="currentIsometric" />
@@ -81,7 +80,7 @@ export default {
   components: {
     IsomentricIllustrations,
     IntegrationIcons,
-    FormTextField
+    FormTextField,
   },
   data() {
     return {

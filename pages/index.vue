@@ -16,7 +16,7 @@ export default {
   components: {
     Hero,
     WhyServcy,
-    Features
+    Features,
   },
 };
 </script>
