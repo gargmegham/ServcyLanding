@@ -1,7 +1,7 @@
 <template>
   <div class="pt-10 s-page-padding-x">
     <div class="d-flex flex-row justify-space-between">
-      <div class="flex-column">
+      <v-col lg="8" md="8" xs="12" sm="12" xl="8" cols="12">
         <div class="servcy-headline-small-font font-castoro s-bold black--text">
           Welcome to Servcy Academy
         </div>
@@ -17,8 +17,14 @@
           input-type="text"
           placeholder="Search for a blog post"
         />
-      </div>
-      <div v-if="!$vuetify.breakpoint.smAndDown" class="flex-column">
+      </v-col>
+      <v-col
+        v-if="!$vuetify.breakpoint.mdAndDown"
+        lg="4"
+        md="4"
+        xl="4"
+        cols="4"
+      >
         <img
           src="@/assets/icons/all-blogs.svg"
           alt="blog home"
@@ -26,14 +32,9 @@
           height="400"
           class="ma-2"
         />
-      </div>
+      </v-col>
     </div>
-    <div
-      :class="[
-        'pb-10 mt-10 d-flex flex-row flex-wrap',
-        $vuetify.breakpoint.smAndDown ? 'justify-space-around' : '',
-      ]"
-    >
+    <div class="pb-10 mt-10 d-flex flex-row flex-wrap justify-space-around">
       <div
         v-for="(blogPost, index) of filteredPosts"
         :key="index"
