@@ -1,5 +1,5 @@
 ---
-title: "The Benefits of Being a Freelancer"
+title: "The Benefits of Being a Freelancer 🔋"
 description: "There are many benefits of being a freelancer. Perhaps the most obvious is that you can work from anywhere in the world. You're not tied to a specific location like you would be with a traditional job."
 ---
 

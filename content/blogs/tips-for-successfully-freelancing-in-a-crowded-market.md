@@ -1,5 +1,5 @@
 ---
-title: "Tips for Successfully Freelancing in a Crowded Market"
+title: "Tips for Successfully Freelancing in a Crowded Market 👨‍👨‍👦‍👦"
 description: "As a freelancer, it can be tough to stand out in a crowded marketplace. With so much competition, how can you make sure that clients will choose you over someone else?"
 ---
 

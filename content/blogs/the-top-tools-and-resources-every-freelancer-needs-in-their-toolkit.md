@@ -1,5 +1,5 @@
 ---
-title: "The Top Tools and Resources Every Freelancer Needs in Their Toolkit"
+title: "The Top Tools and Resources Every Freelancer Needs in Their Toolkit 🎯"
 description: "When it comes to being a freelancer, there are a lot of things you need to be aware of. Not only do you need to be up to date with the latest trends and technologies, but you also need to have a solid understanding of the business side of things."
 ---
 

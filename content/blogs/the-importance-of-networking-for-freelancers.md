@@ -1,5 +1,5 @@
 ---
-title: "The Importance of Networking for Freelancers"
+title: "The Importance of Networking for Freelancers 🔰"
 description: "When it comes to finding work as a freelancer, networking is key. You may be the best at what you do, but if you don't let people know about your skills, you're not going to find much work. That's why networking is so important for freelancers."
 ---
 

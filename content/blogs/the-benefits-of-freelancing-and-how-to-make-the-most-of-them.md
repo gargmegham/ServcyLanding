@@ -1,5 +1,5 @@
 ---
-title: "The Benefits of Freelancing and How to Make the Most of Them"
+title: "The Benefits of Freelancing and How to Make the Most of Them ⏲️"
 description: "There are many benefits to freelancing, and if you know how to make the most of them, you can reap some great rewards."
 ---
 

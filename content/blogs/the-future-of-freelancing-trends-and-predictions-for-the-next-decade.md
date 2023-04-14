@@ -1,5 +1,5 @@
 ---
-title: "The Future of Freelancing: Trends and Predictions for the Next Decade"
+title: "The Future of Freelancing 🌎: Trends and Predictions for the Next Decade"
 description: "The freelance economy has been on the rise for some time now, and it doesn't show any signs of slowing down. In fact, according to a recent study by Upwork and Freelancers Union, the number of freelancers in the US has increased by 3.7 million since 2014 and now stands at 57.3 million."
 ---
 

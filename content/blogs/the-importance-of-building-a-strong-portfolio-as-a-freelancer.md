@@ -1,5 +1,5 @@
 ---
-title: "The Importance of Building a Strong Portfolio as a Freelancer"
+title: "The Importance of Building a Strong Portfolio as a Freelancer 🌐"
 description: "As a freelancer, one of the most important things you can do is build a strong portfolio. Your portfolio is your calling card, and it can make or break your career."
 ---
 
