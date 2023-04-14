@@ -12,7 +12,7 @@
           v-for="(value, title, index) in features"
           :key="index"
           width="300px"
-          height="300px"
+          height="330px"
           class="card pa-6 ma-4"
         >
           <h3 class="card-title s-bold font-castoro">{{ title }}</h3>
@@ -42,7 +42,7 @@ export default {
   data() {
     return {
       features: {
-        "Schedule A Meeting": {
+        "Schedule Meetings": {
           icon: "mdi-calendar",
           val: [
             "Set your availability.",
@@ -51,7 +51,7 @@ export default {
             "Easy for your clients to use.",
           ],
         },
-        "Sign Your Contract": {
+        "Sign Contracts": {
           icon: "mdi-file-sign",
           val: [
             "Share, sign & store on the platform.",
@@ -70,7 +70,7 @@ export default {
             "Use project templates for quicker setup and consistency.",
           ],
         },
-        "Add Tasks": {
+        "Create Tasks": {
           icon: "mdi-checkbox-marked-circle-plus-outline",
           val: [
             "Create new tasks and subtasks in seconds.",
@@ -89,13 +89,13 @@ export default {
         "Raise Invoices": {
           icon: "mdi-receipt-text-plus",
           val: [
-            "Generate invoices automatically based on tracked time and expenses.",
+            "Generate automatically based on tracked time and expenses.",
             "Raise from provided templates or upload your own template.",
             "Scan invoices with amount auto detection.",
-            "Add automatic reminders.",
+            "Add automatic reminders & configure recurring invoices.",
           ],
         },
-        "Get Paid": {
+        "Collect & Monitor Payments": {
           icon: "mdi-cash-multiple",
           val: [
             "Bill your clients directly from inside the platform.",
