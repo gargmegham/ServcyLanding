@@ -2,12 +2,11 @@
   <section id="why-servcy">
     <div class="wave-block text-center">
       <div class="servcy-sub-headline-font s-bold font-castoro pt-10 pb-6">
-        Why Servcy, you ask?
+        Why Choose Servcy?
       </div>
       <div class="s-subheading why-servcy-desc s-semibold font-castoro pb-6">
-        Because we understand the true challenges you face while onboarding
-        clients, sending invoices, communicating, managing project timelines,
-        managing contracts and more.
+        Servcy simplifies freelance agency management by streamlining
+        scheduling, consolidating tools, and enhancing client communication.
       </div>
       <div class="d-flex flex-row align-center justify-center">
         <img
@@ -22,7 +21,7 @@
       <v-sheet
         color="white"
         elevation="2"
-        :height="$vuetify.breakpoint.smAndDown ? '' : '430px'"
+        :height="$vuetify.breakpoint.smAndDown ? '' : '400px'"
         width="350px"
         rounded="xl"
         class="pa-6 card-bounce ma-4 text-center"
@@ -33,49 +32,17 @@
           class="mx-auto d-block align-items-center"
           width="100px"
         />
-        <div class="dark--text s-title s-bold mt-3">
-          Schedule meetings with less back and forth
-        </div>
-        <div class="dark--text mt-6 s-body">
-          Simply set your availability and share your link so clients can find a
-          time that works. Your clients will thank (and book) you.
-        </div>
-        <div class="dark--text mt-4 s-body">
-          Meeting with your client increases your chances of winning their
-          business by 40%
-        </div>
+        <div class="dark--text s-title s-bold mt-3">Streamlined Scheduling</div>
+        <ul class="dark--text mt-6 s-body text-left">
+          <li>Set your availability with ease</li>
+          <li>Share your link for convenient client booking</li>
+          <li>Increase your chances of winning business by 40%</li>
+        </ul>
       </v-sheet>
       <v-sheet
         color="white"
         elevation="2"
-        :height="$vuetify.breakpoint.smAndDown ? '' : '450px'"
-        width="350px"
-        rounded="xl"
-        class="pa-6 ma-4 card-bounce text-center"
-      >
-        <img
-          src="@/assets/icons/gear.svg"
-          alt="gear"
-          class="mx-auto d-block align-items-center"
-          width="100px"
-        />
-        <div class="dark--text s-title s-bold mt-3">
-          All-In-One Place. Consolidate Your Software Stack
-        </div>
-        <div class="dark--text mt-6 s-body">
-          One login. One platform. One software. No more splitting your efforts
-          throughout multiple apps just because your clients are on different
-          platforms.
-        </div>
-        <div class="dark--text mt-4 s-body">
-          Manage finances, tasks, projects, and take your business to next
-          level.
-        </div>
-      </v-sheet>
-      <v-sheet
-        color="white"
-        elevation="2"
-        :height="$vuetify.breakpoint.smAndDown ? '' : '430px'"
+        :height="$vuetify.breakpoint.smAndDown ? '' : '400px'"
         width="350px"
         rounded="xl"
         class="pa-6 ma-4 card-bounce text-center"
@@ -87,17 +54,36 @@
           width="100px"
         />
         <div class="dark--text s-title s-bold mt-3">
-          Keep Your Clients Always Up-To-Date
+          Enhanced Client Communication
         </div>
-        <div class="dark--text mt-6 s-body">
-          Eliminate another client concern 'what are you working on?' with the
-          Client Dashboard: an instant and intuitive way for your client to
-          check on work progress, tasks, projects, results and more.
+        <ul class="dark--text mt-6 s-body text-left">
+          <li>Instant, intuitive Client Dashboard for work progress updates</li>
+          <li>Reduce unnecessary communication and increase satisfaction</li>
+          <li>No more manual updates or pestering emails</li>
+        </ul>
+      </v-sheet>
+      <v-sheet
+        color="white"
+        elevation="2"
+        :height="$vuetify.breakpoint.smAndDown ? '' : '400px'"
+        width="350px"
+        rounded="xl"
+        class="pa-6 ma-4 card-bounce text-center"
+      >
+        <img
+          src="@/assets/icons/gear.svg"
+          alt="gear"
+          class="mx-auto d-block align-items-center"
+          width="100px"
+        />
+        <div class="dark--text s-title s-bold mt-3">
+          Unified Tools and Platform
         </div>
-        <div class="dark--text mt-4 s-body">
-          Reduce unnecessary communication and increase your client's
-          satisfaction. No more manual updates or pestering emails.
-        </div>
+        <ul class="dark--text mt-6 s-body text-left">
+          <li>Consolidate your software stack with one login</li>
+          <li>Manage finances, tasks, and projects effortlessly</li>
+          <li>Take your business to the next level with a single platform</li>
+        </ul>
       </v-sheet>
     </div>
   </section>
