@@ -4,6 +4,9 @@
       <div class="servcy-sub-headline-font s-bold font-castoro pt-10 pb-6">
         Features
       </div>
+      <div class="s-subheading why-servcy-desc s-semibold font-castoro pb-6">
+        Powerful Features to Supercharge Your Agency
+      </div>
       <div class="padding-x d-flex flex-row justify-center flex-wrap">
         <v-sheet
           v-for="(value, title, index) in features"
@@ -54,6 +57,7 @@ export default {
             "Share, sign & store on the platform.",
             "Use provided templates or import your own.",
             "Tweak style and format to suit your business.",
+            "Legally binding e-signatures for added security and compliance.",
           ],
         },
         "Add Projects": {
@@ -63,6 +67,7 @@ export default {
             "Create milestones and timeline.",
             "Add team members.",
             "Connect related apps.",
+            "Use project templates for quicker setup and consistency.",
           ],
         },
         "Add Tasks": {
@@ -84,6 +89,7 @@ export default {
         "Raise Invoices": {
           icon: "mdi-receipt-text-plus",
           val: [
+            "Generate invoices automatically based on tracked time and expenses.",
             "Raise from provided templates or upload your own template.",
             "Scan invoices with amount auto detection.",
             "Add automatic reminders.",
@@ -105,11 +111,11 @@ export default {
             "Insights based on tracked time.",
           ],
         },
-        "Manage Just One Inbox": {
+        "Unified Inbox": {
           icon: "mdi-inbox-arrow-down",
           val: [
-            "Comments from figma, github, linear, asana, notion & more..",
-            "Emails & messages from mutiple accounts aggregated & assigned under one client.",
+            "Comments from Figma, GitHub, Linear, Asana, Notion & more...",
+            "Emails & messages from multiple accounts aggregated & assigned under one client.",
             "Payments information aggregated in one place.",
           ],
         },
