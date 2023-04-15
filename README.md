@@ -1,8 +1,14 @@
-# Servcy
-
-## Deployment Status
-
-[![Deployment Status](https://api.netlify.com/api/v1/badges/9be579e4-51a6-4d89-bc2f-22fecba6b5a6/deploy-status)](https://app.netlify.com/sites/servcy/deploys)
+<h1 align="center">
+  Servcy - one for all platform for all your freelance operations
+</h1>
+<p align="center">
+  <a href="https://app.netlify.com/sites/servcy/deploys" target="_blank">
+    <img src="https://api.netlify.com/api/v1/badges/9be579e4-51a6-4d89-bc2f-22fecba6b5a6/deploy-status" alt="Netlify Status" />
+  </a>
+</p>
+<p align="center">
+  Built with <a href="https://nuxtjs.org/" target="_blank">Nuxt</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
+</p>
 
 ## Build Setup
 
