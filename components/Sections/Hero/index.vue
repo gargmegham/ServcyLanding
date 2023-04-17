@@ -21,7 +21,7 @@
             'pb-10': !$vuetify.breakpoint.smAndDown,
           }"
         >
-          For Operations Of Ambitious Freelance Agencies
+          Save your hours, and effort. Manage all your clients from the same platform.
         </div>
         <div
           :class="{
