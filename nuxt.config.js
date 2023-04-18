@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - Servcy",
+    titleTemplate: "%s - One For All Platform",
     title: "Servcy",
     htmlAttrs: {
       lang: "en",
