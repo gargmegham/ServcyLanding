@@ -21,7 +21,8 @@
             'pb-10': !$vuetify.breakpoint.smAndDown,
           }"
         >
-          Save your hours, and effort. Manage all your clients from the same platform.
+          Save your hours, and effort. Manage all your clients from the same
+          platform.
         </div>
         <div
           :class="{
