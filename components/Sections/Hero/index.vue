@@ -1,7 +1,7 @@
 <template>
   <section
     :class="[
-      'servcy-body s-page-padding-x',
+      'servcy-body s-page-padding-x mt-15',
       $vuetify.breakpoint.smAndDown ? 'mb-15' : '',
     ]"
   >
