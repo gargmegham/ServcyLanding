@@ -10,7 +10,7 @@ We may need to update this notice from time to time. When a significant change i
 
 # Clause 1: Who are “we”?
 
-When we refer to “we” (or “our” or “us'), that means Agroha Solutions and all its wholly owned subsidiaries, including the primary operating entity, Agroha Solutions Our headquarters are in Jagadhri but we operate and have offices all over the world. Address details for all Agroha Solutions offices are available on our “Contact Us” page.
+When we refer to “we” (or “our” or “us'), that means Agroha Solutions and all its wholly owned subsidiaries, including the primary operating entity, Agroha Solutions Our headquarters is located in Jagadhri. Address details for all Agroha Solutions offices are available on our “Contact Us” page.
 
 # Clause 2: Our Principles of Data Protection
 
