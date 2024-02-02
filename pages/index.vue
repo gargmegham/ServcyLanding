@@ -12,7 +12,7 @@ import WhyServcy from "@/components/Sections/WhyServcy.vue";
 import Features from "@/components/Sections/Features.vue";
 
 export default {
-  name: "HomePage",
+  name: "Home",
   components: {
     Hero,
     WhyServcy,
