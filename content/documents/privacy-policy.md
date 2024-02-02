@@ -1,6 +1,6 @@
 # Privacy Notice
 
-This notice applies across all websites that we own and operate and all services we provide, including our online and mobile accounting and financial services products, and any other apps or services we may offer (our “services”)
+This notice applies across all websites that we own and operate and all services we provide, including our online and mobile software services products, and any other apps or services we may offer (our “services”)
 
 When we say “personal data”, we mean information that would identify you, like your name, email, address, telephone number, bank account details, payment information and so on. The same would apply to information that could identify other users in your teams that are shared with Agroha Solutions.
 
