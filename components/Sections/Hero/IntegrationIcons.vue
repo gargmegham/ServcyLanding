@@ -1,7 +1,7 @@
 <template>
   <div class="flex justify-center">
     <img class="mr-2" src="@/assets/icons/integrate.svg" alt="integrate-icon" width="90" height="100%" />
-    <div class="flex overflow-hidden h-[50px] justify-between">
+    <div class="flex overflow-hidden h-[50px] justify-between !max-w-[620px]">
       <v-tooltip bottom>
         <template v-slot:activator="{ on }">
           <img src="@/assets/icons/figma-logo.svg" alt="figma-icon" v-on="on" class="my-2 mx-3 h-[40px] w-[40px]" />
