@@ -1,18 +1,12 @@
 @import url("@/assets/css/typography.css");
 @import url("@/assets/css/backgrounds.css");
-@import url("@/assets/css/spacing.css");
+@import url("@/assets/css/shadows.css");
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:300i,400");
 @import url("https://fonts.googleapis.com/css2?family=Castoro");
+@import url("https://fonts.googleapis.com/css2?family=Axiforma:100,200,300,400,500,600,700,800,900");
+
 * {
   font-family: "Poppins" !important;
-}
-.s-none {
-  display: none !important;
-}
-.s-vh-100 {
-  min-height: 100vh !important;
-}
-a {
-  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-margin-top: 10vh;
 }

@@ -1,44 +1,43 @@
 .servcy-linear-bg {
-  background: rgb(167, 226, 165);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(167, 226, 165, 1) 0%,
-    rgba(91, 169, 89, 1) 23%,
-    rgba(77, 126, 62, 1) 58%,
-    rgba(38, 84, 47, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(167, 226, 165, 1) 0%,
-    rgba(91, 169, 89, 1) 23%,
-    rgba(77, 126, 62, 1) 58%,
-    rgba(38, 84, 47, 1) 100%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(167, 226, 165, 1) 0%,
-    rgba(91, 169, 89, 1) 23%,
-    rgba(77, 126, 62, 1) 58%,
-    rgba(38, 84, 47, 1) 100%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a7e2a5",endColorstr="#26542f",GradientType=1);
+        background: rgb(43, 50, 50);
+        background: -moz-linear-gradient(96deg, rgba(43, 50, 50, 1) 0%, rgba(3, 33, 35, 1) 22%, rgba(209, 191, 174, 1) 100%);
+        background: -webkit-linear-gradient(96deg, rgba(43, 50, 50, 1) 0%, rgba(3, 33, 35, 1) 22%, rgba(209, 191, 174, 1) 100%);
+        background: linear-gradient(96deg, rgba(43, 50, 50, 1) 0%, rgba(3, 33, 35, 1) 22%, rgba(209, 191, 174, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2b3232", endColorstr="#d1bfae", GradientType=1);
 }
+
 .servcy-linear-bg-light {
-  background: rgb(255, 255, 255);
-  background: -moz-linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(223, 224, 236, 1) 47%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgb(236, 223, 234) 47%
-  );
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 1) 0%,
-    rgba(223, 224, 236, 1) 47%
-  );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#dfe0ec",GradientType=1);
+        background: rgb(255, 255, 255);
+        background: -moz-linear-gradient(90deg,
+                        rgba(255, 255, 255, 1) 0%,
+                        rgba(223, 224, 236, 1) 47%);
+        background: -webkit-linear-gradient(90deg,
+                        rgba(255, 255, 255, 1) 0%,
+                        rgb(236, 223, 234) 47%);
+        background: linear-gradient(90deg,
+                        rgba(255, 255, 255, 1) 0%,
+                        rgba(223, 224, 236, 1) 47%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#dfe0ec", GradientType=1);
+}
+
+
+.servcy-wave-block {
+        background-image: url("@/assets/icons/wave.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+
+.servcy-card-bg {
+        background: rgb(255, 255, 255);
+        background: -moz-linear-gradient(90deg,
+                        rgba(255, 255, 255, 1) 0%,
+                        rgba(223, 224, 236, 1) 47%);
+        background: -webkit-linear-gradient(90deg,
+                        rgba(255, 255, 255, 1) 0%,
+                        rgb(236, 223, 234) 47%);
+        background: linear-gradient(90deg,
+                        rgba(255, 255, 255, 1) 0%,
+                        rgba(223, 224, 236, 1) 47%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#dfe0ec", GradientType=1);
 }

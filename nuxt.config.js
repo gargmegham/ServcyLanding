@@ -71,7 +71,7 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ["@/assets/css/global.css"],
+  css: ["@/assets/css/global.css", "@/assets/css/tailwind.css"],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ["~/plugins/notifier.js"],
@@ -91,25 +91,21 @@ export default {
     customVariables: ["~/assets/variables.scss"],
     theme: {
       dark: true,
-      themes: {
-        dark: {
-          primary: "#26542F",
-          secondary: "#4D7E3E",
-          success: "#5BA959",
-          accent: colors.grey.darken3,
-          dark: "#2b3232",
-          info: colors.teal.lighten1,
-          warning: colors.amber.base,
-          error: colors.deepOrange.accent4,
-          errorLight: colors.red.lighten1,
-          silver: "#7E84A3",
-        },
-      },
+      themes: {},
     },
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {},
+  build: {
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+    },
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

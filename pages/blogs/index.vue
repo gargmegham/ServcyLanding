@@ -1,73 +1,37 @@
 <template>
-  <div class="pt-10 s-page-padding-x">
-    <div class="d-flex flex-row justify-space-between">
+  <div class="pt-10 px-[5%] mt-[8vh] servcy-wave-block min-h-screen">
+    <div class="flex flex-row justify-space-between text-servcy-cream h-64">
       <v-col lg="8" md="8" xs="12" sm="12" xl="8" cols="12">
-        <div class="servcy-headline-small-font font-castoro s-bold black--text">
+        <div class="md:text-6xl text-5xl max-sm:text-4xl font-axiforma font-extrabold">
           Welcome to Servcy Academy
         </div>
-        <div class="servcy-sub-headline-small-font mt-6 s-regular dark--text">
+        <div class="mt-6 md:text-xl text-lg max-sm:text-sm font-semibold text-servcy-wheat">
           An interactive suite of blog posts for helping you become more
           productive, and to help you grow your freelance business.
         </div>
-        <FormTextField
-          class="mt-10"
-          :loading="false"
-          @update:input="searchTerm = $event"
-          buttonText="Search!"
-          input-type="text"
-          placeholder="Search for a blog post"
-        />
+        <FormTextField class="mt-10" :loading="false" @update:input="searchTerm = $event" buttonText="Search!"
+          input-type="text" placeholder="Search for a blog post..." />
       </v-col>
-      <v-col
-        v-if="!$vuetify.breakpoint.mdAndDown"
-        lg="4"
-        md="4"
-        xl="4"
-        cols="4"
-      >
-        <img
-          src="@/assets/icons/all-blogs.svg"
-          alt="blog home"
-          width="700"
-          height="400"
-          class="ma-2"
-        />
+      <v-col v-if="!$vuetify.breakpoint.mdAndDown" lg="4" md="4" xl="4" cols="4">
+        <img src="@/assets/icons/all-blogs.svg" alt="blog home" class="ma-2 h-full" />
       </v-col>
     </div>
-    <div class="pb-10 mt-10 d-flex flex-row flex-wrap justify-space-around">
-      <div
-        v-for="(blogPost, index) of filteredPosts"
-        :key="index"
-        class="flex-column ma-4"
-      >
-        <v-sheet
-          class="pa-4 blog-card rounded-xl"
-          color="white"
-          width="350px"
-          elevation="2"
-          height="400px"
-        >
-          <NuxtLink
-            :to="{ path: blogPost.path }"
-            :key="blogPost._id"
-            class="blog-link"
-          >
-            <div class="d-flex flex-row justify-space-between align-start">
+    <div class="pb-10 mt-10 xs:grid-cols-1 grid gap-3 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
+      <div v-for="(blogPost, index) of filteredPosts" :key="index" class="ma-4">
+        <v-sheet class="pa-4 blog-card servcy-card-bg rounded-xl h-full" elevation="2">
+          <NuxtLink :to="{ path: blogPost.path }" :key="blogPost._id" class="blog-link">
+            <div class="flex flex-row justify-space-between align-start">
               <div class="flex-column mr-4">
-                <v-icon color="silver" large
-                  >mdi-book-open-page-variant-outline</v-icon
-                >
+                <v-icon color="#2B3232" large>mdi-book-open-page-variant-outline</v-icon>
               </div>
-              <div
-                class="flex-column blog-title mb-8 dark--text s-heading s-bold"
-              >
+              <div class="flex-column blog-title mb-8 text-lg font-bold text-servcy-black">
                 {{ blogPost.title }}
               </div>
             </div>
-            <div class="blog-desc dark--text s-sub-heading s-regular">
+            <div class="text-sm text-servcy-black">
               {{ blogPost.description }}
-            </div></NuxtLink
-          >
+            </div>
+          </NuxtLink>
         </v-sheet>
       </div>
     </div>
@@ -111,21 +75,16 @@ export default {
 .blog-link {
   text-decoration: none;
 }
+
 .blog-card {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
   -webkit-transition: 0.6s cubic-bezier(0.47, 2.02, 0.31, -0.36);
   transition: 0.6s cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
+
 .blog-card:hover,
 .blog-card:focus,
 .blog-card:active {
   transform: scale(1.1);
-}
-.blog-title {
-  height: 100px;
-}
-.blog-desc {
-  height: 170px;
-  overflow: scroll;
 }
 </style>

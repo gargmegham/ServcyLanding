@@ -1,72 +1,104 @@
 <template>
-  <section id="support-page" class="d-flex flex-row justify-center flex-wrap">
-    <div class="flex-column ma-4" v-if="!$vuetify.breakpoint.smAndDown">
-      <img
-        src="@/assets/icons/super-thank-you.svg"
-        alt="support image"
-        height="400px"
-      />
+  <section class="px-[5%] mt-[8vh] servcy-wave-block text-center">
+    <div class="md:text-6xl text-5xl max-sm:text-4xl py-10 min-h-32 font-axiforma font-extrabold">
+      Contact us
     </div>
-    <v-sheet
-      class="pa-6 flex-column ma-4 dark--text font-castoro"
-      height="350px"
-      min-width="350px"
-      max-width="500px"
-      rounded="xl"
-      elevation="2"
-      color="white"
-    >
-      <div class="pb-10 s-bold s-heading d-flex flex-row">
-        <v-btn class="mr-2" fab outlined color="#07796A">
-          <v-icon>mdi-help</v-icon></v-btn
-        >
-        <div>For Support and Queries, please contact us at:</div>
+    <div class="md:text-xl text-lg max-sm:text-sm font-semibold text-servcy-wheat pb-10">
+      Questions? Concerns? We're here to support you every step of the way. We have real, live people available to chat 7
+      days a week, and online help resources that are available 24 hours a day.
+    </div>
+    <div class="flex justify-center">
+      <div class="mx-4">
+        <button class="bg-servcy-black rounded p-3 mt-5 servcy-wheat-shadow-left-bottom">
+          <a href="tel:+919805085026"
+            class="font-castoro font-semibold !text-servcy-cream hover:!text-servcy-wheat text-2xl">
+            Call Us
+          </a>
+        </button>
       </div>
-      <div class="s-semibold s-subheading">
-        <ul>
-          <li class="mb-2">
-            Email:
-            <strong>
-              <a href="mailto:contact@servcy.com" target="_blank"
-                >contact@servcy.com</a
-              >
-            </strong>
-          </li>
-          <li class="mb-2">
-            Phone:
-            <strong>
-              <a href="tel:+1234567890" target="_blank">+919805085026</a>
-            </strong>
-          </li>
-          <li>
-            Address:
-            <strong>
-              <a
-                href="https://maps.app.goo.gl/N1ZmupNrhTNRRgn96"
-                target="_blank"
-                >Jai City, Gulab Nagar, Jagadhri, Haryana 135003</a
-              >
-            </strong>
-          </li>
-        </ul>
+      <div class="mx-4">
+        <button class="bg-servcy-black rounded p-3 mt-5 servcy-wheat-shadow-right-bottom">
+          <a href="mailto:contact@servcy.com" target="_blank"
+            class="font-castoro font-semibold !text-servcy-cream hover:!text-servcy-wheat text-2xl">
+            Email Us
+          </a>
+        </button>
       </div>
-    </v-sheet>
+    </div>
+    <section id="faqs" class="rounded-lg my-20 servcy-card-bg text-servcy-black pa-10"
+      style="box-shadow: 0px 4px 4px 4px #d1bfae !important">
+      <div class="md:text-6xl text-servcy-neutral text-5xl max-sm:text-4xl min-h-32 font-axiforma font-extrabold">
+        FAQs
+      </div>
+      <div class="mx-auto accordion">
+        <div class="mb-4 border border-servcy-black rounded-2xl overflow-hidden shadow-lg" v-for="(value, index) in faqs"
+          :key="index">
+          <input class="absolute opacity-0 " type="checkbox" :id="`chck${index}`">
+          <label
+            class="relative block bg-servcy-green w-full p-4 md:text-xl text-lg font-semibold text-servcy-white text-left cursor-pointer select-none"
+            :for="`chck${index}`">
+            <h6>{{ value.question }}
+              <v-icon class="float-right">mdi-chevron-down</v-icon>
+            </h6>
+          </label>
+          <div class="tab-content md:text-lg text-xs text-servcy-wheat bg-servcy-black">
+            <p>{{ value.answer }}</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </section>
 </template>
 
 <script>
 export default {
   name: "Support",
+  data() {
+    return {
+      faqs: [
+        {
+          question: "Is Servcy for people like me?",
+          answer: "Most of our users are Founders, CXOs, Freelancers and Software developers. Regardless of whether your goal is to achieve productivity, improve organization, or excel in time management, Servcy is ready to be your reliable ally."
+        },
+        {
+          question: "Does my free trial limit my access to features?",
+          answer: "Absolutely not! Your free trial grants you complete access to all of Servcy's extensive features. We believe in providing you with the full experience, allowing you to explore the platform's capabilities and discover how Servcy can truly enhance your productivity."
+        },
+        {
+          question: "How can I be sure that my data is secure?",
+          answer: "At Servcy, we prioritize data security, taking various measures to ensure your information is protected. Rest assured, your data is safe with us, and you can confidently use our platform without worry. Your peace of mind is important to us!"
+        },
+        {
+          question: "If I have any questions, who can I reach out to?",
+          answer: "If you have any questions or require assistance, please don't hesitate to contact our support team by clicking on the chat icon or by sending an email to contact@servcy.com. You can also join our community on Slack. We're here to help you find the best support and will do our best to address any doubts that you may have.",
+        },
+        {
+          question: "Can i import my existing templates?",
+          answer: "Yes, you can import your existing templates. We understand that you may have spent a lot of time creating and perfecting your templates. We want to make sure that you can continue using them without any hassle. You can import your existing templates into Servcy and continue using them as you normally would."
+        },
+        {
+          question: "Is Servcy a CRM?",
+          answer: "Servcy is a productivity tool that helps you track & manage your projects, payments, inbox, contracts and time. It's an easy-to-use software built to help small business owners streamline their business processes from inquiry to invoicing."
+        }
+      ]
+    }
+  }
 };
 </script>
 
 <style scoped>
-section {
-  padding: 50px 5%;
+.accordion .tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  transition: all .15s;
+  text-align: left;
+  border-color: #D1BFAE
 }
 
-img {
-  max-width: 550px;
-  min-width: 350px;
+
+.accordion input:checked~.tab-content {
+  border-top: 1px solid #D1BFAE;
+  padding: 1em;
+  max-height: 100vh;
 }
 </style>

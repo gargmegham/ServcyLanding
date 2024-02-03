@@ -1,40 +1,31 @@
 <template>
-  <header
-    :class="{
-      'd-flex servcy-linear-bg flex-row py-3 justify-space-between': true,
-      'large-header': $vuetify.breakpoint.mdAndUp,
-      'small-header': !$vuetify.breakpoint.mdAndUp,
-    }"
-  >
+  <header :class="{
+    'flex servcy-linear-bg flex-row py-3 justify-space-between px-[5%] fixed z-10 w-full rounded-b-lg': true,
+    'large-screen-header': $vuetify.breakpoint.mdAndUp,
+    'small-screen-header': !$vuetify.breakpoint.mdAndUp,
+  }">
     <div class="flex-column">
-      <NuxtLink to="/" class="s-black"
-        ><img src="@/static/logo.svg" alt="logo" class="logo"
-      /></NuxtLink>
+      <NuxtLink to="/"><img src="@/static/logo.svg" alt="logo" class="vertical-align-middle h-full" /></NuxtLink>
     </div>
-    <div class="flex-column align-center align-self-center cols-3">
-      <div v-if="!$vuetify.breakpoint.mdAndUp">
-        <a
-          target="_blank"
-          class="s-small"
-          href="https://calendly.com/servcy/demo?utm_source=website&utm_medium=header&utm_campaign=contact_us"
-          ><v-btn x-small rounded outlined>contact Us</v-btn></a
-        >
-      </div>
-      <div v-else>
-        <a class="mr-8 s-bold" href="/#why-servcy">Why Servcy?</a>
-        <a class="mr-8 s-bold" href="/#features">Features</a>
-        <a
-          target="_blank"
-          class="mr-4 s-bold"
-          href="https://calendly.com/servcy/demo?utm_source=website&utm_medium=header&utm_campaign=contact_us"
-          >Contact Us</a
-        >
-        <NuxtLink to="/blogs">
-          <v-btn class="mr-2 s-bold" rounded outlined
-            ><span class="s-bold">Blogs</span></v-btn
-          ></NuxtLink
-        >
-      </div>
+    <div class="flex-column align-self-center cols-3">
+      <NuxtLink v-if="$vuetify.breakpoint.smAndUp" to="/#features"
+        class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">Features
+      </NuxtLink>
+      <NuxtLink v-if="$vuetify.breakpoint.smAndUp" to="/#pricing"
+        class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">Pricing
+      </NuxtLink>
+      <NuxtLink v-if="$vuetify.breakpoint.smAndUp" to="/support#faqs"
+        class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">FAQs
+      </NuxtLink>
+      <NuxtLink v-if="$vuetify.breakpoint.smAndUp" to="/support"
+        class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">Contact Us
+      </NuxtLink>
+      <NuxtLink v-if="$vuetify.breakpoint.smAndUp" to="/blogs"
+        class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">Blogs
+      </NuxtLink>
+      <button class="bg-servcy-black border-servcy-wheat rounded p-2" style="border-style: solid;">
+        <a href="https://web.servcy.com" target="_blank"
+          class="font-castoro font-bold !text-servcy-cream hover:!text-servcy-wheat">Get Started</a></button>
     </div>
   </header>
 </template>
@@ -46,26 +37,11 @@ export default {
 </script>
 
 <style scoped>
-a {
-  text-decoration: none;
-  color: #fff !important;
-}
-a:hover {
-  color: rgba(167, 226, 165, 1) !important;
-}
-header {
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.logo {
-  vertical-align: middle;
-  height: 100%;
-  width: 170px;
-}
-.large-header {
+.large-screen-header {
   height: 10vh;
 }
-.small-header {
+
+.small-screen-header {
   height: 8vh;
 }
 </style>

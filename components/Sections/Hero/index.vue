@@ -1,174 +1,31 @@
 <template>
-  <section
-    :class="[
-      'servcy-body s-page-padding-x mt-15',
-      $vuetify.breakpoint.smAndDown ? 'mb-15' : '',
-    ]"
-  >
-    <v-row no-gutters class="pt-10">
-      <v-col sm="12" xs="12" lg="8" xl="8" md="8" cols="12">
-        <div
-          :class="{
-            'servcy-headline servcy-headline-font servcy-gradient-font s-bold': true,
-            'pb-3': !$vuetify.breakpoint.smAndDown,
-          }"
-        >
-          One For All Platform
-        </div>
-        <div
-          :class="{
-            'servcy-sub-headline-font servcy-gradient-font s-bold': true,
-            'pb-10': !$vuetify.breakpoint.smAndDown,
-          }"
-        >
-          Save your hours, and effort. Manage all your clients from the same
-          platform.
-        </div>
-        <div
-          :class="{
-            'servcy-sub-headline-font dark--text pb-4 s-semi-bold': true,
-            'text-left': $vuetify.breakpoint.smAndDown,
-          }"
-        >
-          <div
-            class="mt-5 d-flex integrate-replace align-center align-self-center flex-wrap"
-          >
-            <img
-              src="@/assets/icons/integrate-replace.svg"
-              alt="integrate-replace-icon"
-              width="20%"
-              height="100%"
-            />
-            <span class="ma-4 manage-text servcy-sub-headline-font">
-              <span class="mr-2 s-bold font-castoro">{{
-                currentIsometric === 0
-                  ? "Inbox Aggregation"
-                  : currentIsometric === 1
-                  ? "Project Management"
-                  : currentIsometric === 2
-                  ? "Payments & Invoicing"
-                  : "Analytics & Reporting"
-              }}</span>
-              <span
-                v-if="!$vuetify.breakpoint.smAndDown"
-                class="s-title silver--text s-semi-bold"
-                >Software</span
-              >
-            </span>
-          </div>
-        </div>
-        <FormTextField
-          class="mt-8"
-          :loading="subscribing"
-          @submit="submit"
-          buttonText="Notify Me!"
-          input-type="email"
-          placeholder="Your email address:"
-        />
-        <div class="silver--text mb-5 mt-10 s-title s-semi-bold font-castoro">
-          Consolidate Operations, Boost Productivity, and Delight Your Clients
-        </div>
-        <!-- Integrations Icons -->
-        <IntegrationIcons :current-isometric="currentIsometric" />
-      </v-col>
-      <!-- Isomentric Illustrations -->
-      <v-col v-if="!$vuetify.breakpoint.smAndDown" cols="4">
-        <IsomentricIllustrations :current-isometric="currentIsometric" />
-      </v-col>
-    </v-row>
+  <section class="px-[5%] mt-[8vh] servcy-wave-block min-h-screen text-center">
+    <div class="md:text-8xl pt-10 pb-5 min-h-32 font-axiforma font-extrabold text-6xl max-sm:text-5xl">
+      One app to<br /> manage them all
+    </div>
+    <div class="text-xl font-semibold text-servcy-wheat py-5">
+      Consolidate all your tools in one place.<br />A single platform designed to manage any your work day.
+    </div>
+    <div>
+      <button class="bg-servcy-black rounded p-3 mt-5 servcy-wheat-shadow-left-bottom">
+        <a href="https://web.servcy.com" target="_blank"
+          class="font-castoro font-semibold !text-servcy-cream hover:!text-servcy-wheat text-2xl">
+          Get Started
+        </a>
+      </button>
+    </div>
+    <div class="text-xs mt-3 text-servcy-cream">No credit card required</div>
+    <IntegrationIcons class="my-20 max-md:mt-32 lg:mt-36" />
   </section>
 </template>
 
 <script>
-import IsomentricIllustrations from "@/components/Sections/Hero/IsomentricIllustrations.vue";
 import IntegrationIcons from "@/components/Sections/Hero/IntegrationIcons.vue";
-import FormTextField from "@/components/Forms/FormTextField.vue";
 
 export default {
   name: "Hero",
   components: {
-    IsomentricIllustrations,
     IntegrationIcons,
-    FormTextField,
-  },
-  data() {
-    return {
-      currentIsometric: 0,
-      subscribing: false,
-      isometricInterval: null,
-    };
-  },
-  mounted() {
-    this.isometricInterval = setInterval(() => {
-      this.currentIsometric =
-        this.currentIsometric === 3 ? 0 : this.currentIsometric + 1;
-    }, 5000);
-  },
-  beforeDestroy() {
-    clearInterval(this.isometricInterval);
-  },
-  methods: {
-    submit(email) {
-      this.subscribing = true;
-      this.$fire.firestore
-        .collection("servcy-landing-page-email-subscribers")
-        .add({ email: email, timestamp: new Date() })
-        .then(() => {
-          this.$notifier.showMessage({
-            content: "Thanks for your interest, We'll contact you soon!",
-            color: "success",
-          });
-        })
-        .catch((err) => {
-          this.$notifier.showMessage({
-            content: "Something went wrong. Please try again later.",
-            color: "errorLight",
-          });
-        })
-        .finally(() => {
-          this.subscribing = false;
-        });
-    },
   },
 };
 </script>
-
-<style scoped lang="css">
-.servcy-body {
-  min-height: 90vh;
-}
-@media screen and (max-width: 959px) {
-  .servcy-body {
-    min-height: 92vh;
-  }
-}
-
-.manage-text {
-  position: relative;
-}
-.manage-text span {
-  position: relative;
-}
-.manage-text::before {
-  content: "";
-  position: absolute;
-  left: -0.1px;
-  right: -0.1px;
-  bottom: 0;
-  height: 100%;
-  transform: scaleY(0.3);
-  transition: transform 0.6s cubic-bezier(0.53, 0.21, 0, 1);
-  transform-origin: bottom;
-  background-color: #5ba959;
-  opacity: 0.6;
-}
-.manage-text:hover::before {
-  transform: scaleY(1);
-}
-@media screen and (max-width: 959px) {
-  .servcy-headline {
-    padding-bottom: 32px;
-    text-align: center;
-  }
-}
-</style>
