@@ -5,7 +5,8 @@
         One app to<br /> manage them all
       </div>
       <div class="text-xl font-semibold text-servcy-wheat py-5">
-        Consolidate all your tools in one place.<br />A single platform designed to manage any your work day.
+        Consolidate all your tools in one place.<br />Track inbox, payments, and everything in between on a
+        single platform.
       </div>
       <div>
         <button class="bg-servcy-black rounded p-3 mt-5 servcy-wheat-shadow-left-bottom">
