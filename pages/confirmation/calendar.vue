@@ -46,7 +46,7 @@
 
 <script>
 export default {
-  name: "Calendar Confirmation",
+  name: "CalendarConfirmation",
   data() {
     return {
       sessionTime: "-",

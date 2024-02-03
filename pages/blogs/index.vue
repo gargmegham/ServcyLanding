@@ -78,7 +78,7 @@
 import FormTextField from "@/components/Forms/FormTextField.vue";
 
 export default {
-  name: "All Blogs",
+  name: "AllBlogs",
   components: {
     FormTextField,
   },

@@ -85,7 +85,7 @@ import IntegrationIcons from "@/components/Sections/Hero/IntegrationIcons.vue";
 import FormTextField from "@/components/Forms/FormTextField.vue";
 
 export default {
-  name: "HeroSection",
+  name: "Hero",
   components: {
     IsomentricIllustrations,
     IntegrationIcons,

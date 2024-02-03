@@ -38,7 +38,7 @@
 
 <script>
 export default {
-  name: "FeaturesSection",
+  name: "Features",
   data() {
     return {
       features: {
