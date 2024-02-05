@@ -1,6 +1,7 @@
 <template>
   <div>
     <Hero />
+    <AggregatedInbox />
     <WhyServcy />
     <Features />
     <Pricing />
@@ -10,6 +11,7 @@
 <script>
 import Hero from "@/components/Sections/Hero/index.vue";
 import WhyServcy from "@/components/Sections/WhyServcy.vue";
+import AggregatedInbox from "@/components/Sections/AggregatedInbox.vue";
 import Features from "@/components/Sections/Features.vue";
 import Pricing from "@/components/Sections/Pricing.vue";
 
@@ -19,6 +21,7 @@ export default {
     Hero,
     WhyServcy,
     Features,
+    AggregatedInbox,
     Pricing,
   },
 };
