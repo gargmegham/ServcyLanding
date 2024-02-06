@@ -35,7 +35,7 @@ export default {
       {
         hid: "og:image",
         property: "og:image",
-        content: "https://servcy.com/inbox-management-isometric.svg",
+        content: "https://servcy.com/meta_image.png",
       },
       { hid: "og:image:width", property: "og:image:width", content: "15141" },
       { hid: "og:image:height", property: "og:image:height", content: "16290" },
