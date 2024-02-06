@@ -1,12 +1,10 @@
-import colors from "vuetify/es5/util/colors";
-
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: "static",
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - One For All Platform",
+    titleTemplate: "%s - One app to manage them all",
     title: "Servcy",
     htmlAttrs: {
       lang: "en",
@@ -18,7 +16,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Servcy is for freelance entrepreneurs, it's their virtual office with features like inbox aggregation, payments, invoicing, reporting, contract management, project management, boilerplates for commonly used documents, and integrations to support other SaaS who provide these features.",
+          "Servcy is for Founders, CXOs, Freelancers and Software developers. We all use different softwares and tools to plan our workday, but what if you could have control over all of them in one place? Servcy helps you to manage your work, team, and clients in one place.",
       },
       { property: "og:site_name", content: "Servcy" },
       { hid: "og:type", property: "og:type", content: "website" },
@@ -26,13 +24,13 @@ export default {
       {
         hid: "og:title",
         property: "og:title",
-        content: "Virtual Office For Freelance Entrepreneurs | Servcy",
+        content: "Consolidate all your tools in one place with Servcy",
       },
       {
         hid: "og:description",
         property: "og:description",
         content:
-          "Servcy is for freelance entrepreneurs, it's their virtual office with features like inbox aggregation, payments, invoicing, reporting, contract management, project management, boilerplates for commonly used documents, and integrations to support other SaaS who provide these features.",
+          "Servcy is for Founders, CXOs, Freelancers and Software developers. We all use different softwares and tools to plan our workday, but what if you could have control over all of them in one place? Servcy helps you to manage your work, team, and clients in one place.",
       },
       {
         hid: "og:image",
