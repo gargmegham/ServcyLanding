@@ -1,9 +1,9 @@
 <template>
-    <section id="pricing" class="mb-20 servcy-wave-block text-center rounded-t-xl px-[5%]">
-        <div class="md:text-6xl text-5xl max-sm:text-4xl py-10 min-h-32 font-axiforma font-extrabold">
+    <section id="pricing" class="py-[4vh] servcy-wave-block text-center">
+        <div class="md:text-7xl text-5xl pt-16 pb-6 font-axiforma font-extrabold">
             Pricing
         </div>
-        <div class="md:text-xl text-lg max-sm:text-sm font-semibold text-servcy-wheat pb-10">
+        <div class="md:text-xl text-lg font-semibold text-servcy-wheat pb-16">
             The best work solution, for the best price.
         </div>
         <div class="flex justify-center">
@@ -108,7 +108,7 @@
                     <div class="text-servcy mt-1">{{ numHours * 4 }} Hours</div>
                 </div>
                 <div style="box-shadow: 0px 4px 0px 2px #d1bfae !important"
-                    class="border border-servcy-black rounded-lg flex-column border-solid pa-2">
+                    class="border border-servcy-black rounded-lg flex-column border-solid pa-2 mx-2">
                     <div>Money Saved Per Month:</div>
                     <div class="text-servcy mt-1">$ {{ valuePerHour * numHours * 4 }}</div>
                 </div>

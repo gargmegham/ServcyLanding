@@ -1,9 +1,9 @@
 <template>
-  <section id="aggregated-inbox" class="mb-20 servcy-wave-block text-center rounded-t-xl px-[5%]">
-    <div class="md:text-5xl text-4xl max-sm:text-4xl py-10 min-h-32 font-axiforma font-extrabold">
+  <section id="aggregated-inbox" class="py-[4vh] servcy-wave-block text-center">
+    <div class="md:text-7xl text-5xl py-16 font-axiforma font-extrabold">
       Magic starts with <br />an aggregated inbox
     </div>
-    <div class="md:text-xl text-lg max-sm:text-sm font-semibold text-servcy-wheat pb-10">
+    <div class="md:text-xl text-lg font-semibold text-servcy-wheat pb-16">
       You can stop wasting time juggling between multiple apps to organize your work. <br />Easily import all your
       messages, notifications & comments from your favorite tools into a single Inbox.
     </div>

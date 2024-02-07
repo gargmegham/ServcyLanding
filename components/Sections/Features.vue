@@ -1,30 +1,28 @@
 <template>
-    <section id="features" class="mt-[8vh]">
-        <div class="servcy-wave-block text-center px-[5%] pb-10 rounded-t-xl">
-            <div class="font-bold md:text-6xl text-5xl max-sm:text-4xl font-castoro pt-10 pb-6">
-                Features
-            </div>
-            <div class="md:text-xl text-lg max-sm:text-sm font-semibold text-servcy-wheat pb-8 w-1/2 mx-auto">
-                Supercharge your productivity. Streamline workflows by doing it,
-                seeing
-                it, and managing it all in one
-                place.
-            </div>
-            <div class="padding-x flex flex-row justify-center flex-wrap">
-                <v-sheet v-for="(value, title, index) in features" :key="index" width="300px" height="330px"
-                    class="servcy-card-bg servcy-wheat-shadow-left-bottom pa-6 ma-4 rounded !text-servcy-neutral">
-                    <h3 class="font-bold  font-castoro">{{ title }}</h3>
-                    <div class="mx-auto mt-3 mb-6">
-                        <v-btn fab outlined color="silver" class="!bg-servcy-neutral">
-                            <v-icon>{{ value.icon }}</v-icon></v-btn>
-                    </div>
-                    <ul class="mt-4" style="list-style-type: circle;">
-                        <li v-for="feature in value.val" class="text-left text-sm" :key="feature">
-                            {{ feature }}
-                        </li>
-                    </ul>
-                </v-sheet>
-            </div>
+    <section id="features" class="py-[4vh] servcy-wave-block text-center">
+        <div class="md:text-7xl text-5xl py-16 font-axiforma font-extrabold">
+            Features
+        </div>
+        <div class="md:text-xl text-lg font-semibold text-servcy-wheat pb-16">
+            Supercharge your productivity.<br />Streamline workflows by doing it,
+            seeing
+            it, and managing it all in one
+            place.
+        </div>
+        <div class="flex flex-row justify-center flex-wrap">
+            <v-sheet v-for="(value, title, index) in features" :key="index" width="300px" height="330px"
+                class="servcy-card-bg servcy-wheat-shadow-left-bottom pa-6 ma-4 rounded !text-servcy-neutral">
+                <h3 class="font-bold  font-castoro">{{ title }}</h3>
+                <div class="mx-auto mt-3 mb-6">
+                    <v-btn fab outlined color="silver" class="!bg-servcy-neutral">
+                        <v-icon>{{ value.icon }}</v-icon></v-btn>
+                </div>
+                <ul class="mt-4" style="list-style-type: circle;">
+                    <li v-for="feature in value.val" class="text-left text-sm" :key="feature">
+                        {{ feature }}
+                    </li>
+                </ul>
+            </v-sheet>
         </div>
     </section>
 </template>

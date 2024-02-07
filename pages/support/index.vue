@@ -1,10 +1,11 @@
 <template>
-  <section class="px-[5%] mt-[8vh] servcy-wave-block text-center">
-    <div class="md:text-6xl text-5xl max-sm:text-4xl py-10 min-h-32 font-axiforma font-extrabold">
+  <section class="px-[5%] pt-[8vh] pb-[4vh] servcy-wave-block text-center flex flex-col">
+    <div class="md:text-8xl text-6xl font-axiforma font-extrabold pt-24 pb-10">
       Contact us
     </div>
-    <div class="md:text-xl text-lg max-sm:text-sm font-semibold text-servcy-wheat pb-10">
-      Questions? Concerns? We're here to support you every step of the way. We have real, live people available to chat 7
+    <div class="md:text-xl text-lg font-semibold text-servcy-wheat pb-16">
+      Questions? Concerns? We're here to support you every step of the way.<br />We have real, live people available to
+      chat 7
       days a week, and online help resources that are available 24 hours a day.
     </div>
     <div class="flex justify-center">
@@ -25,9 +26,8 @@
         </button>
       </div>
     </div>
-    <section id="faqs" class="rounded-lg my-20 servcy-card-bg text-servcy-black pa-10"
-      style="box-shadow: 0px 4px 4px 4px #d1bfae !important">
-      <div class="md:text-6xl text-servcy-neutral text-5xl max-sm:text-4xl min-h-32 font-axiforma font-extrabold">
+    <section id="faqs" class="rounded-lg my-20 servcy-card-bg text-servcy-black pa-10">
+      <div class="md:text-6xl text-servcy-neutral text-5xl min-h-32 font-axiforma font-extrabold">
         FAQs
       </div>
       <div class="mx-auto accordion">

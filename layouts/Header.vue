@@ -1,27 +1,24 @@
 <template>
-  <header :class="{
-    'flex servcy-linear-bg flex-row py-3 justify-space-between px-[5%] fixed z-10 w-full rounded-b-lg': true,
-    'large-screen-header': $vuetify.breakpoint.mdAndUp,
-    'small-screen-header': !$vuetify.breakpoint.mdAndUp,
-  }">
+  <header
+    class="flex servcy-linear-bg flex-row py-3 justify-space-between px-[5%] fixed z-10 w-full rounded-b-lg h-[10vh]">
     <div class="flex-column">
       <NuxtLink to="/"><img src="@/static/logo.svg" alt="logo" class="vertical-align-middle h-full" /></NuxtLink>
     </div>
     <div class="flex-column align-self-center cols-3">
-      <NuxtLink v-if="$vuetify.breakpoint.smAndUp" to="/#features"
-        class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">Features
+      <NuxtLink to="/#features"
+        class="max-md:hidden font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">Features
       </NuxtLink>
-      <NuxtLink v-if="$vuetify.breakpoint.smAndUp" to="/#pricing"
-        class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">Pricing
+      <NuxtLink to="/#pricing"
+        class="max-md:hidden font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">Pricing
       </NuxtLink>
-      <NuxtLink v-if="$vuetify.breakpoint.smAndUp" to="/support#faqs"
-        class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">FAQs
+      <NuxtLink to="/support#faqs"
+        class="max-sm:hidden font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">FAQs
       </NuxtLink>
-      <NuxtLink v-if="$vuetify.breakpoint.smAndUp" to="/support"
-        class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">Contact Us
+      <NuxtLink to="/support"
+        class="max-sm:hidden font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">Contact Us
       </NuxtLink>
-      <NuxtLink v-if="$vuetify.breakpoint.smAndUp" to="/blogs"
-        class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">Blogs
+      <NuxtLink to="/blogs" class="max-md:hidden font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">
+        Blogs
       </NuxtLink>
       <button class="bg-servcy-black border-servcy-wheat rounded p-2" style="border-style: solid;">
         <a href="https://web.servcy.com" target="_blank"
@@ -35,13 +32,3 @@ export default {
   name: "Header",
 };
 </script>
-
-<style scoped>
-.large-screen-header {
-  height: 10vh;
-}
-
-.small-screen-header {
-  height: 8vh;
-}
-</style>

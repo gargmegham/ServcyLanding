@@ -1,11 +1,11 @@
 <template>
-  <div class="pt-10 px-[5%] mt-[8vh] servcy-wave-block min-h-screen">
-    <div class="flex flex-row justify-space-between text-servcy-cream h-64">
+  <div class="px-[5%] pt-[8vh] pb-[4vh] servcy-wave-block">
+    <div class="flex flex-row justify-space-between text-servcy-cream h-64 mt-16">
       <v-col lg="8" md="8" xs="12" sm="12" xl="8" cols="12">
-        <div class="md:text-6xl text-5xl max-sm:text-4xl font-axiforma font-extrabold">
+        <div class="md:text-6xl text-5xl font-axiforma font-extrabold">
           Welcome to Servcy Academy
         </div>
-        <div class="mt-6 md:text-xl text-lg max-sm:text-sm font-semibold text-servcy-wheat">
+        <div class="mt-6 md:text-xl text-lg font-semibold text-servcy-wheat">
           An interactive suite of blog posts for helping you become more
           productive, and to help you grow your freelance business.
         </div>
@@ -16,7 +16,7 @@
         <img src="@/assets/icons/all-blogs.svg" alt="blog home" class="ma-2 h-full" />
       </v-col>
     </div>
-    <div class="pb-10 mt-10 xs:grid-cols-1 grid gap-3 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
+    <div class="py-10 mt-10 xs:grid-cols-1 grid gap-3 sm:grid-cols-1 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
       <div v-for="(blogPost, index) of filteredPosts" :key="index" class="ma-4">
         <v-sheet class="pa-4 blog-card servcy-card-bg rounded-xl h-full" elevation="2">
           <NuxtLink :to="{ path: blogPost.path }" :key="blogPost._id" class="blog-link">
