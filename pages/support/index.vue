@@ -35,7 +35,7 @@
           :key="index">
           <input class="absolute opacity-0 " type="checkbox" :id="`chck${index}`">
           <label
-            class="relative block bg-servcy-green w-full p-4 md:text-xl text-lg font-semibold text-servcy-white text-left cursor-pointer select-none"
+            class="relative block bg-servcy-green w-full p-4 md:text-xl text-lg font-semibold text-servcy-white text-left cursor-pointer select-none overflow-hidden"
             :for="`chck${index}`">
             <h6>{{ value.question }}
               <v-icon class="float-right">mdi-chevron-down</v-icon>

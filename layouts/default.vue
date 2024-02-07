@@ -4,8 +4,8 @@
     <v-main class="servcy-linear-bg-light">
       <Nuxt />
     </v-main>
+    <TheFooter class="max-sm:hidden" />
     <snack-bar />
-    <TheFooter />
   </v-app>
 </template>
 

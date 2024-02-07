@@ -2,7 +2,7 @@
   <div>
     <Hero />
     <AggregatedInbox />
-    <WhyServcy />
+    <WhyServcy class="max-sm:hidden" />
     <Features />
     <Pricing />
   </div>
