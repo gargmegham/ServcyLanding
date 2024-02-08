@@ -14,7 +14,7 @@
                 class="servcy-card-bg servcy-wheat-shadow-left-bottom pa-6 ma-4 rounded !text-servcy-neutral">
                 <h3 class="font-bold  font-castoro">{{ title }}</h3>
                 <div class="mx-auto mt-3 mb-6">
-                    <v-btn fab outlined color="silver" class="!bg-servcy-neutral">
+                    <v-btn fab outlined color="silver" class="!bg-servcy-neutral" :id="title" :title="title">
                         <v-icon>{{ value.icon }}</v-icon></v-btn>
                 </div>
                 <ul class="mt-4" style="list-style-type: circle;">
