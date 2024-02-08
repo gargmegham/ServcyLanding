@@ -97,7 +97,9 @@
             <div class="text-servcy-neutral text-sm font-semibold pt-5">How much is one hour of your time worth to you?
             </div>
             <div>
-                <input id="value-per-hour" v-model="valuePerHour" class="!outline-none" type="number" />
+                <input id="value-per-hour" v-model="valuePerHour" class="!outline-none" type="number"
+                    aria-label="value-per-hour" />
+                <label for="value-per-hour" class="text-servcy-black text-sm font-semibold hidden">Value Per Hour</label>
                 <span class="text-servcy-green">$</span>
             </div>
             <div

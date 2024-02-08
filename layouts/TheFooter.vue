@@ -10,12 +10,13 @@
           © 2024 Servcy. All Rights Reserved.
         </div>
         <div class="flex-row mt-2">
-          <a target="_blank" href="https://twitter.com/ContactServcy"><v-icon large class="mr-4">mdi-twitter</v-icon></a>
-          <a target="_blank" href="https://www.linkedin.com/company/servcy/"><v-icon large
+          <a target="_blank" aria-label="twitter" href="https://twitter.com/ContactServcy"><v-icon large
+              class="mr-4">mdi-twitter</v-icon></a>
+          <a target="_blank" aria-label="linkedin" href="https://www.linkedin.com/company/servcy/"><v-icon large
               class="mr-4">mdi-linkedin</v-icon></a>
-          <a target="_blank" href="https://www.instagram.com/servcy.admin/"><v-icon large
+          <a target="_blank" aria-label="instagram" href="https://www.instagram.com/servcy.admin/"><v-icon large
               class="mr-4">mdi-instagram</v-icon></a>
-          <a target="_blank" href="https://www.facebook.com/profile.php?id=100087292992160"><v-icon
+          <a target="_blank" aria-label="facebook" href="https://www.facebook.com/profile.php?id=100087292992160"><v-icon
               large>mdi-facebook</v-icon></a>
         </div>
       </v-col>
