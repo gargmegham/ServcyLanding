@@ -1,5 +1,5 @@
 <template>
-  <div class="pt-[8vh] pb-[4vh] servcy-wave-block !h-screen text-center flex flex-col">
+  <div class="pt-[8vh] pb-[4vh] servcy-wave-block flex flex-col min-h-[700px] h-screen text-center">
     <div class="flex-row align-self-center justify-center">
       <div class="md:text-8xl text-6xl font-axiforma font-extrabold pt-24 pb-10">
         One app to<br /> manage them all
