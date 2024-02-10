@@ -137,8 +137,4 @@ export default {
   microsoftClarity: {
     id: process.env.CLARITY_PROJECT_ID,
   },
-
-  gtm: {
-    id: process.env.GTM_ID,
-  },
 };
