@@ -110,7 +110,6 @@ export default {
     "@nuxtjs/firebase",
     "@nuxt/content",
     "@nuxtjs/sitemap",
-    "@nuxtjs/gtm",
   ],
 
   firebase: {
