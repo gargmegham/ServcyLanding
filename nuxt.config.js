@@ -81,7 +81,6 @@ export default {
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
     "@nuxtjs/vuetify",
-    "@nuxtjs/google-analytics",
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify
@@ -137,10 +136,6 @@ export default {
 
   microsoftClarity: {
     id: process.env.CLARITY_PROJECT_ID,
-  },
-
-  googleAnalytics: {
-    id: "UA-254127105-1",
   },
 
   gtm: {
