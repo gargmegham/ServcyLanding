@@ -1,5 +1,5 @@
 <template>
-  <section class="px-[5%] pt-[8vh] pb-[4vh] servcy-wave-block text-center flex flex-col">
+  <section class="px-[5%] pt-[8vh] pb-[4vh] servcy-wave-block text-center flex flex-col h-full">
     <div class="md:text-8xl text-6xl font-axiforma font-extrabold pt-24 pb-10">
       Contact us
     </div>
