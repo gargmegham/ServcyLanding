@@ -8,9 +8,9 @@
       <NuxtLink to="/#features"
         class="max-md:hidden font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">Features
       </NuxtLink>
-      <NuxtLink to="/#pricing"
+      <!-- <NuxtLink to="/#pricing"
         class="max-md:hidden font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">Pricing
-      </NuxtLink>
+      </NuxtLink> -->
       <NuxtLink to="/support#faqs"
         class="max-sm:hidden font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-green">FAQs
       </NuxtLink>
