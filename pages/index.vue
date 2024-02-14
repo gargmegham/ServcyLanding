@@ -4,7 +4,7 @@
     <AggregatedInbox class="px-[5%]" />
     <WhyServcy class="px-[5%]" />
     <Features class="px-[5%]" />
-    <Pricing class="px-[5%]" />
+    <!-- <Pricing class="px-[5%]" /> -->
   </div>
 </template>
 
