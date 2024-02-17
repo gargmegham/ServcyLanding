@@ -1,7 +1,7 @@
 <template>
   <v-app id="Home">
     <Header />
-    <v-main class="servcy-linear-bg-light">
+    <v-main>
       <Nuxt />
     </v-main>
     <TheFooter />

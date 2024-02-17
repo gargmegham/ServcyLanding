@@ -16,7 +16,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Servcy is for Founders, CXOs, Freelancers and Software developers. We all use different softwares and tools to plan our workday, but what if you could have control over all of them in one place? Servcy helps you to manage your work, team, and clients in one place.",
+          "Servcy is for Founders, CXOs, Freelancers and Software developers. We all use different softwares to manage our workday, but what if you could have control over all of them in one place? Servcy helps you see it, analyse it and do it all in one place.",
       },
       { property: "og:site_name", content: "Servcy" },
       { hid: "og:type", property: "og:type", content: "website" },
@@ -30,7 +30,7 @@ export default {
         hid: "og:description",
         property: "og:description",
         content:
-          "Servcy is for Founders, CXOs, Freelancers and Software developers. We all use different softwares and tools to plan our workday, but what if you could have control over all of them in one place? Servcy helps you to manage your work, team, and clients in one place.",
+          "Servcy is for Founders, CXOs, Freelancers and Software developers. We all use different softwares to manage our workday, but what if you could have control over all of them in one place? Servcy helps you see it, analyse it and do it all in one place.",
       },
       {
         hid: "og:image",

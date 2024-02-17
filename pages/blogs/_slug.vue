@@ -1,5 +1,6 @@
 <template>
-  <nuxt-content class="pa-16 mx-auto px-[5%] text-servcy-black font-normal mt-[10vh]" :document="theBlog" tag="article" />
+  <nuxt-content class="mx-auto px-[5%] pt-[12vh] pb-[8vh] text-servcy-cream font-normal" :document="theBlog"
+    tag="article" />
 </template>
 
 <script>
@@ -28,6 +29,6 @@ export default {
 
 .nuxt-content a {
   text-decoration: underline;
-  color: #26542F !important;
+  color: #D1BFAE !important;
 }
 </style>

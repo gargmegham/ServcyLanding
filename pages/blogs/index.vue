@@ -1,5 +1,5 @@
 <template>
-  <div class="px-[5%] pt-[8vh] pb-[4vh] servcy-wave-block">
+  <div class="px-[5%] py-[8vh] bg-servcy-green">
     <div class="flex flex-row justify-space-between text-servcy-cream h-64 mt-16">
       <v-col lg="8" md="8" xs="12" sm="12" xl="8" cols="12">
         <div class="md:text-6xl text-5xl font-axiforma font-extrabold">
