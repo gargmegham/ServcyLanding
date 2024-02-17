@@ -19,7 +19,7 @@
         </li>
       </ul>
     </div>
-    <div class="max-sm:hidden">
+    <div class="max-sm:hidden p-16">
       <img src="@/assets/icons/unified-inbox.svg" alt="unified-inbox" class="mt-6" />
     </div>
   </section>

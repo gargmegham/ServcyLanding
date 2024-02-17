@@ -16,7 +16,7 @@
         </li>
       </ul>
     </div>
-    <div class="max-sm:hidden">
+    <div class="max-sm:hidden p-16">
       <img src="@/assets/icons/central-time-hub.svg" alt="central-time-hub" class="mt-6" />
     </div>
   </section>

@@ -19,7 +19,7 @@
         </li>
       </ul>
     </div>
-    <div class="max-sm:hidden">
+    <div class="max-sm:hidden p-16">
       <img src="@/assets/icons/central-document-hub.svg" alt="central-document-hub" class="mt-6" />
     </div>
   </section>

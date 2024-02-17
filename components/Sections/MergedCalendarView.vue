@@ -16,7 +16,7 @@
         </li>
       </ul>
     </div>
-    <div class="max-sm:hidden">
+    <div class="max-sm:hidden p-16">
       <img src="@/assets/icons/merged-calendar.svg" alt="merged-calendar" class="mt-6" />
     </div>
   </section>

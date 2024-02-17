@@ -16,7 +16,7 @@
         </li>
       </ul>
     </div>
-    <div class="max-sm:hidden">
+    <div class="max-sm:hidden p-16">
       <img src="@/assets/icons/central-payment-hub.svg" alt="central-payment-hub" class="mt-6" />
     </div>
   </section>
