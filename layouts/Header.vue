@@ -4,7 +4,7 @@
       <NuxtLink to="/"><img src="@/static/logo.svg" alt="logo" class="vertical-align-middle h-full" /></NuxtLink>
     </div>
     <div class="align-self-center cols-3">
-      <!-- <v-menu open-on-hover location="end">
+      <v-menu open-on-hover location="end">
         <template v-slot:activator="{ on }">
           <button class="max-sm:hidden font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat"
             v-on="on">Features</button>
@@ -49,7 +49,7 @@
             </NuxtLink>
           </v-list-item>
         </v-list>
-      </v-menu> -->
+      </v-menu>
       <NuxtLink to="/support#faqs"
         class="max-sm:hidden font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat">FAQs
       </NuxtLink>
