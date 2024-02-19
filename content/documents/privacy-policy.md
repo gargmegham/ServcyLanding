@@ -87,7 +87,7 @@ There will be times when we need to share your personal identifiable data such a
 
 2. For individuals in the European Economic Area (EEA), this means that your data may be transferred outside of the EEA. Where your personal data is transferred outside the EEA, it will only be transferred to countries that have been identified as providing adequate protection for EEA data (like New Zealand), or to a third party where we have approved transfer mechanisms in place to protect your personal data – i.e., by entering into the European Commission's Standard Contractual # Clauses, or by ensuring the entity is Privacy Shield certified (for transfers to US-based third parties). For further information, please contact us using the details set out in the “How to contact us” section below.
 
-# Clause 7: Data obtained from Google {#google-disclosure}
+# Clause 7: Data obtained from Google
 
 Servcy's use and transfer of information received from Google APIs to any other app will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes) including the [Limited Use](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes) requirements.
 
