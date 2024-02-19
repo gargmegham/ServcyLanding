@@ -45,12 +45,8 @@ export default {
                     answer: "If you have any questions or require assistance, please don't hesitate to contact our support team by clicking on the chat icon or by sending an email to contact@servcy.com. You can also join our community on Slack. We're here to help you find the best support and will do our best to address any doubts that you may have.",
                 },
                 {
-                    question: "Can i import my existing templates?",
-                    answer: "Yes, you can import your existing templates. We understand that you may have spent a lot of time creating and perfecting your templates. We want to make sure that you can continue using them without any hassle. You can import your existing templates into Servcy and continue using them as you normally would."
-                },
-                {
                     question: "Is Servcy a CRM?",
-                    answer: "Servcy is a productivity tool that helps you track & manage your projects, payments, inbox, contracts and time. It's an easy-to-use software built to help small business owners streamline their business processes from inquiry to invoicing."
+                    answer: "Servcy is a productivity tool that helps you track & manage your projects, payments, inbox, contracts, documents and time. It's an easy-to-use software built to help small business owners streamline their business processes from inquiry to invoicing."
                 }
             ]
         }
