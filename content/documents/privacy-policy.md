@@ -2,7 +2,7 @@
 
 This notice applies across all websites that we own and operate and all services we provide, including our online and mobile software services products, and any other apps or services we may offer (our “services”)
 
-When we say “personal data”, we mean information that would identify you, like your name, email, address, telephone number, bank account details, payment information and so on. The same would apply to information that could identify other users in your teams that are shared with Agroha Solutions.
+When we say “personal data”, we mean information that would identify you, like your name, email, address, telephone number, bank account details, payment information and so on. The same would apply to information that could identify other users in your teams that are shared with Servcy.
 
 If you can't be identified (for example, when personal data has been aggregated and anonymised), the information wouldn't be personal data anymore, and this notice doesn't apply.
 
@@ -10,7 +10,7 @@ We may need to update this notice from time to time. When a significant change i
 
 # Clause 1: Who are “we”?
 
-When we refer to “we” (or “our” or “us'), that means Agroha Solutions and all its wholly owned subsidiaries, including the primary operating entity, Agroha Solutions Our headquarters is located in Jagadhri. Address details for all Agroha Solutions offices are available on our “Contact Us” page.
+When we refer to “we” (or “our” or “us'), that means Servcy and all its wholly owned subsidiaries, including the primary operating entity, Servcy Our headquarters is located in Jagadhri. Address details for all Servcy offices are available on our “Contact Us” page.
 
 # Clause 2: Our Principles of Data Protection
 
@@ -44,7 +44,7 @@ Where we collect personal data, we'll only process it:
 
 If we don't collect your personal data, we may be unable to provide you with all our services, and some functions and features on our websites may not be available to you.
 
-If you're someone who doesn't have a relationship with us, but believe that a Agroha Solutions subscriber has entered your personal data into our websites or services, you'll need to contact that Agroha Solutions subscriber for any questions you have about your personal data (including where you want to access, correct, amend, or request that the user delete, your personal data).
+If you're someone who doesn't have a relationship with us, but believe that a Servcy subscriber has entered your personal data into our websites or services, you'll need to contact that Servcy subscriber for any questions you have about your personal data (including where you want to access, correct, amend, or request that the user delete, your personal data).
 
 # Clause 4: How we use your data
 
@@ -54,7 +54,7 @@ First and foremost, we use your personal data to operate our websites and provid
 
    - providing you with information you've requested from us (like training or education materials) or information we are required to send to you;
    - operational communications, like changes to our websites and services, security updates, or assistance with using our websites and services;
-   - marketing communications (about Agroha Solutions or another product or service we think you might be interested in) in accordance with your marketing preferences;
+   - marketing communications (about Servcy or another product or service we think you might be interested in) in accordance with your marketing preferences;
    - asking you for feedback or to take part in any research we are conducting (which we may engage a third party to assist with).
 
 2. To help you share information with those whom you want to share information with and to assist you in making statutory submissions.
@@ -73,7 +73,7 @@ First and foremost, we use your personal data to operate our websites and provid
 
 There will be times when we need to share your personal identifiable data such as name, email id, contact number with third parties. We will take consent from you via our online support chat or email before sharing your personal identifiable data with anyone. We will only disclose your personal data to:
 
-- other companies in the Agroha Solutions group of companies;
+- other companies in the Servcy group of companies;
 
 - third party service providers and partners who assist and enable us to use the personal data to, for example, support delivery of or provide functionality on the website or services, or to market or promote our goods and services to you;
 
@@ -87,17 +87,21 @@ There will be times when we need to share your personal identifiable data such a
 
 2. For individuals in the European Economic Area (EEA), this means that your data may be transferred outside of the EEA. Where your personal data is transferred outside the EEA, it will only be transferred to countries that have been identified as providing adequate protection for EEA data (like New Zealand), or to a third party where we have approved transfer mechanisms in place to protect your personal data – i.e., by entering into the European Commission's Standard Contractual # Clauses, or by ensuring the entity is Privacy Shield certified (for transfers to US-based third parties). For further information, please contact us using the details set out in the “How to contact us” section below.
 
-# Clause 7: Security
+# Clause 7: Data obtained from Google {#google-disclosure}
+
+Servcy's use and transfer of information received from Google APIs to any other app will adhere to [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes) including the [Limited Use](https://developers.google.com/terms/api-services-user-data-policy#additional_requirements_for_specific_api_scopes) requirements.
+
+# Clause 8: Security
 
 Security is a priority for us when it comes to your personal data. We're committed to protecting your personal data and have appropriate technical and organisational measures in place to make sure that happens.
 
-# Clause 8: Retention
+# Clause 9: Retention
 
 1. The length of time we keep your personal data depends on what it is and whether we have an ongoing business need to retain it (for example, to provide you with a service you've requested or to comply with applicable legal, tax or accounting requirements).
 
 2. We'll retain your personal data for as long as we have a relationship with you and for a period of time afterwards where we have an ongoing business need to retain it, in accordance with our data retention policies and practices. Following that period, we'll make sure it's deleted or anonymised.
 
-# Clause 9: Your Rights
+# Clause 10: Your Rights
 
 1. It's your personal data and you have certain rights relating to it. When it comes to marketing communications, you can ask us not to send you these at any time – just follow the unsubscribe instructions contained in the marketing communication, or send your request to contact@servcy.com.
 
