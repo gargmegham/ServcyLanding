@@ -1,60 +1,47 @@
-<h1 align="center">
-  Servcy - one for all platform for all your freelance operations
-</h1>
-<p align="center">
-  <a href="https://app.netlify.com/sites/servcy/deploys" target="_blank">
-    <img src="https://api.netlify.com/api/v1/badges/9be579e4-51a6-4d89-bc2f-22fecba6b5a6/deploy-status" alt="Netlify Status" />
-  </a>
-</p>
-<p align="center">
-  Built with <a href="https://nuxtjs.org/" target="_blank">Nuxt</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Netlify</a>
-</p>
+# Servcy - One For All Platform
 
-## Build Setup
+[Servcy](https://servcy.com) is an open-source software tool kit for all your business needs. We're going on an Open Source spree of creating business solutions.
+
+> Servcy is still in its early days, not everything will be perfect yet, and hiccups may happen. Please let us know of any suggestions, ideas, or bugs that you encounter using GitHub issues, and we will use your feedback to improve on our upcoming releases.
+
+The easiest way to get started with Servcy is by creating a [Servcy Cloud](https://web.servcy.com) account. Servcy Cloud offers a hosted solution for Servcy. If you prefer to self-host Servcy for your personal use, you're free to do so.
+
+## Getting started
+
+### Prerequisite
+
+- [`Node.js`](https://nodejs.org)
+
+### Installing Dependencies
 
 ```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
-$ npm run dev
-
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
+npm install
 ```
 
-## Special Directories
+### Running server
 
-### `assets`
+```bash
+npm run start
+```
 
-The assets directory contains your uncompiled assets such as css, images, animations, svgs, and font files.
+#### Refer Nuxt.js ['Docs'](https://v2.nuxt.com/docs/get-started/installation)
 
-### `components`
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-The components directory contains your Vue.js components. Components make up the different parts of your page and can be reused and imported into your sections, forms and even other common components.
+You are ready to make changes to the code. Do not forget to refresh the browser (in case it does not auto-reload)
 
-### `layouts`
+That's it!
 
-Contains layout files like header, footer, mobile and desktop related components.
+## 📚Documentation
 
-### `pages`
+To see how to Contribute, visit [here](/CONTRIBUTING.md)
 
-This directory contains your application views and routes for blogs and documents. Nuxt will read all the `*.vue` files inside this directory and setup Vue Router automatically.
+## ❤️ Community
 
-### `plugins`
+The Servcy community can be found on GitHub Discussions, where you can ask questions, voice ideas, and share your projects.
 
-The plugins directory contains JavaScript plugins like snackbar that you want to run before instantiating the root Vue.js Application. This is the place to add Vue plugins and to inject functions or constants. Every time you need to use `Vue.use()`, you should create a file in `plugins/` and add its path to plugins in `nuxt.config.js`.
+Our [Code of Conduct](./CODE_OF_CONDUCT.md) applies to all Servcy community channels.
 
-### `static`
+## ⛓️ Security
 
-This directory contains your static files. Each file inside this directory is mapped to `/`.
-
-Example: `/static/robots.txt` is mapped as `/robots.txt`.
-
-### `store`
-
-This directory contains your Vuex store files like snackbar.js. Creating a file in this directory automatically activates Vuex.
+If you believe you have found a security vulnerability in Servcy, we encourage you to responsibly disclose this and not open a public issue. We will investigate all legitimate reports. Email [contact@servcy.com](mailto:contact@servcy.com) to disclose any security vulnerabilities.
