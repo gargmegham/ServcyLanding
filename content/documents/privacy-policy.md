@@ -65,7 +65,7 @@ First and foremost, we use your personal data to operate our websites and provid
 
 5. To protect: So that we can detect and prevent any fraudulent or malicious activity, and make sure that everyone is using our websites and services fairly and in accordance with our terms of use.
 
-6. To market to you: In addition to sending you marketing communications, we may also use your personal data (excluding data obtained from third party integrations) to display targeted advertising to you online – through our own websites and services or through third party websites and their platforms.
+6. To market to you: We only do our marketing by sending you relevant communications, we do not use your personal data to display any targeted advertising to you online be it through our own websites and services, or through third party websites and their platforms.
 
 7. To analyse, aggregate and report: We may use the personal data we collect about you and other users of our websites and services (whether obtained directly or from third parties) to produce aggregated and anonymised analytics and reports, which we may share publicly or with third parties.
 
