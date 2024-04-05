@@ -4,6 +4,7 @@
     <Dashboard />
     <Benefits />
     <UnifiedInbox />
+    <CyclesAndModules />
     <FinalCTA />
   </div>
 </template>
@@ -14,6 +15,7 @@ import UnifiedInbox from "@/components/Sections/UnifiedInbox.vue";
 import Benefits from "@/components/Sections/Benefits.vue";
 import Dashboard from "@/components/Sections/Dashboard.vue";
 import FinalCTA from "@/components/Sections/FinalCTA.vue";
+import CyclesAndModules from "@/components/Sections/CyclesAndModules.vue";
 
 export default {
   name: "Home",
@@ -21,6 +23,7 @@ export default {
     Hero,
     FinalCTA,
     Dashboard,
+    CyclesAndModules,
     UnifiedInbox,
     Benefits,
   },
