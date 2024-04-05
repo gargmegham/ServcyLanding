@@ -1,5 +1,5 @@
 <template>
-  <form class="newsletter-form">
+  <form class="newsletter-form" autocomplete="off">
     <input
       id="cta-input"
       v-model="input"
