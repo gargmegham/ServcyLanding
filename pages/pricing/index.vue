@@ -1,6 +1,6 @@
 <template>
   <div class="servcy-container">
-    <section class="pt-[20vh] pb-[10vh]">
+    <section class="pt-[12vh] pb-[10vh]">
       <div class="flex flex-col items-center text-center">
         <div class="font-axiforma font-extrabold md:text-5xl text-4xl">
           Pricing<br />

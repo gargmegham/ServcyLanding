@@ -17,6 +17,11 @@
         >FAQs
       </NuxtLink>
       <NuxtLink
+        to="/pricing"
+        class="max-sm:hidden font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat"
+        >Pricing
+      </NuxtLink>
+      <NuxtLink
         to="/support"
         class="max-sm:hidden font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat"
         >Contact Us
