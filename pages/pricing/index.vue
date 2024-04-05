@@ -148,7 +148,7 @@ export default {
     };
   },
   mounted() {
-    fetch("https://api.ipregistry.co/?key=d4efnhn98fme2xms").then(
+    fetch(`https://api.ipregistry.co/?key=${process.env.IPREGISTRY_KEY}`).then(
       async (response) => {
         const res = await response.json();
         this.isIndian = res.location.country.code === "IN";
