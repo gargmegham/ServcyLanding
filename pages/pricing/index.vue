@@ -37,85 +37,25 @@
         </div>
       </div>
       <div class="col-span-2 grid grid-rows-2 grid-cols-2 gap-4">
-        <div class="col-span-1 servcy-transparent-bg rounded-lg p-8 row-span-1">
-          <div
-            class="flex items-center font-axiforma font-extrabold md:text-xl text-lg mb-6 text-servcy-wheat"
-          >
-            <img
-              src="@/assets/icons/starter.svg"
-              alt="starter"
-              class="mr-2"
-              width="48"
-              height="48"
-            />
-            <div>
-              Starter
-              <div class="text-sm text-servcy-white">
-                For a team size of 1-10 techies
-              </div>
-            </div>
-          </div>
-        </div>
         <div
-          class="col-span-1 servcy-transparent-bg rounded-lg p-8 row-span-1 relative"
+          class="col-span-1 servcy-transparent-bg rounded-lg p-8 row-span-1"
+          v-for="plan in plans"
+          :key="plan.name"
         >
           <div
-            class="flex items-center font-axiforma font-extrabold md:text-xl text-lg mb-6 text-servcy-wheat"
+            class="flex items-center font-axiforma font-extrabold md:text-xl text-lg mb-6 text-servcy-wheat border-b-2 border-neutral-500 pb-4"
           >
             <img
-              src="@/assets/icons/plus.svg"
-              alt="plus"
+              :src="plan.icon"
+              :alt="plan.name"
               class="mr-2"
               width="48"
               height="48"
             />
             <div>
-              Plus
+              {{ plan.name }}
               <div class="text-sm text-servcy-white">
-                For a team size of 11-25 techies
-              </div>
-            </div>
-          </div>
-          <div
-            class="servcy-most-popular font-axiforma absolute top-[-10px] right-[-10px]"
-          >
-            Most Popular
-          </div>
-        </div>
-        <div class="col-span-1 servcy-transparent-bg rounded-lg p-8 row-span-1">
-          <div
-            class="flex items-center font-axiforma font-extrabold md:text-xl text-lg mb-6 text-servcy-wheat"
-          >
-            <img
-              src="@/assets/icons/business.svg"
-              alt="business"
-              class="mr-2"
-              width="48"
-              height="48"
-            />
-            <div>
-              Business
-              <div class="text-sm text-servcy-white">
-                For a team size of 26-50 techies
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-span-1 servcy-transparent-bg rounded-lg p-8 row-span-1">
-          <div
-            class="flex items-center font-axiforma font-extrabold md:text-xl text-lg mb-6 text-servcy-wheat"
-          >
-            <img
-              src="@/assets/icons/enterprise.svg"
-              alt="enterprise"
-              class="mr-2"
-              width="48"
-              height="48"
-            />
-            <div>
-              Enterprise
-              <div class="text-sm text-servcy-white">
-                For a team size of 50+
+                {{ plan.description }}
               </div>
             </div>
           </div>
@@ -144,6 +84,32 @@ export default {
         { text: "Project budgeting", comingSoon: true },
         { text: "Project budgeting", comingSoon: true },
         { text: "DORA metrics", comingSoon: true },
+      ],
+      plans: [
+        {
+          name: "Starter",
+          description: "For a team size of 1-10 techies",
+          inrPrice: "4,499",
+          icon: "/shots/starter.svg",
+        },
+        {
+          name: "Plus",
+          description: "For a team size of 11-25 techies",
+          icon: "/shots/plus.svg",
+          inrPrice: "9,999",
+        },
+        {
+          name: "Business",
+          description: "For a team size of 26-50 techies",
+          icon: "/shots/business.svg",
+          inrPrice: "17,999",
+        },
+        {
+          name: "Enterprise",
+          description: "For a team size of 50+",
+          icon: "/shots/enterprise.svg",
+          inrPrice: null,
+        },
       ],
     };
   },
