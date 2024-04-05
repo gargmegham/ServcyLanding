@@ -1,7 +1,7 @@
 <template>
   <section
     id="final-cta"
-    class="py-[10vh] flex flex-col text-center justify-center"
+    class="pb-[10vh] flex flex-col text-center justify-center"
   >
     <div>
       <div class="font-axiforma font-extrabold md:text-6xl text-5xl">
@@ -11,8 +11,7 @@
         >
       </div>
       <div class="font-semibold text-servcy-wheat md:text-xl text-lg mt-6">
-        All your Servcy features are just one voice command away with our
-        AI-powered virtual assistant.
+        All your dream features are just one click away, start now!
       </div>
     </div>
     <div class="mt-20">
