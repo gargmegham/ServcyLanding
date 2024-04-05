@@ -36,7 +36,7 @@
           </div>
         </div>
       </div>
-      <div class="col-span-2 grid grid-rows-2 grid-cols-2 gap-4">
+      <div class="relative col-span-2 grid grid-rows-2 grid-cols-2 gap-4">
         <div
           class="col-span-1 servcy-transparent-bg rounded-lg p-8 row-span-1"
           v-for="plan in plans"
@@ -58,6 +58,57 @@
                 {{ plan.description }}
               </div>
             </div>
+          </div>
+          <div class="flex w-full h-20 gap-x-2 opacity-90">
+            <div
+              v-if="plan.inrPrice !== null"
+              class="flex flex-col w-1/3 my-2 rounded-lg font-extrabold font-axiforma text-lg bg-servcy-cream text-servcy-black text-center justify-center items-center"
+            >
+              <div>
+                {{ isIndian ? `${plan.inrPrice} INR` : `${plan.usdPrice} USD` }}
+              </div>
+              <div class="servcy-caption opacity-40">
+                {{
+                  isIndian
+                    ? `${plan.inrPrice / plan.maxSeats} INR/user`
+                    : `${plan.usdPrice / plan.maxSeats} USD/user`
+                }}
+              </div>
+            </div>
+            <div
+              v-else
+              class="flex my-2 w-full rounded-lg font-extrabold font-axiforma text-lg bg-servcy-cream text-servcy-black text-center justify-center items-center"
+            >
+              <a
+                href="mailto:contact@servcy.com"
+                class="flex w-full h-full justify-center items-center !text-servcy-black hover:!text-servcy-wheat"
+              >
+                Contact Us
+              </a>
+            </div>
+            <div
+              v-if="plan.inrPrice !== null"
+              class="flex my-2 w-2/3 rounded-lg font-extrabold font-axiforma text-lg bg-servcy-cream text-servcy-black text-center justify-center items-center"
+            >
+              <a
+                href="mailto:contact@servcy.com"
+                class="flex w-full h-full justify-center items-center !text-servcy-black hover:!text-servcy-wheat"
+              >
+                Get Started
+              </a>
+            </div>
+          </div>
+          <a
+            href="https://web.servcy.com/login"
+            class="flex justify-end ml-auto w-full underline text-xs !text-servcy-wheat hover:!text-servcy-silver"
+          >
+            or start with a trial
+          </a>
+          <div
+            v-if="plan.name === 'Plus'"
+            class="servcy-most-popular font-axiforma absolute top-[-10px] right-[-10px]"
+          >
+            Most Popular
           </div>
         </div>
       </div>
@@ -91,24 +142,31 @@ export default {
           description: "For a team size of 1-10 techies",
           inrPrice: "4,499",
           icon: "/shots/starter.svg",
+          maxSeats: 10,
+          usdPrice: "60",
         },
         {
           name: "Plus",
           description: "For a team size of 11-25 techies",
           icon: "/shots/plus.svg",
           inrPrice: "9,999",
+          usdPrice: "135",
+          maxSeats: 25,
         },
         {
           name: "Business",
           description: "For a team size of 26-50 techies",
           icon: "/shots/business.svg",
           inrPrice: "17,999",
+          maxSeats: 50,
+          usdPrice: "240",
         },
         {
           name: "Enterprise",
           description: "For a team size of 50+",
           icon: "/shots/enterprise.svg",
           inrPrice: null,
+          usdPrice: null,
         },
       ],
     };
@@ -152,5 +210,9 @@ section {
   border-color: rgba(255, 255, 255, 0.05);
   border-image: initial;
   white-space: nowrap;
+}
+.servcy-caption {
+  font-size: 10px;
+  line-height: 12px;
 }
 </style>
