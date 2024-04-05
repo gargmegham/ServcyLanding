@@ -1,10 +1,10 @@
 # Servcy - One For All Platform
 
-[Servcy](https://servcy.com) is an open-source software tool kit for all your business needs. We're going on an Open Source spree of creating business solutions.
+[Servcy](https://servcy.com) provides affordable project management tools to highly efficient engineering teams.
 
 > Servcy is still in its early days, not everything will be perfect yet, and hiccups may happen. Please let us know of any suggestions, ideas, or bugs that you encounter using GitHub issues, and we will use your feedback to improve on our upcoming releases.
 
-The easiest way to get started with Servcy is by creating a [Servcy Cloud](https://web.servcy.com) account. Servcy Cloud offers a hosted solution for Servcy. If you prefer to self-host Servcy for your personal use, you're free to do so.
+The easiest way to get started with Servcy is by creating a [Servcy Cloud](https://web.servcy.com) account. Servcy Cloud offers a hosted solution for Servcy.
 
 ## Getting started
 
