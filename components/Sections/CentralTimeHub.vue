@@ -1,5 +1,8 @@
 <template>
-  <section id="central-time-hub" class="py-[10vh] px-[5%] grid gap-8 items-center grid-cols-2 max-sm:grid-cols-1">
+  <section
+    id="central-time-hub"
+    class="py-[10vh] px-[5%] grid gap-8 items-center grid-cols-2 max-sm:grid-cols-1"
+  >
     <div class="text-left">
       <div class="font-axiforma font-extrabold md:text-5xl text-4xl">
         Analyze all your tracked time in one place
@@ -17,7 +20,11 @@
       </ul>
     </div>
     <div class="max-sm:hidden p-16">
-      <img src="@/assets/icons/central-time-hub.svg" alt="central-time-hub" class="mt-6" />
+      <img
+        src="@/assets/icons/central-time-hub.svg"
+        alt="central-time-hub"
+        class="mt-6"
+      />
     </div>
   </section>
 </template>

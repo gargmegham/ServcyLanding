@@ -1,6 +1,9 @@
 <template>
-  <nuxt-content class="mx-auto px-[5%] pt-[12vh] pb-[8vh] text-servcy-cream font-normal" :document="theBlog"
-    tag="article" />
+  <nuxt-content
+    class="mx-auto px-[5%] pt-[12vh] pb-[8vh] text-servcy-cream font-normal"
+    :document="theBlog"
+    tag="article"
+  />
 </template>
 
 <script>
@@ -14,7 +17,6 @@ export default {
 
 <style lang="scss">
 .nuxt-content {
-
   h1,
   h2,
   h3,
@@ -29,6 +31,6 @@ export default {
 
 .nuxt-content a {
   text-decoration: underline;
-  color: #D1BFAE !important;
+  color: #d1bfae !important;
 }
 </style>

@@ -43,7 +43,7 @@ export default {
   height: 100vh;
 }
 
-.servcy-container>* {
+.servcy-container > * {
   scroll-snap-align: start;
   height: 100vh;
   padding-left: 5%;
