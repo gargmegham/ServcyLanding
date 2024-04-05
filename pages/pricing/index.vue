@@ -149,14 +149,14 @@ export default {
       plans: [
         {
           name: "Starter",
-          description: "For a team size of 1-10 techies",
+          description: "For a team of upto 10 techies",
           icon: "/shots/starter.svg",
           maxSeats: 10,
           price: "49",
         },
         {
           name: "Plus",
-          description: "For a team size of 11-25 techies",
+          description: "For a team of upto 25 techies",
           icon: "/shots/plus.svg",
           price: "99",
           ribbon: "Most Popular",
@@ -164,7 +164,7 @@ export default {
         },
         {
           name: "Business",
-          description: "For a team size of 26-50 techies",
+          description: "For a team of upto 50 techies",
           icon: "/shots/business.svg",
           maxSeats: 50,
           price: "199",
@@ -172,7 +172,7 @@ export default {
         },
         {
           name: "Enterprise",
-          description: "For a team size of 50+",
+          description: "For a team of more than 50 techies",
           icon: "/shots/enterprise.svg",
           price: null,
         },
