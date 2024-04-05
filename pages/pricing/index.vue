@@ -36,9 +36,9 @@
           </div>
         </div>
       </div>
-      <div class="relative col-span-2 grid grid-rows-2 grid-cols-2 gap-4">
+      <div class="col-span-2 grid grid-rows-2 grid-cols-2 gap-4">
         <div
-          class="col-span-1 servcy-transparent-bg rounded-lg p-8 row-span-1"
+          class="relative col-span-1 servcy-transparent-bg rounded-lg p-8 row-span-1"
           v-for="plan in plans"
           :key="plan.name"
         >
@@ -91,13 +91,19 @@
               v-if="plan.price !== null"
               :class="{
                 'flex my-2 w-2/3 rounded-lg border-servcy-wheat font-extrabold font-axiforma text-lg text-center justify-center items-center': true,
-                'servcy-wheat-shadow-bottom': plan.name === 'Plus',
+                'bg-servcy-cream': plan.name === 'Plus',
                 'bg-servcy-black': plan.name !== 'Plus',
               }"
             >
               <a
                 href="mailto:contact@servcy.com"
-                class="flex w-full h-full justify-center items-center font-bold !text-servcy-cream hover:!text-servcy-wheat"
+                :class="{
+                  'flex w-full h-full justify-center items-center font-bold': true,
+                  '!text-servcy-black hover:!text-servcy-green':
+                    plan.name === 'Plus',
+                  '!text-servcy-cream hover:!text-servcy-wheat':
+                    plan.name !== 'Plus',
+                }"
               >
                 Get Started
               </a>
@@ -110,10 +116,10 @@
             or start with a trial
           </a>
           <div
-            v-if="plan.name === 'Plus'"
+            v-if="plan.ribbon"
             class="servcy-most-popular font-axiforma absolute top-[-10px] right-[-10px]"
           >
-            Most Popular
+            {{ plan.ribbon }}
           </div>
         </div>
       </div>
@@ -146,13 +152,14 @@ export default {
           description: "For a team size of 1-10 techies",
           icon: "/shots/starter.svg",
           maxSeats: 10,
-          price: "60",
+          price: "49",
         },
         {
           name: "Plus",
           description: "For a team size of 11-25 techies",
           icon: "/shots/plus.svg",
-          price: "135",
+          price: "99",
+          ribbon: "Most Popular",
           maxSeats: 25,
         },
         {
@@ -160,7 +167,8 @@ export default {
           description: "For a team size of 26-50 techies",
           icon: "/shots/business.svg",
           maxSeats: 50,
-          price: "240",
+          price: "199",
+          ribbon: "~20% Off",
         },
         {
           name: "Enterprise",
