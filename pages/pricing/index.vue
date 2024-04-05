@@ -59,20 +59,21 @@
               </div>
             </div>
           </div>
-          <div class="flex w-full h-20 gap-x-2 opacity-90">
+          <div
+            :class="{
+              'opacity-90': plan.name !== 'Plus',
+              'flex w-full h-20 gap-x-2': true,
+            }"
+          >
             <div
-              v-if="plan.inrPrice !== null"
+              v-if="plan.price !== null"
               class="flex flex-col w-1/3 my-2 rounded-lg font-extrabold font-axiforma text-lg bg-servcy-cream text-servcy-black text-center justify-center items-center"
             >
               <div>
-                {{ isIndian ? `${plan.inrPrice} INR` : `${plan.usdPrice} USD` }}
+                {{ `${plan.price} USD` }}
               </div>
               <div class="servcy-caption opacity-40">
-                {{
-                  isIndian
-                    ? `${plan.inrPrice / plan.maxSeats} INR/user`
-                    : `${plan.usdPrice / plan.maxSeats} USD/user`
-                }}
+                {{ `${plan.price / plan.maxSeats} USD/user` }}
               </div>
             </div>
             <div
@@ -87,12 +88,16 @@
               </a>
             </div>
             <div
-              v-if="plan.inrPrice !== null"
-              class="flex my-2 w-2/3 rounded-lg font-extrabold font-axiforma text-lg bg-servcy-cream text-servcy-black text-center justify-center items-center"
+              v-if="plan.price !== null"
+              :class="{
+                'flex my-2 w-2/3 rounded-lg border-servcy-wheat font-extrabold font-axiforma text-lg text-center justify-center items-center': true,
+                'servcy-wheat-shadow-bottom': plan.name === 'Plus',
+                'bg-servcy-black': plan.name !== 'Plus',
+              }"
             >
               <a
                 href="mailto:contact@servcy.com"
-                class="flex w-full h-full justify-center items-center !text-servcy-black hover:!text-servcy-wheat"
+                class="flex w-full h-full justify-center items-center font-bold !text-servcy-cream hover:!text-servcy-wheat"
               >
                 Get Started
               </a>
@@ -121,7 +126,6 @@ export default {
   name: "Pricing",
   data() {
     return {
-      isIndian: false,
       offerings: [
         { text: "Unlimited Projects, and Issues" },
         { text: "SSO, and Role based access" },
@@ -140,44 +144,32 @@ export default {
         {
           name: "Starter",
           description: "For a team size of 1-10 techies",
-          inrPrice: "4,499",
           icon: "/shots/starter.svg",
           maxSeats: 10,
-          usdPrice: "60",
+          price: "60",
         },
         {
           name: "Plus",
           description: "For a team size of 11-25 techies",
           icon: "/shots/plus.svg",
-          inrPrice: "9,999",
-          usdPrice: "135",
+          price: "135",
           maxSeats: 25,
         },
         {
           name: "Business",
           description: "For a team size of 26-50 techies",
           icon: "/shots/business.svg",
-          inrPrice: "17,999",
           maxSeats: 50,
-          usdPrice: "240",
+          price: "240",
         },
         {
           name: "Enterprise",
           description: "For a team size of 50+",
           icon: "/shots/enterprise.svg",
-          inrPrice: null,
-          usdPrice: null,
+          price: null,
         },
       ],
     };
-  },
-  mounted() {
-    fetch(`https://api.ipregistry.co/?key=${process.env.IPREGISTRY_KEY}`).then(
-      async (response) => {
-        const res = await response.json();
-        this.isIndian = res.location.country.code === "IN";
-      }
-    );
   },
 };
 </script>
