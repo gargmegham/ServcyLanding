@@ -1,32 +1,22 @@
 <template>
-  <section
-    id="unified-inbox"
-    class="py-[10vh] px-[5%] grid gap-4 items-center grid-cols-2 max-sm:grid-cols-1"
-  >
-    <div class="text-left">
-      <div class="font-axiforma font-extrabold md:text-5xl text-4xl">
-        Magic starts with <br />an aggregated inbox
+  <section class="pb-[10vh]" id="unified-inbox">
+    <div class="flex flex-col justify-between items-center text-center">
+      <div>
+        <div class="font-axiforma font-extrabold md:text-5xl text-4xl">
+          Experience the magic<br />of an aggregated inbox
+        </div>
+        <div class="font-semibold md:text-xl text-lg text-servcy-wheat mt-6">
+          See all your emails, messages, notifications, and comments in one
+          place.<br />Convert your inbox items into tasks and save time.
+        </div>
       </div>
-      <ul class="list-disc text-servcy-wheat text-lg">
-        <li class="mt-3">
-          See & reply to all your emails, messages, notifications, and comments
-          from one place.
-        </li>
-        <li class="mt-3">
-          Use AI to prioritize and respond to the most important messages first.
-        </li>
-        <li class="mt-3">Connect your favorite tools and save time today.</li>
-        <li class="mt-3">
-          Convert your inbox items into tasks, calendar events, notes, or
-          reminders.
-        </li>
-      </ul>
     </div>
-    <div class="max-sm:hidden p-16">
+    <div class="mt-16">
       <img
-        src="@/assets/icons/unified-inbox.svg"
-        alt="unified-inbox"
-        class="mt-6"
+        src="/shots/inbox.svg"
+        alt="inbox-image"
+        width="100%"
+        height="100%"
       />
     </div>
   </section>

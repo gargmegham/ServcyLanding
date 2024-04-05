@@ -161,7 +161,7 @@ export default {
   },
   mounted() {
     this.timeInterval = setInterval(() => {
-      if (this.rotateText <= 2) {
+      if (this.rotateText < this.hubFor.length - 1) {
         this.rotateText++;
       } else {
         this.rotateText = 0;

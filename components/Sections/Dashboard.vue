@@ -16,7 +16,7 @@
     <div class="mt-16">
       <img
         src="/shots/dashboard.svg"
-        alt="hero-image"
+        alt="dashboard-image"
         width="100%"
         height="100%"
       />

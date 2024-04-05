@@ -2,6 +2,7 @@
   <div class="servcy-container">
     <Hero />
     <Dashboard />
+    <Benefits />
     <UnifiedInbox />
     <FinalCTA />
   </div>
@@ -10,6 +11,7 @@
 <script>
 import Hero from "@/components/Sections/Hero.vue";
 import UnifiedInbox from "@/components/Sections/UnifiedInbox.vue";
+import Benefits from "@/components/Sections/Benefits.vue";
 import Dashboard from "@/components/Sections/Dashboard.vue";
 import FinalCTA from "@/components/Sections/FinalCTA.vue";
 
@@ -20,6 +22,7 @@ export default {
     FinalCTA,
     Dashboard,
     UnifiedInbox,
+    Benefits,
   },
 };
 </script>
