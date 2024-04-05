@@ -47,7 +47,7 @@ export default {
         {
           question: "Is Servcy for people like me?",
           answer:
-            "Most of our users are Founders, CXOs, Freelancers and Software developers. Regardless of whether your goal is to achieve productivity, improve organization, or excel in time management, Servcy is ready to be your reliable ally.",
+            "Most of our users are Founders, CXOs, Freelancers, and Software developers. Regardless of whether your goal is to achieve productivity, improve organization, or excel in time management, Servcy is ready to be your reliable ally.",
         },
         {
           question: "Does my free trial limit my access to features?",
@@ -67,7 +67,7 @@ export default {
         {
           question: "Is Servcy a CRM?",
           answer:
-            "Servcy is a productivity tool that helps you track & manage your projects, payments, inbox, contracts, documents and time. It's an easy-to-use software built to help small business owners streamline their business processes from inquiry to invoicing.",
+            "Servcy is a productivity tool that helps you track & manage your projects, time, inbox, and budget. It's an easy-to-use software built to help small business owners streamline their business processes.",
         },
       ],
     };
