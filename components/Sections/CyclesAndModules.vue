@@ -18,6 +18,7 @@
         <img
           src="/shots/cycles-modules-2.svg"
           alt="Cycles and Modules 2"
+          id="cyc-mod-2"
           width="100%"
           height="100%"
         />
@@ -27,6 +28,7 @@
           <img
             src="/shots/cycles-modules-1.svg"
             alt="Cycles and Modules 1"
+            id="cyc-mod-1"
             width="100%"
             height="100%"
           />
@@ -35,6 +37,7 @@
           <img
             src="/shots/cycles-modules-4.svg"
             alt="Cycles and Modules 4"
+            id="cyc-mod-4"
             width="100%"
             height="100%"
           />
@@ -44,6 +47,7 @@
         <img
           src="/shots/cycles-modules-3.svg"
           alt="Cycles and Modules 3"
+          id="cyc-mod-3"
           width="100%"
           height="100%"
         />
@@ -57,3 +61,22 @@ export default {
   name: "CyclesAndModules",
 };
 </script>
+
+<style scoped>
+#cyc-mod-3 {
+  mask-image: linear-gradient(
+    to left,
+    transparent -10%,
+    rgba(0, 0, 0, 0.57) 33.98%,
+    black 100%
+  );
+}
+#cyc-mod-2 {
+  mask-image: linear-gradient(
+    to right,
+    transparent -10%,
+    rgba(0, 0, 0, 0.57) 33.98%,
+    black 100%
+  );
+}
+</style>
