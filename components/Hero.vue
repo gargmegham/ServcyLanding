@@ -3,11 +3,11 @@
         <div
             class="flex min-h-[56vh] flex-col items-center justify-between text-center">
             <div>
-                <div
+                <h1
                     class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
                     Project management<br />
                     for highly efficient teams
-                </div>
+                </h1>
                 <div
                     class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
                     Juggling multiple apps for your project lifecycle?<br />

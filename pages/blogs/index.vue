@@ -2,9 +2,9 @@
     <div class="min-h-screen bg-servcy-green px-[5%] py-[8vh]">
         <div class="mt-16 flex h-64 flex-row justify-between text-servcy-cream">
             <div>
-                <div class="font-axiforma text-5xl font-extrabold md:text-6xl">
+                <h1 class="font-axiforma text-5xl font-extrabold md:text-6xl">
                     Welcome to Servcy Academy
-                </div>
+                </h1>
                 <div
                     class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
                     An interactive suite of blog posts for helping you become

@@ -1,10 +1,10 @@
 <template>
     <section
         class="flex flex-col bg-servcy-green px-[5%] pt-[12vh] text-center">
-        <div
+        <h1
             class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
             Contact us
-        </div>
+        </h1>
         <div class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
             Questions? Concerns? We're here to support you every step of the
             way.<br />We have real, live people available to chat 7 days a week,

@@ -1,14 +1,14 @@
 <template>
     <section class="h-screen pb-[10vh] pt-[12vh]">
         <div class="flex flex-col items-center text-center">
-            <div
+            <h1
                 class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
                 Pricing<br />
                 <span
                     class="font-axiforma text-2xl font-extrabold text-servcy-cream md:text-3xl"
                     >that works for you—today and tomorrow</span
                 >
-            </div>
+            </h1>
         </div>
         <div class="mt-16 grid grid-cols-3 gap-4">
             <div class="col-span-1">
