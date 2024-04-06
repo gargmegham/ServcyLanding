@@ -1,5 +1,5 @@
 <template>
-    <section class="pb-[10vh] pt-[20vh]">
+    <section class="pb-[10vh] pt-[12vh]">
         <div
             class="flex min-h-[56vh] flex-col items-center justify-between text-center">
             <div>

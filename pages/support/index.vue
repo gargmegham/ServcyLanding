@@ -1,15 +1,15 @@
 <template>
-    <section class="flex flex-col bg-servcy-green px-[5%] text-center">
+    <section class="flex flex-col bg-servcy-green px-[5%] text-center pt-[12vh]">
         <div
-            class="font-axiforma pb-10 pt-24 text-6xl font-extrabold text-servcy-cream md:text-8xl">
+            class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
             Contact us
         </div>
-        <div class="pb-16 text-lg font-semibold text-servcy-wheat md:text-xl">
+        <div class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
             Questions? Concerns? We're here to support you every step of the
             way.<br />We have real, live people available to chat 7 days a week,
             and online help resources that are available 24 hours a day.
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-center mt-6">
             <div class="mx-4">
                 <button
                     class="servcy-wheat-shadow-left-bottom mt-5 rounded bg-servcy-black p-3">
