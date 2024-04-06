@@ -37,8 +37,8 @@
                 ]
             }">
             <div
-                class="xs:sm:grid-cols-1 mt-10 grid grid-cols-3 gap-3 py-10 xl:grid-cols-4">
-                <div v-for="(blogPost, index) of list" :key="index" class="m-4">
+                class="xs:sm:grid-cols-1 mt-10 grid grid-cols-3 gap-8 py-10 xl:grid-cols-4">
+                <div v-for="(blogPost, index) of list" :key="index">
                     <div
                         class="blog-card servcy-card-bg h-full rounded-xl p-4"
                         elevation="2">
