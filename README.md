@@ -10,7 +10,7 @@ The easiest way to get started with Servcy is by creating a [Servcy Cloud](https
 
 ### Prerequisite
 
-- [`Node.js`](https://nodejs.org)
+-   [`Node.js`](https://nodejs.org)
 
 ### Installing Dependencies
 
