@@ -43,7 +43,7 @@
                         class="blog-card servcy-card-bg h-full rounded-xl p-4"
                         elevation="2">
                         <NuxtLink
-                            :to="{ path: blogPost.path }"
+                            :to="{ path: blogPost._path }"
                             :key="blogPost._id"
                             class="blog-link">
                             <div
