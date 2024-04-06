@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "time management"]
+reading_time: "3"
 title: "🕰️ 10 Time Management Tips for Freelancers ⏰"
 description: "Freelancers are often lauded for their ability to work independently and manage their own time. But while this freedom can be a great perk, it can also lead to some bad habits when it comes to time management."
 ---

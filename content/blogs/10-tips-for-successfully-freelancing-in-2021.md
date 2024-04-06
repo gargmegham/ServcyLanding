@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "tips"]
+reading_time: "3"
 title: "10 Tips for Successfully Freelancing in 2021 😎"
 description: "Freelancing can be a great way to earn a living while having the flexibility to work from home or anywhere else you have an internet connection. However, it can also be a bit of a challenge to get started and to find clients."
 ---

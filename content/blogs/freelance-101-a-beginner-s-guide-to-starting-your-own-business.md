@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "business", "beginner"]
+reading_time: "3"
 title: "Freelance 101: A Beginner's Guide to Starting Your Own Business 💼"
 description: "Are you thinking about starting your own freelance business? Not sure where to start?"
 ---

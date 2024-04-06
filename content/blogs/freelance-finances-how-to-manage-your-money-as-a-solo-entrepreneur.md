@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "finances", "solo entrepreneur"]
+reading_time: "3"
 title: "Freelance Finances: How to Manage Your Money as a Solo Entrepreneur 💰💸"
 description: "Solo entrepreneurs have a lot on their plate. In addition to running their business, they have to wear many hats, including that of financial manager. This can be a daunting task, especially if you're not used to handling your own finances."
 ---

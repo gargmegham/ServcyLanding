@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "clients", "social media"]
+reading_time: "3"
 title: "5 Ways to Find and Keep Great Freelance Clients 🎯"
 description: "It's no secret that the freelance economy is booming. In fact, according to a recent report by Upwork and Freelancers Union, 57.3 million Americans are now freelancing - that's up from 53 million in 2014."
 ---

@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "parenting", "work-life balance"]
+reading_time: "3"
 title: "👨‍👩‍👧‍👦 Freelancing while Parenting: Balancing Work and Family"
 description: "When it comes to freelancing and parenting, it can be difficult to find a balance between work and family. It's important to make sure that you're spending enough time with your family, while also getting your work done."
 ---

@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "tools"]
+reading_time: "3"
 title: "🌟 The Top Tools and Resources for Freelancers"
 description: "As a freelancer, you are always looking for ways to work smarter, not harder. To that end, we've compiled a list of our favorite tools and resources that help us work more efficiently and effectively."
 ---

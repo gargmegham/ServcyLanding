@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "tips"]
+reading_time: "3"
 title: "The Do's and Don'ts of Freelancing: Expert Advice from Successful Freelancers ⛽️"
 description: "As a freelancer, you are in control of your own career. You can work as much or as little as you want, and you can choose the projects that you want to work on. But with that freedom comes a lot of responsibility."
 ---

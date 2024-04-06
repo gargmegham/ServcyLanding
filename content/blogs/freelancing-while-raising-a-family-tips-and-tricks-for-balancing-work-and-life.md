@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "work-life balance", "family", "tips"]
+reading_time: "3"
 title: "Freelancing While Raising a Family: Tips and Tricks for Balancing Work and Life"
 description: "As a freelancer, you have the unique opportunity to create your own schedule and work from home. But if you're also juggling the responsibilities of raising a family, you might find it difficult to strike the right balance between work and home life."
 ---

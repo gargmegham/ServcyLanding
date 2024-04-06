@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "full-time", "pros and cons"]
+reading_time: "3"
 title: "Freelancing Full-Time: Is It Right for You? 💻"
 description: "There's no question that freelancing has become a popular way to make a living. In fact, a recent study by Upwork and Freelancers Union found that 57 million Americans are freelancing today."
 ---

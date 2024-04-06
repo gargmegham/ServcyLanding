@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "tips"]
+reading_time: "3"
 title: "Tips for Successfully Freelancing in a Crowded Market 👨‍👨‍👦‍👦"
 description: "As a freelancer, it can be tough to stand out in a crowded marketplace. With so much competition, how can you make sure that clients will choose you over someone else?"
 ---

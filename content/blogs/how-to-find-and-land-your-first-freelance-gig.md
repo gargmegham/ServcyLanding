@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "tips"]
+reading_time: "3"
 title: "🔍 How to Find and Land Your First Freelance Gig 💼"
 description: "As a freelancer, one of the most difficult things can be finding new clients and gigs. You may be great at what you do, but if no one knows about you, it can be hard to get work. In this post, we'll give you some tips on how to find and land your first freelance gig. 💪"
 ---

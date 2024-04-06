@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "tools"]
+reading_time: "3"
 title: "The Essential Freelancer's Toolkit: Must-Have Tools and Resources ✅"
 description: "As a freelancer, you are always on the lookout for new and better tools to help you work more efficiently and effectively. And while there are a lot of great tools out there, it can be tough to know which ones are really worth your time and money."
 ---

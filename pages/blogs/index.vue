@@ -64,7 +64,7 @@
                                 </div>
                             </div>
                             <div
-                                class="mb-4 border-b-2 border-servcy-wheat pb-4 text-xs font-thin">
+                                class="mb-4 flex justify-between border-b-2 border-servcy-wheat pb-4 text-xs font-thin">
                                 <div class="text-servcy-black">
                                     {{
                                         new Date(
@@ -76,6 +76,9 @@
                                             day: "numeric"
                                         })
                                     }}
+                                </div>
+                                <div class="text-servcy-black">
+                                    {{ blogPost.reading_time }} minute read
                                 </div>
                             </div>
                             <div class="mb-4 flex">

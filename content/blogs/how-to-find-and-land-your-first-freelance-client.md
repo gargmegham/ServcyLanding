@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "clients", "tips"]
+reading_time: "3"
 title: "👀 How to Find and Land Your First Freelance Client 👋"
 description: "When you're new to freelancing, the hardest part is usually finding clients. Once you've landed a few clients and have some good work under your belt, things tend to get easier. But when you're just starting out, it can be tough to know where to look for clients or how to land that first gig. 🤔"
 ---

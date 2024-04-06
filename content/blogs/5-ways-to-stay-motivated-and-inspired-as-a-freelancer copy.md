@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "motivation", "inspiration"]
+reading_time: "3"
 title: "5 Ways to Stay Motivated and Inspired as a Freelancer 💪"
 description: "When it comes to running your own business, there are a lot of ups and downs. It can be difficult to keep your motivation high and your inspiration flowing when you're facing challenges and roadblocks. But it's important to stay motivated and inspired, as it will help you push through the tough times and come out on top."
 ---

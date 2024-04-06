@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "contract negotiation"]
+reading_time: "3"
 title: "The Do's and Don'ts of Freelance Contract Negotiation 🛟"
 description: "As a freelancer, you are in a unique position when it comes to negotiating your contracts. You are your own boss, which means that you have the final say in what you agree to and what you don't. However, this also means that you are at a disadvantage when it comes to negotiating your contracts, because you don't have the backing of a company."
 ---

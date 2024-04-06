@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "career", "tips"]
+reading_time: "3"
 title: "💻 How to Make Freelancing a Sustainable Career Choice 🌍"
 description: "As the world of work continues to evolve, more and more people are choosing to freelance instead of pursuing a traditional 9-to-5 job. And it's no wonder why — freelancing offers a lot of advantages, such as the ability to set your own hours, work from anywhere in the world, and be your own boss. 🙌"
 ---

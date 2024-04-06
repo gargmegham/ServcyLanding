@@ -1,6 +1,7 @@
 ---
-last_updated: "2021-09-30"
+last_updated: "2024-02-30"
 tags: ["freelancing", "productivity", "organization"]
+reading_time: "3"
 title: "5️⃣ Ways to Stay Productive and Organized as a Freelancer 🗂️"
 description: "The life of a freelancer can be a bit of a balancing act. On one hand, you have the freedom to work from anywhere and set your own hours. On the other hand, you have to be highly organized and self-motivated to get the job done."
 ---
