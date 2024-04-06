@@ -1,4 +1,6 @@
 ---
+last_updated: "2021-09-30"
+tags: ["freelancing", "business", "beginner"]
 title: "Freelance 101: A Beginner's Guide to Starting Your Own Business 💼"
 description: "Are you thinking about starting your own freelance business? Not sure where to start?"
 ---
@@ -11,9 +13,9 @@ You're in the right place!
 
 In this article, we'll cover the basics of starting a freelance business, including how to:
 
-- Choose the right freelance business model for you 🏢
-- Find your first clients 🤝
-- Get started with the right tools and resources 🛠️
+-   Choose the right freelance business model for you 🏢
+-   Find your first clients 🤝
+-   Get started with the right tools and resources 🛠️
 
 Let's get started!
 
@@ -37,13 +39,13 @@ One of the first decisions you'll need to make when starting a freelance busines
 
 ### Here are four of the most popular freelance business models:
 
-- Solopreneur: This is the most common type of freelance business. As a solopreneur, you'll be responsible for all aspects of your business, from finding clients to doing the work and everything in between. 👨‍💻
+-   Solopreneur: This is the most common type of freelance business. As a solopreneur, you'll be responsible for all aspects of your business, from finding clients to doing the work and everything in between. 👨‍💻
 
-- Virtual assistant: A virtual assistant provides administrative and/or personal support to clients. Common tasks include scheduling appointments, managing email, and providing customer service. 📅
+-   Virtual assistant: A virtual assistant provides administrative and/or personal support to clients. Common tasks include scheduling appointments, managing email, and providing customer service. 📅
 
-- Freelance writer: A freelance writer creates content for clients, including blog posts, articles, website copy, and more. 📝
+-   Freelance writer: A freelance writer creates content for clients, including blog posts, articles, website copy, and more. 📝
 
-- Freelance designer: A freelance designer creates visual content for clients, including logos, website designs, infographics, and more. 🎨
+-   Freelance designer: A freelance designer creates visual content for clients, including logos, website designs, infographics, and more. 🎨
 
 There are many other types of freelance businesses, but these are some of the most popular.
 
@@ -53,10 +55,10 @@ Now that you know what type of freelance business you want to start, it's time t
 
 ### Here are a few ideas to get you started:
 
-- Network with people you know: Let your family and friends know that you're starting a freelance business and ask if they know anyone who might need your services. 🗣️
+-   Network with people you know: Let your family and friends know that you're starting a freelance business and ask if they know anyone who might need your services. 🗣️
 
-- Use social media: Use social media to promote your freelance business and attract potential clients. LinkedIn is a great platform for connecting with other professionals, and Twitter and Instagram can be used to showcase your work and attract potential clients. 📱
+-   Use social media: Use social media to promote your freelance business and attract potential clients. LinkedIn is a great platform for connecting with other professionals, and Twitter and Instagram can be used to showcase your work and attract potential clients. 📱
 
-- Attend events: Attend local business events and meetups to connect with potential clients. 🤝
+-   Attend events: Attend local business events and meetups to connect with potential clients. 🤝
 
-- Get involved with online communities: There are many online communities for freelancers, such as [Freelance Switch](https://www.freelanceswitch.com/), [Upwork](https://www.upwork.com/), and [Fiverr](https://www.fiverr.com/). These communities can
+-   Get involved with online communities: There are many online communities for freelancers, such as [Freelance Switch](https://www.freelanceswitch.com/), [Upwork](https://www.upwork.com/), and [Fiverr](https://www.fiverr.com/). These communities can

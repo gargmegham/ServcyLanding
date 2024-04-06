@@ -1,4 +1,6 @@
 ---
+last_updated: "2021-09-30"
+tags: ["freelancing", "time management"]
 title: "5 Time Management Tips for Freelancers 🕒"
 description: "As a freelancer, time management is key to your success. You need to be able to juggle multiple clients and projects at once, all while meeting deadlines and keeping your quality of work high. It can be a challenge, but with these five tips, you can master time management as a freelancer."
 ---

@@ -1,4 +1,5 @@
 ---
+last_updated: "2021-09-30"
 title: "The Benefits of Diversifying Your Income as a Freelancer 🖲️"
 description: "As a freelancer, it's important to have a diversified income in order to have a stable financial situation. There are many benefits to diversifying your income as a freelancer, and in this blog post, we'll explore some of those benefits."
 ---
