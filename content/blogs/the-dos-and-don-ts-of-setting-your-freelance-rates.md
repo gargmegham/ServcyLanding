@@ -1,5 +1,6 @@
 ---
 last_updated: "2021-09-30"
+tags: ["freelancing", "rates"]
 title: "The Dos and Don'ts of Setting Your Freelance Rates ♻️"
 description: "When it comes to setting your freelance rates, there are a few things you need to take into account."
 ---

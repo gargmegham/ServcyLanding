@@ -1,5 +1,6 @@
 ---
 last_updated: "2021-09-30"
+tags: ["freelancing", "tips"]
 title: "The Benefits and Challenges of Freelancing: An Insider's Perspective"
 description: "There are many benefits to freelancing, including the ability to choose your own projects, set your own hours, and work from anywhere in the world. However, freelancing also has its challenges, including the need to find new clients regularly and the lack of job security."
 ---

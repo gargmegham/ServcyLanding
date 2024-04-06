@@ -1,5 +1,6 @@
 ---
 last_updated: "2021-09-30"
+tags: ["freelancing", "networking", "tips"]
 title: "🤝 Networking for Freelancers: How to Build Your Professional Network"
 description: "As a freelancer, one of the most important things you can do is build a strong professional network. Your network can provide you with leads, referrals, advice, support, and even just a sounding board for your ideas."
 ---

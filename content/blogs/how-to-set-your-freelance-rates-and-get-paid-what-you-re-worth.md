@@ -1,5 +1,6 @@
 ---
 last_updated: "2021-09-30"
+tags: ["freelancing", "rates", "tips"]
 title: "💰 How to Set Your Freelance Rates and Get Paid What You're Worth 💸"
 description: "As a freelancer, setting your rates can be one of the most difficult and anxiety-inducing parts of the job. After all, you want to get paid what you're worth, but you also don't want to price yourself out of work. 💼"
 ---

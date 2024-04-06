@@ -1,5 +1,6 @@
 ---
 last_updated: "2021-09-30"
+tags: ["freelancing", "productivity"]
 title: "💻💼 Maximizing Your Productivity as a Freelancer"
 description: "As a freelancer, you are your own boss. You make your own hours and you are in control of your own destiny. But with that freedom comes a great deal of responsibility. You are responsible for finding your own clients, managing your own time, and ensuring that you are productive enough to meet your deadlines and make a living."
 ---

@@ -1,5 +1,6 @@
 ---
 last_updated: "2021-09-30"
+tags: ["freelancing", "clients", "negotiation"]
 title: "💰 How to Negotiate Rates with Clients as a Freelancer 💼"
 description: "As a freelancer, one of the most important things you can do is negotiate your rates with clients. Not only will this help you earn more money, but it will also help you build better relationships with your clients. 🤝"
 ---

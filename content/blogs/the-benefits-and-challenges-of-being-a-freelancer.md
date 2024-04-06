@@ -1,5 +1,6 @@
 ---
 last_updated: "2021-09-30"
+tags: ["freelancing", "tips"]
 title: "👨‍💻 The Benefits and Challenges of Being a Freelancer"
 description: "The freelance economy has been on the rise in recent years, and it's no surprise why. The ability to work from anywhere, set your own hours, and be your own boss are just a few of the reasons why people are drawn to freelancing."
 ---

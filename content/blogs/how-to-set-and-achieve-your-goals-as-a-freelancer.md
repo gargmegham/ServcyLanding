@@ -1,5 +1,6 @@
 ---
 last_updated: "2021-09-30"
+tags: ["freelancing", "goals", "tips"]
 title: "🎯 How to Set and Achieve Your Goals as a Freelancer 🚀"
 description: "As a freelancer, one of the most important things you can do is set goals. Not only will this help you stay on track, but it will also help you measure your progress and keep your motivation high. 🙌"
 ---

@@ -1,5 +1,6 @@
 ---
 last_updated: "2021-09-30"
+tags: ["freelancing", "tips"]
 title: "🚀 How to Stand Out as a Freelancer in a Competitive Industry"
 description: "💪 As a freelancer, it's important to stand out from the crowd in order to get ahead. In a competitive industry, this can be difficult, but it's not impossible"
 ---

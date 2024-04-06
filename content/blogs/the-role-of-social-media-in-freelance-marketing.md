@@ -1,5 +1,6 @@
 ---
 last_updated: "2021-09-30"
+tags: ["freelancing", "social media", "marketing"]
 title: "The Role of Social Media in Freelance Marketing 📣"
 description: "As a freelancer, you are always looking for new clients and ways to market your services. Social media is a great way to connect with potential clients and showcase your work. In this blog post, we will discuss the role of social media in freelance marketing."
 ---

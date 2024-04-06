@@ -1,5 +1,6 @@
 ---
 last_updated: "2021-09-30"
+tags: ["freelancing", "marketing", "tips"]
 title: "Mastering the Art of Freelance Marketing 🌐: Strategies and Tactics 📈"
 description: "The freelance economy is booming and marketing your services can be a great way to land new clients and grow your business. But, how do you market your freelance business effectively?"
 ---
