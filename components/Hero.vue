@@ -130,7 +130,7 @@ const redirectToLogin = () => {
         alert("Please enter a valid email address")
         return
     }
-    window.open(`https://web.servcy.com/login?email=${email.value}`, "_self")
+    window.open(`https://web.servcy.com/login?email=${email.value}`, "_blank")
 }
 onBeforeUnmount(() => {
     clearInterval(timeInterval.value)
