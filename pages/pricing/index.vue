@@ -114,59 +114,63 @@
     </section>
 </template>
 
-<script>
-export default {
-    name: "Pricing",
-    data() {
-        return {
-            offerings: [
-                { text: "Unlimited Projects, and Issues" },
-                { text: "SSO, and Role based access" },
-                { text: "AI assistance" },
-                { text: "10+ Integrations" },
-                { text: "Custom analytics" },
-                { text: "Priority support" },
-                { text: "Feature Requests", disclaimer: "(Subject to voting)" },
-                { text: "APIs, Webhooks", comingSoon: true },
-                { text: "Time tracking", comingSoon: true },
-                { text: "Project budgeting", comingSoon: true },
-                { text: "Project budgeting", comingSoon: true },
-                { text: "DORA metrics", comingSoon: true }
-            ],
-            plans: [
-                {
-                    name: "Starter",
-                    description: "For a team of upto 10 techies",
-                    icon: "/shots/starter.svg",
-                    maxSeats: 10,
-                    price: "49"
-                },
-                {
-                    name: "Plus",
-                    description: "For a team of upto 25 techies",
-                    icon: "/shots/plus.svg",
-                    price: "99",
-                    ribbon: "Most Popular",
-                    maxSeats: 25
-                },
-                {
-                    name: "Business",
-                    description: "For a team of upto 50 techies",
-                    icon: "/shots/business.svg",
-                    maxSeats: 50,
-                    price: "199",
-                    ribbon: "~20% Off"
-                },
-                {
-                    name: "Enterprise",
-                    description: "For a team of more than 50 techies",
-                    icon: "/shots/enterprise.svg",
-                    price: null
-                }
-            ]
-        }
+<script setup>
+const offerings = [
+    { text: "Unlimited Projects, and Issues" },
+    { text: "SSO, and Role based access" },
+    { text: "AI assistance" },
+    { text: "10+ Integrations" },
+    { text: "Custom analytics" },
+    { text: "Priority support" },
+    { text: "Feature Requests", disclaimer: "(Subject to voting)" },
+    { text: "APIs, Webhooks", comingSoon: true },
+    { text: "Time tracking", comingSoon: true },
+    { text: "Project budgeting", comingSoon: true },
+    { text: "Project budgeting", comingSoon: true },
+    { text: "DORA metrics", comingSoon: true }
+]
+const plans = [
+    {
+        name: "Starter",
+        description: "For a team of upto 10 techies",
+        icon: "/shots/starter.svg",
+        maxSeats: 10,
+        price: "49"
+    },
+    {
+        name: "Plus",
+        description: "For a team of upto 25 techies",
+        icon: "/shots/plus.svg",
+        price: "99",
+        ribbon: "Most Popular",
+        maxSeats: 25
+    },
+    {
+        name: "Business",
+        description: "For a team of upto 50 techies",
+        icon: "/shots/business.svg",
+        maxSeats: 50,
+        price: "199",
+        ribbon: "~20% Off"
+    },
+    {
+        name: "Enterprise",
+        description: "For a team of more than 50 techies",
+        icon: "/shots/enterprise.svg",
+        price: null
     }
-}
+]
+useHead({
+    title: "Servcy Pricing",
+    meta: [
+        {
+            hid: "description",
+            name: "description",
+            content:
+                "Servcy's pricing plans for teams of all sizes. Start with a 7 day free trial today."
+        }
+    ]
+})
 </script>
 
 <style scoped>

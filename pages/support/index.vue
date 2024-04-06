@@ -1,5 +1,6 @@
 <template>
-    <section class="flex flex-col bg-servcy-green px-[5%] text-center pt-[12vh]">
+    <section
+        class="flex flex-col bg-servcy-green px-[5%] pt-[12vh] text-center">
         <div
             class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
             Contact us
@@ -9,7 +10,7 @@
             way.<br />We have real, live people available to chat 7 days a week,
             and online help resources that are available 24 hours a day.
         </div>
-        <div class="flex justify-center mt-6">
+        <div class="mt-6 flex justify-center">
             <div class="mx-4">
                 <button
                     class="servcy-wheat-shadow-left-bottom mt-5 rounded bg-servcy-black p-3">
@@ -36,13 +37,15 @@
     </section>
 </template>
 
-<script>
-import FAQs from "@/components/FAQs.vue"
-
-export default {
-    name: "Support",
-    components: {
-        FAQs
-    }
-}
+<script setup>
+useHead({
+    title: "Servcy Support",
+    meta: [
+        {
+            hid: "description",
+            name: "description",
+            content: "Servcy's support page for all the help you need."
+        }
+    ]
+})
 </script>

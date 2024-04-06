@@ -1,9 +1,21 @@
 <script lang="ts" setup>
 const { slug } = useRoute().params
+
+useHead({
+    title: "Servcy Docs",
+    meta: [
+        {
+            hid: "description",
+            name: "description",
+            content: "Servcy's TOS, Privacy Policy, and other legal documents."
+        }
+    ]
+})
 </script>
 
 <template>
-    <article class="servcy-docs min-h-screen flex justify-center bg-servcy-green px-[10%] pb-10 pt-[10vh] text-servcy-cream">
+    <article
+        class="servcy-docs flex min-h-screen justify-center bg-servcy-green px-[10%] pb-10 pt-[10vh] text-servcy-cream">
         <ContentDoc :path="`/documents/${slug}`" v-slot="{ doc }">
             <div class="content mt-4 p-5">
                 <ContentRendererMarkdown :value="doc" />
