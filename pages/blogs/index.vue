@@ -88,7 +88,8 @@
                                     {{ tag }}
                                 </div>
                             </div>
-                            <div class="h-20 text-sm text-servcy-black">
+                            <div
+                                class="h-20 overflow-hidden text-sm text-servcy-black">
                                 {{ blogPost.description }}
                             </div>
                         </NuxtLink>
@@ -106,9 +107,6 @@ const searchTerm = ref("")
 </script>
 
 <style scoped>
-.servcy-text-xss {
-    font-size: 0.625rem;
-}
 .blog-link {
     text-decoration: none;
 }

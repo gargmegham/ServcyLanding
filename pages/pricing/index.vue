@@ -175,12 +175,6 @@ section {
     padding-right: 10%;
     background-color: #032123;
 }
-.servcy-transparent-bg {
-    background: linear-gradient(
-        rgba(255, 255, 255, 0.02) 0%,
-        rgba(255, 255, 255, 0.05) 100%
-    );
-}
 .servcy-most-popular {
     display: flex;
     -webkit-box-align: center;
