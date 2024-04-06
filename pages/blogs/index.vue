@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-servcy-green px-[5%] py-[8vh]">
+    <div class="bg-servcy-green px-[5%] py-[8vh] min-h-screen">
         <div class="mt-16 flex h-64 flex-row justify-between text-servcy-cream">
             <div>
                 <div class="font-axiforma text-5xl font-extrabold md:text-6xl">
@@ -14,7 +14,8 @@
                 <form class="servcy-form mt-6" autocomplete="off">
                     <input
                         id="servcy-input"
-                        placeholder="Search for a blog post..." />
+                        placeholder="Search for a blog post..." 
+                        v-model="searchTerm" />
                 </form>
             </div>
             <div class="max-md:hidden">
@@ -38,7 +39,9 @@
             }">
             <div
                 class="xs:sm:grid-cols-1 mt-10 grid grid-cols-3 gap-8 py-10 xl:grid-cols-4">
-                <div v-for="(blogPost, index) of list" :key="index">
+                <div v-for="(blogPost, index) of list.filter(
+                    (blogPost) => blogPost.title.toLowerCase().includes(searchTerm.toLowerCase()) || blogPost.description.toLowerCase().includes(searchTerm.toLowerCase())
+                )" :key="index">
                     <div
                         class="blog-card servcy-card-bg h-full rounded-xl p-4"
                         elevation="2">
@@ -69,6 +72,12 @@
         </ContentList>
     </div>
 </template>
+
+<script setup>
+import { ref } from 'vue';
+
+const searchTerm = ref('');
+</script>
 
 <style scoped>
 .blog-link {
