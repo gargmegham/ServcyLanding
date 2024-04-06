@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - One app to manage them all",
+    titleTemplate: "%s - Built for high performance teams",
     title: "Servcy",
     htmlAttrs: {
       lang: "en",
@@ -16,7 +16,7 @@ export default {
         hid: "description",
         name: "description",
         content:
-          "Servcy is for Founders, CXOs, Freelancers and Software developers. We all use different softwares to manage our workday, but what if you could have control over all of them in one place? Servcy helps you see it, analyse it and do it all in one place.",
+          "Servcy is a project management suite for highly efficient teams. Consolidate now by tracking issues, time and budget all in one place.",
       },
       { property: "og:site_name", content: "Servcy" },
       { hid: "og:type", property: "og:type", content: "website" },
@@ -30,7 +30,7 @@ export default {
         hid: "og:description",
         property: "og:description",
         content:
-          "Servcy is for Founders, CXOs, Freelancers and Software developers. We all use different softwares to manage our workday, but what if you could have control over all of them in one place? Servcy helps you see it, analyse it and do it all in one place.",
+          "Servcy is a project management suite for highly efficient teams. Consolidate now by tracking issues, time and budget all in one place.",
       },
       {
         hid: "og:image",
