@@ -109,8 +109,7 @@ export default {
 
 .blog-card {
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.05), 0 2px 4px 0 rgba(0, 0, 0, 0.1);
-  -webkit-transition: 0.6s cubic-bezier(0.47, 2.02, 0.31, -0.36);
-  transition: 0.6s cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition: transform 0.2s;
 }
 
 .blog-card:hover,
