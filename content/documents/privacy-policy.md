@@ -34,13 +34,13 @@ When you visit our websites or use our services, we collect personal data. The w
 
 Where we collect personal data, we'll only process it:
 
-- to perform a contract with you; or
+-   to perform a contract with you; or
 
-- where we have legitimate interests to process the personal data and they're not overridden by your rights; or
+-   where we have legitimate interests to process the personal data and they're not overridden by your rights; or
 
-- in accordance with a legal obligation; or
+-   in accordance with a legal obligation; or
 
-- where we have your consent.
+-   where we have your consent.
 
 If we don't collect your personal data, we may be unable to provide you with all our services, and some functions and features on our websites may not be available to you.
 
@@ -52,10 +52,10 @@ First and foremost, we use your personal data to operate our websites and provid
 
 1. To communicate with you. This may include:
 
-   - providing you with information you've requested from us (like training or education materials) or information we are required to send to you;
-   - operational communications, like changes to our websites and services, security updates, or assistance with using our websites and services;
-   - marketing communications (about Servcy or another product or service we think you might be interested in) in accordance with your marketing preferences;
-   - asking you for feedback or to take part in any research we are conducting (which we may engage a third party to assist with).
+    - providing you with information you've requested from us (like training or education materials) or information we are required to send to you;
+    - operational communications, like changes to our websites and services, security updates, or assistance with using our websites and services;
+    - marketing communications (about Servcy or another product or service we think you might be interested in) in accordance with your marketing preferences;
+    - asking you for feedback or to take part in any research we are conducting (which we may engage a third party to assist with).
 
 2. To help you share information with those whom you want to share information with and to assist you in making statutory submissions.
 
@@ -73,13 +73,13 @@ First and foremost, we use your personal data to operate our websites and provid
 
 There will be times when we need to share your personal identifiable data such as name, email id, contact number with third parties. We will take consent from you via our online support chat or email before sharing your personal identifiable data with anyone. We will only disclose your personal data to:
 
-- other companies in the Servcy group of companies;
+-   other companies in the Servcy group of companies;
 
-- third party service providers and partners who assist and enable us to use the personal data to, for example, support delivery of or provide functionality on the website or services, or to market or promote our goods and services to you;
+-   third party service providers and partners who assist and enable us to use the personal data to, for example, support delivery of or provide functionality on the website or services, or to market or promote our goods and services to you;
 
-- regulators, law enforcement bodies, government agencies, courts or other third parties where we think it's necessary to comply with applicable laws or regulations, or to exercise, establish or defend our legal rights. Where possible and appropriate, we will notify you of this type of disclosure;
+-   regulators, law enforcement bodies, government agencies, courts or other third parties where we think it's necessary to comply with applicable laws or regulations, or to exercise, establish or defend our legal rights. Where possible and appropriate, we will notify you of this type of disclosure;
 
-- other people where we have your consent.
+-   other people where we have your consent.
 
 # Clause 6: International Data Transfers
 
@@ -107,9 +107,9 @@ Security is a priority for us when it comes to your personal data. We're committ
 
 2. You also have rights to, subject to the applicable limitations on reasonableness and practicability:
 
-   - know what personal data we hold about you, and to make sure it's correct and up to date;
-   - request a copy of your personal data, or ask us to restrict processing your personal data or delete it; and
-   - object to our continued processing of your personal data
+    - know what personal data we hold about you, and to make sure it's correct and up to date;
+    - request a copy of your personal data, or ask us to restrict processing your personal data or delete it; and
+    - object to our continued processing of your personal data
 
 3. You can exercise these rights at any time by sending an email to contact@servcy.com.
 
