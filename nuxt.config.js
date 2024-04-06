@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - Built for high performance teams",
+    titleTemplate: "%s - for high performance teams",
     title: "Servcy",
     htmlAttrs: {
       lang: "en",
