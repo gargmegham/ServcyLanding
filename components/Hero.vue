@@ -8,12 +8,12 @@
                     Project management<br />
                     for highly efficient teams
                 </h1>
-                <div
+                <h2
                     class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
                     Juggling multiple apps for your project lifecycle?<br />
                     Consolidate now by tracking issues, time and budget all in
                     one place.
-                </div>
+                </h2>
             </div>
             <div class="flex flex-wrap items-center">
                 <transition name="fade" mode="out-in">

@@ -5,12 +5,12 @@
                 <h1 class="font-axiforma text-5xl font-extrabold md:text-6xl">
                     Welcome to Servcy Academy
                 </h1>
-                <div
+                <h2
                     class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
                     An interactive suite of blog posts for helping you become
                     more productive,<br />and to help you grow your freelance
                     business.
-                </div>
+                </h2>
                 <form class="servcy-form mt-6" autocomplete="off">
                     <input
                         id="servcy-input"

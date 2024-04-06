@@ -5,11 +5,11 @@
             class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
             Contact us
         </h1>
-        <div class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
+        <h2 class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
             Questions? Concerns? We're here to support you every step of the
             way.<br />We have real, live people available to chat 7 days a week,
             and online help resources that are available 24 hours a day.
-        </div>
+        </h2>
         <div class="mt-6 flex justify-center">
             <div class="mx-4">
                 <button
