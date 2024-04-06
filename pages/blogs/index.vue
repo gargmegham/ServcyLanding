@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-servcy-green px-[5%] py-[8vh] min-h-screen">
+    <div class="min-h-screen bg-servcy-green px-[5%] py-[8vh]">
         <div class="mt-16 flex h-64 flex-row justify-between text-servcy-cream">
             <div>
                 <div class="font-axiforma text-5xl font-extrabold md:text-6xl">
@@ -14,7 +14,7 @@
                 <form class="servcy-form mt-6" autocomplete="off">
                     <input
                         id="servcy-input"
-                        placeholder="Search for a blog post..." 
+                        placeholder="Search for a blog post..."
                         v-model="searchTerm" />
                 </form>
             </div>
@@ -39,30 +39,53 @@
             }">
             <div
                 class="xs:sm:grid-cols-1 mt-10 grid grid-cols-3 gap-8 py-10 xl:grid-cols-4">
-                <div v-for="(blogPost, index) of list.filter(
-                    (blogPost) => blogPost.title.toLowerCase().includes(searchTerm.toLowerCase()) || blogPost.description.toLowerCase().includes(searchTerm.toLowerCase())
-                )" :key="index">
+                <div
+                    v-for="(blogPost, index) of list.filter(
+                        (blogPost) =>
+                            blogPost.title
+                                .toLowerCase()
+                                .includes(searchTerm.toLowerCase()) ||
+                            blogPost.description
+                                .toLowerCase()
+                                .includes(searchTerm.toLowerCase())
+                    )"
+                    :key="index">
                     <div
-                        class="blog-card servcy-card-bg h-full rounded-xl p-4"
+                        class="blog-card servcy-card-bg h-72 rounded-xl p-4"
                         elevation="2">
                         <NuxtLink
                             :to="{ path: blogPost._path }"
                             :key="blogPost._id"
                             class="blog-link">
-                            <div
-                                class="justify-space-between align-start flex flex-row">
-                                <div class="flex-column mr-4">
-                                    <Icon
-                                        class="mt-2"
-                                        name="mdi:book-open-page-variant-outline"
-                                        size="20" />
-                                </div>
+                            <div class="mb-4 flex items-center">
                                 <div
-                                    class="flex-column blog-title mb-8 text-lg font-bold text-servcy-black">
+                                    class="blog-title font-poppins truncate text-lg font-extrabold text-servcy-black">
                                     {{ blogPost.title }}
                                 </div>
                             </div>
-                            <div class="text-sm text-servcy-black">
+                            <div
+                                class="mb-4 border-b-2 border-servcy-wheat pb-4 text-xs font-thin">
+                                <div class="text-servcy-black">
+                                    {{
+                                        new Date(
+                                            blogPost.last_updated
+                                        ).toLocaleDateString("en-US", {
+                                            weekday: "long",
+                                            year: "numeric",
+                                            month: "long",
+                                            day: "numeric"
+                                        })
+                                    }}
+                                </div>
+                            </div>
+                            <div class="mb-4 flex">
+                                <div
+                                    v-for="tag in blogPost.tags"
+                                    class="servcy-text-xss mr-2 rounded-md bg-servcy-black p-1 text-servcy-gray">
+                                    {{ tag }}
+                                </div>
+                            </div>
+                            <div class="h-20 text-sm text-servcy-black">
                                 {{ blogPost.description }}
                             </div>
                         </NuxtLink>
@@ -74,12 +97,15 @@
 </template>
 
 <script setup>
-import { ref } from 'vue';
+import { ref } from "vue"
 
-const searchTerm = ref('');
+const searchTerm = ref("")
 </script>
 
 <style scoped>
+.servcy-text-xss {
+    font-size: 0.625rem;
+}
 .blog-link {
     text-decoration: none;
 }
