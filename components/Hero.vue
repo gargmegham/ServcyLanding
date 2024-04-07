@@ -28,7 +28,7 @@
                 </transition>
             </div>
             <div>
-                <div class="mb-8 w-full">
+                <div class="mb-8 flex w-full justify-center">
                     <form class="servcy-form" autocomplete="off">
                         <input
                             id="servcy-input"
