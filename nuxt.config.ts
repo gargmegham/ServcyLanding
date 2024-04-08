@@ -92,6 +92,7 @@ export default defineNuxtConfig({
     },
     css: ["@/assets/css/global.css"],
     site: {
-        url: 'https://servcy.com',
-    },
+        url: "https://servcy.com",
+        trailingSlash: true
+    }
 })
