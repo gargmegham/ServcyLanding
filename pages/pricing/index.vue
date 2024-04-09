@@ -150,8 +150,8 @@ const plans = [
         description: "For a team of upto 50 techies",
         icon: "/shots/business.svg",
         maxSeats: 50,
-        price: "199",
-        ribbon: "~20% Off"
+        price: "179",
+        ribbon: "~27% Off"
     },
     {
         name: "Enterprise",
