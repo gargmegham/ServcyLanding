@@ -75,11 +75,6 @@
                             color="#F7F6FA"
                             size="40"
                             name="uil:github" />
-                        <Icon
-                            name="mdi:jira"
-                            class="mx-3 my-2"
-                            color="#F7F6FA"
-                            size="40" />
                     </div>
                     <img
                         src="@/assets/icons/more.svg"
