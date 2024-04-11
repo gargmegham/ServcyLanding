@@ -5,7 +5,7 @@
                 <h1
                     class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
                     Project management<br />
-                    for high performance teams
+                    for highly performant teams.
                 </h1>
                 <h2
                     class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
