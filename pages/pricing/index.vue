@@ -146,8 +146,9 @@ const offerings = [
     { text: "Feature Requests", disclaimer: "Subjected to voting." },
     { text: "DORA metrics", comingSoon: true },
     { text: "APIs, & Webhooks", comingSoon: true },
-    { text: "Time Tracking", comingSoon: true },
-    { text: "Project Budgeting", comingSoon: true }
+    { text: "Slack & Github bot", comingSoon: true }
+    // { text: "Time Tracking", comingSoon: true },
+    // { text: "Project Budgeting", comingSoon: true }
 ]
 const plans = [
     {
