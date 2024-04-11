@@ -1,21 +1,20 @@
 <template>
     <section class="pb-[10vh] pt-[12vh]">
-        <div
-            class="flex min-h-[56vh] flex-col items-center justify-between text-center">
+        <div class="flex flex-col items-center justify-between text-center">
             <div>
                 <h1
                     class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
                     Project management<br />
-                    for highly efficient teams
+                    for high performance teams
                 </h1>
                 <h2
                     class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
                     Juggling multiple apps for your project lifecycle?<br />
-                    Consolidate now by tracking issues, time and budget all in
-                    one place.
+                    Consolidate now by tracking issues, visualizing sprints and
+                    measuring performance all in one place.
                 </h2>
             </div>
-            <div class="flex flex-wrap items-center">
+            <!-- <div class="flex flex-wrap items-center">
                 <transition name="fade" mode="out-in">
                     <div
                         class="font-axiforma servcy-text-bg text-4xl font-semibold md:text-5xl"
@@ -26,9 +25,9 @@
                         >
                     </div>
                 </transition>
-            </div>
+            </div> -->
             <div>
-                <div class="mb-8 flex w-full justify-center">
+                <div class="my-8 flex w-full justify-center">
                     <form class="servcy-form" autocomplete="off">
                         <input
                             id="servcy-input"
@@ -96,24 +95,27 @@
 </template>
 
 <script setup>
-import { ref, onMounted, onBeforeUnmount } from "vue"
-const rotateText = ref(0)
-const timeInterval = ref(null)
-const hubFor = ref([
-    "Issue Tracking",
-    "Inbox Aggregation",
-    "Time Tracking",
-    "Project Budgeting"
-])
-onMounted(() => {
-    timeInterval.value = setInterval(() => {
-        if (rotateText.value < hubFor.value.length - 1) {
-            rotateText.value++
-        } else {
-            rotateText.value = 0
-        }
-    }, 2000)
-})
+// import { ref, onMounted, onBeforeUnmount } from "vue"
+// const rotateText = ref(0)
+// const timeInterval = ref(null)
+// const hubFor = ref([
+//     "Issue Tracking",
+//     "Inbox Aggregation",
+//     "Time Tracking",
+//     "Project Budgeting"
+// ])
+// onMounted(() => {
+//     timeInterval.value = setInterval(() => {
+//         if (rotateText.value < hubFor.value.length - 1) {
+//             rotateText.value++
+//         } else {
+//             rotateText.value = 0
+//         }
+//     }, 2000)
+// })
+// onBeforeUnmount(() => {
+//     clearInterval(timeInterval.value)
+// })
 const validateEmail = (email) => {
     return email.match(
         /^[a-zA-Z0-9._%+-]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!live.com)(?!outlook.com)[a-zA-Z0-9_-]+.[a-zA-Z0-9-.]{2,61}$/
@@ -127,9 +129,6 @@ const redirectToLogin = () => {
     }
     window.open(`https://web.servcy.com/login?email=${email.value}`, "_blank")
 }
-onBeforeUnmount(() => {
-    clearInterval(timeInterval.value)
-})
 </script>
 
 <style scoped>
