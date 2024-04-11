@@ -3,12 +3,14 @@
         <div class="flex flex-col items-center text-center">
             <h1
                 class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
-                Pricing<br />
-                <span
-                    class="font-axiforma text-2xl font-extrabold text-servcy-cream md:text-3xl"
-                    >that works for you—today and tomorrow</span
-                >
+                Pricing For Your Growth
             </h1>
+            <h3
+                class="mt-6 text-xl font-extrabold text-servcy-wheat md:text-lg">
+                Hate Seat Based Pricing? We do too.<br />That's why we offer
+                unlimited projects, issues, integrations, and more in all our
+                plans.
+            </h3>
         </div>
         <div class="mt-16 grid grid-cols-3 gap-4">
             <div class="col-span-1">
@@ -71,14 +73,27 @@
                             </div>
                         </div>
                         <div
-                            v-else
+                            v-else-if="!plan.showKofi"
                             class="font-axiforma my-2 flex w-full items-center justify-center rounded-lg bg-servcy-cream text-center text-lg font-extrabold text-servcy-black">
                             <a
-                                href="mailto:contact@servcy.com"
+                                :href="plan.href"
                                 class="flex h-full w-full items-center justify-center !text-servcy-black">
-                                Contact Us
+                                {{ plan.buttonText }}
                             </a>
                         </div>
+                        <a
+                            v-else
+                            href="https://ko-fi.com/B0B0WS6XV"
+                            target="_blank"
+                            class="flex h-16 w-full items-center justify-center rounded-lg bg-servcy-black text-lg font-extrabold text-servcy-cream hover:text-servcy-wheat">
+                            <img
+                                height="28px"
+                                width="28px"
+                                class="elevation-2 mr-2 inline"
+                                src="@/assets/icons/logos/kofi.png"
+                                alt="Buy Me a Coffee" />
+                            <span>Buy Me A Coffee</span>
+                        </a>
                         <div
                             v-if="plan.price !== null"
                             :class="{
@@ -87,7 +102,7 @@
                                 'bg-servcy-black': plan.name !== 'Plus'
                             }">
                             <a
-                                href="mailto:contact@servcy.com"
+                                :href="plan.href"
                                 :class="{
                                     'flex h-full w-full items-center justify-center font-bold': true,
                                     '!text-servcy-black hover:!text-servcy-green':
@@ -95,14 +110,19 @@
                                     '!text-servcy-cream hover:!text-servcy-wheat':
                                         plan.name !== 'Plus'
                                 }">
-                                Get Started
+                                {{ plan.buttonText }}
                             </a>
                         </div>
                     </div>
                     <a
+                        v-if="plan.price || plan.showKofi"
                         href="https://web.servcy.com/login"
                         class="ml-auto flex w-full justify-end text-xs !text-servcy-wheat underline hover:!text-servcy-silver">
-                        or start with a trial
+                        {{
+                            plan.showKofi
+                                ? "and start for free"
+                                : "or start with a trial"
+                        }}
                     </a>
                     <div
                         v-if="plan.ribbon"
@@ -117,31 +137,35 @@
 
 <script setup>
 const offerings = [
-    { text: "Unlimited Projects, and Issues" },
-    { text: "SSO, and Role based access" },
-    { text: "AI assistance" },
-    { text: "10+ Integrations" },
-    { text: "Custom analytics" },
-    { text: "Priority support" },
-    { text: "Feature Requests", disclaimer: "(Subject to voting)" },
-    { text: "APIs, Webhooks", comingSoon: true },
-    { text: "Time tracking", comingSoon: true },
-    { text: "Project budgeting", comingSoon: true },
-    { text: "DORA metrics", comingSoon: true }
+    { text: "Unlimited Projects" },
+    { text: "Unlimited Issues" },
+    { text: "SSO, & Role based access" },
+    { text: "AI Assistance" },
+    { text: "Integration with Notion, Figma, Gmail & more" },
+    { text: "Custom Analytics" },
+    { text: "Feature Requests", disclaimer: "Subjected to voting." },
+    { text: "DORA metrics", comingSoon: true },
+    { text: "APIs, & Webhooks", comingSoon: true },
+    { text: "Time Tracking", comingSoon: true },
+    { text: "Project Budgeting", comingSoon: true }
 ]
 const plans = [
     {
         name: "Starter",
-        description: "For a team of upto 10 techies",
+        description: "For a team of upto 5 techies",
         icon: "/shots/starter.svg",
-        maxSeats: 10,
-        price: "49"
+        href: "https://web.servcy.com/login",
+        buttonText: "Get Started",
+        showKofi: true,
+        price: null
     },
     {
         name: "Plus",
         description: "For a team of upto 25 techies",
         icon: "/shots/plus.svg",
-        price: "99",
+        price: "79",
+        href: "mailto:contact@servcy.com",
+        buttonText: "Get In Touch",
         ribbon: "Most Popular",
         maxSeats: 25
     },
@@ -149,14 +173,18 @@ const plans = [
         name: "Business",
         description: "For a team of upto 50 techies",
         icon: "/shots/business.svg",
+        buttonText: "Get In Touch",
+        href: "mailto:contact@servcy.com",
         maxSeats: 50,
-        price: "179",
-        ribbon: "~27% Off"
+        price: "119",
+        ribbon: "~25% Off"
     },
     {
         name: "Enterprise",
         description: "For a team of more than 50 techies",
         icon: "/shots/enterprise.svg",
+        buttonText: "Get A Quote",
+        href: "mailto:contact@servcy.com",
         price: null
     }
 ]
