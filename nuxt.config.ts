@@ -5,8 +5,7 @@ export default defineNuxtConfig({
         "@nuxtjs/tailwindcss",
         "@nuxt/content",
         "@nuxtjs/sitemap",
-        "nuxt-icon",
-        "nuxt-clarity-analytics"
+        "nuxt-icon"
     ],
     app: {
         head: {
