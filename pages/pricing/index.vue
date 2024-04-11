@@ -12,7 +12,8 @@
         </div>
         <div class="mt-16 grid grid-cols-3 gap-4">
             <div class="col-span-1">
-                <div class="servcy-transparent-bg rounded-lg p-8 text-white">
+                <div
+                    class="servcy-transparent-bg h-full rounded-lg p-8 text-white">
                     <div
                         class="font-axiforma mb-6 text-xl font-extrabold text-servcy-wheat md:text-2xl">
                         All plans offer:
