@@ -8,6 +8,7 @@
 useHead({
     script: [
         {
+            type: "text/javascript",
             async: true,
             innerHTML: `
                 (function(c,l,a,r,i,t,y){
