@@ -34,10 +34,10 @@
                 class="servcy-wheat-shadow-right-bottom rounded border-servcy-wheat bg-servcy-black p-2"
                 style="border-style: solid">
                 <a
-                    href="https://web.servcy.com"
+                    href="https://web.servcy.com/login"
                     target="_blank"
                     class="font-bold !text-servcy-cream hover:!text-servcy-wheat"
-                    >Start free trial</a
+                    >Get Started</a
                 >
             </button>
         </div>

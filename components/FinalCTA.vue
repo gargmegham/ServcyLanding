@@ -19,10 +19,10 @@
             <button
                 class="servcy-wheat-shadow-left-bottom rounded bg-servcy-black p-3">
                 <a
-                    href="https://web.servcy.com"
+                    href="https://web.servcy.com/login"
                     target="_blank"
                     class="text-lg font-semibold !text-servcy-cream hover:!text-servcy-wheat md:text-xl">
-                    Start free trial
+                    Get Started
                 </a>
             </button>
             <div class="mt-3 text-xs text-servcy-cream">
