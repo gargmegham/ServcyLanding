@@ -1,12 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: true },
-    modules: [
-        "@nuxtjs/tailwindcss",
-        "@nuxt/content",
-        "@nuxtjs/sitemap",
-        "nuxt-icon"
-    ],
+    modules: ["@nuxt/content", "@nuxtjs/sitemap", "@nuxt/ui"],
     app: {
         head: {
             titleTemplate: "%s - for high performance teams",

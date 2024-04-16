@@ -12,7 +12,16 @@
                 you, and we want you to grow with us.
             </h3>
         </div>
-        <div class="mt-16 grid grid-cols-2 gap-4 lg:grid-cols-4">
+        <div class="my-10 flex items-center justify-center">
+            <Icon size="40" name="heroicons:currency-dollar" color="primary" />
+            <UToggle
+                v-model="isInrSelected"
+                color="emerald"
+                size="xl"
+                class="mx-4" />
+            <Icon size="40" name="heroicons:currency-rupee" color="primary" />
+        </div>
+        <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
             <div
                 class="servcy-transparent-bg relative col-span-1 rounded-lg p-8">
                 <div
@@ -31,11 +40,23 @@
                     </div>
                 </div>
                 <div class="mb-6 h-16 border-b-2 border-neutral-500 pb-4">
-                    <span class="text-5xl font-extrabold text-servcy-wheat"
+                    <span
+                        v-if="!isInrSelected"
+                        class="text-4xl font-extrabold text-servcy-wheat"
                         >$</span
-                    ><span
-                        class="ml-1 text-5xl font-extrabold text-servcy-wheat"
-                        >0</span
+                    >
+                    <span
+                        v-else
+                        class="text-4xl font-extrabold text-servcy-wheat"
+                        >&#8377;</span
+                    >
+                    <span
+                        class="ml-1 text-4xl font-extrabold text-servcy-wheat"
+                        >{{
+                            !isInrSelected
+                                ? plans[0].usdPrice
+                                : plans[0].inrPrice
+                        }}</span
                     ><span class="text-xl font-extrabold text-servcy-silver"
                         >/mo</span
                     >
@@ -101,11 +122,22 @@
                     </div>
                 </div>
                 <div class="mb-6 h-16 border-b-2 border-neutral-500 pb-4">
-                    <span class="text-5xl font-extrabold text-servcy-wheat"
+                    <span
+                        v-if="!isInrSelected"
+                        class="text-4xl font-extrabold text-servcy-wheat"
                         >$</span
+                    >
+                    <span
+                        v-else
+                        class="text-4xl font-extrabold text-servcy-wheat"
+                        >&#8377;</span
                     ><span
-                        class="ml-1 text-5xl font-extrabold text-servcy-wheat"
-                        >79</span
+                        class="ml-1 text-4xl font-extrabold text-servcy-wheat"
+                        >{{
+                            !isInrSelected
+                                ? plans[1].usdPrice
+                                : plans[1].inrPrice
+                        }}</span
                     ><span class="text-xl font-extrabold text-servcy-silver"
                         >/mo</span
                     >
@@ -123,7 +155,7 @@
                 </div>
                 <div
                     class="servcy-most-popular font-axiforma absolute right-[-10px] top-[-10px] text-servcy-cream">
-                    {{ plans[1].ribbon }}
+                    Most Popular
                 </div>
                 <div
                     class="my-2 flex text-sm"
@@ -165,11 +197,22 @@
                     </div>
                 </div>
                 <div class="mb-6 h-16 border-b-2 border-neutral-500 pb-4">
-                    <span class="text-5xl font-extrabold text-servcy-cream"
+                    <span
+                        v-if="!isInrSelected"
+                        class="text-4xl font-extrabold text-servcy-cream"
                         >$</span
+                    >
+                    <span
+                        v-else
+                        class="text-4xl font-extrabold text-servcy-cream"
+                        >&#8377;</span
                     ><span
-                        class="ml-1 text-5xl font-extrabold text-servcy-cream"
-                        >119</span
+                        class="ml-1 text-4xl font-extrabold text-servcy-cream"
+                        >{{
+                            !isInrSelected
+                                ? plans[2].usdPrice
+                                : plans[2].inrPrice
+                        }}</span
                     ><span class="text-xl font-extrabold text-servcy-silver"
                         >/mo</span
                     >
@@ -197,7 +240,7 @@
                 </div>
                 <div
                     class="servcy-most-popular font-axiforma absolute right-[-10px] top-[-10px] text-servcy-cream">
-                    {{ plans[2].ribbon }}
+                    ~25% Off
                 </div>
                 <div
                     class="my-2 flex text-sm"
@@ -232,27 +275,34 @@
                     </div>
                 </div>
                 <div class="mb-6 h-16 border-b-2 border-neutral-500 pb-4">
-                    <span class="text-5xl font-extrabold text-servcy-wheat"
+                    <span
+                        v-if="!isInrSelected"
+                        class="text-4xl font-extrabold text-servcy-wheat"
                         >$</span
+                    >
+                    <span
+                        v-else
+                        class="text-4xl font-extrabold text-servcy-wheat"
+                        >&#8377;</span
                     ><span
-                        class="ml-1 text-5xl font-extrabold text-servcy-wheat"
-                        >249</span
+                        class="ml-1 text-4xl font-extrabold text-servcy-wheat"
+                        >{{
+                            !isInrSelected
+                                ? plans[3].usdPrice
+                                : plans[3].inrPrice
+                        }}</span
                     ><span class="text-xl font-extrabold text-servcy-silver"
                         >/mo</span
                     >
-                    <span
-                        class="font-axiforma ml-2 self-end text-lg text-servcy-silver">
-                        & up...
-                    </span>
                 </div>
                 <div class="mb-4 h-24">
                     <div class="flex h-20 w-full gap-x-2">
                         <a
-                            :href="plans[3].href"
+                            href="mailto:contact@servcy.com"
                             target="_blank"
                             class="servcy-wheat-shadow-right-bottom flex h-16 w-full items-center justify-center rounded-lg bg-servcy-black text-lg font-extrabold text-servcy-cream hover:text-servcy-wheat">
                             <Icon class="mr-2" size="24" name="mdi:gmail" />
-                            <span>{{ plans[3].buttonText }}</span>
+                            <span>Get A Quote</span>
                         </a>
                     </div>
                 </div>
@@ -283,6 +333,7 @@
 </template>
 
 <script setup>
+const isInrSelected = ref(true)
 const offerings = [
     { text: "Unlimited Projects" },
     { text: "Unlimited Issues" },
@@ -301,40 +352,32 @@ const plans = [
         differentiators: ["Seats for upto 5 techies"],
         description: "Ideal for small teams to get started.",
         icon: "/shots/starter.svg",
-        href: "https://web.servcy.com/login",
-        showKofi: true,
-        price: null
+        inrPrice: "0",
+        usdPrice: "0"
     },
     {
         name: "Plus",
         description: "For startups that are making waves.",
         icon: "/shots/plus.svg",
-        price: "79",
-        href: "mailto:contact@servcy.com",
-        differentiators: ["Seats for upto 25 techies"],
-        buttonText: "Get Started",
-        ribbon: "Most Popular",
-        maxSeats: 25
+        inrPrice: "6,499",
+        usdPrice: "79",
+        differentiators: ["Seats for upto 25 techies"]
     },
     {
         name: "Business",
         description: "For businesses that are growing.",
         icon: "/shots/business.svg",
-        buttonText: "Get Started",
-        href: "mailto:contact@servcy.com",
-        maxSeats: 50,
         differentiators: ["Seats for upto 50 techies"],
-        price: "119",
-        ribbon: "~25% Off"
+        inrPrice: "9,999",
+        usdPrice: "119"
     },
     {
         name: "Enterprise",
         description: "For enterprises that are scaling.",
         differentiators: ["Seats for more than 50 techies"],
         icon: "/shots/enterprise.svg",
-        buttonText: "Get A Quote",
-        href: "mailto:contact@servcy.com",
-        price: null
+        inrPrice: "19,999",
+        usdPrice: "249"
     }
 ]
 useHead({
