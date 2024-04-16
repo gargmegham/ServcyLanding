@@ -18,7 +18,7 @@
                     class="servcy-transparent-bg h-full rounded-lg p-8 text-white">
                     <div
                         class="font-axiforma mb-6 text-xl font-extrabold text-servcy-wheat md:text-2xl">
-                        All plans offer:
+                        All our plans offer:
                     </div>
                     <div
                         class="my-2 flex text-sm"
@@ -43,46 +43,24 @@
             </div>
             <div class="col-span-2 grid grid-cols-2 grid-rows-2 gap-4">
                 <div
-                    class="servcy-transparent-bg relative col-span-1 row-span-1 rounded-lg p-8"
-                    v-for="plan in plans"
-                    :key="plan.name">
+                    class="servcy-transparent-bg relative col-span-1 row-span-1 rounded-lg p-8">
                     <div
                         class="font-axiforma mb-6 flex items-center border-b-2 border-neutral-500 pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
                         <img
-                            :src="plan.icon"
-                            :alt="plan.name"
+                            :src="plans[0].icon"
+                            :alt="plans[0].name"
                             class="mr-2"
                             width="48"
                             height="48" />
                         <div>
-                            {{ plan.name }}
+                            {{ plans[0].name }}
                             <div class="text-sm text-servcy-white">
-                                {{ plan.description }}
+                                {{ plans[0].description }}
                             </div>
                         </div>
                     </div>
                     <div class="flex h-20 w-full gap-x-2">
-                        <div
-                            v-if="plan.price !== null"
-                            class="font-axiforma my-2 flex w-1/3 flex-col items-center justify-center rounded-lg bg-servcy-cream text-center text-lg font-extrabold text-servcy-black">
-                            <div>
-                                {{ `${plan.price} USD` }}
-                            </div>
-                            <div class="servcy-caption opacity-40">
-                                {{ `${plan.price / plan.maxSeats} USD/user` }}
-                            </div>
-                        </div>
-                        <div
-                            v-else-if="!plan.showKofi"
-                            class="font-axiforma my-2 flex w-full items-center justify-center rounded-lg bg-servcy-cream text-center text-lg font-extrabold text-servcy-black">
-                            <a
-                                :href="plan.href"
-                                class="flex h-full w-full items-center justify-center !text-servcy-black">
-                                {{ plan.buttonText }}
-                            </a>
-                        </div>
                         <a
-                            v-else
                             href="https://ko-fi.com/B0B0WS6XV"
                             target="_blank"
                             class="flex h-16 w-full items-center justify-center rounded-lg bg-servcy-black text-lg font-extrabold text-servcy-cream hover:text-servcy-wheat">
@@ -94,40 +72,125 @@
                                 alt="Buy Me a Coffee" />
                             <span>Buy Me A Coffee</span>
                         </a>
+                    </div>
+                    <a
+                        href="https://web.servcy.com/login"
+                        class="ml-auto flex w-full justify-end text-xs !text-servcy-wheat underline hover:!text-servcy-silver">
+                        and start for free
+                    </a>
+                </div>
+                <div
+                    class="servcy-transparent-bg relative col-span-1 row-span-1 rounded-lg p-8">
+                    <div
+                        class="font-axiforma mb-6 flex items-center border-b-2 border-neutral-500 pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
+                        <img
+                            :src="plans[1].icon"
+                            :alt="plans[1].name"
+                            class="mr-2"
+                            width="48"
+                            height="48" />
+                        <div>
+                            {{ plans[1].name }}
+                            <div class="text-sm text-servcy-white">
+                                {{ plans[1].description }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex h-20 w-full gap-x-2">
                         <div
-                            v-if="plan.price !== null"
-                            :class="{
-                                'font-axiforma my-2 flex w-2/3 items-center justify-center rounded-lg border-servcy-wheat text-center text-lg font-extrabold': true,
-                                'bg-servcy-cream': plan.name === 'Plus',
-                                'bg-servcy-black': plan.name !== 'Plus'
-                            }">
+                            class="font-axiforma my-2 flex w-1/3 flex-col items-center justify-center rounded-lg bg-servcy-cream text-center text-lg font-extrabold text-servcy-black">
+                            <div>
+                                {{ `${plans[1].price} USD` }}
+                            </div>
+                            <div class="servcy-caption opacity-40">
+                                {{
+                                    `${plans[1].price / plans[1].maxSeats} USD/user`
+                                }}
+                            </div>
+                        </div>
+                        <div
+                            class="font-axiforma my-2 flex w-2/3 items-center justify-center rounded-lg border-servcy-wheat bg-servcy-cream text-center text-lg font-extrabold">
                             <a
-                                :href="plan.href"
-                                :class="{
-                                    'flex h-full w-full items-center justify-center font-bold': true,
-                                    '!text-servcy-black hover:!text-servcy-green':
-                                        plan.name === 'Plus',
-                                    '!text-servcy-cream hover:!text-servcy-wheat':
-                                        plan.name !== 'Plus'
-                                }">
-                                {{ plan.buttonText }}
+                                :href="plans[1].href"
+                                class="flex h-full w-full items-center justify-center font-bold !text-servcy-black hover:!text-servcy-green">
+                                {{ plans[1].buttonText }}
                             </a>
                         </div>
                     </div>
-                    <a
-                        v-if="plan.price || plan.showKofi"
-                        href="https://web.servcy.com/login"
-                        class="ml-auto flex w-full justify-end text-xs !text-servcy-wheat underline hover:!text-servcy-silver">
-                        {{
-                            plan.showKofi
-                                ? "and start for free"
-                                : "or start with a trial"
-                        }}
-                    </a>
                     <div
-                        v-if="plan.ribbon"
                         class="servcy-most-popular font-axiforma absolute right-[-10px] top-[-10px] text-servcy-cream">
-                        {{ plan.ribbon }}
+                        {{ plans[1].ribbon }}
+                    </div>
+                </div>
+                <div
+                    class="servcy-transparent-bg relative col-span-1 row-span-1 rounded-lg p-8">
+                    <div
+                        class="font-axiforma mb-6 flex items-center border-b-2 border-neutral-500 pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
+                        <img
+                            :src="plans[2].icon"
+                            :alt="plans[2].name"
+                            class="mr-2"
+                            width="48"
+                            height="48" />
+                        <div>
+                            {{ plans[2].name }}
+                            <div class="text-sm text-servcy-white">
+                                {{ plans[2].description }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex h-20 w-full gap-x-2">
+                        <div
+                            class="font-axiforma my-2 flex w-1/3 flex-col items-center justify-center rounded-lg bg-servcy-cream text-center text-lg font-extrabold text-servcy-black">
+                            <div>
+                                {{ `${plans[2].price} USD` }}
+                            </div>
+                            <div class="servcy-caption opacity-40">
+                                {{
+                                    `${plans[2].price / plans[2].maxSeats} USD/user`
+                                }}
+                            </div>
+                        </div>
+                        <div
+                            class="font-axiforma my-2 flex w-2/3 items-center justify-center rounded-lg border-servcy-wheat bg-servcy-cream text-center text-lg font-extrabold">
+                            <a
+                                :href="plans[2].href"
+                                class="flex h-full w-full items-center justify-center font-bold !text-servcy-black hover:!text-servcy-green">
+                                {{ plans[2].buttonText }}
+                            </a>
+                        </div>
+                    </div>
+                    <div
+                        class="servcy-most-popular font-axiforma absolute right-[-10px] top-[-10px] text-servcy-cream">
+                        {{ plans[2].ribbon }}
+                    </div>
+                </div>
+                <div
+                    class="servcy-transparent-bg relative col-span-1 row-span-1 rounded-lg p-8">
+                    <div
+                        class="font-axiforma mb-6 flex items-center border-b-2 border-neutral-500 pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
+                        <img
+                            :src="plans[3].icon"
+                            :alt="plans[3].name"
+                            class="mr-2"
+                            width="48"
+                            height="48" />
+                        <div>
+                            {{ plans[3].name }}
+                            <div class="text-sm text-servcy-white">
+                                {{ plans[3].description }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex h-20 w-full gap-x-2">
+                        <div
+                            class="font-axiforma my-2 flex w-full items-center justify-center rounded-lg bg-servcy-cream text-center text-lg font-extrabold text-servcy-black">
+                            <a
+                                :href="plans[3].href"
+                                class="flex h-full w-full items-center justify-center !text-servcy-black">
+                                {{ plans[3].buttonText }}
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
