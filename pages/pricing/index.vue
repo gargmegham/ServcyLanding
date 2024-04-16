@@ -1,64 +1,46 @@
 <template>
-    <section class="h-screen pb-[10vh] pt-[12vh]">
+    <section class="min-h-screen py-[10vh]">
         <div class="flex flex-col items-center text-center">
             <h1
-                class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
+                class="font-axiforma text-3xl font-extrabold text-servcy-cream md:text-4xl">
                 Pricing For Your Growth
             </h1>
             <h3
                 class="mt-6 text-xl font-extrabold text-servcy-wheat md:text-lg">
-                Hate Seat Based Pricing? We do too.<br />That's why we offer
-                unlimited projects, issues, integrations, and more in all our
-                plans.
+                We offer the same features to all our customers. The only
+                difference is the number of seats you need.<br />We grow with
+                you, and we want you to grow with us.
             </h3>
         </div>
-        <div class="mt-16 grid grid-cols-3 gap-4">
-            <div class="col-span-1">
+        <div class="mt-16 grid grid-cols-2 gap-4 lg:grid-cols-4">
+            <div
+                class="servcy-transparent-bg relative col-span-1 rounded-lg p-8">
                 <div
-                    class="servcy-transparent-bg h-full rounded-lg p-8 text-white">
-                    <div
-                        class="font-axiforma mb-6 text-xl font-extrabold text-servcy-wheat md:text-2xl">
-                        All our plans offer:
-                    </div>
-                    <div
-                        class="my-2 flex text-sm"
-                        v-for="offering in offerings"
-                        :key="offering">
-                        <img
-                            src="@/assets/icons/new-releases.svg"
-                            class="mr-2" />
-                        {{ offering.text }}
-                        <span
-                            v-if="offering.comingSoon"
-                            class="ml-2 text-xs text-servcy-wheat"
-                            >(Coming Soon...)</span
-                        >
-                        <span
-                            v-if="offering.disclaimer"
-                            class="ml-2 text-xs text-servcy-wheat"
-                            >{{ offering.disclaimer }}</span
-                        >
-                    </div>
-                </div>
-            </div>
-            <div class="col-span-2 grid grid-cols-2 grid-rows-2 gap-4">
-                <div
-                    class="servcy-transparent-bg relative col-span-1 row-span-1 rounded-lg p-8">
-                    <div
-                        class="font-axiforma mb-6 flex items-center border-b-2 border-neutral-500 pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
-                        <img
-                            :src="plans[0].icon"
-                            :alt="plans[0].name"
-                            class="mr-2"
-                            width="48"
-                            height="48" />
-                        <div>
-                            {{ plans[0].name }}
-                            <div class="text-sm text-servcy-white">
-                                {{ plans[0].description }}
-                            </div>
+                    class="font-axiforma items-centerpb-4 mb-6 flex h-20 text-lg font-extrabold text-servcy-wheat md:text-xl">
+                    <img
+                        :src="plans[0].icon"
+                        :alt="plans[0].name"
+                        class="mr-4"
+                        width="48"
+                        height="48" />
+                    <div>
+                        {{ plans[0].name }}
+                        <div class="text-sm text-servcy-white">
+                            {{ plans[0].description }}
                         </div>
                     </div>
+                </div>
+                <div class="mb-6 h-16 border-b-2 border-neutral-500 pb-4">
+                    <span class="text-5xl font-extrabold text-servcy-wheat"
+                        >$</span
+                    ><span
+                        class="ml-1 text-5xl font-extrabold text-servcy-wheat"
+                        >0</span
+                    ><span class="text-xl font-extrabold text-servcy-silver"
+                        >/mo</span
+                    >
+                </div>
+                <div class="mb-4 h-24">
                     <div class="flex h-20 w-full gap-x-2">
                         <a
                             href="https://ko-fi.com/B0B0WS6XV"
@@ -80,118 +62,220 @@
                     </a>
                 </div>
                 <div
-                    class="servcy-transparent-bg relative col-span-1 row-span-1 rounded-lg p-8">
-                    <div
-                        class="font-axiforma mb-6 flex items-center border-b-2 border-neutral-500 pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
-                        <img
-                            :src="plans[1].icon"
-                            :alt="plans[1].name"
-                            class="mr-2"
-                            width="48"
-                            height="48" />
-                        <div>
-                            {{ plans[1].name }}
-                            <div class="text-sm text-servcy-white">
-                                {{ plans[1].description }}
-                            </div>
+                    class="my-2 flex text-sm"
+                    v-for="differentiator in plans[0].differentiators"
+                    :key="differentiator">
+                    <img src="@/assets/icons/new-releases.svg" class="mr-2" />
+                    <span class="text-servcy-cream">{{ differentiator }}</span>
+                </div>
+                <div
+                    class="my-2 flex text-sm"
+                    v-for="offering in offerings"
+                    :key="offering">
+                    <img src="@/assets/icons/new-releases.svg" class="mr-2" />
+                    <span class="truncate text-servcy-cream">{{
+                        offering.text
+                    }}</span>
+                    <span
+                        v-if="offering.comingSoon"
+                        class="ml-2 text-[8px] text-servcy-wheat"
+                        >(Coming Soon...)</span
+                    >
+                </div>
+            </div>
+            <div
+                class="servcy-transparent-bg relative col-span-1 rounded-lg p-8">
+                <div
+                    class="font-axiforma mb-6 flex h-20 items-center pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
+                    <img
+                        :src="plans[1].icon"
+                        :alt="plans[1].name"
+                        class="mr-4"
+                        width="48"
+                        height="48" />
+                    <div>
+                        {{ plans[1].name }}
+                        <div class="text-sm text-servcy-white">
+                            {{ plans[1].description }}
                         </div>
                     </div>
+                </div>
+                <div class="mb-6 h-16 border-b-2 border-neutral-500 pb-4">
+                    <span class="text-5xl font-extrabold text-servcy-wheat"
+                        >$</span
+                    ><span
+                        class="ml-1 text-5xl font-extrabold text-servcy-wheat"
+                        >79</span
+                    ><span class="text-xl font-extrabold text-servcy-silver"
+                        >/mo</span
+                    >
+                </div>
+                <div class="mb-4 h-24">
                     <div class="flex h-20 w-full gap-x-2">
-                        <div
-                            class="font-axiforma my-2 flex w-1/3 flex-col items-center justify-center rounded-lg bg-servcy-cream text-center text-lg font-extrabold text-servcy-black">
-                            <div>
-                                {{ `${plans[1].price} USD` }}
-                            </div>
-                            <div class="servcy-caption opacity-40">
-                                {{
-                                    `${plans[1].price / plans[1].maxSeats} USD/user`
-                                }}
-                            </div>
-                        </div>
-                        <div
-                            class="font-axiforma my-2 flex w-2/3 items-center justify-center rounded-lg border-servcy-wheat bg-servcy-cream text-center text-lg font-extrabold">
-                            <a
-                                :href="plans[1].href"
-                                class="flex h-full w-full items-center justify-center font-bold !text-servcy-black hover:!text-servcy-green">
-                                {{ plans[1].buttonText }}
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        class="servcy-most-popular font-axiforma absolute right-[-10px] top-[-10px] text-servcy-cream">
-                        {{ plans[1].ribbon }}
+                        <a
+                            href="https://web.servcy.com/login?plan=plus"
+                            target="_blank"
+                            class="servcy-wheat-shadow-right-bottom flex h-16 w-full items-center justify-center rounded-lg bg-servcy-black text-lg font-extrabold text-servcy-cream hover:text-servcy-wheat">
+                            <Icon class="mr-2" size="24" name="mdi:flare" />
+                            <span>Get Started</span>
+                        </a>
                     </div>
                 </div>
                 <div
-                    class="servcy-transparent-bg relative col-span-1 row-span-1 rounded-lg p-8">
-                    <div
-                        class="font-axiforma mb-6 flex items-center border-b-2 border-neutral-500 pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
-                        <img
-                            :src="plans[2].icon"
-                            :alt="plans[2].name"
-                            class="mr-2"
-                            width="48"
-                            height="48" />
-                        <div>
-                            {{ plans[2].name }}
-                            <div class="text-sm text-servcy-white">
-                                {{ plans[2].description }}
-                            </div>
+                    class="servcy-most-popular font-axiforma absolute right-[-10px] top-[-10px] text-servcy-cream">
+                    {{ plans[1].ribbon }}
+                </div>
+                <div
+                    class="my-2 flex text-sm"
+                    v-for="differentiator in plans[1].differentiators"
+                    :key="differentiator">
+                    <img src="@/assets/icons/new-releases.svg" class="mr-2" />
+                    <span class="text-servcy-cream">{{ differentiator }}</span>
+                </div>
+                <div
+                    class="my-2 flex text-sm"
+                    v-for="offering in offerings"
+                    :key="offering">
+                    <img src="@/assets/icons/new-releases.svg" class="mr-2" />
+                    <span class="truncate text-servcy-cream">{{
+                        offering.text
+                    }}</span>
+                    <span
+                        v-if="offering.comingSoon"
+                        class="ml-2 text-[8px] text-servcy-wheat"
+                        >(Coming Soon...)</span
+                    >
+                </div>
+            </div>
+            <div
+                class="servcy-transparent-bg relative col-span-1 row-span-1 rounded-lg p-8">
+                <div
+                    class="font-axiforma mb-6 flex h-20 items-center pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
+                    <img
+                        :src="plans[2].icon"
+                        :alt="plans[2].name"
+                        class="mr-4"
+                        width="48"
+                        height="48" />
+                    <div>
+                        {{ plans[2].name }}
+                        <div class="text-sm text-servcy-white">
+                            {{ plans[2].description }}
                         </div>
                     </div>
+                </div>
+                <div class="mb-6 h-16 border-b-2 border-neutral-500 pb-4">
+                    <span class="text-5xl font-extrabold text-servcy-cream"
+                        >$</span
+                    ><span
+                        class="ml-1 text-5xl font-extrabold text-servcy-cream"
+                        >119</span
+                    ><span class="text-xl font-extrabold text-servcy-silver"
+                        >/mo</span
+                    >
+                </div>
+                <div class="mb-4 h-24">
                     <div class="flex h-20 w-full gap-x-2">
-                        <div
-                            class="font-axiforma my-2 flex w-1/3 flex-col items-center justify-center rounded-lg bg-servcy-cream text-center text-lg font-extrabold text-servcy-black">
-                            <div>
-                                {{ `${plans[2].price} USD` }}
-                            </div>
-                            <div class="servcy-caption opacity-40">
-                                {{
-                                    `${plans[2].price / plans[2].maxSeats} USD/user`
-                                }}
-                            </div>
-                        </div>
-                        <div
-                            class="font-axiforma my-2 flex w-2/3 items-center justify-center rounded-lg border-servcy-wheat bg-servcy-cream text-center text-lg font-extrabold">
-                            <a
-                                :href="plans[2].href"
-                                class="flex h-full w-full items-center justify-center font-bold !text-servcy-black hover:!text-servcy-green">
-                                {{ plans[2].buttonText }}
-                            </a>
-                        </div>
-                    </div>
-                    <div
-                        class="servcy-most-popular font-axiforma absolute right-[-10px] top-[-10px] text-servcy-cream">
-                        {{ plans[2].ribbon }}
+                        <a
+                            href="https://web.servcy.com/login?plan=business"
+                            target="_blank"
+                            class="servcy-wheat-shadow-right-bottom flex h-16 w-full items-center justify-center rounded-lg bg-servcy-cream text-lg font-extrabold text-servcy-black hover:text-servcy-green">
+                            <Icon
+                                class="mr-2"
+                                size="24"
+                                name="mdi:auto-awesome" />
+                            <span>Get Started</span>
+                        </a>
                     </div>
                 </div>
                 <div
-                    class="servcy-transparent-bg relative col-span-1 row-span-1 rounded-lg p-8">
-                    <div
-                        class="font-axiforma mb-6 flex items-center border-b-2 border-neutral-500 pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
-                        <img
-                            :src="plans[3].icon"
-                            :alt="plans[3].name"
-                            class="mr-2"
-                            width="48"
-                            height="48" />
-                        <div>
-                            {{ plans[3].name }}
-                            <div class="text-sm text-servcy-white">
-                                {{ plans[3].description }}
-                            </div>
+                    class="my-2 flex text-sm"
+                    v-for="differentiator in plans[2].differentiators"
+                    :key="differentiator">
+                    <img src="@/assets/icons/new-releases.svg" class="mr-2" />
+                    <span class="text-servcy-cream">{{ differentiator }}</span>
+                </div>
+                <div
+                    class="servcy-most-popular font-axiforma absolute right-[-10px] top-[-10px] text-servcy-cream">
+                    {{ plans[2].ribbon }}
+                </div>
+                <div
+                    class="my-2 flex text-sm"
+                    v-for="offering in offerings"
+                    :key="offering">
+                    <img src="@/assets/icons/new-releases.svg" class="mr-2" />
+                    <span class="truncate text-servcy-cream">{{
+                        offering.text
+                    }}</span>
+                    <span
+                        v-if="offering.comingSoon"
+                        class="ml-2 text-[8px] text-servcy-wheat"
+                        >(Coming Soon...)</span
+                    >
+                </div>
+            </div>
+            <div
+                class="servcy-transparent-bg relative col-span-1 row-span-1 rounded-lg p-8">
+                <div
+                    class="font-axiforma mb-6 flex h-20 items-center pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
+                    <img
+                        :src="plans[3].icon"
+                        :alt="plans[3].name"
+                        class="mr-4"
+                        width="48"
+                        height="48" />
+                    <div>
+                        {{ plans[3].name }}
+                        <div class="text-sm text-servcy-white">
+                            {{ plans[3].description }}
                         </div>
                     </div>
+                </div>
+                <div class="mb-6 h-16 border-b-2 border-neutral-500 pb-4">
+                    <span class="text-5xl font-extrabold text-servcy-wheat"
+                        >$</span
+                    ><span
+                        class="ml-1 text-5xl font-extrabold text-servcy-wheat"
+                        >249</span
+                    ><span class="text-xl font-extrabold text-servcy-silver"
+                        >/mo</span
+                    >
+                    <span
+                        class="font-axiforma ml-2 self-end text-lg text-servcy-silver">
+                        & up...
+                    </span>
+                </div>
+                <div class="mb-4 h-24">
                     <div class="flex h-20 w-full gap-x-2">
-                        <div
-                            class="font-axiforma my-2 flex w-full items-center justify-center rounded-lg bg-servcy-cream text-center text-lg font-extrabold text-servcy-black">
-                            <a
-                                :href="plans[3].href"
-                                class="flex h-full w-full items-center justify-center !text-servcy-black">
-                                {{ plans[3].buttonText }}
-                            </a>
-                        </div>
+                        <a
+                            :href="plans[3].href"
+                            target="_blank"
+                            class="servcy-wheat-shadow-right-bottom flex h-16 w-full items-center justify-center rounded-lg bg-servcy-black text-lg font-extrabold text-servcy-cream hover:text-servcy-wheat">
+                            <Icon class="mr-2" size="24" name="mdi:gmail" />
+                            <span>{{ plans[3].buttonText }}</span>
+                        </a>
                     </div>
+                </div>
+                <div
+                    class="my-2 flex text-sm"
+                    v-for="differentiator in plans[3].differentiators"
+                    :key="differentiator">
+                    <img src="@/assets/icons/new-releases.svg" class="mr-2" />
+                    <span class="text-servcy-cream">{{ differentiator }}</span>
+                </div>
+                <div
+                    class="my-2 flex text-sm"
+                    v-for="offering in offerings"
+                    :key="offering">
+                    <img src="@/assets/icons/new-releases.svg" class="mr-2" />
+                    <span class="truncate text-servcy-cream">{{
+                        offering.text
+                    }}</span>
+                    <span
+                        v-if="offering.comingSoon"
+                        class="ml-2 text-[8px] text-servcy-wheat"
+                        >(Coming Soon...)</span
+                    >
                 </div>
             </div>
         </div>
@@ -206,7 +290,7 @@ const offerings = [
     { text: "AI Assistance" },
     { text: "Integration with Notion, Figma, Gmail & more" },
     { text: "Custom Analytics" },
-    { text: "Feature Requests", disclaimer: "Subjected to voting." },
+    { text: "Feature Requests" },
     { text: "DORA metrics", comingSoon: true },
     { text: "APIs, & Webhooks", comingSoon: true },
     { text: "Slack & Github bot", comingSoon: true }
@@ -214,36 +298,39 @@ const offerings = [
 const plans = [
     {
         name: "Starter",
-        description: "For a team of upto 5 techies",
+        differentiators: ["Seats for upto 5 techies"],
+        description: "Ideal for small teams to get started.",
         icon: "/shots/starter.svg",
         href: "https://web.servcy.com/login",
-        buttonText: "Get Started",
         showKofi: true,
         price: null
     },
     {
         name: "Plus",
-        description: "For a team of upto 25 techies",
+        description: "For startups that are making waves.",
         icon: "/shots/plus.svg",
         price: "79",
         href: "mailto:contact@servcy.com",
-        buttonText: "Get In Touch",
+        differentiators: ["Seats for upto 25 techies"],
+        buttonText: "Get Started",
         ribbon: "Most Popular",
         maxSeats: 25
     },
     {
         name: "Business",
-        description: "For a team of upto 50 techies",
+        description: "For businesses that are growing.",
         icon: "/shots/business.svg",
-        buttonText: "Get In Touch",
+        buttonText: "Get Started",
         href: "mailto:contact@servcy.com",
         maxSeats: 50,
+        differentiators: ["Seats for upto 50 techies"],
         price: "119",
         ribbon: "~25% Off"
     },
     {
         name: "Enterprise",
-        description: "For a team of more than 50 techies",
+        description: "For enterprises that are scaling.",
+        differentiators: ["Seats for more than 50 techies"],
         icon: "/shots/enterprise.svg",
         buttonText: "Get A Quote",
         href: "mailto:contact@servcy.com",
@@ -265,8 +352,8 @@ useHead({
 
 <style scoped>
 section {
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     background-color: #032123;
 }
 .servcy-most-popular {
