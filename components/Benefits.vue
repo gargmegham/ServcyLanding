@@ -53,13 +53,13 @@
                 </div>
                 <h3
                     class="font-axiforma text-xl font-extrabold text-servcy-cream md:text-2xl">
-                    Blazing fast
+                    Custom Analytics
                 </h3>
                 <span
                     class="font-axiforma mt-3 text-sm font-semibold text-servcy-wheat md:text-lg"
-                    >Built for speed with 100ms interactions and real-time
-                    sync.</span
-                >
+                    >Analytics that are tailored to your workflow. Export as csv
+                    and make data-driven decisions.
+                </span>
             </div>
             <div class="col-span-3">
                 <img
