@@ -4,7 +4,7 @@
             <div>
                 <div
                     class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
-                    Time tracking<br />that works for you
+                    Time tracking<br />That works for you
                 </div>
                 <div
                     class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
