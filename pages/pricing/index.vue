@@ -333,7 +333,7 @@
 </template>
 
 <script setup>
-const isInrSelected = ref(true)
+const isInrSelected = ref(false)
 const offerings = [
     { text: "Unlimited Projects" },
     { text: "Unlimited Issues" },
