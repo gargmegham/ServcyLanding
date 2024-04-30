@@ -40,11 +40,7 @@ export default {
             faqs: [
                 {
                     question: "Is Servcy for people like me?",
-                    answer: "Most of our users are Founders, CXOs, Freelancers, and Software developers. Regardless of whether your goal is to achieve productivity, improve organization, or excel in time management, Servcy is ready to be your reliable ally."
-                },
-                {
-                    question: "Does my free trial limit my access to features?",
-                    answer: "Absolutely not! Your free trial grants you complete access to all of Servcy's extensive features. We believe in providing you with the full experience, allowing you to explore the platform's capabilities and discover how Servcy can truly enhance your productivity."
+                    answer: "Most of our users are tech startups, and freelance agencies. Regardless of whether your goal is to achieve productivity, or project visibility, Servcy is ready to be your reliable ally."
                 },
                 {
                     question: "How can I be sure that my data is secure?",
@@ -54,10 +50,6 @@ export default {
                     question:
                         "If I have any questions, who can I reach out to?",
                     answer: "If you have any questions or require assistance, please don't hesitate to contact our support team by clicking on the chat icon or by sending an email to contact@servcy.com. You can also join our community on Slack. We're here to help you find the best support and will do our best to address any doubts that you may have."
-                },
-                {
-                    question: "Is Servcy a CRM?",
-                    answer: "Servcy is a productivity tool that helps you track & manage your projects, time, inbox, and budget. It's an easy-to-use software built to help small business owners streamline their business processes."
                 }
             ]
         }
