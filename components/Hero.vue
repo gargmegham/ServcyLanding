@@ -11,7 +11,7 @@
                     </h1>
                     <h2
                         class="text-lg font-semibold text-servcy-wheat md:text-xl">
-                        Running a freelance agency or a services business?<br />
+                        Running a freelance agency?<br />
                         By using Servcy's ecosystem of tools you will be able to
                         predict projects cost, profit and timeline with higher
                         accuracy.
