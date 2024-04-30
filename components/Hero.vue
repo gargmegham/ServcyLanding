@@ -1,42 +1,28 @@
 <template>
     <section class="pb-[10vh] pt-[12vh]">
-        <div class="flex flex-col items-center justify-between text-center">
-            <div>
-                <h1
-                    class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
-                    Project management<br />
-                    for highly performant teams.
-                </h1>
-                <h2
-                    class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
-                    Juggling multiple apps for your project lifecycle?<br />
-                    Consolidate now by tracking issues, visualizing sprints and
-                    measuring performance all in one place.
-                </h2>
-            </div>
-            <!-- <div class="flex flex-wrap items-center">
-                <transition name="fade" mode="out-in">
-                    <div
-                        class="font-axiforma servcy-text-bg text-4xl font-semibold md:text-5xl"
-                        :key="rotateText">
-                        {{ hubFor[rotateText] }}
-                        <span v-if="rotateText > 1" class="text-xs"
-                            >(coming soon...)</span
-                        >
-                    </div>
-                </transition>
-            </div> -->
-            <div>
-                <div class="my-8 flex w-full justify-center">
-                    <form class="servcy-form" autocomplete="off">
-                        <input
-                            id="servcy-input"
-                            placeholder="mail@company.com" />
-                        <button id="servcy-button" @click="redirectToLogin">
-                            <span id="servcy-span">Get Started</span>
-                        </button>
-                    </form>
+        <div
+            class="grid min-h-[50vh] max-md:grid-cols-1 max-md:gap-y-10 md:my-20 md:grid-cols-2">
+            <div class="flex flex-col space-y-10 max-md:text-center">
+                <div class="flex w-full flex-col gap-y-6">
+                    <h1
+                        class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
+                        Gain visibility over your project deliverables, costs
+                        and timeline.
+                    </h1>
+                    <h2
+                        class="text-lg font-semibold text-servcy-wheat md:text-xl">
+                        Running a freelance agency or a services business?<br />
+                        By using Servcy's ecosystem of tools you will be able to
+                        predict projects cost, profit and timeline with higher
+                        accuracy.
+                    </h2>
                 </div>
+                <form class="servcy-form max-md:!w-[100%]" autocomplete="off">
+                    <input id="servcy-input" placeholder="mail@company.com" />
+                    <button id="servcy-button" @click="redirectToLogin">
+                        <span id="servcy-span">Get Started</span>
+                    </button>
+                </form>
                 <div class="flex">
                     <img
                         class="mr-2"
@@ -83,6 +69,14 @@
                         class="ml-2" />
                 </div>
             </div>
+            <div class="flex items-center justify-center">
+                <img
+                    src="@/assets/icons/fly-wheel.svg"
+                    alt="fly-wheel"
+                    class="max-w-[500px]"
+                    width="100%"
+                    height="100%" />
+            </div>
         </div>
         <div class="mt-16">
             <img
@@ -95,27 +89,6 @@
 </template>
 
 <script setup>
-// import { ref, onMounted, onBeforeUnmount } from "vue"
-// const rotateText = ref(0)
-// const timeInterval = ref(null)
-// const hubFor = ref([
-//     "Issue Tracking",
-//     "Inbox Aggregation",
-//     "Time Tracking",
-//     "Project Budgeting"
-// ])
-// onMounted(() => {
-//     timeInterval.value = setInterval(() => {
-//         if (rotateText.value < hubFor.value.length - 1) {
-//             rotateText.value++
-//         } else {
-//             rotateText.value = 0
-//         }
-//     }, 2000)
-// })
-// onBeforeUnmount(() => {
-//     clearInterval(timeInterval.value)
-// })
 const validateEmail = (email) => {
     return email.match(
         /^[a-zA-Z0-9._%+-]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!live.com)(?!outlook.com)[a-zA-Z0-9_-]+.[a-zA-Z0-9-.]{2,61}$/
