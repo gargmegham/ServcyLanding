@@ -4,7 +4,7 @@ export default defineNuxtConfig({
     modules: ["@nuxt/content", "@nuxtjs/sitemap", "@nuxt/ui"],
     app: {
         head: {
-            titleTemplate: "%s - for high performance teams",
+            titleTemplate: "%s - for freelance agencies",
             title: "Servcy",
             htmlAttrs: {
                 lang: "en"
@@ -19,7 +19,7 @@ export default defineNuxtConfig({
                     hid: "description",
                     name: "description",
                     content:
-                        "Servcy is a project management suite for highly efficient teams. Consolidate now by tracking issues, time and budget all in one place."
+                        "Servcy provides a project tracking ecosystem for freelance agencies. Gain complete visibility over your project by tracking issues, inbox, time and budget all in one place."
                 },
                 { property: "og:site_name", content: "Servcy" },
                 { hid: "og:type", property: "og:type", content: "website" },
@@ -32,13 +32,13 @@ export default defineNuxtConfig({
                     hid: "og:title",
                     property: "og:title",
                     content:
-                        "Consolidate all your tools in one place with Servcy"
+                        "Gain complete visibility over your projects with Servcy"
                 },
                 {
                     hid: "og:description",
                     property: "og:description",
                     content:
-                        "Servcy is a project management suite for highly efficient teams. Consolidate now by tracking issues, time and budget all in one place."
+                        "Servcy provides a project tracking ecosystem for freelance agencies. Gain complete visibility over your project by tracking issues, inbox, time and budget all in one place."
                 },
                 {
                     hid: "og:image",
