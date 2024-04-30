@@ -14,12 +14,12 @@
                 </div>
             </div>
         </div>
-        <div class="mt-16">
+        <div class="mt-16 flex justify-center">
             <img
                 src="/shots/inbox.svg"
                 alt="inbox-image"
-                width="100%"
-                height="100%" />
+                width="80%"
+                height="80%" />
         </div>
     </section>
 </template>

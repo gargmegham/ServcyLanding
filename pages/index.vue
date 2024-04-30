@@ -5,6 +5,8 @@
         <Benefits />
         <AggregatedInbox />
         <CyclesAndModules />
+        <Timesheet />
+        <Budgeting />
         <FinalCTA />
     </div>
 </template>
