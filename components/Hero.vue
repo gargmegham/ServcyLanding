@@ -23,7 +23,7 @@
                         <span id="servcy-span">Get Started</span>
                     </button>
                 </form>
-                <div class="flex">
+                <div class="flex max-md:hidden">
                     <img
                         class="mr-2"
                         src="@/assets/icons/integrate.svg"
