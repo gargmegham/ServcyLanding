@@ -69,7 +69,7 @@
                         class="ml-2" />
                 </div>
             </div>
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center max-sm:hidden">
                 <img
                     src="@/assets/icons/fly-wheel.svg"
                     alt="fly-wheel"
