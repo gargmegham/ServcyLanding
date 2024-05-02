@@ -1,9 +1,9 @@
 @import url("@/assets/css/typography.css");
 @import url("@/assets/css/backgrounds.css");
 @import url("@/assets/css/shadows.css");
+@import url("https://fonts.googleapis.com/css2?family=Axiforma");
 @import url("https://fonts.googleapis.com/css2?family=Poppins");
 @import url("https://fonts.googleapis.com/css2?family=Castoro");
-@import url("https://fonts.googleapis.com/css2?family=Axiforma:100,200,300,400,500,600,700,800,900");
 
 * {
     font-family: "Poppins" !important;

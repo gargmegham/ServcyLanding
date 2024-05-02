@@ -5,6 +5,8 @@
             <NuxtLink to="/">
                 <img
                     src="/logo.svg"
+                    width="55px"
+                    height="55px"
                     alt="logo"
                     class="vertical-align-middle h-full" />
             </NuxtLink>
