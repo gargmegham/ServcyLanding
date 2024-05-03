@@ -18,7 +18,7 @@
                     </h2>
                 </div>
                 <form class="servcy-form max-md:!w-[100%]" autocomplete="off">
-                    <input id="servcy-input" placeholder="mail@company.com" />
+                    <input id="servcy-input" placeholder="name@company.com" />
                     <button id="servcy-button" @click="redirectToLogin">
                         <span id="servcy-span">Get Started</span>
                     </button>
