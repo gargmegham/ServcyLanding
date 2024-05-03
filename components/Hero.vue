@@ -23,47 +23,90 @@
                         <span id="servcy-span">Get Started</span>
                     </button>
                 </form>
-                <div class="flex max-md:hidden">
+                <div class="flex items-center gap-x-4 max-md:justify-center">
                     <img
-                        class="mr-2"
-                        src="@/assets/icons/integrate.svg"
-                        alt="integrate-icon"
+                        id="trusted-by"
+                        src="@/assets/icons/trusted-by.svg"
+                        alt="trusted-icon"
                         width="90"
                         height="100%" />
-                    <div
-                        class="flex h-[50px] !max-w-[450px] justify-between overflow-hidden">
-                        <img
-                            src="@/assets/icons/logos/figma-logo.svg"
-                            alt="figma-icon"
-                            class="mx-3 my-2 h-[40px] w-[40px]" />
-                        <Icon
-                            class="mx-3 my-2"
-                            color="#F7F6FA"
-                            size="40"
-                            name="mdi:gmail" />
-                        <img
-                            src="@/assets/icons/logos/notion-logo.svg"
-                            alt="notion-icon"
-                            class="mx-3 my-2 h-[40px] w-[40px]" />
-                        <Icon
-                            class="mx-3 my-2"
-                            color="#F7F6FA"
-                            size="40"
-                            name="mdi:microsoft-outlook" />
-                        <Icon
-                            name="mdi:slack"
-                            class="mx-3 my-2"
-                            color="#F7F6FA"
-                            size="40" />
-                        <Icon
-                            class="mx-3 my-2"
-                            color="#F7F6FA"
-                            size="40"
-                            name="uil:github" />
+                    <div class="flex items-center overflow-x-hidden rounded-xl">
+                        <ul
+                            class="animate-infinite-scroll flex items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8">
+                            <li>
+                                <img
+                                    src="@/assets/icons/logos/facebook.svg"
+                                    alt="Facebook" />
+                            </li>
+                            <li>
+                                <img
+                                    src="@/assets/icons/logos/disney.svg"
+                                    alt="Disney" />
+                            </li>
+                            <li>
+                                <img
+                                    src="@/assets/icons/logos/airbnb.svg"
+                                    alt="Airbnb" />
+                            </li>
+                            <li>
+                                <img
+                                    src="@/assets/icons/logos/apple.svg"
+                                    alt="Apple" />
+                            </li>
+                            <li>
+                                <img
+                                    src="@/assets/icons/logos/spark.svg"
+                                    alt="Spark" />
+                            </li>
+                            <li>
+                                <img
+                                    src="@/assets/icons/logos/quora.svg"
+                                    alt="Quora" />
+                            </li>
+                        </ul>
+                        <ul
+                            class="animate-infinite-scroll flex items-center justify-center md:justify-start [&_img]:max-w-none [&_li]:mx-8">
+                            <li>
+                                <img
+                                    src="@/assets/icons/logos/facebook.svg"
+                                    alt="Facebook" />
+                            </li>
+                            <li>
+                                <img
+                                    src="@/assets/icons/logos/disney.svg"
+                                    alt="Disney" />
+                            </li>
+                            <li>
+                                <img
+                                    src="@/assets/icons/logos/airbnb.svg"
+                                    alt="Airbnb" />
+                            </li>
+                            <li>
+                                <img
+                                    src="@/assets/icons/logos/apple.svg"
+                                    alt="Apple" />
+                            </li>
+                            <li>
+                                <img
+                                    src="@/assets/icons/logos/spark.svg"
+                                    alt="Spark" />
+                            </li>
+                            <li>
+                                <img
+                                    src="@/assets/icons/logos/quora.svg"
+                                    alt="Quora" />
+                            </li>
+                            <li>
+                                <img
+                                    src="@/assets/icons/logos/google-cloud.svg"
+                                    alt="Sass" />
+                            </li>
+                        </ul>
                     </div>
                     <img
                         src="@/assets/icons/more.svg"
                         alt="more-icon"
+                        id="more-icon"
                         width="90"
                         height="100%"
                         class="ml-2" />
@@ -182,5 +225,21 @@ const redirectToLogin = () => {
             opacity: var(--text-opacity);
         }
     }
+}
+#more-icon {
+    mask-image: linear-gradient(
+        to left,
+        transparent -10%,
+        rgba(0, 0, 0, 0.57) 33.98%,
+        black 100%
+    );
+}
+#trusted-by {
+    mask-image: linear-gradient(
+        to right,
+        transparent -10%,
+        rgba(0, 0, 0, 0.57) 33.98%,
+        black 100%
+    );
 }
 </style>
