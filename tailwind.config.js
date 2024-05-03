@@ -21,6 +21,15 @@ module.exports = {
                 "servcy-cream": "#F1F2EF",
                 "servcy-neutral": "#7A7A7A",
                 "servcy-wheat": "#D1BFAE"
+            },
+            animation: {
+                "infinite-scroll": "infinite-scroll 25s linear infinite"
+            },
+            keyframes: {
+                "infinite-scroll": {
+                    from: { transform: "translateX(0)" },
+                    to: { transform: "translateX(-100%)" }
+                }
             }
         }
     },
