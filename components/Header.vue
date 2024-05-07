@@ -13,6 +13,11 @@
         </div>
         <div class="cols-3">
             <NuxtLink
+                to="https://youtu.be/s4NSM8URZ1M"
+                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-md:hidden"
+                >Demo
+            </NuxtLink>
+            <NuxtLink
                 to="/support#faqs"
                 class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-md:hidden"
                 >FAQs
