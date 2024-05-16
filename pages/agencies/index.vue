@@ -46,10 +46,7 @@
                     .filter((agency) =>
                         agency.name.toLowerCase().includes(search.toLowerCase())
                     )
-                    .slice(
-                        (pagination.page - 1) * pagination.limit,
-                        pagination.page * pagination.limit
-                    )"
+                    .slice((page - 1) * 20, page * 20)"
                 :key="index">
                 <div
                     class="agency-card servcy-card-bg relative min-h-[400px] rounded-xl p-4"
@@ -226,10 +223,22 @@
         </div>
         <div class="my-6 flex justify-end">
             <UPagination
-                class=""
-                v-model="pagination.page"
-                :page-count="pagination.totalPages"
-                :total="pagination.total" />
+                v-model="page"
+                :page-count="20"
+                show-last
+                show-first
+                :prev-button="{
+                    icon: 'i-heroicons-arrow-small-left-20-solid',
+                    label: 'Prev',
+                    color: 'gray'
+                }"
+                :next-button="{
+                    icon: 'i-heroicons-arrow-small-right-20-solid',
+                    trailing: true,
+                    label: 'Next',
+                    color: 'gray'
+                }"
+                :total="agencies?.length ?? 0" />
         </div>
         <FinalCTA />
     </section>
@@ -238,12 +247,7 @@
 <script setup>
 const agencies = ref([])
 const search = ref("")
-const pagination = ref({
-    page: 1,
-    limit: 20,
-    total: 0,
-    totalPages: 0
-})
+const page = ref(1)
 onMounted(async () => {
     const data = await fetch("/agencies/data.json")
     const companies = await data.json()
@@ -258,12 +262,6 @@ onMounted(async () => {
         })
         .sort((a, b) => b.location - a.location)
         .sort((a, b) => b.executives.length - a.executives.length)
-    pagination.value = {
-        page: 1,
-        limit: 20,
-        total: companies.length,
-        totalPages: Math.ceil(companies.length / 20)
-    }
 })
 useHead({
     title: "Top Vetted Agencies, for your next project",
