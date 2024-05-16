@@ -1,12 +1,12 @@
 <template>
     <div class="servcy-container">
         <Hero />
-        <Dashboard />
-        <Benefits />
-        <AggregatedInbox />
-        <CyclesAndModules />
-        <Timesheet />
         <Budgeting />
+        <Timesheet />
+        <AggregatedInbox />
+        <Dashboard />
+        <CyclesAndModules />
+        <Benefits />
         <FinalCTA />
     </div>
 </template>

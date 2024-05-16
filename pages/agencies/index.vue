@@ -3,7 +3,8 @@
         <div class="relative mb-10 flex flex-col items-center text-center">
             <h1
                 class="font-axiforma text-3xl font-extrabold text-servcy-cream md:text-4xl">
-                Top <span class="servcy-text-bg">Vetted</span> Agencies,<br />
+                Top
+                <span class="servcy-text-bg">Vetted</span> Agencies,<br />
                 <span
                     class="text-lg font-extrabold text-servcy-cream md:text-xl"
                     >for your next project</span
@@ -204,6 +205,7 @@
                 :page-count="pagination.totalPages"
                 :total="pagination.total" />
         </div>
+        <FinalCTA class="min-h-screen" />
     </section>
 </template>
 
