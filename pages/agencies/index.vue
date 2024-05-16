@@ -31,7 +31,7 @@
                                 v-if="!!agency.logo"
                                 width="48"
                                 height="48"
-                                :src="`./agencies/${agency._id}.png`"
+                                :src="`/agencies/${agency._id}.png`"
                                 alt="logo"
                                 class="rounded-full" />
                             <div
@@ -136,7 +136,13 @@
 </template>
 
 <script setup>
-import agencies from "assets/data/agencies.json"
+const agencies = ref([])
+onMounted(async () => {
+    const data = await fetch("/agencies/data.json")
+    const data1 = await data.json()
+    console.log(data1)
+    agencies.value = data1
+})
 </script>
 
 <style scoped>
