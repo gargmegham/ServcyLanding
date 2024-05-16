@@ -48,71 +48,85 @@
                             class="mb-4 flex justify-between border-b-2 border-servcy-wheat pb-4 text-xs font-thin text-servcy-black">
                             <span class="truncate">{{ agency.tagline }}</span>
                         </div>
-                        <div class="mb-4 flex">
+                        <div class="mb-4 flex flex-wrap gap-2">
                             <div
                                 v-if="agency.location"
-                                class="servcy-text-xss mr-2 rounded-md bg-servcy-black p-1 text-servcy-gray">
+                                class="servcy-text-xss rounded-md bg-servcy-black p-1 text-servcy-gray">
                                 <Icon
                                     name="material-symbols:android-emergency-location-service"
-                                    size="16" />
+                                    size="12" />
                                 {{ agency.location }}
                             </div>
                             <div
                                 v-if="agency.reviews_count"
-                                class="servcy-text-xss mr-2 rounded-md bg-servcy-black p-1 text-servcy-gray">
-                                <Icon name="ic:twotone-reviews" size="16" />
+                                class="servcy-text-xss rounded-md bg-servcy-black p-1 text-servcy-gray">
+                                <Icon name="ic:twotone-reviews" size="12" />
                                 {{ agency.reviews_count }} Reviews
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-y-2">
-                            <div
-                                v-if="agency.rating"
-                                class="flex items-center gap-1">
-                                <Icon
-                                    name="streamline:interface-favorite-award-ribbon-reward-like-social-rating-media"
-                                    size="20"
-                                    class="text-servcy" />
-                                <span
-                                    class="text-xs font-bold text-servcy-black"
-                                    >{{ agency.rating }}</span
-                                >
-                            </div>
-                            <div
-                                v-if="agency.hourly_rate"
-                                class="flex items-center gap-1">
-                                <Icon
-                                    name="f7:money-dollar-circle"
-                                    size="20"
-                                    class="text-servcy" />
-                                <span
-                                    class="text-xs font-bold text-servcy-black"
-                                    >{{ agency.hourly_rate }}</span
-                                >
-                            </div>
-                            <div
-                                v-if="agency.min_project_size"
-                                class="flex items-center gap-1">
-                                <Icon
-                                    name="fluent:wallet-credit-card-16-regular"
-                                    size="20"
-                                    class="text-yellow-600" />
-                                <span
-                                    class="text-xs font-bold text-servcy-black"
-                                    >{{ agency.min_project_size }}</span
-                                >
-                            </div>
-                            <div
-                                v-if="agency.team_size"
-                                class="flex items-center gap-1">
-                                <Icon
-                                    name="fluent:people-team-16-regular"
-                                    size="20"
-                                    class="text-blue-800" />
-                                <span
-                                    class="text-xs font-bold text-servcy-black"
-                                    >{{ agency.team_size }}</span
-                                >
-                            </div>
+                            <UTooltip text="Rating" :popper="{ arrow: true }"
+                                ><div
+                                    v-if="agency.rating"
+                                    class="flex items-center gap-1">
+                                    <Icon
+                                        name="streamline:interface-favorite-award-ribbon-reward-like-social-rating-media"
+                                        size="20"
+                                        class="text-servcy" />
+                                    <span
+                                        class="text-xs font-bold text-servcy-black"
+                                        >{{ agency.rating }}</span
+                                    >
+                                </div></UTooltip
+                            >
+                            <UTooltip
+                                text="Hourly Rate"
+                                :popper="{ arrow: true }"
+                                ><div
+                                    v-if="agency.hourly_rate"
+                                    class="flex items-center gap-1">
+                                    <Icon
+                                        name="f7:money-dollar-circle"
+                                        size="20"
+                                        class="text-servcy" />
+                                    <span
+                                        class="text-xs font-bold text-servcy-black"
+                                        >{{ agency.hourly_rate }}</span
+                                    >
+                                </div></UTooltip
+                            >
+                            <UTooltip
+                                text="Minimum Project Size"
+                                :popper="{ arrow: true }">
+                                <div
+                                    v-if="agency.min_project_size"
+                                    class="flex items-center gap-1">
+                                    <Icon
+                                        name="fluent:wallet-credit-card-16-regular"
+                                        size="20"
+                                        class="text-yellow-600" />
+                                    <span
+                                        class="text-xs font-bold text-servcy-black"
+                                        >{{ agency.min_project_size }}</span
+                                    >
+                                </div></UTooltip
+                            >
+                            <UTooltip
+                                text="Team Size"
+                                :popper="{ arrow: true }">
+                                <div
+                                    v-if="agency.team_size"
+                                    class="flex items-center gap-1">
+                                    <Icon
+                                        name="fluent:people-team-16-regular"
+                                        size="20"
+                                        class="text-blue-800" />
+                                    <span
+                                        class="text-xs font-bold text-servcy-black"
+                                        >{{ agency.team_size }}</span
+                                    >
+                                </div>
+                            </UTooltip>
                         </div>
                     </div>
                 </NuxtLink>
