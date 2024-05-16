@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: true },
+    nitro: {
+        plugins: ["~/server/index.ts"]
+    },
     modules: ["@nuxt/content", "@nuxtjs/sitemap", "@nuxt/ui"],
     app: {
         head: {
@@ -95,5 +98,8 @@ export default defineNuxtConfig({
     css: ["@/assets/css/global.css"],
     site: {
         url: "https://servcy.com"
+    },
+    runtimeConfig: {
+        mongodbUri: process.env.MONGODB_URI
     }
 })
