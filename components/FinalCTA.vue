@@ -1,7 +1,7 @@
 <template>
     <section
         id="final-cta"
-        class="flex flex-col justify-center pb-[10vh] text-center">
+        class="flex flex-col justify-center py-10 text-center">
         <div>
             <div
                 class="font-axiforma text-5xl font-extrabold text-servcy-cream md:text-6xl">

@@ -34,6 +34,7 @@
             <PlanBusiness :isInrSelected="isInrSelected" />
             <PlanEnterprise />
         </div>
+        <FinalCTA />
     </section>
 </template>
 

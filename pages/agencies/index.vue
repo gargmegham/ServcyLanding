@@ -1,5 +1,5 @@
 <template>
-    <section class="min-h-screen py-[12vh]">
+    <section class="min-h-screen pt-[12vh]">
         <div class="relative mb-10 flex flex-col items-center text-center">
             <h1
                 class="font-axiforma text-3xl font-extrabold text-servcy-cream md:text-4xl">
