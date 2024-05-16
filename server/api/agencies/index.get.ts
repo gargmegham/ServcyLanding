@@ -27,7 +27,5 @@ export const Company = model("companies", companySchema)
 
 export default defineEventHandler(async (event) => {
     const companies = await Company.find()
-    return {
-        companies
-    }
+    return companies
 })
