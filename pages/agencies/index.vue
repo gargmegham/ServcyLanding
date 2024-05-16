@@ -16,14 +16,40 @@
                 your project.<br />Filter them further by rating, location,
                 reviews, and more.
             </h3>
+            <!-- search bar -->
+            <div class="mt-8 w-full max-w-[600px]">
+                <UInput
+                    v-model="search"
+                    class="ring-none outline-none"
+                    size="lg"
+                    name="search"
+                    placeholder="Search by name..."
+                    icon="i-heroicons-magnifying-glass-20-solid"
+                    autocomplete="off"
+                    :ui="{ icon: { trailing: { pointer: '' } } }">
+                    <template #trailing>
+                        <UButton
+                            v-show="search !== ''"
+                            color="gray"
+                            variant="link"
+                            icon="i-heroicons-x-mark-20-solid"
+                            :padded="false"
+                            @click="search = ''" />
+                    </template>
+                </UInput>
+            </div>
         </div>
         <div
             class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
             <div
-                v-for="(agency, index) of agencies.slice(
-                    (pagination.page - 1) * pagination.limit,
-                    pagination.page * pagination.limit
-                )"
+                v-for="(agency, index) of agencies
+                    .filter((agency) =>
+                        agency.name.toLowerCase().includes(search.toLowerCase())
+                    )
+                    .slice(
+                        (pagination.page - 1) * pagination.limit,
+                        pagination.page * pagination.limit
+                    )"
                 :key="index">
                 <div
                     class="agency-card servcy-card-bg relative min-h-[400px] rounded-xl p-4"
@@ -205,12 +231,13 @@
                 :page-count="pagination.totalPages"
                 :total="pagination.total" />
         </div>
-        <FinalCTA class="min-h-screen" />
+        <FinalCTA />
     </section>
 </template>
 
 <script setup>
 const agencies = ref([])
+const search = ref("")
 const pagination = ref({
     page: 1,
     limit: 20,
