@@ -155,35 +155,42 @@
                                     0,
                                     4
                                 )"
-                                :key="executive._id">
-                                <UTooltip
-                                    text="Executive"
-                                    :popper="{ arrow: true }">
-                                    <div class="flex items-center gap-1">
-                                        <Icon
-                                            v-if="!executive.image"
-                                            name="mdi:head-cog"
-                                            size="24"
-                                            class="text-servcy-black" />
-                                        <img
-                                            v-else
-                                            :src="`/agencies/executives/${executive.name}.jpg`"
-                                            alt="executive"
-                                            width="24"
-                                            height="24"
-                                            class="rounded-full" />
-                                        <div>
-                                            <div
-                                                class="truncate text-xs font-bold text-servcy-black">
-                                                {{ executive.name }}
-                                            </div>
-                                            <div
-                                                class="servcy-text-xss w-48 truncate font-bold text-servcy-black">
-                                                {{ executive.position }}
-                                            </div>
+                                :key="executive._id"
+                                class="flex items-center justify-between gap-x-2">
+                                <div class="flex items-center gap-1">
+                                    <Icon
+                                        v-if="!executive.image"
+                                        name="mdi:head-cog"
+                                        size="24"
+                                        class="text-servcy-black" />
+                                    <img
+                                        v-else
+                                        :src="`/agencies/executives/${executive.name}.jpg`"
+                                        alt="executive"
+                                        width="24"
+                                        height="24"
+                                        class="rounded-full" />
+                                    <div>
+                                        <div
+                                            class="truncate text-xs font-bold text-servcy-black">
+                                            {{ executive.name }}
+                                        </div>
+                                        <div
+                                            class="servcy-text-xss w-36 truncate font-bold text-servcy-black">
+                                            {{ executive.position }}
                                         </div>
                                     </div>
-                                </UTooltip>
+                                </div>
+                                <NuxtLink
+                                    v-if="executive.linkedin"
+                                    :to="executive.linkedin"
+                                    :key="`${executive.name}-linkedin`"
+                                    class="agency-link">
+                                    <Icon
+                                        name="mdi:linkedin"
+                                        size="24"
+                                        class="text-servcy-green"
+                                /></NuxtLink>
                             </div>
                         </div>
                     </div>
