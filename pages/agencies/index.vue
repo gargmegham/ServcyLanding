@@ -18,20 +18,35 @@
         </div>
         <div
             class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
-            <div v-for="(agency, index) of agencies" :key="index">
-                <NuxtLink
-                    :to="`${agency.website}?utm_source=servcy&utm_medium=agencies`"
-                    :key="agency._id"
-                    class="agency-link">
-                    <div
-                        class="agency-card servcy-card-bg rounded-xl p-4"
-                        elevation="2">
+            <div
+                v-for="(agency, index) of agencies.slice(
+                    (pagination.page - 1) * pagination.limit,
+                    pagination.page * pagination.limit
+                )"
+                :key="index">
+                <div
+                    class="agency-card servcy-card-bg relative rounded-xl p-4"
+                    elevation="2">
+                    <NuxtLink
+                        v-if="agency.linkedin"
+                        :to="agency.linkedin"
+                        :key="agency._id"
+                        class="agency-link">
+                        <Icon
+                            name="mdi:linkedin"
+                            size="24"
+                            class="absolute right-2 top-2 text-servcy-green" />
+                    </NuxtLink>
+                    <NuxtLink
+                        :to="`${agency.website}?utm_source=servcy&utm_medium=agencies`"
+                        :key="agency._id"
+                        class="agency-link">
                         <div class="mb-4 flex items-center gap-x-2">
                             <img
                                 v-if="!!agency.logo"
                                 width="48"
                                 height="48"
-                                :src="`/agencies/${agency._id}.png`"
+                                :src="`/agencies/logos/${agency._id}.png`"
                                 alt="logo"
                                 class="rounded-full" />
                             <div
@@ -40,7 +55,7 @@
                                 {{ agency.name[0].toLocaleUpperCase() }}
                             </div>
                             <div
-                                class="agency-title font-poppins truncate text-lg font-extrabold text-servcy-black">
+                                class="agency-title font-poppins w-44 truncate text-lg font-extrabold text-servcy-black">
                                 {{ agency.name.toLocaleUpperCase() }}
                             </div>
                         </div>
@@ -51,7 +66,7 @@
                         <div class="mb-4 flex flex-wrap gap-2">
                             <div
                                 v-if="agency.location"
-                                class="servcy-text-xss rounded-md bg-servcy-black p-1 text-servcy-gray">
+                                class="servcy-text-xss w-24 truncate rounded-md bg-servcy-black p-1 text-servcy-gray">
                                 <Icon
                                     name="material-symbols:android-emergency-location-service"
                                     size="12" />
@@ -128,20 +143,78 @@
                                 </div>
                             </UTooltip>
                         </div>
+                    </NuxtLink>
+                    <div class="mt-4" v-if="agency?.executives?.length > 0">
+                        <div
+                            class="mb-2 w-20 border-b-2 border-servcy-wheat text-sm font-extrabold text-servcy-black">
+                            Executives:
+                        </div>
+                        <div class="grid grid-cols-1 gap-y-1">
+                            <div
+                                v-for="executive in agency.executives"
+                                :key="executive._id">
+                                <UTooltip
+                                    text="Executive"
+                                    :popper="{ arrow: true }">
+                                    <div class="flex items-center gap-1">
+                                        <Icon
+                                            v-if="!executive.image"
+                                            name="mdi:head-cog"
+                                            size="24"
+                                            class="text-servcy-black" />
+                                        <img
+                                            v-else
+                                            :src="`/agencies/executives/${executive.name}.jpg`"
+                                            alt="executive"
+                                            width="24"
+                                            height="24"
+                                            class="rounded-full" />
+                                        <div>
+                                            <div
+                                                class="truncate text-xs font-bold text-servcy-black">
+                                                {{ executive.name }}
+                                            </div>
+                                            <div
+                                                class="servcy-text-xss w-48 truncate font-bold text-servcy-black">
+                                                {{ executive.position }}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </UTooltip>
+                            </div>
+                        </div>
                     </div>
-                </NuxtLink>
+                </div>
             </div>
+        </div>
+        <div class="my-6 flex justify-end">
+            <UPagination
+                class=""
+                v-model="pagination.page"
+                :page-count="pagination.totalPages"
+                :total="pagination.total" />
         </div>
     </section>
 </template>
 
 <script setup>
 const agencies = ref([])
+const pagination = ref({
+    page: 1,
+    limit: 20,
+    total: 0,
+    totalPages: 0
+})
 onMounted(async () => {
     const data = await fetch("/agencies/data.json")
-    const data1 = await data.json()
-    console.log(data1)
-    agencies.value = data1
+    const companies = await data.json()
+    agencies.value = companies
+    pagination.value = {
+        page: 1,
+        limit: 20,
+        total: companies.length,
+        totalPages: Math.ceil(companies.length / 20)
+    }
 })
 </script>
 
