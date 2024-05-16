@@ -26,13 +26,13 @@
                     <div
                         class="agency-card servcy-card-bg rounded-xl p-4"
                         elevation="2">
-                        <div class="mb-4 flex items-center gap-4">
+                        <div class="mb-4 flex items-center gap-x-2">
                             <img
                                 v-if="!!agency.logo"
                                 width="48"
                                 height="48"
                                 :src="`./agencies/${agency._id}.png`"
-                                alt="agency logo"
+                                alt="logo"
                                 class="rounded-full" />
                             <div
                                 v-else
@@ -52,7 +52,16 @@
                             <div
                                 v-if="agency.location"
                                 class="servcy-text-xss mr-2 rounded-md bg-servcy-black p-1 text-servcy-gray">
+                                <Icon
+                                    name="material-symbols:android-emergency-location-service"
+                                    size="16" />
                                 {{ agency.location }}
+                            </div>
+                            <div
+                                v-if="agency.reviews_count"
+                                class="servcy-text-xss mr-2 rounded-md bg-servcy-black p-1 text-servcy-gray">
+                                <Icon name="ic:twotone-reviews" size="16" />
+                                {{ agency.reviews_count }} Reviews
                             </div>
                         </div>
                         <div class="grid grid-cols-2 gap-y-2">
