@@ -106,7 +106,7 @@ import { ref } from "vue"
 const searchTerm = ref("")
 
 useHead({
-    title: "Servcy Blog",
+    title: "Servcy Blogs",
     meta: [
         {
             hid: "description",

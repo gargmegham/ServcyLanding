@@ -4,8 +4,8 @@ export default defineNuxtConfig({
     modules: ["@nuxt/content", "@nuxtjs/sitemap", "@nuxt/ui"],
     app: {
         head: {
-            titleTemplate: "%s - for freelance agencies",
-            title: "Servcy",
+            titleTemplate: "%s",
+            title: "Servcy - Project Tracking Ecosystem for Freelance Agencies",
             htmlAttrs: {
                 lang: "en"
             },

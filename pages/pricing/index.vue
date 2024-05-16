@@ -41,7 +41,7 @@
 <script setup>
 const isInrSelected = ref(false)
 useHead({
-    title: "Growth Pricing",
+    title: "Servcy Pricing",
     meta: [
         {
             hid: "description",

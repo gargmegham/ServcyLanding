@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 const { slug } = useRoute().params
 useHead({
-    title: `Blogs | ${slug}`,
+    title: `Servcy Blogs | ${slug}`,
     meta: [
         {
             hid: "description",
