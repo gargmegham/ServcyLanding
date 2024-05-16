@@ -95,11 +95,5 @@ export default defineNuxtConfig({
     css: ["@/assets/css/global.css"],
     site: {
         url: "https://servcy.com"
-    },
-    nitro: {
-        plugins: ["~/server/index.ts"]
-    },
-    runtimeConfig: {
-        mongodbUri: process.env.MONGODB_URI
     }
 })
