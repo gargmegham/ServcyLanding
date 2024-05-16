@@ -236,6 +236,28 @@ onMounted(async () => {
         totalPages: Math.ceil(companies.length / 20)
     }
 })
+useHead({
+    title: "Top Vetted Agencies, for your next project",
+    meta: [
+        {
+            hid: "description",
+            name: "description",
+            content:
+                "We have vetted the best agencies for you, so you can focus on your project. Filter them further by rating, location, reviews, and more."
+        },
+        {
+            hid: "keywords",
+            name: "keywords",
+            content:
+                "agencies, vetted agencies, top agencies, best agencies, agencies for project, agencies for startups, agencies for businesses"
+        },
+        {
+            hid: "author",
+            name: "author",
+            content: "Servcy"
+        }
+    ]
+})
 </script>
 
 <style scoped>
