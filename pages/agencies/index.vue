@@ -17,14 +17,14 @@
             </h3>
         </div>
         <div
-            class="xs:sm:grid-cols-1 mt-10 grid grid-cols-3 gap-8 py-10 xl:grid-cols-4">
+            class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4">
             <div v-for="(agency, index) of agencies" :key="index">
                 <NuxtLink
                     :to="`${agency.website}?utm_source=servcy&utm_medium=agencies`"
                     :key="agency._id"
                     class="agency-link">
                     <div
-                        class="agency-card servcy-card-bg h-72 rounded-xl p-4"
+                        class="agency-card servcy-card-bg rounded-xl p-4"
                         elevation="2">
                         <div class="mb-4 flex items-center gap-4">
                             <img
@@ -50,14 +50,60 @@
                         </div>
                         <div class="mb-4 flex">
                             <div
-                                v-for="tag in agency.tags"
+                                v-if="agency.location"
                                 class="servcy-text-xss mr-2 rounded-md bg-servcy-black p-1 text-servcy-gray">
-                                {{ tag }}
+                                {{ agency.location }}
                             </div>
                         </div>
-                        <div
-                            class="h-20 overflow-hidden text-sm text-servcy-black">
-                            {{ agency.description }}
+                        <div class="grid grid-cols-2 gap-y-2">
+                            <div
+                                v-if="agency.rating"
+                                class="flex items-center gap-1">
+                                <Icon
+                                    name="streamline:interface-favorite-award-ribbon-reward-like-social-rating-media"
+                                    size="20"
+                                    class="text-servcy" />
+                                <span
+                                    class="text-xs font-bold text-servcy-black"
+                                    >{{ agency.rating }}</span
+                                >
+                            </div>
+                            <div
+                                v-if="agency.hourly_rate"
+                                class="flex items-center gap-1">
+                                <Icon
+                                    name="f7:money-dollar-circle"
+                                    size="20"
+                                    class="text-servcy" />
+                                <span
+                                    class="text-xs font-bold text-servcy-black"
+                                    >{{ agency.hourly_rate }}</span
+                                >
+                            </div>
+                            <div
+                                v-if="agency.min_project_size"
+                                class="flex items-center gap-1">
+                                <Icon
+                                    name="fluent:wallet-credit-card-16-regular"
+                                    size="20"
+                                    class="text-yellow-600" />
+                                <span
+                                    class="text-xs font-bold text-servcy-black"
+                                    >{{ agency.min_project_size }}</span
+                                >
+                            </div>
+                            <div
+                                v-if="agency.team_size"
+                                class="flex items-center gap-1">
+                                <Icon
+                                    name="fluent:people-team-16-regular"
+                                    size="20"
+                                    class="text-blue-800" />
+                                <span
+                                    class="text-xs font-bold text-servcy-black"
+                                    >{{ agency.team_size }}</span
+                                >
+                            </div>
                         </div>
                     </div>
                 </NuxtLink>
