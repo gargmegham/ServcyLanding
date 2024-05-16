@@ -25,7 +25,7 @@
                 )"
                 :key="index">
                 <div
-                    class="agency-card servcy-card-bg relative rounded-xl p-4"
+                    class="agency-card servcy-card-bg relative min-h-[400px] rounded-xl p-4"
                     elevation="2">
                     <NuxtLink
                         v-if="agency.linkedin"
@@ -151,7 +151,10 @@
                         </div>
                         <div class="grid grid-cols-1 gap-y-1">
                             <div
-                                v-for="executive in agency.executives"
+                                v-for="executive in agency.executives.slice(
+                                    0,
+                                    4
+                                )"
                                 :key="executive._id">
                                 <UTooltip
                                     text="Executive"
@@ -209,6 +212,16 @@ onMounted(async () => {
     const data = await fetch("/agencies/data.json")
     const companies = await data.json()
     agencies.value = companies
+        .map((company) => {
+            if (!company.executives)
+                return {
+                    ...company,
+                    executives: []
+                }
+            return company
+        })
+        .sort((a, b) => b.location - a.location)
+        .sort((a, b) => b.executives.length - a.executives.length)
     pagination.value = {
         page: 1,
         limit: 20,
