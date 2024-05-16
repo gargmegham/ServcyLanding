@@ -28,6 +28,11 @@
                 >Pricing
             </NuxtLink>
             <NuxtLink
+                to="/agencies"
+                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
+                >Vetted Agencies
+            </NuxtLink>
+            <NuxtLink
                 to="/support"
                 class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
                 >Contact Us
