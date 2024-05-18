@@ -96,8 +96,12 @@ const validateEmail = (email) => {
 }
 const redirectToLogin = () => {
     const email = document.getElementById("servcy-input")
-    if (!email.value || !validateEmail(email.value)) {
-        alert("Please enter a valid email address")
+    if (!email.value) {
+        alert("Please enter a valid email address.")
+        return
+    }
+    if (!validateEmail(email.value)) {
+        alert("Only workspace emails are allowed.")
         return
     }
     window.open(`https://web.servcy.com/login?email=${email.value}`, "_blank")
