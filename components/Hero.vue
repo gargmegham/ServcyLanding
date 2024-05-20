@@ -22,7 +22,7 @@
                         <span id="servcy-span">Get Started</span>
                     </button>
                 </form>
-                <div class="flex max-md:hidden">
+                <div class="flex max-lg:hidden">
                     <img
                         class="mr-2"
                         src="@/assets/icons/integrate.svg"
@@ -68,7 +68,7 @@
                         class="ml-2" />
                 </div>
             </div>
-            <div class="flex items-center justify-center max-sm:hidden">
+            <div class="flex items-center justify-center">
                 <img
                     src="@/assets/icons/fly-wheel.svg"
                     alt="fly-wheel"

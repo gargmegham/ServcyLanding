@@ -1,7 +1,7 @@
 <template>
     <header
         class="align-center fixed top-0 z-10 flex h-[10vh] w-full justify-between rounded-b-lg bg-servcy-green px-[5%] py-4">
-        <div>
+        <div class="flex items-center gap-x-2">
             <NuxtLink to="/">
                 <img
                     src="/logo.svg"
@@ -10,6 +10,7 @@
                     alt="logo"
                     class="vertical-align-middle h-full" />
             </NuxtLink>
+            <div class="font-axiforma text-3xl md:text-5xl">Servcy</div>
         </div>
         <div class="cols-3">
             <NuxtLink
