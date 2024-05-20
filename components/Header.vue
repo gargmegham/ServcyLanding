@@ -10,7 +10,7 @@
                     alt="logo"
                     class="vertical-align-middle h-full" />
             </NuxtLink>
-            <div class="font-axiforma text-3xl md:text-5xl">Servcy</div>
+            <div class="font-axiforma text-3xl md:text-5xl max-md:hidden !text-servcy-cream">Servcy</div>
         </div>
         <div class="cols-3">
             <NuxtLink
