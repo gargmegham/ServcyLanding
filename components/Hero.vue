@@ -6,7 +6,7 @@
                 <div class="flex w-full flex-col gap-y-6">
                     <h1
                         class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
-                        Continous visibility over projects estimated and actual
+                        Continuous visibility over projects estimated and actual
                         profit.
                     </h1>
                     <h2
