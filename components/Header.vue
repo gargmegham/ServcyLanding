@@ -30,17 +30,17 @@
             </NuxtLink>
             <NuxtLink
                 to="/support#faqs"
-                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-md:hidden"
+                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-lg:hidden"
                 >FAQs
             </NuxtLink>
             <NuxtLink
                 to="/agencies"
-                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
+                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-lg:hidden"
                 >Directory
             </NuxtLink>
             <NuxtLink
                 to="/blogs"
-                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-md:hidden">
+                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-lg:hidden">
                 Blogs
             </NuxtLink>
             <button
