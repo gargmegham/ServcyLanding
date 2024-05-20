@@ -19,24 +19,24 @@
                 >Demo
             </NuxtLink>
             <NuxtLink
-                to="/support#faqs"
-                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-md:hidden"
-                >FAQs
-            </NuxtLink>
-            <NuxtLink
                 to="/pricing"
                 class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
                 >Pricing
             </NuxtLink>
             <NuxtLink
-                to="/agencies"
-                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
-                >Directory
-            </NuxtLink>
-            <NuxtLink
                 to="/support"
                 class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
                 >Contact Us
+            </NuxtLink>
+            <NuxtLink
+                to="/support#faqs"
+                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-md:hidden"
+                >FAQs
+            </NuxtLink>
+            <NuxtLink
+                to="/agencies"
+                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
+                >Directory
             </NuxtLink>
             <NuxtLink
                 to="/blogs"
