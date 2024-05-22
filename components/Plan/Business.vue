@@ -73,9 +73,6 @@ const plan = {
 }
 function checkout() {
     Paddle.Checkout.open({
-        settings: {
-            theme: "dark"
-        },
         items: [
             {
                 priceId: config.public.businessPriceId,
