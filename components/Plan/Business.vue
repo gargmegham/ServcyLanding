@@ -69,7 +69,7 @@ const offerings = [
 const plan = {
     name: "Business",
     description: "For businesses that are growing.",
-    usdPrice: "149"
+    usdPrice: "99"
 }
 </script>
 

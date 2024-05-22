@@ -51,6 +51,7 @@
 
 <script setup>
 const offerings = [
+    "Invite Upto 10 Users",
     "Unlimited Projects",
     "Unlimited Cycles",
     "Unlimited Modules",
@@ -70,6 +71,6 @@ const offerings = [
 const plan = {
     name: "Plus",
     description: "For startups that are making waves.",
-    usdPrice: "99"
+    usdPrice: "49"
 }
 </script>
