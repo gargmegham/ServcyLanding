@@ -12,9 +12,9 @@
                     <h2
                         class="text-lg font-semibold text-servcy-wheat md:text-xl">
                         Hate it when your projects go over budget?<br />
-                        By using Servcy's ecosystem you will be able to predict
-                        projects cost, profit and timeline with higher accuracy
-                        consistently.
+                        With Servcy's ecosystem you will be able to predict
+                        projects cost,<br />profit and timeline with higher
+                        accuracy consistently.
                     </h2>
                 </div>
                 <form class="servcy-form max-md:!w-[100%]" autocomplete="off">
