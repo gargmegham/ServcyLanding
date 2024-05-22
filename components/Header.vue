@@ -5,15 +5,11 @@
             <NuxtLink to="/">
                 <img
                     src="/logo.svg"
-                    width="55px"
-                    height="55px"
+                    width="160px"
+                    height="160px"
                     alt="logo"
                     class="vertical-align-middle h-full" />
             </NuxtLink>
-            <div
-                class="font-axiforma text-3xl !text-servcy-cream max-md:hidden md:text-5xl">
-                Servcy
-            </div>
         </div>
         <div class="cols-3">
             <NuxtLink
