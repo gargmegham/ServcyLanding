@@ -9,14 +9,16 @@
                         Continuous visibility over projects estimated and actual
                         profit.
                     </h1>
-                    <h2
-                        class="text-lg font-semibold text-servcy-wheat md:text-xl"
-                        style="line-height: 1.8rem !important">
-                        Hate it when your projects go over budget?<br />
-                        With Servcy's ecosystem you will be able to predict
-                        projects cost,<br />profit and timeline with higher
-                        accuracy consistently.
-                    </h2>
+                    <div
+                        class="space-y-2 text-lg font-semibold text-servcy-wheat md:text-xl">
+                        <h2>Hate it when your projects go over budget?</h2>
+                        <h2>
+                            With Servcy's ecosystem you will be able to predict
+                            projects cost,<br />
+                            profit and timeline with higher accuracy
+                            consistently.
+                        </h2>
+                    </div>
                 </div>
                 <form class="servcy-form max-md:!w-[100%]" autocomplete="off">
                     <input
