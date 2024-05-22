@@ -29,7 +29,7 @@
                         type="button"
                         :disabled="input === ''"
                         class="disabled:filter-grayscale-65 disabled:cursor-not-allowed disabled:opacity-50">
-                        <span id="servcy-span">Get Started</span>
+                        <span id="servcy-span">Try For Free</span>
                     </button>
                 </form>
                 <div class="flex max-lg:hidden">
