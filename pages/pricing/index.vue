@@ -26,11 +26,52 @@
             <span
                 class="absolute inset-x-0 -bottom-px mx-auto h-px w-1/2 bg-gradient-to-r from-transparent via-amber-500 to-transparent" />
         </a>
+        <UModal v-model="checkoutCompleted">
+            <UCard
+                :ui="{
+                    ring: '',
+                    background: '!bg-servcy-black'
+                }">
+                <template #header>
+                    <div>🎊 Payment Successful</div>
+                </template>
+                <div class="text-servcy-cream">
+                    <p>
+                        We've received your payment and you will receive an
+                        email with your receipt shortly.
+                    </p>
+                    <p class="mt-4">
+                        If you have any questions or concerns, please don't
+                        hesitate to reach out to us at
+                        <a
+                            href="mailto:contact@servcy.com"
+                            class="text-servcy-wheat !outline-none !ring-0"
+                            >contact@servcy.com</a
+                        >
+                    </p>
+                </div>
+                <template #footer>
+                    <div class="flex justify-end">
+                        <button
+                            class="rounded bg-servcy-wheat p-2"
+                            style="border-style: solid">
+                            <a
+                                href="https://web.servcy.com/login"
+                                target="_blank"
+                                class="font-bold !text-servcy-green hover:!text-servcy-black"
+                                >Register</a
+                            >
+                        </button>
+                    </div>
+                </template>
+            </UCard>
+        </UModal>
     </section>
 </template>
 
 <script setup>
 const config = useRuntimeConfig()
+const checkoutCompleted = ref(false)
 useHead({
     title: "Servcy Pricing",
     meta: [
@@ -46,7 +87,12 @@ onMounted(() => {
     Paddle.Initialize({
         token: config.public.paddleClientToken,
         eventCallback: function (data) {
-            console.log("Paddle Event:", data)
+            if (data.name == "checkout.completed") {
+                checkoutCompleted.value = true
+                setTimeout(() => {
+                    checkoutCompleted.value = false
+                }, 5000)
+            }
         }
     })
 })
