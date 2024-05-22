@@ -6,17 +6,15 @@
                 <div class="flex w-full flex-col gap-y-6">
                     <h1
                         class="font-axiforma text-3xl font-extrabold text-servcy-cream md:text-4xl lg:text-5xl xl:text-6xl">
-                        Continuous visibility over projects estimated and actual
-                        profit.
+                        Maximize Your Project Profits with Real-Time Insights
                     </h1>
                     <div
                         class="space-y-2 text-base font-semibold text-servcy-wheat md:text-xl">
                         <h2>Hate it when your projects go over budget?</h2>
                         <h2>
-                            Servcy's ecosystem helps you to predict projects
-                            cost,<br />
-                            profit and timeline with higher accuracy
-                            consistently.
+                            With Servcy's ecosystem you can predict projects
+                            profit,<br />
+                            and analyse cost with higher accuracy.
                         </h2>
                     </div>
                 </div>
