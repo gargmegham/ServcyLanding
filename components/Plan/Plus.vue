@@ -87,7 +87,6 @@ function checkout() {
     })
 }
 onMounted(() => {
-    Paddle.Environment.set("sandbox")
     Paddle.Initialize({
         token: config.public.paddleClientToken,
         eventCallback: function (data) {
