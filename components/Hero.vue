@@ -5,7 +5,7 @@
             <div class="flex flex-col space-y-10 max-md:text-center">
                 <div class="flex w-full flex-col gap-y-6">
                     <h1
-                        class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
+                        class="font-axiforma text-5xl font-extrabold text-servcy-cream md:text-6xl">
                         Continuous visibility over projects estimated and actual
                         profit.
                     </h1>
