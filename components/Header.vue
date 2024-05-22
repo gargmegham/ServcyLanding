@@ -27,16 +27,33 @@
                 class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
                 >Contact Us
             </NuxtLink>
-            <NuxtLink
-                to="/agencies"
-                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-lg:hidden"
-                >Directory
-            </NuxtLink>
-            <NuxtLink
-                to="/blogs"
-                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-lg:hidden">
-                Blogs
-            </NuxtLink>
+            <button
+                @mouseenter="menuOpen = true"
+                class="font-castoro relative mr-6 font-bold !text-servcy-cream max-lg:hidden">
+                <span>Resources</span>
+                <div
+                    v-if="menuOpen"
+                    @mouseleave="menuOpen = false"
+                    class="absolute right-0 top-8 flex w-52 flex-col rounded bg-servcy-black px-4 py-4 text-left text-sm">
+                    <NuxtLink
+                        to="/agencies"
+                        class="font-castoro font-bold !text-servcy-wheat"
+                        ><div>Agencies</div>
+                        <div class="mt-1 text-xs text-gray-300">
+                            Verified agencies for you.
+                        </div>
+                    </NuxtLink>
+                    <hr class="my-4 opacity-30" />
+                    <NuxtLink
+                        to="/blogs"
+                        class="font-castoro font-bold !text-servcy-wheat">
+                        Blogs
+                        <div class="mt-1 text-xs text-gray-300">
+                            Read our latest blogs.
+                        </div>
+                    </NuxtLink>
+                </div>
+            </button>
             <button
                 class="servcy-wheat-shadow-right-bottom rounded border-servcy-wheat bg-servcy-black p-2"
                 style="border-style: solid">
@@ -50,3 +67,7 @@
         </div>
     </header>
 </template>
+
+<script setup>
+const menuOpen = ref(false)
+</script>
