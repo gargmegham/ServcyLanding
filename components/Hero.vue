@@ -1,7 +1,7 @@
 <template>
     <section class="py-[10vh] max-md:pt-[12vh]">
         <div
-            class="grid min-h-[50vh] max-md:grid-cols-1 max-md:gap-y-10 md:my-20 md:grid-cols-2 md:gap-x-4">
+            class="grid min-h-[50vh] max-md:grid-cols-1 max-md:gap-y-10 md:mt-20 md:grid-cols-2 md:gap-x-4">
             <div class="flex flex-col space-y-10">
                 <div class="flex w-full flex-col gap-y-6">
                     <h1
@@ -16,6 +16,37 @@
                             profit,<br />
                             and analyse cost with higher accuracy.
                         </h2>
+                    </div>
+                </div>
+                <div class="mt-10 flex items-center gap-x-2">
+                    <img
+                        src="@/assets/icons/social-proof.svg"
+                        alt="social-proof"
+                        width="220px" />
+                    <div class="py-1">
+                        <div class="flex">
+                            <img
+                                src="@/assets/icons/star.svg"
+                                alt="social-proof"
+                                width="20px" />
+                            <img
+                                src="@/assets/icons/star.svg"
+                                alt="social-proof"
+                                width="20px" />
+                            <img
+                                src="@/assets/icons/star.svg"
+                                alt="social-proof"
+                                width="20px" />
+                            <img
+                                src="@/assets/icons/star.svg"
+                                alt="social-proof"
+                                width="20px" />
+                            <img
+                                src="@/assets/icons/star.svg"
+                                alt="social-proof"
+                                width="20px" />
+                        </div>
+                        <div class="text-xs">Join 100+ happy businesses</div>
                     </div>
                 </div>
                 <form class="servcy-form max-md:!w-[100%]" autocomplete="off">
@@ -82,7 +113,7 @@
                 <img
                     src="@/assets/icons/fly-wheel.svg"
                     alt="fly-wheel"
-                    style="max-height: 500px !important"
+                    style="max-height: 530px !important"
                     width="100%"
                     height="100%" />
             </div>
