@@ -29,13 +29,12 @@
         </div>
         <div class="mb-4 h-24">
             <div class="flex h-20 w-full gap-x-2">
-                <a
-                    href="https://web.servcy.com/login?plan=business"
-                    target="_blank"
+                <button
+                    @click="checkout"
                     class="servcy-wheat-shadow-right-bottom flex h-16 w-full items-center justify-center rounded-lg bg-servcy-cream text-lg font-extrabold text-servcy-black hover:text-servcy-green">
                     <Icon class="mr-2" size="24" name="mdi:auto-awesome" />
                     <span>Get Started</span>
-                </a>
+                </button>
             </div>
         </div>
         <div class="my-2 flex text-sm">
@@ -55,6 +54,7 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig()
 const offerings = [
     "Invite Upto 25 Users",
     "Everything New",
@@ -70,6 +70,19 @@ const plan = {
     name: "Business",
     description: "For businesses that are growing.",
     usdPrice: "99"
+}
+function checkout() {
+    Paddle.Checkout.open({
+        settings: {
+            theme: "dark"
+        },
+        items: [
+            {
+                priceId: config.public.businessPriceId,
+                quantity: 1
+            }
+        ]
+    })
 }
 </script>
 

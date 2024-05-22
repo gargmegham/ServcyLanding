@@ -30,7 +30,7 @@
 </template>
 
 <script setup>
-const isInrSelected = ref(false)
+const config = useRuntimeConfig()
 useHead({
     title: "Servcy Pricing",
     meta: [
@@ -41,6 +41,14 @@ useHead({
                 "Servcy's pricing plans for teams of all sizes. Start with a 7 day free trial today."
         }
     ]
+})
+onMounted(() => {
+    Paddle.Initialize({
+        token: config.public.paddleClientToken,
+        eventCallback: function (data) {
+            console.log("Paddle Event:", data)
+        }
+    })
 })
 </script>
 

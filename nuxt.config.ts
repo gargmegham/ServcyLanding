@@ -99,7 +99,8 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             paddleClientToken: process.env.NUXT_PUBLIC_PADDLE_CLIENT_TOKEN,
-            plusPriceId: process.env.NUXT_PUBLIC_PLUS_PRICE_ID
+            plusPriceId: process.env.NUXT_PUBLIC_PLUS_PRICE_ID,
+            businessPriceId: process.env.NUXT_PUBLIC_BUSINESS_PRICE_ID
         }
     }
 })

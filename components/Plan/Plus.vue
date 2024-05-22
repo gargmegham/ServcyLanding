@@ -49,6 +49,7 @@
 </template>
 
 <script setup>
+const config = useRuntimeConfig()
 const offerings = [
     "Invite Upto 10 Users",
     "Unlimited Projects",
@@ -72,7 +73,6 @@ const plan = {
     description: "For startups that are making waves.",
     usdPrice: "49"
 }
-const config = useRuntimeConfig()
 function checkout() {
     Paddle.Checkout.open({
         settings: {
@@ -86,12 +86,4 @@ function checkout() {
         ]
     })
 }
-onMounted(() => {
-    Paddle.Initialize({
-        token: config.public.paddleClientToken,
-        eventCallback: function (data) {
-            console.log("Paddle Event:", data)
-        }
-    })
-})
 </script>
