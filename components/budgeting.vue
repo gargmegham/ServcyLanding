@@ -3,11 +3,11 @@
         <div class="flex flex-col items-center justify-between text-center">
             <div>
                 <div
-                    class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
+                    class="font-axiforma text-3xl font-extrabold text-servcy-cream md:text-4xl">
                     Project Cost Analysis<br />Accurate, Fast and Easy
                 </div>
                 <div
-                    class="mt-6 px-20 text-lg font-semibold text-servcy-wheat md:text-xl">
+                    class="mt-6 px-20 text-base font-semibold text-servcy-wheat max-md:text-left md:text-xl">
                     By assigning each member an hourly rate or a per project
                     rate, you get better insights into the cost of project.<br />
                     Adding other one-time or recurring costs like software

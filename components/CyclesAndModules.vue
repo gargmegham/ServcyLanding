@@ -3,12 +3,12 @@
         <div class="flex flex-col items-center justify-between text-center">
             <div>
                 <div
-                    class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
+                    class="font-axiforma text-3xl font-extrabold text-servcy-cream md:text-4xl">
                     Conquer with cycles<br />
                     Divide into modules
                 </div>
                 <div
-                    class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
+                    class="mt-6 px-20 text-base font-semibold text-servcy-wheat max-md:text-left md:text-xl">
                     Cycles helps you minimize project risks through forward
                     planning so that software meets customer expectations.<br />Modules
                     enable grouping and organization of issues within a specific

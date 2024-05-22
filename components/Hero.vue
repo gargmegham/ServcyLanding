@@ -1,8 +1,8 @@
 <template>
-    <section class="py-[10vh]">
+    <section class="py-[10vh] max-md:pt-[12vh]">
         <div
             class="grid min-h-[50vh] max-md:grid-cols-1 max-md:gap-y-10 md:my-20 md:grid-cols-2 md:gap-x-4">
-            <div class="flex flex-col space-y-10 max-md:text-center">
+            <div class="flex flex-col space-y-10">
                 <div class="flex w-full flex-col gap-y-6">
                     <h1
                         class="font-axiforma text-3xl font-extrabold text-servcy-cream md:text-4xl lg:text-5xl xl:text-6xl">
@@ -10,7 +10,7 @@
                         profit.
                     </h1>
                     <div
-                        class="space-y-2 text-lg font-semibold text-servcy-wheat md:text-xl">
+                        class="space-y-2 text-base font-semibold text-servcy-wheat md:text-xl">
                         <h2>Hate it when your projects go over budget?</h2>
                         <h2>
                             Servcy's ecosystem helps you to predict projects

@@ -3,12 +3,12 @@
         <div class="flex flex-col items-center justify-between text-center">
             <div>
                 <div
-                    class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
+                    class="font-axiforma text-3xl font-extrabold text-servcy-cream md:text-4xl">
                     Eliminate the excess,<br />
                     maximize the impact
                 </div>
                 <div
-                    class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
+                    class="mt-6 px-20 text-base font-semibold text-servcy-wheat max-md:text-left md:text-xl">
                     Engineered for efficiency, insights and ease of use.<br />
                     Enjoy custom analytics, keyboard shortcuts, and more.
                 </div>
