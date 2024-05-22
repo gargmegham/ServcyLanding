@@ -42,7 +42,7 @@
                     Built for your keyboard
                 </h3>
                 <span
-                    class="font-axiforma mt-3 text-sm font-semibold text-servcy-wheat md:text-lg"
+                    class="mt-3 text-sm font-semibold text-servcy-wheat md:text-base"
                     >Fly through your tasks with rapid-fire keyboard
                     shortcuts<br />for everything. Literally everything.</span
                 >
@@ -56,7 +56,7 @@
                     Custom Analytics
                 </h3>
                 <span
-                    class="font-axiforma mt-3 text-sm font-semibold text-servcy-wheat md:text-lg"
+                    class="mt-3 text-sm font-semibold text-servcy-wheat md:text-base"
                     >Analytics that are tailored to your workflow. Export as csv
                     and make data-driven decisions.
                 </span>
