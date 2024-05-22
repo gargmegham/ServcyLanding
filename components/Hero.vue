@@ -46,7 +46,7 @@
                                 alt="social-proof"
                                 width="20px" />
                         </div>
-                        <div class="text-xs">Join 100+ happy businesses</div>
+                        <div class="text-xs">Join 100+ profitable agencies</div>
                     </div>
                 </div>
                 <form class="servcy-form max-md:!w-[100%]" autocomplete="off">
