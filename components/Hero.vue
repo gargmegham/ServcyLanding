@@ -1,5 +1,5 @@
 <template>
-    <section class="pb-[10vh] pt-[12vh]">
+    <section class="py-[10vh]">
         <div
             class="grid min-h-[50vh] max-md:grid-cols-1 max-md:gap-y-10 md:my-20 md:grid-cols-2 md:gap-x-4">
             <div class="flex flex-col space-y-10 max-md:text-center">
@@ -81,7 +81,12 @@
                 </div>
             </div>
             <div class="flex items-center justify-center">
-                <img src="@/assets/icons/fly-wheel.svg" alt="fly-wheel" />
+                <img
+                    src="@/assets/icons/fly-wheel.svg"
+                    alt="fly-wheel"
+                    style="max-height: 500px !important"
+                    width="100%"
+                    height="100%" />
             </div>
         </div>
         <div class="mt-16">
