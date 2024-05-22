@@ -1,12 +1,9 @@
 <template>
     <div class="servcy-container">
         <Hero />
-        <Budgeting />
-        <Timesheet />
-        <!-- <AggregatedInbox />
-        <Dashboard /> -->
         <CyclesAndModules />
         <Benefits />
+        <Timesheet />
         <FinalCTA />
         <a
             href="https://github.com/orgs/Servcy/repositories"

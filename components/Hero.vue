@@ -89,7 +89,7 @@
         </div>
         <div class="mt-16">
             <img
-                src="/shots/kanban.svg"
+                src="/shots/costing.svg"
                 alt="hero-image"
                 width="100%"
                 height="100%" />
