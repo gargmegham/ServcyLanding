@@ -41,8 +41,9 @@
                         email with your receipt shortly.
                     </p>
                     <p class="mt-4">
-                        If you have any questions or concerns, please don't
-                        hesitate to reach out to us at
+                        You can now login on the platform using the same email you used during checkout.<br />
+                        Your purchase status will reflect on your workspace dashboard in 24 hours.<br />
+                        If you have any questions or concerns, please don't hesitate to reach out to us at
                         <a
                             href="mailto:contact@servcy.com"
                             class="text-servcy-wheat !outline-none !ring-0"
