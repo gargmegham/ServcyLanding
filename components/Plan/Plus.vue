@@ -24,13 +24,12 @@
         </div>
         <div class="mb-4 h-24">
             <div class="flex h-20 w-full gap-x-2">
-                <a
-                    href="https://web.servcy.com/login?plan=plus"
-                    target="_blank"
+                <button
+                    @click="checkout"
                     class="servcy-wheat-shadow-right-bottom flex h-16 w-full items-center justify-center rounded-lg bg-servcy-black text-lg font-extrabold text-servcy-cream hover:text-servcy-wheat">
                     <Icon class="mr-2" size="24" name="mdi:flare" />
                     <span>Get Started</span>
-                </a>
+                </button>
             </div>
         </div>
         <div class="my-2 flex text-sm">
@@ -72,5 +71,18 @@ const plan = {
     name: "Plus",
     description: "For startups that are making waves.",
     usdPrice: "49"
+}
+
+function checkout() {
+    Paddle.Initialize({ token: process.env.NUXT_PUBLIC_PADDLE_CLIENT_TOKEN })
+    Paddle.Checkout.open({
+        theme: "dark",
+        items: [
+            {
+                product: "pri_01hx0zj0pk1ejcjs5nm25yttkw",
+                quantity: 1
+            }
+        ]
+    })
 }
 </script>
