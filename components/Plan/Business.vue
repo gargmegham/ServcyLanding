@@ -5,7 +5,7 @@
             class="font-axiforma mb-6 flex h-20 items-center pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
             <img
                 src="/shots/business.svg"
-                alt="Plus"
+                alt="business"
                 class="mr-4"
                 width="48"
                 height="48" />
@@ -17,15 +17,9 @@
             </div>
         </div>
         <div class="mb-6 h-16 border-b-2 border-neutral-500 pb-4">
-            <span
-                v-if="!isInrSelected"
-                class="text-4xl font-extrabold text-servcy-wheat"
-                >$</span
-            >
-            <span v-else class="text-4xl font-extrabold text-servcy-wheat"
-                >&#8377;</span
-            ><span class="ml-1 text-4xl font-extrabold text-servcy-wheat">{{
-                !isInrSelected ? plan.usdPrice : plan.inrPrice
+            <span class="text-4xl font-extrabold text-servcy-wheat">$</span>
+            <span class="ml-1 text-4xl font-extrabold text-servcy-wheat">{{
+                plan.usdPrice
             }}</span
             ><span class="text-xl font-extrabold text-servcy-silver">/mo</span>
         </div>
@@ -61,7 +55,6 @@
 </template>
 
 <script setup>
-const props = defineProps(["isInrSelected"])
 const offerings = [
     "Invite Upto 25 Users",
     "Everything New",
@@ -76,8 +69,7 @@ const offerings = [
 const plan = {
     name: "Business",
     description: "For businesses that are growing.",
-    usdPrice: "149",
-    inrPrice: "11,999"
+    usdPrice: "149"
 }
 </script>
 

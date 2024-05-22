@@ -65,9 +65,7 @@ const offerings = [
 const plan = {
     name: "Enterprise",
     description: "For enterprises that are scaling.",
-    icon: "/shots/enterprise.svg",
-    inrPrice: "19,999",
-    usdPrice: "249"
+    icon: "/shots/enterprise.svg"
 }
 </script>
 

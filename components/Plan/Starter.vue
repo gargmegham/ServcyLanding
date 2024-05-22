@@ -16,14 +16,7 @@
             </div>
         </div>
         <div class="mb-6 h-16 border-b-2 border-neutral-500 pb-4">
-            <span
-                v-if="!isInrSelected"
-                class="text-4xl font-extrabold text-servcy-wheat"
-                >$</span
-            >
-            <span v-else class="text-4xl font-extrabold text-servcy-wheat"
-                >&#8377;</span
-            >
+            <span class="text-4xl font-extrabold text-servcy-wheat">$</span>
             <span class="ml-1 text-4xl font-extrabold text-servcy-wheat">0</span
             ><span class="text-xl font-extrabold text-servcy-silver">/mo</span>
         </div>
@@ -59,7 +52,6 @@
 </template>
 
 <script setup>
-const props = defineProps(["isInrSelected"])
 const offerings = [
     "Invite Upto 3 Users",
     "Create 3 Projects",

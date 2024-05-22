@@ -5,33 +5,16 @@
                 class="font-axiforma text-3xl font-extrabold text-servcy-cream md:text-4xl">
                 Growth Pricing
             </h1>
-            <h3
-                class="mt-4 text-xl font-extrabold text-servcy-wheat md:text-2xl">
-                Save upto
-                <span class="servcy-text-bg">80%</span> in your SaaS spending by
-                switching to Servcy ecosystem.<br />Our ecosystem is designed to
-                help you grow without breaking the bank.
+            <h3 class="mt-4 text-xl font-extrabold text-servcy-wheat">
+                We offer a <span class="servcy-text-bg">100% refund</span> if
+                you're not satisfied with our service.<br />
+                All you've got to do is send us an email.
             </h3>
-            <div class="absolute right-0 flex items-center justify-end">
-                <Icon
-                    size="40"
-                    name="heroicons:currency-dollar"
-                    color="primary" />
-                <UToggle
-                    v-model="isInrSelected"
-                    color="emerald"
-                    size="xl"
-                    class="mx-4" />
-                <Icon
-                    size="40"
-                    name="heroicons:currency-rupee"
-                    color="primary" />
-            </div>
         </div>
         <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
-            <PlanStarter :isInrSelected="isInrSelected" />
-            <PlanPlus :isInrSelected="isInrSelected" />
-            <PlanBusiness :isInrSelected="isInrSelected" />
+            <PlanStarter />
+            <PlanPlus />
+            <PlanBusiness />
             <PlanEnterprise />
         </div>
         <FinalCTA />

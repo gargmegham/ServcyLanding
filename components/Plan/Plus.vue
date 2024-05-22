@@ -16,15 +16,9 @@
             </div>
         </div>
         <div class="mb-6 h-16 border-b-2 border-neutral-500 pb-4">
-            <span
-                v-if="!isInrSelected"
-                class="text-4xl font-extrabold text-servcy-wheat"
-                >$</span
-            >
-            <span v-else class="text-4xl font-extrabold text-servcy-wheat"
-                >&#8377;</span
-            ><span class="ml-1 text-4xl font-extrabold text-servcy-wheat">{{
-                !isInrSelected ? plan.usdPrice : plan.inrPrice
+            <span class="text-4xl font-extrabold text-servcy-wheat">$</span>
+            <span class="ml-1 text-4xl font-extrabold text-servcy-wheat">{{
+                plan.usdPrice
             }}</span
             ><span class="text-xl font-extrabold text-servcy-silver">/mo</span>
         </div>
@@ -56,7 +50,6 @@
 </template>
 
 <script setup>
-const props = defineProps(["isInrSelected"])
 const offerings = [
     "Unlimited Projects",
     "Unlimited Cycles",
@@ -77,7 +70,6 @@ const offerings = [
 const plan = {
     name: "Plus",
     description: "For startups that are making waves.",
-    usdPrice: "99",
-    inrPrice: "7,999"
+    usdPrice: "99"
 }
 </script>
