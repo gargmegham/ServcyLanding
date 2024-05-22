@@ -18,8 +18,16 @@
                     </h2>
                 </div>
                 <form class="servcy-form max-md:!w-[100%]" autocomplete="off">
-                    <input id="servcy-input" placeholder="name@company.com" />
-                    <button id="servcy-button" @click="redirectToLogin">
+                    <input
+                        id="servcy-input"
+                        placeholder="name@company.com"
+                        @change="input = $event.target.value" />
+                    <button
+                        id="servcy-button"
+                        @click="redirectToLogin"
+                        type="button"
+                        :disabled="input === ''"
+                        class="disabled:filter-grayscale-65 disabled:cursor-not-allowed disabled:opacity-50">
                         <span id="servcy-span">Get Started</span>
                     </button>
                 </form>
@@ -89,6 +97,7 @@
 </template>
 
 <script setup>
+const input = ref("")
 const validateEmail = (email) => {
     return email.match(
         /^[a-zA-Z0-9._%+-]+@(?!gmail.com)(?!yahoo.com)(?!hotmail.com)(?!yahoo.co.in)(?!aol.com)(?!live.com)(?!outlook.com)[a-zA-Z0-9_-]+.[a-zA-Z0-9-.]{2,61}$/
