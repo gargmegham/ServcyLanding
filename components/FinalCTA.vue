@@ -22,7 +22,7 @@
                     href="https://web.servcy.com/login"
                     target="_blank"
                     class="text-lg font-semibold !text-servcy-cream hover:!text-servcy-wheat md:text-xl">
-                    Get Started
+                    Start Tracking Now
                 </a>
             </button>
             <div class="mt-3 text-xs text-servcy-cream">
