@@ -72,17 +72,27 @@ const plan = {
     description: "For startups that are making waves.",
     usdPrice: "49"
 }
-
+const config = useRuntimeConfig()
 function checkout() {
-    Paddle.Initialize({ token: process.env.NUXT_PUBLIC_PADDLE_CLIENT_TOKEN })
     Paddle.Checkout.open({
-        theme: "dark",
+        settings: {
+            theme: "dark"
+        },
         items: [
             {
-                product: process.env.NUXT_PUBLIC_PLUS_PRODUCT_ID,
+                priceId: config.public.plusPriceId,
                 quantity: 1
             }
         ]
     })
 }
+onMounted(() => {
+    Paddle.Environment.set("sandbox")
+    Paddle.Initialize({
+        token: config.public.paddleClientToken,
+        eventCallback: function (data) {
+            console.log("Paddle Event:", data)
+        }
+    })
+})
 </script>
