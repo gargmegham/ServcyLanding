@@ -10,7 +10,8 @@
                         profit.
                     </h1>
                     <h2
-                        class="text-lg font-semibold text-servcy-wheat md:text-xl">
+                        class="text-lg font-semibold text-servcy-wheat md:text-xl"
+                        style="line-height: 1.8rem !important">
                         Hate it when your projects go over budget?<br />
                         With Servcy's ecosystem you will be able to predict
                         projects cost,<br />profit and timeline with higher
