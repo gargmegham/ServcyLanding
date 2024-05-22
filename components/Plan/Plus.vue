@@ -79,7 +79,7 @@ function checkout() {
         theme: "dark",
         items: [
             {
-                product: "pri_01hx0zj0pk1ejcjs5nm25yttkw",
+                product: process.env.NUXT_PUBLIC_PLUS_PRODUCT_ID,
                 quantity: 1
             }
         ]
