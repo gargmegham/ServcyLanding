@@ -10,7 +10,10 @@
                     alt="logo"
                     class="vertical-align-middle h-full" />
             </NuxtLink>
-            <div class="font-axiforma text-3xl md:text-5xl max-md:hidden !text-servcy-cream">Servcy</div>
+            <div
+                class="font-axiforma text-3xl !text-servcy-cream max-md:hidden md:text-5xl">
+                Servcy
+            </div>
         </div>
         <div class="cols-3">
             <NuxtLink
@@ -27,11 +30,6 @@
                 to="/support"
                 class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
                 >Contact Us
-            </NuxtLink>
-            <NuxtLink
-                to="/support#faqs"
-                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-lg:hidden"
-                >FAQs
             </NuxtLink>
             <NuxtLink
                 to="/agencies"
