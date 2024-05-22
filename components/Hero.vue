@@ -51,7 +51,7 @@
                         </div>
                     </div>
                 </div>
-                <form class="servcy-form max-md:!w-[100%]" autocomplete="off">
+                <form class="servcy-form max-md:!w-[100%]" autocomplete="off" @submit="redirectToLogin">
                     <input
                         id="servcy-input"
                         placeholder="name@company.com"
