@@ -13,14 +13,15 @@
         </div>
         <div class="cols-3">
             <NuxtLink
-                to="https://youtu.be/s4NSM8URZ1M"
-                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-md:hidden"
-                >Demo
-            </NuxtLink>
-            <NuxtLink
                 to="/pricing"
                 class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
                 >Pricing
+            </NuxtLink>
+            <NuxtLink
+                to="https://youtu.be/s4NSM8URZ1M"
+                target="_blank"
+                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-md:hidden"
+                >Demo
             </NuxtLink>
             <NuxtLink
                 to="/support"
