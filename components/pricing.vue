@@ -21,9 +21,9 @@
             </h6>
         </div>
         <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
-            <PlanPlus />
-            <PlanBusiness />
-            <PlanEnterprise />
+            <PlanPlus v-motion-slide-visible-once-left />
+            <PlanBusiness v-motion-pop-visible-once />
+            <PlanEnterprise v-motion-slide-visible-once-right />
         </div>
         <UModal v-model="checkoutCompleted">
             <UCard

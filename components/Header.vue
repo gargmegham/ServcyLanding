@@ -1,5 +1,6 @@
 <template>
     <header
+        v-motion-slide-top
         class="align-center fixed top-0 z-10 flex w-full justify-between rounded-b-lg bg-servcy-green px-[5%] py-4">
         <div class="flex items-center">
             <NuxtLink to="/">

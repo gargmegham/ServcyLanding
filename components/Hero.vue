@@ -2,7 +2,7 @@
     <section class="pt-[10vh]">
         <div
             class="mt-6 grid grid-cols-1 gap-x-10 gap-y-10 md:mt-8 lg:mt-12 lg:grid-cols-2">
-            <div class="space-y-8">
+            <div class="space-y-8" v-motion-slide-left>
                 <!-- headline -->
                 <div
                     class="flex w-full flex-col gap-y-4 text-center lg:text-left">
@@ -129,7 +129,7 @@
                         class="ml-2" />
                 </div>
             </div>
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center" v-motion-slide-right>
                 <img
                     src="@/assets/icons/fly-wheel.svg"
                     alt="fly-wheel"

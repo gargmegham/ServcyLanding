@@ -1,6 +1,8 @@
 <template>
     <section id="transformation" class="space-y-16 pt-[4vh] lg:pt-[10vh]">
-        <div class="grid grid-cols-1 gap-x-10 gap-y-6 lg:grid-cols-2">
+        <div
+            v-motion-slide-visible-left
+            class="grid grid-cols-1 gap-x-10 gap-y-6 lg:grid-cols-2">
             <div class="flex items-center">
                 <div>
                     <div
@@ -36,6 +38,7 @@
                 class="rounded-lg" />
         </div>
         <div
+            v-motion-slide-visible-right
             class="grid grid-cols-1 gap-x-10 gap-y-6 space-y-reverse lg:grid-cols-2">
             <img
                 src="/people/unhappy.jpeg"
@@ -73,7 +76,9 @@
                 </div>
             </div>
         </div>
-        <div class="grid grid-cols-1 gap-x-10 gap-y-6 lg:grid-cols-2">
+        <div
+            v-motion-slide-visible-left
+            class="grid grid-cols-1 gap-x-10 gap-y-6 lg:grid-cols-2">
             <div class="flex items-center">
                 <div>
                     <div

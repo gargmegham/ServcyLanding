@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     devtools: { enabled: true },
-    modules: ["@nuxt/content", "@nuxtjs/sitemap", "@nuxt/ui"],
+    modules: [
+        "@nuxt/content",
+        "@nuxtjs/sitemap",
+        "@nuxt/ui",
+        "@vueuse/motion/nuxt"
+    ],
     app: {
         head: {
             titleTemplate: "%s",

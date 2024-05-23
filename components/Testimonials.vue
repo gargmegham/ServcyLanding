@@ -6,7 +6,10 @@
             v-for="(testimonial, index) in testimonials"
             :key="`testimonial-${testimonial.company}`"
             class="servcy-transparent-bg relative space-y-4 rounded-lg p-8">
-            <div class="flex items-center gap-x-2">
+            <div
+                class="flex items-center gap-x-2"
+                v-motion-slide-visible-once-right="index % 2"
+                v-motion-slide-visible-once-left="index % 2">
                 <div>
                     <img
                         :src="testimonial.logo"

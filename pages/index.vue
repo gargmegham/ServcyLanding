@@ -3,6 +3,7 @@
         <Hero />
         <Testimonials />
         <Transformation />
+        <Features />
         <Pricing />
         <FinalCTA />
     </div>
