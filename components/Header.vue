@@ -8,7 +8,7 @@
         </div>
         <div class="flex items-center gap-x-6">
             <NuxtLink
-                to="#pricing"
+                to="/#pricing"
                 class="font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
                 >Pricing
             </NuxtLink>
@@ -66,7 +66,9 @@
                 <div
                     v-if="menuOpen"
                     class="absolute right-0 top-8 flex w-32 flex-col rounded bg-servcy-black px-4 py-4 text-left text-sm shadow-2xl shadow-gray-800">
-                    <NuxtLink to="#pricing" class="font-bold !text-servcy-wheat"
+                    <NuxtLink
+                        to="/#pricing"
+                        class="font-bold !text-servcy-wheat"
                         ><div>Pricing</div>
                     </NuxtLink>
                     <hr class="my-4 opacity-30" />
