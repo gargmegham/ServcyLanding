@@ -79,7 +79,7 @@
                                 {{ agency.name[0].toLocaleUpperCase() }}
                             </div>
                             <div
-                                class="agency-title font-poppins w-44 truncate text-lg font-extrabold text-servcy-black">
+                                class="agency-title w-44 truncate text-lg font-extrabold text-servcy-black">
                                 {{ agency.name.toLocaleUpperCase() }}
                             </div>
                         </div>

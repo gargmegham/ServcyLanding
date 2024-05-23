@@ -1,7 +1,7 @@
 <template>
     <footer
         class="bg-servcy-green px-[5%] py-[20px] sm:flex sm:justify-between">
-        <div class="font-castoro text-lg text-servcy-cream max-sm:text-center">
+        <div class="text-lg text-servcy-cream max-sm:text-center">
             © 2024 Servcy. All Rights Reserved.
         </div>
         <div class="max-sm:mt-4 max-sm:flex max-sm:justify-center">

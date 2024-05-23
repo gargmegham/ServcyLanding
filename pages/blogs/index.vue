@@ -59,7 +59,7 @@
                             class="blog-link">
                             <div class="mb-4 flex items-center">
                                 <div
-                                    class="blog-title font-poppins truncate text-lg font-extrabold text-servcy-black">
+                                    class="blog-title truncate text-lg font-extrabold text-servcy-black">
                                     {{ blogPost.title }}
                                 </div>
                             </div>

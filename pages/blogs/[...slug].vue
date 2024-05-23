@@ -24,7 +24,7 @@ useHead({
                 <div
                     class="servcy-transparent-bg scroll col-span-3 h-[85vh] overflow-y-scroll rounded-lg p-6">
                     <div
-                        class="font-poppins mb-6 border-b-[1px] border-servcy-wheat pb-2 text-xl text-servcy-wheat">
+                        class="mb-6 border-b-[1px] border-servcy-wheat pb-2 text-xl text-servcy-wheat">
                         Similar articles
                     </div>
                     <ContentList
@@ -59,7 +59,7 @@ useHead({
                                     class="blog-link">
                                     <div class="mb-4 flex items-center">
                                         <div
-                                            class="blog-title font-poppins text-sm font-extrabold text-servcy-black">
+                                            class="blog-title text-sm font-extrabold text-servcy-black">
                                             {{ blogPost.title }}
                                         </div>
                                     </div>

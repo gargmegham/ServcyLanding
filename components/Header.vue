@@ -14,23 +14,23 @@
         <div class="cols-3">
             <NuxtLink
                 to="/pricing"
-                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
+                class="mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
                 >Pricing
             </NuxtLink>
             <NuxtLink
                 to="https://youtu.be/s4NSM8URZ1M"
                 target="_blank"
-                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-md:hidden"
+                class="mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-md:hidden"
                 >Demo
             </NuxtLink>
             <NuxtLink
                 to="/support"
-                class="font-castoro mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
+                class="mr-6 font-bold !text-servcy-cream hover:!text-servcy-wheat max-sm:hidden"
                 >Contact Us
             </NuxtLink>
             <button
                 @mouseenter="menuOpen = true"
-                class="font-castoro relative mr-6 font-bold !text-servcy-cream max-lg:hidden">
+                class="relative mr-6 font-bold !text-servcy-cream max-lg:hidden">
                 <span>Resources</span>
                 <div
                     v-if="menuOpen"
@@ -38,16 +38,14 @@
                     class="absolute right-0 top-8 flex w-52 flex-col rounded bg-servcy-black px-4 py-4 text-left text-sm">
                     <NuxtLink
                         to="/agencies"
-                        class="font-castoro font-bold !text-servcy-wheat"
+                        class="font-bold !text-servcy-wheat"
                         ><div>Agencies</div>
                         <div class="mt-1 text-xs text-gray-300">
                             Verified agencies for you.
                         </div>
                     </NuxtLink>
                     <hr class="my-4 opacity-30" />
-                    <NuxtLink
-                        to="/blogs"
-                        class="font-castoro font-bold !text-servcy-wheat">
+                    <NuxtLink to="/blogs" class="font-bold !text-servcy-wheat">
                         Blogs
                         <div class="mt-1 text-xs text-gray-300">
                             Read our latest blogs.

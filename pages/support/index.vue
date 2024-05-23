@@ -16,7 +16,7 @@
                     class="servcy-wheat-shadow-left-bottom mt-5 rounded bg-servcy-black p-3">
                     <a
                         href="tel:+919805085026"
-                        class="font-castoro text-2xl font-semibold !text-servcy-cream hover:!text-servcy-wheat">
+                        class="text-2xl font-semibold !text-servcy-cream hover:!text-servcy-wheat">
                         Call Us
                     </a>
                 </button>
@@ -27,7 +27,7 @@
                     <a
                         href="mailto:contact@servcy.com"
                         target="_blank"
-                        class="font-castoro text-2xl font-semibold !text-servcy-cream hover:!text-servcy-wheat">
+                        class="text-2xl font-semibold !text-servcy-cream hover:!text-servcy-wheat">
                         Email Us
                     </a>
                 </button>
