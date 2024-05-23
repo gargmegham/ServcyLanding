@@ -19,11 +19,11 @@
             class="mb-6 flex items-baseline border-b-2 border-neutral-500 pb-4">
             <div
                 class="font-bricolage ml-1 mr-2 text-2xl font-extrabold text-gray-400 line-through">
-                $ {{ plan.usdPrice + 50 }}
+                ${{ plan.usdPrice + 50 }}
             </div>
             <div
                 class="font-bricolage ml-1 text-6xl font-extrabold text-servcy-wheat">
-                $ {{ plan.usdPrice }}
+                ${{ plan.usdPrice }}
             </div>
             <div class="text-xl font-extrabold text-servcy-wheat">/mo</div>
         </div>
