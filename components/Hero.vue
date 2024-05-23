@@ -1,7 +1,7 @@
 <template>
     <section class="py-[10vh]">
         <div
-            class="mt-6 grid grid-cols-1 gap-x-4 gap-y-10 md:mt-8 lg:mt-12 lg:grid-cols-2">
+            class="mt-6 grid grid-cols-1 gap-x-10 gap-y-10 md:mt-8 lg:mt-12 lg:grid-cols-2">
             <div class="space-y-8">
                 <!-- headline -->
                 <div
@@ -50,9 +50,7 @@
                                 alt="social-proof"
                                 width="20px" />
                         </div>
-                        <div class="text-xs">
-                            Join 100+ profitable businesses
-                        </div>
+                        <div class="text-xs">Join 100+ profitable agencies</div>
                     </div>
                 </div>
                 <!-- CTA -->
