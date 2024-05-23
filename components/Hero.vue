@@ -71,8 +71,10 @@
                             @click="redirectToLogin"
                             type="button"
                             :disabled="input === ''"
-                            class="rounded-lg !bg-servcy-black text-servcy-cream hover:text-servcy-wheat disabled:cursor-not-allowed">
-                            <span id="servcy-span">Try For Free</span>
+                            class="rounded-lg !bg-servcy-black p-2 text-servcy-cream hover:text-servcy-wheat disabled:cursor-not-allowed">
+                            <span id="servcy-span" class="text-sm md:text-base"
+                                >Try For Free</span
+                            >
                         </button>
                     </form>
                 </div>
@@ -182,8 +184,6 @@ const redirectToLogin = () => {
     }
     #servcy-button {
         position: relative;
-        padding: 8px 0;
-        min-width: 130px;
         text-align: center;
         font-weight: 600 !important;
         #servcy-span {
