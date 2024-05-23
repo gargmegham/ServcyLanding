@@ -70,7 +70,7 @@
 </template>
 
 <script setup>
-const selectedSlide = ref(1)
+const selectedSlide = ref(2)
 const features = [
     {
         name: "Inbox",
@@ -175,5 +175,5 @@ const features = [
         ]
     }
 ]
-const selectedFeature = ref(features[0])
+const selectedFeature = ref(features[4])
 </script>
