@@ -72,7 +72,7 @@
                             type="button"
                             :disabled="input === ''"
                             class="rounded-lg !bg-servcy-black p-2 text-servcy-cream hover:text-servcy-wheat disabled:cursor-not-allowed">
-                            <span id="servcy-span" class="text-sm md:text-base"
+                            <span id="servcy-span" class="text-xs md:text-base"
                                 >Try For Free</span
                             >
                         </button>
