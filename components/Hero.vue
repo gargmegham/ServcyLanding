@@ -22,12 +22,15 @@
                 </div>
                 <!-- social-proof -->
                 <div
-                    class="flex items-center justify-center gap-x-2 px-4 md:px-0 lg:justify-normal">
-                    <img
-                        src="@/assets/icons/social-proof.svg"
-                        alt="social-proof"
-                        width="220px" />
-                    <div class="py-1">
+                    class="flex flex-col justify-center gap-x-2 px-4 md:flex-row md:items-center md:px-0 lg:justify-normal">
+                    <div class="flex justify-center">
+                        <img
+                            src="@/assets/icons/social-proof.svg"
+                            alt="social-proof"
+                            width="220px" />
+                    </div>
+                    <div
+                        class="flex items-center justify-center gap-x-2 py-1 md:block">
                         <div class="flex">
                             <img
                                 src="@/assets/icons/star.svg"
