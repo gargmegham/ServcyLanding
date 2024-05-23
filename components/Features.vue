@@ -1,5 +1,5 @@
 <template>
-    <section id="features" class="pt-[4vh] lg:pt-[10vh] xl:min-h-[130vh]">
+    <section id="features" class="pt-[4vh] lg:pt-[10vh] xl:min-h-[110vh]">
         <div class="relative mb-8 flex flex-col items-center text-center">
             <h1
                 class="font-axiforma text-xl font-extrabold text-servcy-wheat md:text-2xl">
