@@ -292,6 +292,10 @@ section {
     padding-left: 5%;
     padding-right: 5%;
     background-color: #032123;
+    @media screen and (max-width: 768px) {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }
 .agency-link {
     text-decoration: none;

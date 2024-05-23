@@ -1,10 +1,10 @@
 <template>
     <section
         id="final-cta"
-        class="flex flex-col justify-center py-10 text-center">
+        class="flex flex-col justify-center py-20 text-center">
         <div>
             <div
-                class="font-axiforma text-5xl font-extrabold text-servcy-cream md:text-6xl">
+                class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-6xl">
                 Try Servcy now for a
                 <br /><span class="servcy-text-bg text-6xl md:text-7xl"
                     >10x visibility boost</span

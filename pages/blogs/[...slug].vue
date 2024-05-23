@@ -18,11 +18,11 @@ useHead({
         <ContentDoc :path="`/blogs/${slug}`" v-slot="{ doc }">
             <div class="grid grid-cols-12 gap-6">
                 <div
-                    class="servcy-blog-content no-scrollbar col-span-9 h-[85vh] overflow-y-scroll">
+                    class="servcy-blog-content no-scrollbar col-span-12 h-[85vh] overflow-y-scroll lg:col-span-9">
                     <ContentRendererMarkdown :value="doc" />
                 </div>
                 <div
-                    class="servcy-transparent-bg scroll col-span-3 h-[85vh] overflow-y-scroll rounded-lg p-6">
+                    class="servcy-transparent-bg scroll col-span-3 hidden h-[85vh] overflow-y-scroll rounded-lg p-6 lg:block">
                     <div
                         class="mb-6 border-b-[1px] border-servcy-wheat pb-2 text-xl text-servcy-wheat">
                         Similar articles

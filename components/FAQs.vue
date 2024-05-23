@@ -1,7 +1,7 @@
 <template>
     <section
         id="faqs"
-        class="servcy-card-bg my-20 rounded-lg p-10 text-servcy-black">
+        class="servcy-card-bg my-20 rounded-lg p-6 text-servcy-black md:p-10">
         <div
             class="font-axiforma min-h-32 text-5xl font-extrabold text-servcy-neutral md:text-6xl">
             FAQs

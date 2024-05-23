@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen bg-servcy-green px-[5%] py-[8vh]">
+    <div class="min-h-screen bg-servcy-green px-[10%] py-[8vh] md:px-[5%]">
         <div class="mt-16 flex h-64 flex-row justify-between text-servcy-cream">
             <div>
                 <h1 class="font-axiforma text-5xl font-extrabold md:text-6xl">
@@ -11,7 +11,7 @@
                     more productive,<br />and to help you grow your freelance
                     business.
                 </h2>
-                <form class="servcy-form mt-6" autocomplete="off">
+                <form class="servcy-form mt-4" autocomplete="off">
                     <input
                         id="servcy-input"
                         placeholder="Search for a blog post..."
@@ -38,7 +38,7 @@
                 ]
             }">
             <div
-                class="xs:sm:grid-cols-1 mt-10 grid grid-cols-3 gap-8 py-10 xl:grid-cols-4">
+                class="mt-20 grid grid-cols-1 gap-8 py-10 md:grid-cols-2 xl:grid-cols-4">
                 <div
                     v-for="(blogPost, index) of list.filter(
                         (blogPost) =>

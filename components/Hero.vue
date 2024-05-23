@@ -1,11 +1,11 @@
 <template>
-    <section class="py-[10vh]">
+    <section class="pt-[10vh]">
         <div
             class="mt-6 grid grid-cols-1 gap-x-10 gap-y-10 md:mt-8 lg:mt-12 lg:grid-cols-2">
             <div class="space-y-8">
                 <!-- headline -->
                 <div
-                    class="flex w-full flex-col gap-y-4 px-2 text-center md:px-28 lg:px-0 lg:text-left">
+                    class="flex w-full flex-col gap-y-4 text-center lg:text-left">
                     <h1
                         class="font-axiforma text-3xl font-extrabold text-servcy-cream md:text-4xl lg:text-5xl">
                         Maximize your Agency's Profit. Track Estimated vs
@@ -124,7 +124,7 @@
                         class="ml-2" />
                 </div>
             </div>
-            <div class="flex items-center justify-center px-4 md:px-6 lg:px-0">
+            <div class="flex items-center justify-center">
                 <img
                     src="@/assets/icons/fly-wheel.svg"
                     alt="fly-wheel"
@@ -191,6 +191,9 @@ const redirectToLogin = () => {
             position: relative;
             z-index: 4;
         }
+    }
+    @media screen and (max-width: 768px) {
+        width: 100%;
     }
 }
 </style>

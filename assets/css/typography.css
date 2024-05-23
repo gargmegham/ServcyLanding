@@ -2,6 +2,10 @@
     font-family: "Axiforma" !important;
 }
 
+.font-bricolage {
+    font-family: "Bricolage Grotesque", sans-serif !important;
+}
+
 .servcy-text-xss {
     font-size: 0.625rem;
 }

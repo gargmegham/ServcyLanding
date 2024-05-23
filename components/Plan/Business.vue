@@ -1,6 +1,5 @@
 <template>
-    <div
-        class="servcy-transparent-bg relative col-span-1 row-span-1 rounded-lg p-8">
+    <div class="servcy-transparent-bg relative col-span-1 rounded-lg p-8">
         <div
             class="font-axiforma mb-6 flex h-20 items-center pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
             <img
@@ -16,12 +15,17 @@
                 </div>
             </div>
         </div>
-        <div class="mb-6 h-16 border-b-2 border-neutral-500 pb-4">
-            <span class="text-4xl font-extrabold text-servcy-wheat">$</span>
-            <span class="ml-1 text-4xl font-extrabold text-servcy-wheat">{{
-                plan.usdPrice
-            }}</span
-            ><span class="text-xl font-extrabold text-servcy-silver">/mo</span>
+        <div
+            class="mb-6 flex items-baseline border-b-2 border-neutral-500 pb-4">
+            <div
+                class="font-bricolage ml-1 mr-2 text-2xl font-extrabold text-gray-400 line-through">
+                $ {{ plan.usdPrice + 50 }}
+            </div>
+            <div
+                class="font-bricolage ml-1 text-6xl font-extrabold text-servcy-wheat">
+                $ {{ plan.usdPrice }}
+            </div>
+            <div class="text-xl font-extrabold text-servcy-wheat">/mo</div>
         </div>
         <div
             class="servcy-most-popular font-axiforma absolute right-[-10px] top-[-10px] text-servcy-cream">
@@ -57,19 +61,16 @@
 const config = useRuntimeConfig()
 const offerings = [
     "Invite Upto 25 Users",
-    "Everything New",
-    "Custom Analytics Export",
-    "Project Deploy Boards",
+    "Analytics Export",
+    "Deploy Boards",
     "AI Assistance",
-    "Advanced Time Tracking",
-    "Project Cost Estimation Export",
-    "Feature Requests",
-    "Priority Support"
+    "Unlimited Storage",
+    "Cost Estimation Export"
 ]
 const plan = {
     name: "Business",
     description: "For businesses that are growing.",
-    usdPrice: "99"
+    usdPrice: 99
 }
 function checkout() {
     Paddle.Checkout.open({

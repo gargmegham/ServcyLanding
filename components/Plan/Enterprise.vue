@@ -1,6 +1,6 @@
 <template>
     <div
-        class="servcy-transparent-bg relative col-span-1 row-span-1 rounded-lg p-8">
+        class="servcy-transparent-bg relative col-span-1 hidden rounded-lg p-8 lg:block">
         <div
             class="font-axiforma mb-6 flex h-20 items-center pb-4 text-lg font-extrabold text-servcy-wheat md:text-xl">
             <img
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div
-            class="mb-6 h-16 border-b-2 border-neutral-500 pb-4 text-sm text-stone-400">
+            class="mb-6 flex h-20 items-center border-b-2 border-neutral-500 pb-4 text-sm text-stone-400">
             Get a custom demo and see how Servcy aligns with your goals.
         </div>
         <div class="mb-4 h-24">
@@ -50,17 +50,11 @@
 <script setup>
 const offerings = [
     "Invite Unlimited Users",
-    "Custom Feature Implementation",
-    "Dedicated backend server",
-    "Dedicated sub-domain",
-    "High speed data processing",
+    "High speed backend server",
     "MSA, & HIPAA Compliance",
     "SLA & Uptime Guarantee",
-    "Live Training Sessions",
     "Dedicated Relationship Manager",
-    "Live Chat Support",
-    "US, EU, APAC Data Residency",
-    "Whiteglove Implementation"
+    "US, EU, APAC Data Residency"
 ]
 const plan = {
     name: "Enterprise",

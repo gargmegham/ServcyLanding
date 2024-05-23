@@ -1,23 +1,30 @@
 <template>
-    <section class="min-h-screen py-[10vh]">
-        <div class="relative mb-10 flex flex-col items-center text-center">
+    <section id="pricing" class="pt-[4vh] lg:pt-[10vh]">
+        <div class="relative mb-8 flex flex-col items-center text-center">
             <h1
-                class="font-axiforma text-3xl font-extrabold text-servcy-cream md:text-4xl">
-                Growth Pricing
+                class="font-axiforma text-xl font-extrabold text-servcy-wheat md:text-2xl">
+                Pricing
             </h1>
-            <h3 class="mt-4 text-xl font-extrabold text-servcy-wheat">
-                We offer a <span class="servcy-text-bg">100% refund</span> if
-                you're not satisfied with our service.<br />
-                All you've got to do is send us an email.
+            <h3
+                class="mt-4 text-xl font-extrabold text-servcy-cream md:text-2xl lg:text-3xl">
+                Increase your profits by estimating better, and tracking
+                accurately!
             </h3>
+            <h6
+                class="mt-2 text-sm font-extrabold text-servcy-cream md:text-lg">
+                <Icon
+                    name="material-symbols:featured-seasonal-and-gifts-rounded"
+                    class="text-green-500" /><span class="mx-1 text-green-500"
+                    >$50 off</span
+                >
+                for the first 150 customers (9 left)
+            </h6>
         </div>
-        <div class="grid grid-cols-2 gap-4 lg:grid-cols-4">
-            <PlanStarter />
+        <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
             <PlanPlus />
             <PlanBusiness />
             <PlanEnterprise />
         </div>
-        <FinalCTA />
         <UModal v-model="checkoutCompleted">
             <UCard
                 :ui="{
@@ -29,16 +36,17 @@
                 </template>
                 <div class="text-servcy-cream">
                     <p>
-                        We've received your payment and you will receive an
-                        email with your receipt shortly.
+                        We've received your payment, you will receive your
+                        receipt shortly.
                     </p>
                     <p class="mt-4">
-                        You can now login on the platform using the same email
-                        you used during checkout.<br />
-                        Your purchase status will reflect on your workspace
-                        dashboard in 24 hours.<br />
-                        If you have any questions or concerns, please don't
-                        hesitate to reach out to us at
+                        You can now login using the email you used during
+                        checkout.<br />
+                        Your subscription will reflect on your dashboard in 24
+                        hours.
+                    </p>
+                    <p class="mt-4">
+                        If you have any questions or concerns, email us at
                         <a
                             href="mailto:contact@servcy.com"
                             class="text-servcy-wheat !outline-none !ring-0"
@@ -68,17 +76,6 @@
 <script setup>
 const config = useRuntimeConfig()
 const checkoutCompleted = ref(false)
-useHead({
-    title: "Servcy Pricing",
-    meta: [
-        {
-            hid: "description",
-            name: "description",
-            content:
-                "Servcy's pricing plans for teams of all sizes. Start with a 7 day free trial today."
-        }
-    ]
-})
 onMounted(() => {
     Paddle.Initialize({
         token: config.public.paddleClientToken,
@@ -95,11 +92,6 @@ onMounted(() => {
 </script>
 
 <style scoped>
-section {
-    padding-left: 5%;
-    padding-right: 5%;
-    background-color: #032123;
-}
 .servcy-caption {
     font-size: 10px;
     line-height: 12px;

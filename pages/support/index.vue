@@ -5,7 +5,7 @@
             class="font-axiforma text-4xl font-extrabold text-servcy-cream md:text-5xl">
             Contact us
         </h1>
-        <h2 class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
+        <h2 class="mt-4 text-lg font-semibold text-servcy-wheat md:text-xl">
             Questions? Concerns? We're here to support you every step of the
             way.<br />We have real, live people available to chat 7 days a week,
             and online help resources that are available 24 hours a day.
@@ -33,8 +33,8 @@
                 </button>
             </div>
         </div>
-        <div class="mt-16 grid grid-cols-3 gap-6">
-            <div class="col-span-2">
+        <div class="mt-16 grid grid-cols-1 gap-6 md:grid-cols-3">
+            <div class="md:col-span-2">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3448.904131600887!2d77.28319477585859!3d30.18273241200485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390efeaab0000001%3A0x3f8bee4d4bddec2d!2sAgroha%20Solutions!5e0!3m2!1sen!2sin!4v1712944958765!5m2!1sen!2sin"
                     style="border: 0"
@@ -46,7 +46,7 @@
                     referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
             </div>
-            <div class="servcy-transparent-bg col-span-1 p-12 text-left">
+            <div class="servcy-transparent-bg p-12 text-left md:col-span-1">
                 <h3 class="text-lg font-semibold text-servcy-cream">
                     Our Office:
                     <span class="ml-2 text-sm text-servcy-wheat">

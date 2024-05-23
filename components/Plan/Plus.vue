@@ -15,12 +15,17 @@
                 </div>
             </div>
         </div>
-        <div class="mb-6 h-16 border-b-2 border-neutral-500 pb-4">
-            <span class="text-4xl font-extrabold text-servcy-wheat">$</span>
-            <span class="ml-1 text-4xl font-extrabold text-servcy-wheat">{{
-                plan.usdPrice
-            }}</span
-            ><span class="text-xl font-extrabold text-servcy-silver">/mo</span>
+        <div
+            class="mb-6 flex items-baseline border-b-2 border-neutral-500 pb-4">
+            <div
+                class="font-bricolage ml-1 mr-2 text-2xl font-extrabold text-gray-400 line-through">
+                $ {{ plan.usdPrice + 50 }}
+            </div>
+            <div
+                class="font-bricolage ml-1 text-6xl font-extrabold text-servcy-wheat">
+                $ {{ plan.usdPrice }}
+            </div>
+            <div class="text-xl font-extrabold text-servcy-wheat">/mo</div>
         </div>
         <div class="mb-4 h-24">
             <div class="flex h-20 w-full gap-x-2">
@@ -31,12 +36,6 @@
                     <span>Get Started</span>
                 </button>
             </div>
-        </div>
-        <div class="my-2 flex text-sm text-servcy-cream">
-            <Icon
-                class="mr-2 size-4"
-                name="material-symbols:health-and-safety-rounded" />
-            <span>Everything in Starter</span>
         </div>
         <div
             class="my-2 flex text-sm"
@@ -53,25 +52,16 @@ const config = useRuntimeConfig()
 const offerings = [
     "Invite Upto 10 Users",
     "Unlimited Projects",
-    "Unlimited Cycles",
-    "Unlimited Modules",
     "Collaborative Docs",
-    "Native Time Tracking",
-    "Timesheet",
-    "Gantt, Spreadsheet & Calendar Layout",
-    "Project Cost Analysis",
     "Unlimited Automations",
-    "Inbox to Issue Conversion",
-    "Fine-tune your Permissions",
+    "Custom Role Permissions",
     "Custom Analytics",
-    "Custom Views",
-    "Unlimited Storage",
     "Private Projects"
 ]
 const plan = {
     name: "Plus",
     description: "For startups that are making waves.",
-    usdPrice: "49"
+    usdPrice: 49
 }
 function checkout() {
     Paddle.Checkout.open({
