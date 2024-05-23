@@ -1,5 +1,5 @@
 <template>
-    <section id="transformation" class="space-y-16 pt-[4vh] lg:pt-[10vh]">
+    <section id="transformation" class="space-y-16 pt-[4vh] lg:pt-[10vh] text-servcy-cream">
         <div
             v-motion-slide-visible-left
             class="grid grid-cols-1 gap-x-10 gap-y-6 lg:grid-cols-2">
