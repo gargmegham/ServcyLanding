@@ -135,6 +135,7 @@ const features = [
     },
     {
         name: "Time Tracker",
+        hideOnMobile: true,
         icon: "material-symbols:auto-timer-outline-rounded",
         slides: [
             {
@@ -154,7 +155,6 @@ const features = [
         ]
     },
     {
-        hideOnMobile: true,
         name: "Cost Tracker",
         icon: "nimbus:stats",
         slides: [
