@@ -74,8 +74,8 @@
                             @click="redirectToLogin"
                             type="button"
                             :disabled="input === ''"
-                            class="rounded-lg !bg-servcy-black p-2 text-servcy-cream hover:text-servcy-wheat disabled:cursor-not-allowed">
-                            <span id="servcy-span" class="text-xs md:text-base"
+                            class="rounded-lg !bg-servcy-black px-1 py-2 text-servcy-cream hover:text-servcy-wheat disabled:cursor-not-allowed sm:px-2">
+                            <span id="servcy-span" class="text-xs sm:text-base"
                                 >Try For Free</span
                             >
                         </button>
