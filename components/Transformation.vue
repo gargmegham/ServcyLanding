@@ -7,24 +7,25 @@
                         class="font-axiforma mb-10 text-4xl underline decoration-wavy md:text-5xl">
                         Did You Know?
                     </div>
-                    <div class="space-y-6 text-base md:text-xl">
+                    <div class="space-y-6 text-base md:text-lg">
                         <div class="flex items-center gap-x-4">
                             <Icon
                                 name="streamline:interface-arrows-synchronize-warning-arrow-fail-notification-sync-warning-failure-synchronize-error"
-                                class="text-amber-400" />
+                                class="text-red-400" />
                             92% of agencies struggle with project cost overruns
                         </div>
                         <div class="flex items-center gap-x-4">
                             <Icon
                                 name="streamline:interface-arrows-synchronize-warning-arrow-fail-notification-sync-warning-failure-synchronize-error"
-                                class="text-amber-400" />
+                                class="text-red-400" />
                             65% miss their deadlines regularly
                         </div>
                         <div class="flex items-center gap-x-4">
                             <Icon
                                 name="streamline:interface-arrows-synchronize-warning-arrow-fail-notification-sync-warning-failure-synchronize-error"
-                                class="text-amber-400" />
-                            53% of similar tools are reported as insufficient
+                                class="text-red-400" />
+                            53% of similar tools are reported as insufficient,
+                            or too complex
                         </div>
                     </div>
                 </div>
@@ -46,24 +47,24 @@
                         class="font-axiforma mb-10 text-4xl underline decoration-wavy md:text-5xl">
                         How it impacts you
                     </div>
-                    <div class="space-y-6 text-base md:text-xl">
+                    <div class="space-y-6 text-base md:text-lg">
                         <div class="flex items-center gap-x-4">
                             <Icon
-                                name="streamline:interface-arrows-synchronize-warning-arrow-fail-notification-sync-warning-failure-synchronize-error"
+                                name="carbon:tropical-warning"
                                 class="text-amber-400" />
                             Constantly exceeding budgets can hurt your bottom
                             line
                         </div>
                         <div class="flex items-center gap-x-4">
                             <Icon
-                                name="streamline:interface-arrows-synchronize-warning-arrow-fail-notification-sync-warning-failure-synchronize-error"
+                                name="carbon:tropical-warning"
                                 class="text-amber-400" />
                             Missing deadlines impacts your reputation and client
                             relationships
                         </div>
                         <div class="flex items-center gap-x-4">
                             <Icon
-                                name="streamline:interface-arrows-synchronize-warning-arrow-fail-notification-sync-warning-failure-synchronize-error"
+                                name="carbon:tropical-warning"
                                 class="text-amber-400" />
                             Juggling multiple tools that don't integrate well
                             wastes time and energy
@@ -79,7 +80,7 @@
                         class="font-axiforma mb-10 text-4xl underline decoration-wavy md:text-5xl">
                         That's where we come in
                     </div>
-                    <div class="space-y-6 text-base md:text-xl">
+                    <div class="space-y-6 text-base md:text-lg">
                         <div class="flex items-center gap-x-4">
                             <Icon
                                 name="material-symbols:playlist-add-check-circle-rounded"
