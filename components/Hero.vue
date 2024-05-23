@@ -1,27 +1,28 @@
 <template>
     <section class="py-[10vh]">
         <div
-            class="grid min-h-[50vh] max-md:grid-cols-1 max-md:gap-y-10 md:mt-20 md:grid-cols-2 md:gap-x-4">
-            <div class="flex flex-col space-y-10">
-                <div class="flex w-full flex-col gap-y-6">
+            class="mt-6 grid grid-cols-1 gap-x-4 gap-y-10 md:mt-8 lg:mt-12 lg:grid-cols-2">
+            <div class="space-y-8">
+                <!-- headline -->
+                <div
+                    class="flex w-full flex-col gap-y-4 px-2 text-center md:px-28 lg:px-0 lg:text-left">
                     <h1
-                        class="font-axiforma text-3xl font-extrabold text-servcy-cream md:text-4xl lg:text-5xl xl:text-6xl">
-                        Maximize Your Project Profits by providing you continous
-                        visibility over your cost and profit.
+                        class="font-axiforma text-3xl font-extrabold text-servcy-cream md:text-4xl lg:text-5xl">
+                        Maximize your Agency's Profit. Track Estimated vs
+                        Ongoing Cost in Real-Time.
                     </h1>
                     <div
                         class="space-y-2 text-base font-semibold text-servcy-wheat md:text-xl">
+                        <h2>Love it when your projects are profitable?</h2>
                         <h2>
-                            Running an agency? Keep your projects under control.
-                        </h2>
-                        <h2>
-                            With Servcy's ecosystem you can predict projects
-                            profit,<br />
-                            and analyse cost with higher accuracy.
+                            Servcy's ecosystem helps you stay on top of your
+                            costs, timeline and deliverables.
                         </h2>
                     </div>
                 </div>
-                <div class="mt-10 flex items-center gap-x-2">
+                <!-- social-proof -->
+                <div
+                    class="flex items-center justify-center gap-x-2 px-4 md:px-0 lg:justify-normal">
                     <img
                         src="@/assets/icons/social-proof.svg"
                         alt="social-proof"
@@ -54,24 +55,29 @@
                         </div>
                     </div>
                 </div>
-                <form
-                    class="servcy-form max-md:!w-[100%]"
-                    autocomplete="off"
-                    @submit="redirectToLogin">
-                    <input
-                        id="servcy-input"
-                        placeholder="name@company.com"
-                        @change="input = $event.target.value" />
-                    <button
-                        id="servcy-button"
-                        @click="redirectToLogin"
-                        type="button"
-                        :disabled="input === ''"
-                        class="disabled:filter-grayscale-65 disabled:cursor-not-allowed disabled:opacity-50">
-                        <span id="servcy-span">Try For Free</span>
-                    </button>
-                </form>
-                <div class="flex max-lg:hidden">
+                <!-- CTA -->
+                <div class="flex w-full justify-center lg:justify-normal">
+                    <form
+                        class="servcy-form flex items-center rounded-lg bg-servcy-cream px-1"
+                        autocomplete="off"
+                        @submit="redirectToLogin">
+                        <input
+                            id="servcy-input"
+                            placeholder="name@company.com"
+                            class="text-servcy-black"
+                            @change="input = $event.target.value" />
+                        <button
+                            id="servcy-button"
+                            @click="redirectToLogin"
+                            type="button"
+                            :disabled="input === ''"
+                            class="rounded-lg !bg-servcy-black text-servcy-cream hover:text-servcy-wheat disabled:cursor-not-allowed">
+                            <span id="servcy-span">Try For Free</span>
+                        </button>
+                    </form>
+                </div>
+                <!-- integration icon set -->
+                <div class="flex max-md:hidden">
                     <img
                         class="mr-2"
                         src="@/assets/icons/integrate.svg"
@@ -126,7 +132,7 @@
                     height="100%" />
             </div>
         </div>
-        <div class="mt-16">
+        <div class="mt-16 items-center justify-center">
             <img
                 src="/shots/costing.svg"
                 alt="hero-image"
@@ -157,38 +163,13 @@ const redirectToLogin = () => {
 }
 </script>
 
-<style scoped>
-.fade-enter-active,
-.fade-leave-active {
-    transition: opacity 0.5s ease;
-}
-
-.fade-enter,
-.fade-leave-to {
-    opacity: 0;
-}
-</style>
-
 <style scoped lang="scss">
 .servcy-form {
-    --primary: #032123;
     --input-placeholder: #7e84a3;
-    --input-text: #7e84a3;
     --border-default: #e1e6f9;
-    --background: #fff;
-    --button-text: #ffffff;
-    display: flex;
-    align-items: center;
-    width: 90%;
-    background: var(--background);
     box-shadow: inset 0 0 0 var(--border-width, 1px)
         var(--border, var(--border-default));
-    border-radius: 9px;
-    padding-right: 4px;
-    transition: box-shadow 0.25s;
-    &:focus-within {
-        --border-width: 1.5px;
-    }
+    width: 90%;
     #servcy-input,
     #servcy-button {
         background: none;
@@ -199,40 +180,22 @@ const redirectToLogin = () => {
         margin: 0;
     }
     #servcy-input {
-        width: 100%;
         flex-grow: 1;
         padding: 12px 12px 12px 16px;
-        color: var(--input-text);
-        font-weight: 400;
         &::placeholder {
             color: var(--input-placeholder);
         }
     }
     #servcy-button {
-        --text-opacity: 1;
-        --border-radius: 7px;
         position: relative;
         padding: 8px 0;
         min-width: 130px;
         text-align: center;
         font-weight: 600 !important;
-        opacity: var(--button-opacity, 0.5);
-        filter: var(--button-filter, grayscale(65%));
-        color: var(--button-text);
-        border-radius: var(--border-radius);
-        transform: translateZ(0);
-        transition:
-            opacity 0.25s,
-            filter 0.25s;
-        -webkit-tap-highlight-color: transparent;
-        &:not(.active) {
-            background: var(--primary);
-        }
         #servcy-span {
             display: block;
             position: relative;
             z-index: 4;
-            opacity: var(--text-opacity);
         }
     }
 }
