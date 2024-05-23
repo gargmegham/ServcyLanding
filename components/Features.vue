@@ -50,7 +50,7 @@
                 " />
             <img
                 v-if="selectedSlide > 0"
-                v-motion-slide-left
+                v-motion-slide-visible-left
                 :src="selectedFeature.slides[1].image"
                 :class="`absolute ${selectedFeature.slides[1].transform} cursor-pointer rounded-xl shadow-2xl shadow-gray-700`"
                 :width="selectedFeature.slides[1].width"
@@ -61,7 +61,7 @@
                 " />
             <img
                 v-if="selectedSlide > 1"
-                v-motion-slide-right
+                v-motion-slide-visible-right
                 :src="selectedFeature.slides[2].image"
                 :class="`absolute ${selectedFeature.slides[2].transform} rounded-xl shadow-2xl shadow-gray-800`"
                 :width="selectedFeature.slides[2].width" />
