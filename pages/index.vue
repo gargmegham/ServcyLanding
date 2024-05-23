@@ -2,10 +2,8 @@
     <div class="servcy-container">
         <Hero />
         <Testimonials />
+        <Transformation />
         <Pricing />
-        <!-- <CyclesAndModules />
-        <Benefits />
-        <Timesheet /> -->
         <FinalCTA />
     </div>
 </template>
