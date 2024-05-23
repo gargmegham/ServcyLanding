@@ -32,11 +32,11 @@
                 </button>
             </div>
         </div>
-        <div class="my-2 flex text-sm">
+        <div class="my-2 flex text-sm text-servcy-cream">
             <Icon
                 class="mr-2 size-4"
                 name="material-symbols:health-and-safety-rounded" />
-            <span class="text-servcy-cream">Everything in Starter</span>
+            <span>Everything in Starter</span>
         </div>
         <div
             class="my-2 flex text-sm"

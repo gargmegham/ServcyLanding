@@ -50,7 +50,9 @@
                                 alt="social-proof"
                                 width="20px" />
                         </div>
-                        <div class="text-xs">Join 100+ profitable agencies</div>
+                        <div class="text-xs text-servcy-cream">
+                            Join 100+ profitable agencies
+                        </div>
                     </div>
                 </div>
                 <!-- CTA -->
@@ -122,7 +124,7 @@
                         class="ml-2" />
                 </div>
             </div>
-            <div class="flex items-center justify-center">
+            <div class="flex items-center justify-center px-4 md:px-6 lg:px-0">
                 <img
                     src="@/assets/icons/fly-wheel.svg"
                     alt="fly-wheel"
@@ -130,13 +132,6 @@
                     width="100%"
                     height="100%" />
             </div>
-        </div>
-        <div class="mt-16 items-center justify-center">
-            <img
-                src="/shots/costing.svg"
-                alt="hero-image"
-                width="100%"
-                height="100%" />
         </div>
     </section>
 </template>

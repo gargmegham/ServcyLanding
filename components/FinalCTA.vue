@@ -7,15 +7,15 @@
                 class="font-axiforma text-5xl font-extrabold text-servcy-cream md:text-6xl">
                 Try Servcy now for a
                 <br /><span class="servcy-text-bg text-6xl md:text-7xl"
-                    >10x productivity boost</span
+                    >10x visibility boost</span
                 >
             </div>
             <div
                 class="mt-6 text-lg font-semibold text-servcy-wheat md:text-xl">
-                All your dream features are just one click away, start now!
+                All your hidden profits are just a click away with Servcy.
             </div>
         </div>
-        <div class="mt-20">
+        <div class="mt-10">
             <button
                 class="servcy-wheat-shadow-left-bottom rounded bg-servcy-black p-3">
                 <a
