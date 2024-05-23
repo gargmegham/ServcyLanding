@@ -77,7 +77,8 @@
                     </form>
                 </div>
                 <!-- integration icon set -->
-                <div class="flex max-md:hidden">
+                <div
+                    class="flex items-center justify-center max-md:hidden lg:justify-normal">
                     <img
                         class="mr-2"
                         src="@/assets/icons/integrate.svg"
