@@ -184,9 +184,13 @@ const redirectToLogin = () => {
         &::placeholder {
             color: var(--input-placeholder);
         }
+        @media screen and (max-width: 400px) {
+            width: 80%;
+        }
     }
     #servcy-button {
         position: relative;
+        min-width: 100px;
         text-align: center;
         font-weight: 600 !important;
         #servcy-span {
