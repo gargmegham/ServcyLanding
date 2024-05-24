@@ -82,6 +82,11 @@ onMounted(() => {
         eventCallback: function (data) {
             if (data.name == "checkout.completed") {
                 checkoutCompleted.value = true
+                gtag('event', 'conversion_event_purchase', {
+                    'currency': data?.currency_code,
+                    'value': data?.items?.[0]?.price_id,
+                    'transaction_id': data?.transaction_id
+                });
                 setTimeout(() => {
                     checkoutCompleted.value = false
                 }, 5000)
