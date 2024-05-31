@@ -40,7 +40,7 @@ withDefaults(defineProps<Props>(), {
                 <div class="!m-0 text-xs">{{ last_updated || "" }}</div>
             </div>
             <div
-                class="flex flex-wrap items-center justify-center gap-x-2 px-4 py-2">
+                class="flex flex-wrap items-center justify-center gap-2 px-4 py-2">
                 <div
                     v-for="tag in tags"
                     :key="tag"
