@@ -1,6 +1,6 @@
 ---
-last_updated: "2024-02-30"
-tags: ["freelancing", "income", "diversification"]
+last_updated: "2024-05-31"
+tags: ["Freelancing", "Income", "Diversification"]
 reading_time: "3"
 image: "/blogs/covers/the-benefits-of-diversifying-your-income-as-a-freelancer.jpeg"
 ogImage: "/blogs/covers/the-benefits-of-diversifying-your-income-as-a-freelancer.jpeg"
