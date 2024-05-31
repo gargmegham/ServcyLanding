@@ -130,12 +130,11 @@
                 </div>
             </div>
             <div class="flex items-center justify-center" v-motion-slide-right>
-                <img
-                    src="@/assets/icons/fly-wheel.svg"
+                <NuxtImg
+                    src="/svgs/fly-wheel.svg"
+                    loading="lazy"
                     alt="fly-wheel"
-                    style="max-height: 530px !important"
-                    width="100%"
-                    height="100%" />
+                    style="max-height: 530px !important; width: 100%" />
             </div>
         </div>
     </section>

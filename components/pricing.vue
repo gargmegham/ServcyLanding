@@ -5,12 +5,12 @@
                 class="font-axiforma text-xl font-extrabold text-servcy-wheat md:text-2xl">
                 Pricing
             </h1>
-            <h3
+            <h2
                 class="mt-4 text-xl font-extrabold text-servcy-cream md:text-2xl lg:text-3xl">
                 Increase your profits by estimating better, and tracking
                 accurately!
-            </h3>
-            <h6
+            </h2>
+            <h3
                 class="mt-2 text-sm font-extrabold text-servcy-cream md:text-lg">
                 <Icon
                     name="material-symbols:featured-seasonal-and-gifts-rounded"
@@ -18,7 +18,7 @@
                     >$50 off</span
                 >
                 for the first 150 customers (9 left)
-            </h6>
+            </h3>
         </div>
         <div class="grid grid-cols-1 gap-4 lg:grid-cols-3">
             <PlanPlus v-motion-slide-visible-once-left />
@@ -82,11 +82,11 @@ onMounted(() => {
         eventCallback: function (data) {
             if (data.name == "checkout.completed") {
                 checkoutCompleted.value = true
-                gtag('event', 'conversion_event_purchase', {
-                    'currency': data?.currency_code,
-                    'value': data?.items?.[0]?.price_id,
-                    'transaction_id': data?.transaction_id
-                });
+                gtag("event", "conversion_event_purchase", {
+                    currency: data?.currency_code,
+                    value: data?.items?.[0]?.price_id,
+                    transaction_id: data?.transaction_id
+                })
                 setTimeout(() => {
                     checkoutCompleted.value = false
                 }, 5000)

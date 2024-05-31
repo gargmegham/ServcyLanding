@@ -5,16 +5,16 @@
                 class="font-axiforma text-xl font-extrabold text-servcy-wheat md:text-2xl">
                 Features
             </h1>
-            <h3
+            <h2
                 class="mt-4 text-xl font-extrabold text-servcy-cream md:text-2xl lg:text-3xl">
                 Servcy packs everything you need to<br />
                 make your agency profitable.
-            </h3>
-            <h6
+            </h2>
+            <h3
                 class="mt-2 text-sm font-extrabold text-servcy-cream md:text-lg">
                 <Icon name="mdi:heart" class="mr-2 text-amber-500" />Made with
                 love in India
-            </h6>
+            </h3>
         </div>
         <div class="mb-8 flex items-center justify-center gap-x-6">
             <div

@@ -5,7 +5,8 @@ export default defineNuxtConfig({
         "@nuxt/content",
         "@nuxtjs/sitemap",
         "@nuxt/ui",
-        "@vueuse/motion/nuxt"
+        "@vueuse/motion/nuxt",
+        "@nuxt/image"
     ],
     app: {
         head: {
