@@ -38,7 +38,7 @@
                 ]
             }">
             <div
-                class="mt-20 grid grid-cols-1 gap-8 py-10 md:grid-cols-2 xl:grid-cols-4">
+                class="mt-20 grid grid-cols-1 gap-8 py-10 md:grid-cols-2 xl:grid-cols-3">
                 <div
                     v-for="(blogPost, index) of list.filter(
                         (blogPost) =>
@@ -57,6 +57,11 @@
                             :to="{ path: blogPost._path }"
                             :key="blogPost._id"
                             class="blog-link">
+                            <NuxtImg
+                                :src="blogPost.image"
+                                loading="lazy"
+                                alt="blog post image"
+                                class="h-36 w-full rounded-xl object-cover" />
                             <div class="mb-4 flex items-center">
                                 <div
                                     class="blog-title truncate text-lg font-extrabold text-servcy-black">
@@ -87,10 +92,6 @@
                                     class="servcy-text-xss mr-2 rounded-md bg-servcy-black p-1 text-servcy-gray">
                                     {{ tag }}
                                 </div>
-                            </div>
-                            <div
-                                class="h-20 overflow-hidden text-sm text-servcy-black">
-                                {{ blogPost.description }}
                             </div>
                         </NuxtLink>
                     </div>

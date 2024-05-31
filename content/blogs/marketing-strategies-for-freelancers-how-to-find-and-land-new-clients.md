@@ -1,9 +1,11 @@
 ---
 last_updated: "2024-02-30"
-tags: ["freelancing", "marketing", "SEO", "copywriting"]
+tags: ["Freelancing", "Marketing", "SEO", "Copywriting"]
 reading_time: "3"
 title: "Marketing Strategies for Freelancers: How to Find and Land New Clients 🚀"
 description: "As a freelancer, your marketing strategy is key to finding and landing new clients. By following some best practices for SEO and copywriting, you can ensure that your marketing efforts are effective and efficient. 💻"
+image: "/blogs/extras/dreaming-freelancer.jpg"
+ogImage: "/blogs/extras/dreaming-freelancer.jpg"
 ---
 
 # Marketing Strategies for Freelancers: How to Find and Land New Clients 🎯

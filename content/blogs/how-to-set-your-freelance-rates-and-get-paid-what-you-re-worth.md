@@ -1,35 +1,93 @@
 ---
-last_updated: "2024-02-30"
-tags: ["freelancing", "rates", "tips"]
-reading_time: "3"
-title: "💰 How to Set Your Freelance Rates and Get Paid What You're Worth 💸"
-description: "As a freelancer, setting your rates can be one of the most difficult and anxiety-inducing parts of the job. After all, you want to get paid what you're worth, but you also don't want to price yourself out of work. 💼"
+last_updated: "2024-05-31"
+tags: ["Freelancing", "Rates", "Value-Based Pricing"]
+alt: "Understanding Your Worth: Setting Rates as a Freelancer"
+reading_time: "4"
+title: "Understanding Your Worth: Setting Rates as a Freelancer"
+image: "/blogs/covers/setting-rates.jpeg"
+ogImage: "/blogs/covers/setting-rates.jpeg"
+description: "Once upon a time, in a world not too unlike ours, a horde of brave warriors known as freelancers set out on challenging quests. They embarked on these journeys for glory, freedom, and passion but mostly, for providing value to those who dared seek it."
 ---
 
-# How to Set Your Freelance Rates and Get Paid What You're Worth 💰
+These brave warriors faced many challenges, but one towered above the rest: setting their rates. This delicate dance between underpricing and overpricing could often feel like a complex puzzle. What if we told you, there's a way to solve this riddle? Let's delve deeper into this with some stats, engaging storytelling, and practical advice.
 
-As a freelancer, setting your rates can be one of the most difficult and anxiety-inducing parts of the job. After all, you want to get paid what you're worth, but you also don't want to price yourself out of work. 💻
+Firstly, let's look at a case study. According to a study by AND CO from Fiverr, 46% of freelancers had trouble figuring out how to price their services. They ended up underpricing their services, not realizing the value they were adding.
 
-### Here are some tips to help you set your rates and get paid what you're worth. 💡
+> 43% of freelancers say they raised their rates during the past year. The top reasons that they raised rates were due to professional experience (39%), economic conditions (37%), their services being in higher demand (36%), and to keep up with competitive rates (34%). The ability to raise their rates is likely why freelancers are over thirty percent (36%) more likely to feel satisfied with the amount of money they make for the work they do than non-freelancers.
 
-1. **Know your worth.** 💪
+<div>
+    <div class="flex justify-center">
+        <img src="/blogs/extras/avg-annual-earnings.png"  width="60%" alt="avg annual earnings" class="rounded-xl">
+    </div>
+    <a class="flex justify-center text-sm text-servcy-haze" href="https://www.researchgate.net/">
+        Source: ResearchGate
+    </a>
+</div>
 
-    Before you can set your rates, you need to know what you're worth. This means understanding your skillset and experience, as well as the going rates for similar work. Research what others in your field are charging, and use that information to help you set your own rates.
+#### Here’s a list of the average salaries and annual earnings for the most popular freelancing activities:
 
-2. **Consider your costs.** 💸
+| **Freelancer Job Title** | **Hourly Wage** | **Annual Salary** |
+| ------------------------ | --------------- | ----------------- |
+| Writers                  | $30-40/hr       | $42,000           |
+| Editors                  | $25-35/hr       | $40,000           |
+| Programmers              | $60-70/hr       | $120,000          |
+| General developers       | $50-60/hr       | $100,000          |
+| Mobile developers        | $55-65/hr       | $100,000          |
+| Web developers           | $50-60/hr       | $90,000           |
+| Graphic designers        | $40-45/hr       | $90,000           |
+| Transcribers             | $20-25/hr       | $32,000           |
+| Bookkeepers              | $30-35/hr       | $40,000           |
+| Online marketers         | $50/hr          | $100,000          |
+| Photographers            | $35-45/hr       | $42,000           |
+| CRM managers             | $50-60/hr       | $120,000          |
+| Data analysts            | $55-65/hr       | $100,000          |
 
-    In addition to your time, you also need to factor in your costs when setting your rates. This includes things like your equipment, software, and other business expenses. Be sure to factor in your costs so you can ensure you're making a profit.
+In this ocean teeming with freelancers, bringing unique value is imperative not just for survival but for setting your rates. Imagine a sea filled with red fishes. Now picture a single, vibrant yellow fish. That yellow fish has something unique. It is a beacon amidst the mundane which will likely attract more attention. And thus, it can command a higher price. Relate this with your own services. What uniqueness, what value can you bring? That's your starting point for setting your rates.
 
-3. **Set your rates.** 💵
+### Value-Based Pricing
 
-    Once you know your worth and have considered your costs, it's time to set your rates. Start by coming up with a range that you're comfortable with, and then narrow it down to a specific rate. Remember, you can always adjust your rates as needed.
+The principle is simple: Estimate the value you're providing and price your services accordingly. This discipline empowers freelancers to set fair rates, considering factors such as market demand, the complexity of the project, turnaround time, their unique skill set, and the value they'll be adding to the client's business.
 
-4. **Get paid what you're worth.** 💰
+Picture this scenario. You have two goldsmiths, one who can craft a plain gold ring and the other who can create a gold ring etched with intricate designs. Without a doubt, the latter can, and should, charge more for the unique skills and value they offer.
 
-    Once you've set your rates, it's important to stick to them. Don't let clients lowball you or take advantage of you. If a client is trying to haggle, be firm and stand your ground. Remember, you're worth what you say you're worth.
+You see, setting rates isn't necessarily based on the number of hours worked but rather, on the value created.
 
-5. **Review your rates regularly.** 📈
+<div class="flex justify-center">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Xe8oNhg0KQY?si=PiDbmeg0V3q5qBam" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" class="rounded-xl" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
 
-    Your rates should be reviewed and updated regularly, as your skills and experience grow. As your business grows, you may also need to adjust your rates to reflect your increased costs. Review your rates at least once a year, and make changes as needed.
+### Project-based (fixed) pricing
 
-Following these tips will help you set your freelance rates and get paid what you're worth. By knowing your worth, considering your costs, and setting a fair rate, you can ensure you're getting paid what you deserve. 💪💸💵💰📈
+This model charges a set price for the complete project, not based on hours but on the outcome. It's best for projects with specific deliverables open to value-based pricing.
+
+Projects ideal for fixed-price contracts are graphic design, web design, and mobile app development.
+
+### Goal-based pricing
+
+Pick a yearly salary and calculate how many working hours you’ll need to get to that salary.
+
+For example, an annual income of $50,000 breaks down like this:
+
+1. $50,000 per year (before taxes)
+2. Working 40 hours per week (5 x 8-hour days)
+3. 4 weeks off for holidays, sick days, and unexpected absences
+
+```
+   = 48 working weeks x 40 hours week = 1,920 working hours
+   = $50,000 / 1,920 hours = $26 per hour
+```
+
+Getting the hang of it? Let's now explore another important aspect: research and market trends. Staying updated with industry trends, competitor rates, and financial climate would empower you to price your services competitively yet reasonably.
+
+<div>
+    <div class="flex justify-center">
+        <img src="/blogs/extras/rates-statistics.png"  width="50%" alt="rates statistics" class="rounded-xl">
+    </div>
+    <a class="flex justify-center text-sm text-servcy-haze" href="https://www.upwork.com/guides/hourly-rates#development-it">
+        Source: UpWork
+    </a>
+</div>
+
+At the end of the day, remember this: don't sell yourself short. Be the yellow fish among red ones. It's vital to know your worth, price your services accordingly and take on substantial, value-adding projects. By doing so, you will not only provide unique value but also create a sustainable and fruitful freelance career.
+
+In conclusion, freelancers, fear not the task of setting your rates. Treat it as an adventure, a quest to discover your worth. Value-Based Pricing, market research, and understanding your unique value – these are your weapons. Wield them well, for they will guide you towards setting the right freelance rates.
