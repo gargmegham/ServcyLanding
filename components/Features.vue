@@ -81,16 +81,16 @@ const features = [
         icon: "mdi:gmail",
         slides: [
             {
-                image: "/shots/integrations.png",
+                image: "/shots/integrations.webp",
                 width: "100%"
             },
             {
-                image: "/shots/inbox.png",
+                image: "/shots/inbox.webp",
                 width: "60%",
                 transform: "left-20 -bottom-2"
             },
             {
-                image: "/shots/inbox-to-issue.png",
+                image: "/shots/inbox-to-issue.webp",
                 width: "50%",
                 transform: "-top-2 right-20"
             }
@@ -101,16 +101,16 @@ const features = [
         icon: "ph:suitcase",
         slides: [
             {
-                image: "/shots/project-button.png",
+                image: "/shots/project-button.webp",
                 width: "100%"
             },
             {
-                image: "/shots/project.png",
+                image: "/shots/project.webp",
                 width: "30%",
                 transform: "top-1/4 left-20"
             },
             {
-                image: "/shots/add-members.png",
+                image: "/shots/add-members.webp",
                 width: "50%",
                 transform: "bottom-10 right-1/4"
             }
@@ -121,16 +121,16 @@ const features = [
         icon: "material-symbols:add-task",
         slides: [
             {
-                image: "/shots/issues.png",
+                image: "/shots/issues.webp",
                 width: "100%"
             },
             {
-                image: "/shots/create-issue.png",
+                image: "/shots/create-issue.webp",
                 width: "50%",
                 transform: "left-20 top-1/2"
             },
             {
-                image: "/shots/side-peek.png",
+                image: "/shots/side-peek.webp",
                 width: "42%",
                 transform: "top-0 right-32"
             }
@@ -142,16 +142,16 @@ const features = [
         icon: "material-symbols:auto-timer-outline-rounded",
         slides: [
             {
-                image: "/shots/timesheet.png",
+                image: "/shots/timesheet.webp",
                 width: "100%"
             },
             {
-                image: "/shots/timer-start.png",
+                image: "/shots/timer-start.webp",
                 width: "50%",
                 transform: "left-20 top-1/2"
             },
             {
-                image: "/shots/timer.png",
+                image: "/shots/timer.webp",
                 width: "3%",
                 transform: "bottom-4 right-36"
             }
@@ -162,16 +162,16 @@ const features = [
         icon: "nimbus:stats",
         slides: [
             {
-                image: "/shots/dashboard.png",
+                image: "/shots/dashboard.webp",
                 width: "100%"
             },
             {
-                image: "/shots/costing.png",
+                image: "/shots/costing.webp",
                 width: "50%",
                 transform: "left-20 -bottom-2"
             },
             {
-                image: "/shots/analytics.png",
+                image: "/shots/analytics.webp",
                 width: "42%",
                 transform: "-top-2 right-24"
             }
