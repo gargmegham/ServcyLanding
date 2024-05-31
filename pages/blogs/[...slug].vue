@@ -22,10 +22,10 @@ useHead({
                     <ContentRendererMarkdown :value="doc" />
                 </div>
                 <div
-                    class="servcy-transparent-bg scroll col-span-3 hidden h-[85vh] overflow-y-scroll rounded-lg p-6 lg:block">
+                    class="servcy-transparent-bg scroll col-span-3 hidden h-[85vh] overflow-y-scroll rounded-lg p-6 xl:block">
                     <div
                         class="mb-6 border-b-[1px] border-servcy-wheat pb-2 text-xl text-servcy-wheat">
-                        Similar articles
+                        Further Reading
                     </div>
                     <ContentList
                         path="blogs"
