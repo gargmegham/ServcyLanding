@@ -42,6 +42,7 @@
             <img
                 :src="selectedFeature.slides[0].image"
                 class="cursor-pointer rounded-lg shadow-gray-600"
+                alt="starting-stage"
                 :width="selectedFeature.slides[0].width"
                 @click="
                     selectedSlide === 0
@@ -51,6 +52,7 @@
             <img
                 v-if="selectedSlide > 0"
                 v-motion-slide-visible-left
+                alt="middle-stage"
                 :src="selectedFeature.slides[1].image"
                 :class="`absolute ${selectedFeature.slides[1].transform} cursor-pointer rounded-xl shadow-2xl shadow-gray-700`"
                 :width="selectedFeature.slides[1].width"
@@ -62,6 +64,7 @@
             <img
                 v-if="selectedSlide > 1"
                 v-motion-slide-visible-right
+                alt="last-stage"
                 :src="selectedFeature.slides[2].image"
                 :class="`absolute ${selectedFeature.slides[2].transform} rounded-xl shadow-2xl shadow-gray-800`"
                 :width="selectedFeature.slides[2].width" />
