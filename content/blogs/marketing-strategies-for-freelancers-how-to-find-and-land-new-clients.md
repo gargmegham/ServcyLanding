@@ -1,5 +1,5 @@
 ---
-last_updated: "2024-02-30"
+last_updated: "2024-05-31"
 tags: ["Freelancing", "Marketing", "SEO", "Copywriting"]
 reading_time: "3"
 title: "Marketing Strategies for Freelancers: How to Find and Land New Clients 🚀"
