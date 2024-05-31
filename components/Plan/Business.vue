@@ -51,7 +51,10 @@
             class="my-2 flex text-sm"
             v-for="offering in offerings"
             :key="offering">
-            <img src="@/assets/icons/new-releases.svg" class="mr-2 size-4" />
+            <img
+                src="@/assets/icons/new-releases.svg"
+                class="mr-2 size-4"
+                alt="new-releases" />
             <span class="text-servcy-cream">{{ offering }}</span>
         </div>
     </div>
