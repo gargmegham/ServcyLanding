@@ -1,5 +1,5 @@
 ---
-last_updated: "2024-02-30"
+last_updated: "2024-05-31"
 tags: ["Freelancing", "Sustainability", "Income"]
 reading_time: "3"
 image: "/blogs/covers/how-to-make-freelancing-a-sustainable-career-choice.jpeg"
