@@ -1,5 +1,7 @@
 <template>
-    <section id="transformation" class="space-y-16 pt-[4vh] lg:pt-[10vh] text-servcy-cream">
+    <section
+        id="transformation"
+        class="space-y-16 pt-[4vh] text-servcy-cream lg:pt-[10vh]">
         <div
             v-motion-slide-visible-once-left
             class="grid grid-cols-1 gap-x-10 gap-y-6 lg:grid-cols-2">
@@ -32,17 +34,19 @@
                     </div>
                 </div>
             </div>
-            <img
+            <NuxtImg
                 src="/people/confused.jpeg"
                 alt="confused"
+                format="webp"
                 class="rounded-lg" />
         </div>
         <div
             v-motion-slide-visible-once-right
             class="grid grid-cols-1 gap-x-10 gap-y-6 space-y-reverse lg:grid-cols-2">
-            <img
+            <NuxtImg
                 src="/people/unhappy.jpeg"
                 alt="confused"
+                format="webp"
                 class="order-2 rounded-lg lg:order-1" />
             <div class="order-1 flex items-center lg:order-2">
                 <div>
@@ -117,7 +121,11 @@
                     </div>
                 </div>
             </div>
-            <img src="/people/happy.jpeg" alt="confused" class="rounded-lg" />
+            <NuxtImg
+                src="/people/happy.jpeg"
+                format="webp"
+                alt="confused"
+                class="rounded-lg" />
         </div>
     </section>
 </template>
