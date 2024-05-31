@@ -132,7 +132,6 @@
             <div class="flex items-center justify-center" v-motion-slide-right>
                 <NuxtImg
                     src="/svgs/fly-wheel.svg"
-                    loading="lazy"
                     alt="fly-wheel"
                     style="max-height: 530px !important; width: 100%" />
             </div>
