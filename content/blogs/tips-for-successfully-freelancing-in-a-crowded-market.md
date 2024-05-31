@@ -1,5 +1,5 @@
 ---
-last_updated: "2024-02-30"
+last_updated: "2024-05-31"
 tags: ["Freelancing", "Survival"]
 reading_time: "3"
 image: "/blogs/covers/tips-for-successfully-freelancing-in-a-crowded-market.jpeg"
