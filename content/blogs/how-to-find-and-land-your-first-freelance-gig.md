@@ -1,5 +1,5 @@
 ---
-last_updated: "2024-02-30"
+last_updated: "2024-05-31"
 tags: ["Freelancing", "First Client"]
 reading_time: "3"
 image: "/blogs/covers/how-to-find-and-land-your-first-freelance-gig.jpeg"
@@ -48,7 +48,7 @@ Jake observed successful proposals, analyzed what made them tick, and like Picas
 
 Recall the tale of Aladdin? Remember how the magical phase, 'Open Sesame,' opened the cave, revealing untold treasures? Well, that's exactly how your resume acts as in the eyes of a client - a key to your freelancing treasure chest.
 
-Jake, at first, hesitated. His resume seemed scanty, but he realized it was all about perspective. Checkout this reddit thread on [how to write a resume](https://www.reddit.com/r/Resume/comments/kraiam/how_do_you_fluff_up_a_resume). He started listing all his accomplishments, no matter how irrelevant they seemed to the gig. He displayed a broad range of skills, showcasing his adaptability.
+Jake, at first, hesitated. His resume seemed scanty, but he realized it was all about perspective. He started listing all his accomplishments, no matter how irrelevant they seemed to the gig. He displayed a broad range of skills, showcasing his adaptability.
 
 After a few attempts, Jake made it. He got his first gig! He poured every ounce of dedication into his work, delivering beyond expectations, thus paving the way for repeated business.
 
