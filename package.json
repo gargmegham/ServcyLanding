@@ -2,6 +2,16 @@
     "name": "nuxt-app",
     "private": true,
     "type": "module",
+    "author": {
+      "name": "Megham Garg",
+      "email": "business@meghamgarg.com",
+      "url": "https://meghamgarg.com"
+    },
+    "repository": {
+      "url": "https://github.com/Servcy/Landing",
+      "type": "git"
+    },
+    "license": "AGPL-3.0-only",
     "scripts": {
         "build": "nuxt build",
         "dev": "nuxt dev",
