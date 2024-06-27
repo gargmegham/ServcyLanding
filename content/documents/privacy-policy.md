@@ -115,6 +115,4 @@ Security is a priority for us when it comes to your personal data. We're committ
 
 4. If you're not happy with how we are processing your personal data, please let us know by sending an email to contact@servcy.com. We will review and investigate your complaint, and try to get back to you within a reasonable time frame.
 
-# Clause 10: How to contact us
-
-You could get in touch with us at contact@servcy.com.
+#### You could get in touch with us at contact@servcy.com.
