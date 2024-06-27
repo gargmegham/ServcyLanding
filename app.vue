@@ -4,7 +4,7 @@
     <Footer />
     <a
         href="https://github.com/orgs/Servcy/repositories"
-        class="fixed bottom-4 right-4 m-0 rounded-xl border border-neutral-200 border-white/[0.2] bg-black px-2 py-1 text-sm font-medium text-servcy-cream">
+        class="fixed bottom-8 right-4 m-0 rounded-xl border border-neutral-200 border-white/[0.2] bg-black px-2 py-1 text-sm font-medium text-servcy-cream">
         <span>We're Open Source</span>
         <Icon name="mdi:github" class="ml-2 h-6 w-6" />
         <span
