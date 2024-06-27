@@ -11,3 +11,7 @@ Please note that there may be certain orders that we are unable to accept and mu
 ## Cancellation by you
 
 You agree and acknowledge that unless stated otherwise you are not entitled to cancel any orders made by you on this Website. In the event you subscribe to any Solutions, the same may be cancelled by you one month prior to the provision of the Solutions, in such a case you will be refunded in the entire amount after deducting any bank charges that may have been applicable. Further during a period between one month and 14 days from when the Solutions are to be provided, if there is a cancellation request received, we may at our discretion refund 50% of the amount, after deducting any bank charges that may have been applicable, to you. A period of 14 days before the Solutions to be provided no request for cancelation will not be entertained by the Company.
+
+# Refund Turn Around Time
+
+Once we confirm refunds from our side, it can take upto 5-7 working days to process the refund successfully.
