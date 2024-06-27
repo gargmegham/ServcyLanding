@@ -1,7 +1,5 @@
 # Refund And Cancellation Policy
 
-## Cancellation and Refund Policy
-
 The terms hereof shall constitute Interweave Consulting Private Limited’s (“Company”) cancellation and refund policy in relation to the Solutions rendered on the Website (“Cancellation and Refund Policy”). Capitalized terms not defined herein shall have the meaning ascribed to them in the Terms of Use.
 
 ## Cancellation and Refunds by the Company
@@ -14,4 +12,4 @@ You agree and acknowledge that unless stated otherwise you are not entitled to c
 
 ## Refund Turn Around Time
 
-Once we confirm refunds from our side, it can take upto 5-7 working days to process the refund successfully.
+Once we confirm refund status from our side, it can take upto 5-7 working days to process the refund successfully.
