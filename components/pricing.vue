@@ -60,7 +60,7 @@
                             class="rounded bg-servcy-wheat p-2"
                             style="border-style: solid">
                             <a
-                                href="https://web.servcy.com/login"
+                                href="mailto:contact@servcy.com"
                                 target="_blank"
                                 class="font-bold !text-servcy-green hover:!text-servcy-black"
                                 >Register</a
