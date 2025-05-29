@@ -76,14 +76,7 @@ const plan = {
     usdPrice: 99
 }
 function checkout() {
-    Paddle.Checkout.open({
-        items: [
-            {
-                priceId: config.public.businessPriceId,
-                quantity: 1
-            }
-        ]
-    })
+    window.open(`mailto:meghamgarg@gmail.com`, "_blank")
 }
 </script>
 

@@ -51,7 +51,6 @@
 </template>
 
 <script setup>
-const config = useRuntimeConfig()
 const offerings = [
     "Invite Upto 10 Users",
     "Unlimited Projects",
@@ -67,13 +66,6 @@ const plan = {
     usdPrice: 49
 }
 function checkout() {
-    Paddle.Checkout.open({
-        items: [
-            {
-                priceId: config.public.plusPriceId,
-                quantity: 1
-            }
-        ]
-    })
+    window.open(`mailto:meghamgarg@gmail.com`, "_blank")
 }
 </script>

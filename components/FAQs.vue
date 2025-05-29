@@ -49,7 +49,7 @@ export default {
                 {
                     question:
                         "If I have any questions, who can I reach out to?",
-                    answer: "If you have any questions or require assistance, please don't hesitate to contact our support team by clicking on the chat icon or by sending an email to contact@servcy.com. You can also join our community on Slack. We're here to help you find the best support and will do our best to address any doubts that you may have."
+                    answer: "If you have any questions or require assistance, please don't hesitate to contact our support team by clicking on the chat icon or by sending an email to meghamgarg@gmail.com. You can also join our community on Slack. We're here to help you find the best support and will do our best to address any doubts that you may have."
                 }
             ]
         }

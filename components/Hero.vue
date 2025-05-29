@@ -156,7 +156,7 @@ const redirectToLogin = () => {
         alert("Only workspace emails are allowed.")
         return
     }
-    window.open(`mailto:contact@servcy.com`, "_blank")
+    window.open(`mailto:meghamgarg@gmail.com`, "_blank")
 }
 </script>
 

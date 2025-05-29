@@ -45,10 +45,6 @@ useHead({
                 y.parentNode.insertBefore(t, y)
             })(window, document, "clarity", "script", "ffilkcgrum")
             `
-        },
-        {
-            type: "text/javascript",
-            src: "https://cdn.paddle.com/paddle/v2/paddle.js"
         }
     ]
 })

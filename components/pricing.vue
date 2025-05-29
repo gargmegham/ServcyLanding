@@ -25,76 +25,8 @@
             <PlanBusiness v-motion-pop-visible-once />
             <PlanEnterprise v-motion-slide-visible-once-right />
         </div>
-        <UModal v-model="checkoutCompleted">
-            <UCard
-                :ui="{
-                    ring: '',
-                    background: '!bg-servcy-black'
-                }">
-                <template #header>
-                    <div>🎊 Payment Successful</div>
-                </template>
-                <div class="text-servcy-cream">
-                    <p>
-                        We've received your payment, you will receive your
-                        receipt shortly.
-                    </p>
-                    <p class="mt-4">
-                        You can now login using the email you used during
-                        checkout.<br />
-                        Your subscription will reflect on your dashboard in 24
-                        hours.
-                    </p>
-                    <p class="mt-4">
-                        If you have any questions or concerns, email us at
-                        <a
-                            href="mailto:contact@servcy.com"
-                            class="text-servcy-wheat !outline-none !ring-0"
-                            >contact@servcy.com</a
-                        >
-                    </p>
-                </div>
-                <template #footer>
-                    <div class="flex justify-end">
-                        <button
-                            class="rounded bg-servcy-wheat p-2"
-                            style="border-style: solid">
-                            <a
-                                href="mailto:contact@servcy.com"
-                                target="_blank"
-                                class="font-bold !text-servcy-green hover:!text-servcy-black"
-                                >Register</a
-                            >
-                        </button>
-                    </div>
-                </template>
-            </UCard>
-        </UModal>
     </section>
 </template>
-
-<script setup>
-const config = useRuntimeConfig()
-const checkoutCompleted = ref(false)
-onMounted(() => {
-    Paddle.Initialize({
-        token: config.public.paddleClientToken,
-        eventCallback: function (data) {
-            if (data.name == "checkout.completed") {
-                checkoutCompleted.value = true
-                gtag("event", "conversion_event_purchase", {
-                    currency: data?.currency_code,
-                    value: data?.items?.[0]?.price_id,
-                    transaction_id: data?.transaction_id
-                })
-                setTimeout(() => {
-                    checkoutCompleted.value = false
-                }, 5000)
-            }
-        }
-    })
-})
-</script>
 
 <style scoped>
 .servcy-caption {

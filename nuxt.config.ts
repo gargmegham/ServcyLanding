@@ -101,12 +101,5 @@ export default defineNuxtConfig({
     css: ["@/assets/css/global.css"],
     site: {
         url: "https://servcy.com"
-    },
-    runtimeConfig: {
-        public: {
-            paddleClientToken: process.env.NUXT_PUBLIC_PADDLE_CLIENT_TOKEN,
-            plusPriceId: process.env.NUXT_PUBLIC_PLUS_PRICE_ID,
-            businessPriceId: process.env.NUXT_PUBLIC_BUSINESS_PRICE_ID
-        }
     }
 })

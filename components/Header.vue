@@ -54,7 +54,7 @@
                 style="border-style: solid"
                 id="header-cta">
                 <a
-                    href="mailto:contact@servcy.com"
+                    href="mailto:meghamgarg@gmail.com"
                     target="_blank"
                     class="font-bold !text-servcy-cream hover:!text-servcy-wheat"
                     >Get Started</a
