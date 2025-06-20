@@ -156,7 +156,7 @@ const redirectToLogin = () => {
         alert("Only workspace emails are allowed.")
         return
     }
-    window.open(`mailto:meghamgarg@gmail.com`, "_blank")
+    window.open(`mailto:support@launchbit.in`, "_blank")
 }
 </script>
 

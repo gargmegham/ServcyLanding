@@ -53,4 +53,4 @@ Our [Code of Conduct](./CODE_OF_CONDUCT.md) applies to all Servcy community chan
 
 ## ⛓️ Security
 
-If you believe you have found a security vulnerability in Servcy, we encourage you to responsibly disclose this and not open a public issue. We will investigate all legitimate reports. Email [meghamgarg@gmail.com](mailto:meghamgarg@gmail.com) to disclose any security vulnerabilities.
+If you believe you have found a security vulnerability in Servcy, we encourage you to responsibly disclose this and not open a public issue. We will investigate all legitimate reports. Email [support@launchbit.in](mailto:support@launchbit.in) to disclose any security vulnerabilities.

@@ -76,7 +76,7 @@ const plan = {
     usdPrice: 99
 }
 function checkout() {
-    window.open(`mailto:meghamgarg@gmail.com`, "_blank")
+    window.open(`mailto:support@launchbit.in`, "_blank")
 }
 </script>
 

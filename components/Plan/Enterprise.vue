@@ -23,7 +23,7 @@
         <div class="mb-4 h-24">
             <div class="flex h-20 w-full gap-x-2">
                 <a
-                    href="mailto:meghamgarg@gmail.com"
+                    href="mailto:support@launchbit.in"
                     target="_blank"
                     class="servcy-wheat-shadow-right-bottom flex h-16 w-full items-center justify-center rounded-lg bg-servcy-black text-lg font-extrabold text-servcy-cream hover:text-servcy-wheat">
                     <Icon class="mr-2" size="24" name="mdi:gmail" />

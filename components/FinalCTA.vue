@@ -19,7 +19,7 @@
             <button
                 class="servcy-wheat-shadow-left-bottom rounded bg-servcy-black p-3">
                 <a
-                    href="mailto:meghamgarg@gmail.com"
+                    href="mailto:support@launchbit.in"
                     target="_blank"
                     class="text-lg font-semibold !text-servcy-cream hover:!text-servcy-wheat md:text-xl">
                     Start Tracking Now

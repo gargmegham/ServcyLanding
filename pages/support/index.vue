@@ -25,7 +25,7 @@
                 <button
                     class="servcy-wheat-shadow-right-bottom mt-5 rounded bg-servcy-black p-3">
                     <a
-                        href="mailto:meghamgarg@gmail.com"
+                        href="mailto:support@launchbit.in"
                         target="_blank"
                         class="text-2xl font-semibold !text-servcy-cream hover:!text-servcy-wheat">
                         Email Us
@@ -57,8 +57,8 @@
                 <h3 class="mt-4 text-lg font-semibold text-servcy-cream">
                     Email:
                     <span class="tml-2 text-sm text-servcy-wheat">
-                        <a href="mailto:meghamgarg@gmail.com">
-                            meghamgarg@gmail.com
+                        <a href="mailto:support@launchbit.in">
+                            support@launchbit.in
                         </a>
                     </span>
                 </h3>
